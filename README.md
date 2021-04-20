@@ -479,7 +479,7 @@ Returns a boolean based on the successful execution of the return type void, met
 api.CallMethod("//*[@name='Canvas']/fn:component('CustomScript')", "CustomMethod", new string[] { "string:The Test was run on " + DateTime.Now.ToShortDateString() });
 
 <a name='M-gdio-unity_api-v2-ApiClient-CallMethod``1-System-String,System-String,System-Object[],System-Int32-'></a>
-### CallMethod\`\`1(hierarchyPath,methodName,arguments,timeout) `method`
+### CallMethod<T>(hierarchyPath,methodName,arguments,timeout) `method`
 
 ##### Summary
 
@@ -501,7 +501,7 @@ Returns a deserialized object of type T. If T and the type of the returned objec
 ##### Example
 
 ```
-api.CallMethod&lt;int&gt;("//*[@name='Canvas']/fn:component('CustomScript')", "DoMath", new object[] { 1, 2 });
+api.CallMethod<int>("//*[@name='Canvas']/fn:component('CustomScript')", "DoMath", new object[] { 1, 2 });
 ```
 
 <a name='M-gdio-unity_api-v2-ApiClient-CaptureScreenshot-System-String,System-Boolean,System-Boolean,System-Int32-'></a>
@@ -1048,7 +1048,7 @@ Returns the distance between the two objects as a float.
 // CubeB.Transform = Vector3(6, 5, 4)
 
 <a name='M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue``1-System-String,System-Int32-'></a>
-### GetObjectFieldValue\`\`1(hierarchyPath,timeout) `method`
+### GetObjectFieldValue<T>(hierarchyPath,timeout) `method`
 
 ##### Summary
 
@@ -1076,7 +1076,7 @@ Returns an object of type T for the value or throws an [Exception](http://msdn.m
 // Searches for an object named 'HiddenCube' which is invisible in the scene, and checks whether the "Active" checkbox is enabled.
 
 ```
-bool invisCube = api.GetObjectFieldValue&lt;bool&gt;("//*[@name='HiddenCube']/fn:component('UnityEngine.Behaviour')/@isActiveAndEnabled");
+bool invisCube = api.GetObjectFieldValue<bool>("//*[@name='HiddenCube']/fn:component('UnityEngine.Behaviour')/@isActiveAndEnabled");
 Assert.IsTrue(invisCube == false, "The invisible cube isn't active"); //Passes if the object is Active in the scene
 ```
 
@@ -1102,7 +1102,7 @@ This method returns a [IList](http://msdn.microsoft.com/query/dev14.query?appId=
 //Print a list of the scene objects
 
 ```
- System.Collections.Generic.List&lt;LiteGameObject&gt; objects = api.GetObjectList();
+ System.Collections.Generic.List<LiteGameObject> objects = api.GetObjectList();
  //Test whether the list is null
  Assert.IsNotNull(objects, "GetObjectList failed!");
  //Print a full object list
