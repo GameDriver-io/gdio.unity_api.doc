@@ -475,9 +475,11 @@ Returns a boolean based on the successful execution of the return type void, met
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the request was processed. |
 
 ##### Example
-
-api.CallMethod("//*[@name='Canvas']/fn:component('CustomScript')", "CustomMethod", new string[] { "string:The Test was run on " + DateTime.Now.ToShortDateString() });
-
+```
+api.CallMethod("//*[@name='Canvas']/fn:component('CustomScript')",
+  "CustomMethod",
+  new string[] { "string:The Test was run on " + DateTime.Now.ToShortDateString() });
+```
 <a name='M-gdio-unity_api-v2-ApiClient-CallMethod``1-System-String,System-String,System-Object[],System-Int32-'></a>
 ### CallMethod<T>(hierarchyPath,methodName,arguments,timeout) `method`
 
@@ -501,7 +503,9 @@ Returns a deserialized object of type T. If T and the type of the returned objec
 ##### Example
 
 ```
-api.CallMethod<int>("//*[@name='Canvas']/fn:component('CustomScript')", "DoMath", new object[] { 1, 2 });
+api.CallMethod<int>("//*[@name='Canvas']/fn:component('CustomScript')",
+  "DoMath",
+  new object[] { 1, 2 });
 ```
 
 <a name='M-gdio-unity_api-v2-ApiClient-CaptureScreenshot-System-String,System-Boolean,System-Boolean,System-Int32-'></a>
@@ -521,8 +525,9 @@ Use this function to capture a screenshot of the Game under test.
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the CaptureScreenshot request was processed. |
 
 ##### Example
-
+```
 api.CaptureScreenshot(@"c:\temp\screen1.png", false, true);
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-Click-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,System-Int32-'></a>
 ### Click(buttonId,position,clickFrameCount,timeout) `method`
@@ -541,8 +546,10 @@ Use this function to perform in-game mouse-clicks.
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
-
-api.Click(MouseButtons.LEFT, new Vector2 (0, 0), 30, 30); //Clicks the left mouse button at 0,0 for 30 frames
+```
+//Clicks the left mouse button at 0,0 for 30 frames
+api.Click(MouseButtons.LEFT, new Vector2 (0, 0), 30, 30);
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-Click-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,System-Int32-'></a>
 ### Click(buttonId,x,y,clickFrameCount,timeout) `method`
@@ -562,8 +569,10 @@ Use this function to perform in-game mouse-clicks.
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
-
-api.Click(MouseButtons.LEFT, 0, 0, 30, 30); //Clicks the left mouse button at 0,0 for 30 frames
+```
+//Clicks the left mouse button at 0,0 for 30 frames
+api.Click(MouseButtons.LEFT, 0, 0, 30, 30);
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-ClickEx-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
 ### ClickEx(buttonId,position,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
@@ -588,8 +597,14 @@ If this delay is longer than that of the frame count for all of the key presses 
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
-
-api.ClickEx(MouseButtons.LEFT, new Vector2(0, 0), 30, new KeyCode[] { KeyCode.C }, 5, new KeyCode[] { KeyCode.LeftShift }, 3, 500, 30); //Clicks the left mouse button at 0,0 for 30 frames while holding the left-shift key for 3 frames, and the C key for 5 frames.
+```
+//Clicks the left mouse button at 0,0 for 30 frames while holding the left-shift key for 3 frames, and the C key for 5 frames.
+api.ClickEx(MouseButtons.LEFT,
+  new Vector2(0, 0), 30,
+  new KeyCode[] { KeyCode.C }, 5,
+  new KeyCode[] { KeyCode.LeftShift }, 3,
+  500, 30);
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-ClickEx-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
 ### ClickEx(buttonId,x,y,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
@@ -615,8 +630,13 @@ If this delay is longer than that of the frame count for all of the key presses 
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
-
-api.ClickEx(MouseButtons.LEFT, 0, 0, 30, new KeyCode[] { KeyCode.C }, 5, new KeyCode[] { KeyCode.LeftShift }, 3, 500, 30); //Clicks the left mouse button at 0,0 for 30 frames while holding the left-shift key for 3 frames, and the C key for 5 frames.
+```
+//Clicks the left mouse button at 0,0 for 30 frames while holding the left-shift key for 3 frames, and the C key for 5 frames.
+api.ClickEx(MouseButtons.LEFT, 0, 0, 30,
+  new KeyCode[] { KeyCode.C }, 5,
+  new KeyCode[] { KeyCode.LeftShift }, 3,
+  500, 30);
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-ClickObject-gdio-common-objects-MouseButtons,System-String,System-UInt64,System-Int32-'></a>
 ### ClickObject(buttonId,hierarchyPath,frameCount,timeout) `method`
@@ -635,8 +655,10 @@ Use this function to interact with an in-game object using mouse-clicks.
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of frames to hold the keys down before clicking. Total press frame count is keyFrames + frames.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
-
-api.ClickObject(MouseButtons.LEFT, "//*[@name='Cube']", 30, 30); //Locates and clicks the first object with the name "Cube" for 30 frames using the left mouse button.
+```
+//Locates and clicks the first object with the name "Cube" for 30 frames using the left mouse button.
+api.ClickObject(MouseButtons.LEFT, "//*[@name='Cube']", 30, 30);
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-ClickObjectEx-gdio-common-objects-MouseButtons,System-String,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
 ### ClickObjectEx(buttonId,hierarchyPath,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
@@ -661,8 +683,14 @@ If this delay is longer than that of the frame count for all of the key presses 
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickObjectEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
-
-api.ClickObjectEx(MouseButtons.LEFT, "//*[@name='Cube']", 30, new KeyCode[] { KeyCode.LeftControl }, 5, new KeyCode[] { KeyCode.LeftShift }, 3, 500, 30); //Locates and clicks the first object with the name "Cube"for 30 frames with the left mouse button while holding the left-shift key for 3 frames, and the left-CTRL key for 5 frames.
+```
+//Locates and clicks the first object with the name "Cube"for 30 frames with the left mouse button while holding the left-shift key for 3 frames,
+// and the left-CTRL key for 5 frames.
+api.ClickObjectEx(MouseButtons.LEFT, "//*[@name='Cube']", 30,
+  new KeyCode[] { KeyCode.LeftControl }, 5,
+  new KeyCode[] { KeyCode.LeftShift }, 3,
+  500, 30); 
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-Connect-System-String,System-Int32,System-Boolean,System-Int32,System-Boolean-'></a>
 ### Connect(hostname,port,autoplay,timeout,autoPortResolution) `method`
@@ -682,8 +710,10 @@ Use this function to connect to a Unity game with GameDriver Agent configured an
 | autoPortResolution | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Auto port resolution allows for the Unity editor or Standalone game to report what port it is using for the GameDriver agent. |
 
 ##### Example
-
-api.Connect("localhost"); // Connects to a local instance of the Unity editor with the default port of 19734 configured and starts Play mode automatically.
+```
+//Connects to a local instance of the Unity editor with the default port of 19734 configured and starts Play mode automatically.
+api.Connect("localhost");
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-Connect-System-String,System-String,System-Int32,System-Boolean,System-Int32,System-Boolean-'></a>
 ### Connect(hostname,regex_MatchGamePath,port,autoplay,timeout,autoPortResolution) `method`
@@ -704,8 +734,10 @@ Use this function to connect to a Unity game with GameDriver Agent configured an
 | autoPortResolution | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Auto port resolution allows for the Unity editor or Standalone game to report what port it is using for the GameDriver agent. |
 
 ##### Example
-
-api.Connect("*", ".*?myunitygame.**"); // Connects to any running instance of the Unity editor on the local network (broadcast) with the project name of "myunitygame".
+```
+//Connects to any running instance of the Unity editor on the local network (broadcast) with the project name of "myunitygame".
+api.Connect("*", ".*?myunitygame.**");
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-DisableHooks-gdio-unity_api-v2-HookingObject,System-Int32-'></a>
 ### DisableHooks(hookObject,timeout) `method`
@@ -726,8 +758,9 @@ TRUE if the GameDriver agent successfully processed the request.
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
-
+```
 api.DisableHooks(HookingObject.ALL);
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-DisbleObjectCaching-System-Int32-'></a>
 ### DisbleObjectCaching(timeout) `method`
@@ -747,8 +780,9 @@ TRUE if the GameDriver agent successfully processed the request.
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
-
+```
 api.DisableObjectCaching();
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-Disconnect'></a>
 ### Disconnect() `method`
@@ -782,8 +816,10 @@ Use this function to perform in-game mouse double-clicks.
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
-
-api.DoubleClick(MouseButtons.LEFT, new Vector2(0, 0), 30, 30); //Doube-clicks the left mouse button at position 0, 0 on the screen over a duration of 30 frames.
+```
+//Double-clicks the left mouse button at position 0, 0 on the screen over a duration of 30 frames.
+api.DoubleClick(MouseButtons.LEFT, new Vector2(0, 0), 30, 30);
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-DoubleClick-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,System-Int32-'></a>
 ### DoubleClick(buttonId,x,y,clickFrameCount,timeout) `method`
@@ -803,8 +839,10 @@ Use this function to perform in-game mouse double-clicks.
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
-
-api.DoubleClick(MouseButtons.LEFT, 0, 0, 30, 30); //Doube-clicks the left mouse button at position 0, 0 on the screen over a duration of 30 frames.
+```
+//Double-clicks the left mouse button at position 0, 0 on the screen over a duration of 30 frames.
+api.DoubleClick(MouseButtons.LEFT, 0, 0, 30, 30);
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-DoubleClickEx-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
 ### DoubleClickEx(buttonId,position,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
@@ -833,8 +871,14 @@ If this delay is longer than the frame count for all the key presses and click o
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
-
-api.DoubleClickEx(MouseButtons.LEFT, new Vector2 (0, 0), 30, new KeyCode[] { KeyCode.LeftControl }, 5, new KeyCode[] { KeyCode.LeftShift }, 3, 500, 30); //Double-clicks the left mouse button at the position 0, 0 for 30 frames with the left mouse button while holding the left-shift key for 3 frames, and the left-CTRL key for 5 frames.
+```
+//Double-clicks the left mouse button at the position 0, 0 for 30 frames with the left mouse button while holding the left-shift key for 3 frames,
+// and the left-CTRL key for 5 frames.
+api.DoubleClickEx(MouseButtons.LEFT, new Vector2 (0, 0), 30,
+  new KeyCode[] { KeyCode.LeftControl }, 5,
+  new KeyCode[] { KeyCode.LeftShift }, 3,
+  500, 30);
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-DoubleClickEx-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
 ### DoubleClickEx(buttonId,x,y,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
@@ -864,8 +908,14 @@ If this delay is longer than the frame count for all the key presses and click o
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
-
-api.DoubleClickEx(MouseButtons.LEFT, 0, 0, 30, new KeyCode[] { KeyCode.LeftControl }, 5, new KeyCode[] { KeyCode.LeftShift }, 3, 500, 30); //Double-clicks the left mouse button at the position 0, 0 for 30 frames with the left mouse button while holding the left-shift key for 3 frames, and the left-CTRL key for 5 frames.
+```
+//Double-clicks the left mouse button at the position 0, 0 for 30 frames with the left mouse button while holding the left-shift key for 3 frames,
+// and the left-CTRL key for 5 frames.
+api.DoubleClickEx(MouseButtons.LEFT, 0, 0, 30,
+  new KeyCode[] { KeyCode.LeftControl }, 5,
+  new KeyCode[] { KeyCode.LeftShift }, 3,
+  500, 30);
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-DoubleClickObject-gdio-common-objects-MouseButtons,System-String,System-UInt64,System-Int32-'></a>
 ### DoubleClickObject(buttonId,hierarchyPath,frameCount,timeout) `method`
@@ -888,8 +938,10 @@ TRUE if the GameDriver agent successfully processed the request.
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the DoubleClickObject request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
-
-api.DoubleClickObject(MouseButtons.LEFT, "//*[@name='Cube']", 30, 30); //Locates and double-clicks the first object with the name "Cube" over a period of 30 frames using the left mouse button.
+```
+//Locates and double-clicks the first object with the name "Cube" over a period of 30 frames using the left mouse button.
+api.DoubleClickObject(MouseButtons.LEFT, "//*[@name='Cube']", 30, 30);
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-DoubleClickObjectEx-gdio-common-objects-MouseButtons,System-String,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
 ### DoubleClickObjectEx(buttonId,hierarchyPath,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
@@ -918,8 +970,14 @@ If this delay is longer than the frame count for all the key presses and click o
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the DoubleClickObjectEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
-
-api.DoubleClickObjectEx(MouseButtons.LEFT, "//*[@name='Cube']", 30, new KeyCode[] { KeyCode.LeftControl }, 5, new KeyCode[] { KeyCode.LeftShift }, 3, 500, 30); //Locates and clicks the first object with the name "Cube"for 30 frames with the left mouse button while holding the left-shift key for 3 frames, and the left-CTRL key for 5 frames.
+```
+//Locates and clicks the first object with the name "Cube" for 30 frames with the left mouse button while holding the left-shift key for 3 frames,
+// and the left-CTRL key for 5 frames.
+api.DoubleClickObjectEx(MouseButtons.LEFT, "//*[@name='Cube']", 30,
+  new KeyCode[] { KeyCode.LeftControl }, 5,
+  new KeyCode[] { KeyCode.LeftShift }, 3,
+  500, 30);
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-EnableHooks-gdio-unity_api-v2-HookingObject,System-Int32-'></a>
 ### EnableHooks(hookObject,timeout) `method`
@@ -940,8 +998,9 @@ TRUE if the GameDriver agent successfully processed the request.
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
-
+```
 api.EnableHooks(HookingObject.ALL);
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-EnableObjectCaching-System-Int32-'></a>
 ### EnableObjectCaching(timeout) `method`
@@ -962,8 +1021,9 @@ TRUE if the GameDriver agent successfully processed the request.
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
-
+```
 api.EnableObjectCaching();
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-FlushObjectLookupCache-System-Int32-'></a>
 ### FlushObjectLookupCache(timeout) `method`
@@ -983,8 +1043,9 @@ TRUE if the GameDriver agent successfully processed the request.
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
-
+```
 api.FlushObjectLookupCache();
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-GetConnectedGameDetails'></a>
 ### GetConnectedGameDetails() `method`
@@ -1017,11 +1078,11 @@ The last published FPS as a double.
 This method has no parameters.
 
 ##### Example
-
-Can be used as input for time-sensitive functions such as input.
- For example, this will press the Down key for roughly 1 second:
- 
-    api.KeyPress(new KeyCode[] { KeyCode.DownArrow }, (ulong)api.GetLastFPS());
+```
+//Can be used as input for time-sensitive functions such as input.
+// For example, this will press the Down key for roughly 1 second:
+api.KeyPress(new KeyCode[] { KeyCode.DownArrow }, (ulong)api.GetLastFPS());
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-GetObjectDistance-System-String,System-String,System-Int32-'></a>
 ### GetObjectDistance(objectA_HierarchyPath,objectB_HierarchyPath,timeout) `method`
@@ -1043,9 +1104,13 @@ Returns the distance between the two objects as a float.
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
-
+```
 // CubeA.Transform = Vector3(1, 2, 3)
 // CubeB.Transform = Vector3(6, 5, 4)
+d = api.GetObjectDistance("//*[@name = 'CubeA']", "//*[@name = 'CubeB']");
+
+Console.WriteLine(d.ToString()); // prints -5.0,-3.0,-1.0
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue``1-System-String,System-Int32-'></a>
 ### GetObjectFieldValue<T>(hierarchyPath,timeout) `method`
