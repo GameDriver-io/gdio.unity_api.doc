@@ -1,5 +1,3 @@
-# gdio.unity_api.doc
-Documentation for the GameDriver Unity API
 <a name='assembly'></a>
 # gdio.unity_api
 
@@ -46,8 +44,8 @@ Documentation for the GameDriver Unity API
   - [LoadScene(sceneName,timeout)](#M-gdio-unity_api-v2-ApiClient-LoadScene-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.LoadScene(System.String,System.Int32)')
   - [MouseDrag(button,destination,frameCount,origin,waitForEmptyInput,timeout)](#M-gdio-unity_api-v2-ApiClient-MouseDrag-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.MouseDrag(gdio.common.objects.MouseButtons,gdio.common.objects.Vector2,System.UInt64,gdio.common.objects.Vector2,System.Boolean,System.Int32)')
   - [MouseMoveToObject(objectHierarchyPath,frameCount,waitForObject,waitForEmptyInput,timeout)](#M-gdio-unity_api-v2-ApiClient-MouseMoveToObject-System-String,System-UInt64,System-Boolean,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.MouseMoveToObject(System.String,System.UInt64,System.Boolean,System.Boolean,System.Int32)')
-  - [MoveMouseToPoint(desintation,frameCount,origin,waitForEmptyInput,timeout)](#M-gdio-unity_api-v2-ApiClient-MoveMouseToPoint-gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.MoveMouseToPoint(gdio.common.objects.Vector2,System.UInt64,gdio.common.objects.Vector2,System.Boolean,System.Int32)')
-  - [NavAgentMoveToPoint(navAgentHierarchyPath,desintation,waitForMoveToComplete,timeout)](#M-gdio-unity_api-v2-ApiClient-NavAgentMoveToPoint-System-String,gdio-common-objects-Vector3,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.NavAgentMoveToPoint(System.String,gdio.common.objects.Vector3,System.Boolean,System.Int32)')
+  - [MoveMouseToPoint(destination,frameCount,origin,waitForEmptyInput,timeout)](#M-gdio-unity_api-v2-ApiClient-MoveMouseToPoint-gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.MoveMouseToPoint(gdio.common.objects.Vector2,System.UInt64,gdio.common.objects.Vector2,System.Boolean,System.Int32)')
+  - [NavAgentMoveToPoint(navAgentHierarchyPath,destination,waitForMoveToComplete,timeout)](#M-gdio-unity_api-v2-ApiClient-NavAgentMoveToPoint-System-String,gdio-common-objects-Vector3,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.NavAgentMoveToPoint(System.String,gdio.common.objects.Vector3,System.Boolean,System.Int32)')
   - [Raycast(raycastPoint,cameraHierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-Raycast-gdio-common-objects-Vector3,System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.Raycast(gdio.common.objects.Vector3,System.String,System.Int32)')
   - [RotateObject(hierarchyPath,quaternion,waitForObject,timeout)](#M-gdio-unity_api-v2-ApiClient-RotateObject-System-String,gdio-common-objects-Quaternion,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.RotateObject(System.String,gdio.common.objects.Quaternion,System.Boolean,System.Int32)')
   - [RotateObject(hierarchyPath,eulers,relativeTo,waitForObject,timeout)](#M-gdio-unity_api-v2-ApiClient-RotateObject-System-String,gdio-common-objects-Vector3,gdio-common-objects-Space,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.RotateObject(System.String,gdio.common.objects.Vector3,gdio.common.objects.Space,System.Boolean,System.Int32)')
@@ -433,7 +431,7 @@ This constructor has no parameters.
 
 ##### Summary
 
-The default AUTOPLAY port to use when searching for games running.  This port is configured in the Unity preferences.
+The default AUTOPLAY port to use when searching for running games.  This port is configured in the Unity preferences.
 
 <a name='F-gdio-unity_api-v2-ApiClient-AUTOPLAY_ENABLED'></a>
 ### AUTOPLAY_ENABLED `constants`
@@ -447,7 +445,7 @@ NOT IN USE.
 
 ##### Summary
 
-The port to listen for responses from the AutoPlay plugin running in Unity.  Do to loopback limitations, this port must be different than the [AUTOPLAY_DEFAULT_PORT](#F-gdio-unity_api-v2-ApiClient-AUTOPLAY_DEFAULT_PORT 'gdio.unity_api.v2.ApiClient.AUTOPLAY_DEFAULT_PORT')
+The port to listen for responses from the AutoPlay plugin running in Unity.  Due to loopback limitations, this port must be different than the [AUTOPLAY_DEFAULT_PORT](#F-gdio-unity_api-v2-ApiClient-AUTOPLAY_DEFAULT_PORT 'gdio.unity_api.v2.ApiClient.AUTOPLAY_DEFAULT_PORT')
 
 <a name='F-gdio-unity_api-v2-ApiClient-THROW_EXCEPTIONS'></a>
 ### THROW_EXCEPTIONS `constants`
@@ -471,10 +469,14 @@ Returns a boolean based on the successful execution of the return type void, met
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the object, i.e. Script component, to call a method for. |
-| methodName | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The name of the method to call |
-| arguments | [System.Object[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Object[] 'System.Object[]') | An array of objects to pass as arguments to the method |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the CaptureScreenshot request was processed. |
+| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the object that the script component is attached to. |
+| methodName | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The name of the method to call. |
+| arguments | [System.Object[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Object[] 'System.Object[]') | An array of objects to pass as arguments to the method. |
+| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the request was processed. |
+
+##### Example
+
+api.CallMethod("//*[@name='Canvas']/fn:component('CustomScript')", "CustomMethod", new string[] { "string:The Test was run on " + DateTime.Now.ToShortDateString() });
 
 <a name='M-gdio-unity_api-v2-ApiClient-CallMethod``1-System-String,System-String,System-Object[],System-Int32-'></a>
 ### CallMethod\`\`1(hierarchyPath,methodName,arguments,timeout) `method`
@@ -485,23 +487,29 @@ Use this function to execute a method on an object.
 
 ##### Returns
 
-Returns a deserialized object of type T. If T and the type of the returned object don't match, and exception will be thrown.
+Returns a deserialized object of type T. If T and the type of the returned object don't match, an exception will be thrown.
 
 ##### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the object, i.e. Script component, to call a method for. |
-| methodName | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The name of the method to call |
-| arguments | [System.Object[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Object[] 'System.Object[]') | An array of objects to pass as arguments to the method |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the CaptureScreenshot request was processed. |
+| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the object that the script component is attached to. |
+| methodName | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The name of the method to call. |
+| arguments | [System.Object[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Object[] 'System.Object[]') | An array of objects to pass as arguments to the method. |
+| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the request was processed. |
+
+##### Example
+
+```
+api.CallMethod&lt;int&gt;("//*[@name='Canvas']/fn:component('CustomScript')", "DoMath", new object[] { 1, 2 });
+```
 
 <a name='M-gdio-unity_api-v2-ApiClient-CaptureScreenshot-System-String,System-Boolean,System-Boolean,System-Int32-'></a>
 ### CaptureScreenshot(filename,storeInGameFolder,overwriteExisting,timeout) `method`
 
 ##### Summary
 
-Use this function to capture a screenshot of the Game running.
+Use this function to capture a screenshot of the Game under test.
 
 ##### Parameters
 
@@ -512,28 +520,36 @@ Use this function to capture a screenshot of the Game running.
 | overwriteExisting | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | If true, the operation will overwrite the file if it already exists. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the CaptureScreenshot request was processed. |
 
+##### Example
+
+api.CaptureScreenshot(@"c:\temp\screen1.png", false, true);
+
 <a name='M-gdio-unity_api-v2-ApiClient-Click-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,System-Int32-'></a>
 ### Click(buttonId,position,clickFrameCount,timeout) `method`
 
 ##### Summary
 
-Use this function to interact perform in game mouse-clicks.
+Use this function to perform in-game mouse-clicks.
 
 ##### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The [Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') position to performa a mouse click. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchornously, so a response does NOT imply the input operation has completed. |
+| position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The [Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') position to perform the mouse click. |
+| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
+| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+
+##### Example
+
+api.Click(MouseButtons.LEFT, new Vector2 (0, 0), 30, 30); //Clicks the left mouse button at 0,0 for 30 frames
 
 <a name='M-gdio-unity_api-v2-ApiClient-Click-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,System-Int32-'></a>
 ### Click(buttonId,x,y,clickFrameCount,timeout) `method`
 
 ##### Summary
 
-Use this function to interact perform in game mouse-clicks.
+Use this function to perform in-game mouse-clicks.
 
 ##### Parameters
 
@@ -542,37 +558,45 @@ Use this function to interact perform in game mouse-clicks.
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | x | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The X coordinate of the game to click in Screen space. |
 | y | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The Y coordinate of the game to click in Screen space. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchornously, so a response does NOT imply the input operation has completed. |
+| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
+| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+
+##### Example
+
+api.Click(MouseButtons.LEFT, 0, 0, 30, 30); //Clicks the left mouse button at 0,0 for 30 frames
 
 <a name='M-gdio-unity_api-v2-ApiClient-ClickEx-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
 ### ClickEx(buttonId,position,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
 
 ##### Summary
 
-Use this function to interact perform in game mouse-clicks in combination with key press operations.  The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames
+Use this function to perform in-game mouse-clicks combined with key press operations.  The total frame count of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames
 
 ##### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The [Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') position to performa a mouse click. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
+| position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The [Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') position to perform the mouse click. |
+| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
 | keysNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | Ann array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
+| modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
 | modifiersNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.  If this delay is longer than the frame
-count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchornously, so a response does NOT imply the input operation has completed. |
+| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in game.
+If this delay is longer than that of the frame count for all of the key presses and click operations, the resulting behavior may not be what the user intends. |
+| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+
+##### Example
+
+api.ClickEx(MouseButtons.LEFT, new Vector2(0, 0), 30, new KeyCode[] { KeyCode.C }, 5, new KeyCode[] { KeyCode.LeftShift }, 3, 500, 30); //Clicks the left mouse button at 0,0 for 30 frames while holding the left-shift key for 3 frames, and the C key for 5 frames.
 
 <a name='M-gdio-unity_api-v2-ApiClient-ClickEx-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
 ### ClickEx(buttonId,x,y,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
 
 ##### Summary
 
-Use this function to interact perform in game mouse-clicks in combination with key press operations.  The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames
+Use this function to perform in game mouse-clicks combined with key press operations.  The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames.
 
 ##### Parameters
 
@@ -581,21 +605,25 @@ Use this function to interact perform in game mouse-clicks in combination with k
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | x | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The X coordinate of the game to click in Screen space. |
 | y | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The Y coordinate of the game to click in Screen space. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
+| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
 | keysNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | Ann array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
+| modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
 | modifiersNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.  If this delay is longer than the frame
-count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchornously, so a response does NOT imply the input operation has completed. |
+| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
+If this delay is longer than that of the frame count for all of the key presses and click operations, the resulting behavior may not be what the user intends. |
+| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+
+##### Example
+
+api.ClickEx(MouseButtons.LEFT, 0, 0, 30, new KeyCode[] { KeyCode.C }, 5, new KeyCode[] { KeyCode.LeftShift }, 3, 500, 30); //Clicks the left mouse button at 0,0 for 30 frames while holding the left-shift key for 3 frames, and the C key for 5 frames.
 
 <a name='M-gdio-unity_api-v2-ApiClient-ClickObject-gdio-common-objects-MouseButtons,System-String,System-UInt64,System-Int32-'></a>
 ### ClickObject(buttonId,hierarchyPath,frameCount,timeout) `method`
 
 ##### Summary
 
-Use this function to interact with an object in game using mouse-clicks.
+Use this function to interact with an in-game object using mouse-clicks.
 
 ##### Parameters
 
@@ -604,14 +632,18 @@ Use this function to interact with an object in game using mouse-clicks.
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the GameObject to perform a click on. |
 | frameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of frames to hold the keys down before clicking. Total press frame count is keyFrames + frames.  Input requests process asynchornously, so a response does NOT imply the input operation has completed. |
+| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of frames to hold the keys down before clicking. Total press frame count is keyFrames + frames.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+
+##### Example
+
+api.ClickObject(MouseButtons.LEFT, "//*[@name='Cube']", 30, 30); //Locates and clicks the first object with the name "Cube" for 30 frames using the left mouse button.
 
 <a name='M-gdio-unity_api-v2-ApiClient-ClickObjectEx-gdio-common-objects-MouseButtons,System-String,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
 ### ClickObjectEx(buttonId,hierarchyPath,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
 
 ##### Summary
 
-Use this function to interact with an object in game using mouse-clicks in combination with key press operations.  The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames
+Use this function to interact with an in-game object using mouse-clicks combined with key press operations.  The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames.
 
 ##### Parameters
 
@@ -622,18 +654,22 @@ Use this function to interact with an object in game using mouse-clicks in combi
 | clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
 | keysNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | Ann array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
+| modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
 | modifiersNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.  If this delay is longer than the frame
-count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickObjectEx request was processed.  Input requests process asynchornously, so a response does NOT imply the input operation has completed. |
+| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
+If this delay is longer than that of the frame count for all of the key presses and click operations, the resulting behavior may not be what the user intends. |
+| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickObjectEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+
+##### Example
+
+api.ClickObjectEx(MouseButtons.LEFT, "//*[@name='Cube']", 30, new KeyCode[] { KeyCode.LeftControl }, 5, new KeyCode[] { KeyCode.LeftShift }, 3, 500, 30); //Locates and clicks the first object with the name "Cube"for 30 frames with the left mouse button while holding the left-shift key for 3 frames, and the left-CTRL key for 5 frames.
 
 <a name='M-gdio-unity_api-v2-ApiClient-Connect-System-String,System-Int32,System-Boolean,System-Int32,System-Boolean-'></a>
 ### Connect(hostname,port,autoplay,timeout,autoPortResolution) `method`
 
 ##### Summary
 
-Use this function to connect to a Unity game with GameDriver Agent configured and active.  This function can connect to the UnityEditor or a Standalone deployment of a game.
+Use this function to connect to a Unity game with GameDriver Agent configured and active.  This function can connect to the Unity editor or a Standalone deployment of a game.
 
 ##### Parameters
 
@@ -641,16 +677,20 @@ Use this function to connect to a Unity game with GameDriver Agent configured an
 | ---- | ---- | ----------- |
 | hostname | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The hostname of the machine running the game. |
 | port | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The configured port that the GameDriver agent is configured to use. |
-| autoplay | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Autoplay allows you to automatically start a game in the UnityEditor without manual intervention. |
+| autoplay | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Autoplay allows you to automatically start a game in the Unity editor without manual intervention. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The amount of time in seconds to wait for connectivity to establish with the game. |
-| autoPortResolution | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Auto port resolution allows for the UnityEditor or Standalone game to report what port it is using for the GameDriver agent. |
+| autoPortResolution | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Auto port resolution allows for the Unity editor or Standalone game to report what port it is using for the GameDriver agent. |
+
+##### Example
+
+api.Connect("localhost"); // Connects to a local instance of the Unity editor with the default port of 19734 configured and starts Play mode automatically.
 
 <a name='M-gdio-unity_api-v2-ApiClient-Connect-System-String,System-String,System-Int32,System-Boolean,System-Int32,System-Boolean-'></a>
 ### Connect(hostname,regex_MatchGamePath,port,autoplay,timeout,autoPortResolution) `method`
 
 ##### Summary
 
-Use this function to connect to a Unity game with GameDriver Agent configured and active.  This function can connect to the UnityEditor or a Standalone deployment of a game.
+Use this function to connect to a Unity game with GameDriver Agent configured and active.  This function can connect to the Unity editor or a Standalone deployment of a game.
 
 ##### Parameters
 
@@ -659,16 +699,20 @@ Use this function to connect to a Unity game with GameDriver Agent configured an
 | hostname | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The hostname of the machine running the game. |
 | regex_MatchGamePath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | This parameter is a regular expression that will attempt to match a specfic game via its Application.DataPath if you have multiple games running. |
 | port | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The configured port that the GameDriver agent is configured to use. |
-| autoplay | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Autoplay allows you to automatically start a game in the UnityEditor without manual intervention. |
+| autoplay | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Autoplay allows you to automatically start a game in the Unity editor without manual intervention. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The amount of time in seconds to wait for connectivity to establish with the game. |
-| autoPortResolution | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Auto port resolution allows for the UnityEditor or Standalone game to report what port it is using for the GameDriver agent. |
+| autoPortResolution | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Auto port resolution allows for the Unity editor or Standalone game to report what port it is using for the GameDriver agent. |
+
+##### Example
+
+api.Connect("*", ".*?myunitygame.**"); // Connects to any running instance of the Unity editor on the local network (broadcast) with the project name of "myunitygame".
 
 <a name='M-gdio-unity_api-v2-ApiClient-DisableHooks-gdio-unity_api-v2-HookingObject,System-Int32-'></a>
 ### DisableHooks(hookObject,timeout) `method`
 
 ##### Summary
 
-Diable input hooks in the game.
+Disable input hooks in the game.
 
 ##### Returns
 
@@ -681,12 +725,16 @@ TRUE if the GameDriver agent successfully processed the request.
 | hookObject | [gdio.unity_api.v2.HookingObject](#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') | The type of input hook to disable. See [HookingObject](#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
+##### Example
+
+api.DisableHooks(HookingObject.ALL);
+
 <a name='M-gdio-unity_api-v2-ApiClient-DisbleObjectCaching-System-Int32-'></a>
 ### DisbleObjectCaching(timeout) `method`
 
 ##### Summary
 
-Diable the use of object caching when doing HierarchyPath object resolution.
+Disable the use of object caching when doing HierarchyPath object resolution.
 
 ##### Returns
 
@@ -697,6 +745,10 @@ TRUE if the GameDriver agent successfully processed the request.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+##### Example
+
+api.DisableObjectCaching();
 
 <a name='M-gdio-unity_api-v2-ApiClient-Disconnect'></a>
 ### Disconnect() `method`
@@ -709,28 +761,36 @@ Use this function to disconnect the API client from the Game.
 
 This method has no parameters.
 
+##### Example
+
+api.Disconnect();
+
 <a name='M-gdio-unity_api-v2-ApiClient-DoubleClick-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,System-Int32-'></a>
 ### DoubleClick(buttonId,position,clickFrameCount,timeout) `method`
 
 ##### Summary
 
-Use this function to interact perform in game mouse double clicks.
+Use this function to perform in-game mouse double-clicks.
 
 ##### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the double click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The 2d vector to double click in Screen space. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to double click the specific object. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchornously, so a response does NOT imply the input operation has completed. |
+| position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The Vector2 location to double click in Screen space. |
+| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to double click the specific position. |
+| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+
+##### Example
+
+api.DoubleClick(MouseButtons.LEFT, new Vector2(0, 0), 30, 30); //Doube-clicks the left mouse button at position 0, 0 on the screen over a duration of 30 frames.
 
 <a name='M-gdio-unity_api-v2-ApiClient-DoubleClick-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,System-Int32-'></a>
 ### DoubleClick(buttonId,x,y,clickFrameCount,timeout) `method`
 
 ##### Summary
 
-Use this function to interact perform in game mouse double clicks.
+Use this function to perform in-game mouse double-clicks.
 
 ##### Parameters
 
@@ -739,15 +799,19 @@ Use this function to interact perform in game mouse double clicks.
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the double click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | x | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The X coordinate of the game to double click in Screen space. |
 | y | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The Y coordinate of the game to double click in Screen space. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchornously, so a response does NOT imply the input operation has completed. |
+| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific location. |
+| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+
+##### Example
+
+api.DoubleClick(MouseButtons.LEFT, 0, 0, 30, 30); //Doube-clicks the left mouse button at position 0, 0 on the screen over a duration of 30 frames.
 
 <a name='M-gdio-unity_api-v2-ApiClient-DoubleClickEx-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
 ### DoubleClickEx(buttonId,position,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
 
 ##### Summary
 
-Use this function to interact perform in game mouse double clicks in combination with key press operations.  The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames
+Use this function to perform in game mouse double clicks combined with key press operations.  The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames
 
 ##### Returns
 
@@ -758,22 +822,26 @@ TRUE if the GameDriver agent successfully processed the request.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The 2d vector of where to double click in Screen space. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
+| position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The Vector2 position of where to double click in Screen space. |
+| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
 | keysNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | Ann array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
+| modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
 | modifiersNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.  If this delay is longer than the frame
-count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchornously, so a response does NOT imply the input operation has completed. |
+| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
+If this delay is longer than the frame count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
+| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+
+##### Example
+
+api.DoubleClickEx(MouseButtons.LEFT, new Vector2 (0, 0), 30, new KeyCode[] { KeyCode.LeftControl }, 5, new KeyCode[] { KeyCode.LeftShift }, 3, 500, 30); //Double-clicks the left mouse button at the position 0, 0 for 30 frames with the left mouse button while holding the left-shift key for 3 frames, and the left-CTRL key for 5 frames.
 
 <a name='M-gdio-unity_api-v2-ApiClient-DoubleClickEx-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
 ### DoubleClickEx(buttonId,x,y,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
 
 ##### Summary
 
-Use this function to interact perform in game mouse double clicks in combination with key press operations.  The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames
+Use this function to perform in game mouse double clicks combined with key press operations.  The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames
 
 ##### Returns
 
@@ -786,21 +854,25 @@ TRUE if the GameDriver agent successfully processed the request.
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | x | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The X coordinate of the game to double click in Screen space. |
 | y | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The Y coordinate of the game to double click in Screen space. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
+| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
 | keysNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | Ann array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
+| modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
 | modifiersNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.  If this delay is longer than the frame
-count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchornously, so a response does NOT imply the input operation has completed. |
+| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
+If this delay is longer than the frame count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
+| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+
+##### Example
+
+api.DoubleClickEx(MouseButtons.LEFT, 0, 0, 30, new KeyCode[] { KeyCode.LeftControl }, 5, new KeyCode[] { KeyCode.LeftShift }, 3, 500, 30); //Double-clicks the left mouse button at the position 0, 0 for 30 frames with the left mouse button while holding the left-shift key for 3 frames, and the left-CTRL key for 5 frames.
 
 <a name='M-gdio-unity_api-v2-ApiClient-DoubleClickObject-gdio-common-objects-MouseButtons,System-String,System-UInt64,System-Int32-'></a>
 ### DoubleClickObject(buttonId,hierarchyPath,frameCount,timeout) `method`
 
 ##### Summary
 
-Use this function to interact with an object in game using a mouse double click.
+Use this function to interact with an object in game using a mouse double-click.
 
 ##### Returns
 
@@ -812,15 +884,19 @@ TRUE if the GameDriver agent successfully processed the request.
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the double click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the GameObject to perform a double click on. |
-| frameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to double click the specific object. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of frames to hold the keys down before clicking. Total press frame count is keyFrames + frames.  Input requests process asynchornously, so a response does NOT imply the input operation has completed. |
+| frameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to double-click the specific object. |
+| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the DoubleClickObject request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+
+##### Example
+
+api.DoubleClickObject(MouseButtons.LEFT, "//*[@name='Cube']", 30, 30); //Locates and double-clicks the first object with the name "Cube" over a period of 30 frames using the left mouse button.
 
 <a name='M-gdio-unity_api-v2-ApiClient-DoubleClickObjectEx-gdio-common-objects-MouseButtons,System-String,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
 ### DoubleClickObjectEx(buttonId,hierarchyPath,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
 
 ##### Summary
 
-Use this function to interact with an object in game using amouse double click, in combination with key press operations.  The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames
+Use this function to interact with an object in game using a mouse double-click, combinated with key press operations.  The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames
 
 ##### Returns
 
@@ -831,22 +907,26 @@ TRUE if the GameDriver agent successfully processed the request.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the double click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the GameObject to perform a double click on. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
+| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the GameObject to perform a double-click on. |
+| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to double-click the specific object. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
 | keysNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | Ann array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
+| modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
 | modifiersNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.  If this delay is longer than the frame
-count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickObjectEx request was processed.  Input requests process asynchornously, so a response does NOT imply the input operation has completed. |
+| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
+If this delay is longer than the frame count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
+| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the DoubleClickObjectEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+
+##### Example
+
+api.DoubleClickObjectEx(MouseButtons.LEFT, "//*[@name='Cube']", 30, new KeyCode[] { KeyCode.LeftControl }, 5, new KeyCode[] { KeyCode.LeftShift }, 3, 500, 30); //Locates and clicks the first object with the name "Cube"for 30 frames with the left mouse button while holding the left-shift key for 3 frames, and the left-CTRL key for 5 frames.
 
 <a name='M-gdio-unity_api-v2-ApiClient-EnableHooks-gdio-unity_api-v2-HookingObject,System-Int32-'></a>
 ### EnableHooks(hookObject,timeout) `method`
 
 ##### Summary
 
-Enable input hooks in the game.
+Enable input hooks in the game, which is required to perform various input types during replay.
 
 ##### Returns
 
@@ -859,12 +939,16 @@ TRUE if the GameDriver agent successfully processed the request.
 | hookObject | [gdio.unity_api.v2.HookingObject](#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') | The type of input hook to enable. See [HookingObject](#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
+##### Example
+
+api.EnableHooks(HookingObject.ALL);
+
 <a name='M-gdio-unity_api-v2-ApiClient-EnableObjectCaching-System-Int32-'></a>
 ### EnableObjectCaching(timeout) `method`
 
 ##### Summary
 
-Enable the use of object caching when doing HierarchyPath object resolution.  Object caching is per HierarchyPath stored in a [IDictionary](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.IDictionary 'System.Collections.IDictionary'). If a matching HierarchyPath is already in the dictionary, then the stored object is returned.
+Enable the use of object caching when performing HierarchyPath object resolution.  Object caching is per HierarchyPath stored in a [IDictionary](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.IDictionary 'System.Collections.IDictionary'). If a matching HierarchyPath is already in the dictionary, then the stored object is returned.
 The only way to update a cached reference is for the reference to be garbage collected or flush the cache with [FlushObjectLookupCache](#M-gdio-unity_api-v2-ApiClient-FlushObjectLookupCache-System-Int32- 'gdio.unity_api.v2.ApiClient.FlushObjectLookupCache(System.Int32)').
 
 ##### Returns
@@ -877,6 +961,10 @@ TRUE if the GameDriver agent successfully processed the request.
 | ---- | ---- | ----------- |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
+##### Example
+
+api.EnableObjectCaching();
+
 <a name='M-gdio-unity_api-v2-ApiClient-FlushObjectLookupCache-System-Int32-'></a>
 ### FlushObjectLookupCache(timeout) `method`
 
@@ -886,13 +974,17 @@ If object caching is enabled, this method will request that the agent flush the 
 
 ##### Returns
 
-
+TRUE if the GameDriver agent successfully processed the request.
 
 ##### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') |  |
+| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+##### Example
+
+api.FlushObjectLookupCache();
 
 <a name='M-gdio-unity_api-v2-ApiClient-GetConnectedGameDetails'></a>
 ### GetConnectedGameDetails() `method`
@@ -924,16 +1016,23 @@ The last published FPS as a double.
 
 This method has no parameters.
 
+##### Example
+
+Can be used as input for time-sensitive functions such as input.
+ For example, this will press the Down key for roughly 1 second:
+ 
+    api.KeyPress(new KeyCode[] { KeyCode.DownArrow }, (ulong)api.GetLastFPS());
+
 <a name='M-gdio-unity_api-v2-ApiClient-GetObjectDistance-System-String,System-String,System-Int32-'></a>
 ### GetObjectDistance(objectA_HierarchyPath,objectB_HierarchyPath,timeout) `method`
 
 ##### Summary
 
-This method returns the distance of two objects.
+This method returns the distance of two objects using vector subtraction.
 
 ##### Returns
 
-Returns the disance between the two objects as a float.
+Returns the distance between the two objects as a float.
 
 ##### Parameters
 
@@ -942,6 +1041,11 @@ Returns the disance between the two objects as a float.
 | objectA_HierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the first GameObject. |
 | objectB_HierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchYpath for the second GameObject. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+##### Example
+
+// CubeA.Transform = Vector3(1, 2, 3)
+// CubeB.Transform = Vector3(6, 5, 4)
 
 <a name='M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue``1-System-String,System-Int32-'></a>
 ### GetObjectFieldValue\`\`1(hierarchyPath,timeout) `method`
@@ -967,6 +1071,15 @@ Returns an object of type T for the value or throws an [Exception](http://msdn.m
 | ---- | ----------- |
 | T | The [Type](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Type 'System.Type') of the field or property to be inspected. |
 
+##### Example
+
+// Searches for an object named 'HiddenCube' which is invisible in the scene, and checks whether the "Active" checkbox is enabled.
+
+```
+bool invisCube = api.GetObjectFieldValue&lt;bool&gt;("//*[@name='HiddenCube']/fn:component('UnityEngine.Behaviour')/@isActiveAndEnabled");
+Assert.IsTrue(invisCube == false, "The invisible cube isn't active"); //Passes if the object is Active in the scene
+```
+
 <a name='M-gdio-unity_api-v2-ApiClient-GetObjectList-System-Int32-'></a>
 ### GetObjectList(timeout) `method`
 
@@ -984,25 +1097,48 @@ This method returns a [IList](http://msdn.microsoft.com/query/dev14.query?appId=
 | ---- | ---- | ----------- |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
+##### Example
+
+//Print a list of the scene objects
+
+```
+ System.Collections.Generic.List&lt;LiteGameObject&gt; objects = api.GetObjectList();
+ //Test whether the list is null
+ Assert.IsNotNull(objects, "GetObjectList failed!");
+ //Print a full object list
+ foreach (var obj in objects)
+ {
+     Console.WriteLine("Object Name: " + obj.Name);
+     Console.WriteLine("Object Tag: " + obj.Tag);
+     Console.WriteLine("Object Position: " + obj.Position);
+     Console.WriteLine($"Object Rotation (w): {obj.Rotation.w}, (x): {obj.Rotation.x}, (y): {obj.Rotation.x}, (z): {obj.Rotation.z}");
+ }
+ 
+```
+
 <a name='M-gdio-unity_api-v2-ApiClient-GetObjectPosition-System-String,gdio-common-objects-CoordinateConversion,System-String,System-Int32-'></a>
 ### GetObjectPosition(objectHierarchyPath,cordSpace,cameraHierarchyPath,timeout) `method`
 
 ##### Summary
 
-
+Return the position of a specific object.
 
 ##### Returns
 
-
+The Vector3 position of the specific object.
 
 ##### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| objectHierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath to the object to return the poisition of. |
-| cordSpace | [gdio.common.objects.CoordinateConversion](#T-gdio-common-objects-CoordinateConversion 'gdio.common.objects.CoordinateConversion') | The coorindate space conversion to perform on the position before returning it. |
+| objectHierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath of the object to return the position of. |
+| cordSpace | [gdio.common.objects.CoordinateConversion](#T-gdio-common-objects-CoordinateConversion 'gdio.common.objects.CoordinateConversion') | The coorindate space conversion to perform on the position before returning it. See [CoordinateConversion](#T-gdio-common-objects-CoordinateConversion 'gdio.common.objects.CoordinateConversion') for more information. |
 | cameraHierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchPath to the Camera GameObject to use.  The default is string.Empty, which uses Camera.main/> |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+##### Example
+
+Vector3 spot = api.GetObjectPosition("//*[@name = 'Player prefab(Clone)']", CoordinateConversion.WorldToScreenPoint); // spot is set to the Vector3 value of the object position on screen
 
 <a name='M-gdio-unity_api-v2-ApiClient-GetSceneName-System-Int32-'></a>
 ### GetSceneName(timeout) `method`
@@ -1020,6 +1156,10 @@ The name of the scene as a string.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+##### Example
+
+string activeScene = api.GetSceneName();
 
 <a name='M-gdio-unity_api-v2-ApiClient-GetVersionsString'></a>
 ### GetVersionsString() `method`
@@ -1041,7 +1181,7 @@ Use this function to send arbitrary button states to the game. Defaults to LEFT 
 
 ##### Returns
 
-
+TRUE if the GameDriver agent successfully processed the request.
 
 ##### Parameters
 
@@ -1054,6 +1194,18 @@ Use this function to send arbitrary button states to the game. Defaults to LEFT 
 | delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The delay to wait between holding the modifies and pressing the keys. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
+##### Example
+
+//Press the down, left, up, then right keys in sequence
+api.KeyPress(new KeyCode[] { KeyCode.DownArrow}, 100);
+api.Wait(300);
+api.KeyPress(new KeyCode[] { KeyCode.LeftArrow}, 100);
+api.Wait(300);
+api.KeyPress(new KeyCode[] { KeyCode.UpArrow }, 100);
+api.Wait(300);
+api.KeyPress(new KeyCode[] { KeyCode.RightArrow }, 100);
+api.Wait(3000);
+
 <a name='M-gdio-unity_api-v2-ApiClient-LoadScene-System-String,System-Int32-'></a>
 ### LoadScene(sceneName,timeout) `method`
 
@@ -1063,7 +1215,7 @@ This method loads the scene, defined by the scene name passed as an argument.
 
 ##### Returns
 
-Returns TRUE if the request was successfully processed by the GameDriver agent.
+TRUE if the request was successfully processed by the GameDriver agent.
 
 ##### Parameters
 
@@ -1071,6 +1223,10 @@ Returns TRUE if the request was successfully processed by the GameDriver agent.
 | ---- | ---- | ----------- |
 | sceneName | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The name of the scene to load |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+##### Example
+
+api.LoadScene("FinalBoss"); //Loads the FinalBoss scene
 
 <a name='M-gdio-unity_api-v2-ApiClient-MouseDrag-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32-'></a>
 ### MouseDrag(button,destination,frameCount,origin,waitForEmptyInput,timeout) `method`
@@ -1081,18 +1237,22 @@ Perform a mouse drag operation.
 
 ##### Returns
 
-Returns TRUE if the requests was successfully processed by the GameDriver agent.
+TRUE if the requests was successfully processed by the GameDriver agent.
 
 ##### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | button | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button, [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'), to perform the drag operation with. |
-| destination | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The desintation vector to drag the mouse to. |
+| destination | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The destination vector to drag the mouse to. |
 | frameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames taken to complete the drag operation. |
 | origin | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The origin to start the drag operation.  If null, the mouse drag operation will begin at the current position of Input.mousePosition. |
 | waitForEmptyInput | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for the empty input event to be returned from the agent before returning from the method call. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. If waitForEmptyInput is set to TRUE, then the method call will wait the timeout alotment to recieve the event. |
+| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. If waitForEmptyInput is set to TRUE, then the method call will wait the timeout allotment to recieve the event. |
+
+##### Example
+
+api.MouseDrag(MouseButtons.LEFT, new Vector2(180, 0), 30, start, true); //Drags the left mouse button to the position 180, 0 on the screen over 30 frames
 
 <a name='M-gdio-unity_api-v2-ApiClient-MouseMoveToObject-System-String,System-UInt64,System-Boolean,System-Boolean,System-Int32-'></a>
 ### MouseMoveToObject(objectHierarchyPath,frameCount,waitForObject,waitForEmptyInput,timeout) `method`
@@ -1103,7 +1263,7 @@ Move the mouse to the center of a specific object, identified by the HierarchyPa
 
 ##### Returns
 
-Returns TRUE if the method call was successfully processed by the GameDriver agent.
+TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Parameters
 
@@ -1115,8 +1275,12 @@ Returns TRUE if the method call was successfully processed by the GameDriver age
 | waitForEmptyInput | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for the empty input event to be returned from the GameDriver agent, before returning from the method. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent.  If waitForEmptyInput is TRUE, then the method call will wait the timeout alotment to recieve the event. |
 
+##### Example
+
+api.MouseMoveToObject("//*[@name='Cylinder']", 300, true, true); //Moves the mouse to the center of the object named "Cylinder" over 300 frames
+
 <a name='M-gdio-unity_api-v2-ApiClient-MoveMouseToPoint-gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32-'></a>
-### MoveMouseToPoint(desintation,frameCount,origin,waitForEmptyInput,timeout) `method`
+### MoveMouseToPoint(destination,frameCount,origin,waitForEmptyInput,timeout) `method`
 
 ##### Summary
 
@@ -1124,44 +1288,59 @@ Move the mouse to the destination vector.
 
 ##### Returns
 
-Returns TRUE if the method call was successfully processed by the GameDriver agent.
+TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| desintation | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | Destination vector to move the mouse to. |
+| destination | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | Destination vector to move the mouse to. |
 | frameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to complete the operaiton over. |
 | origin | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The origin to start the mouse move operation.  If null, the mouse move operation will begin at the current position of Input.mousePosition. |
 | waitForEmptyInput | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for the empty input event to be returned from the GameDriver agent, before returning from the method. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent.  If waitForEmptyInput is TRUE, then the method call will wait the timeout alotment to recieve the event. |
 
+##### Example
+
+//First get the position of an object named "Cube" on screen
+ Vector3 cubePos = api.GetObjectPosition("//*[@name='Cube']", CoordinateConversion.WorldToScreenPoint);
+
+ //Take the x,y values of the on-screen object
+ Vector2 cubePos2 = new Vector2(cubePos.x, cubePos.y);
+ 
+ //Move the mouse to the cube on-screen position over 30 frames
+ api.MoveMouseToPoint(cubePos2, (ulong) api.GetLastFPS());
+
 <a name='M-gdio-unity_api-v2-ApiClient-NavAgentMoveToPoint-System-String,gdio-common-objects-Vector3,System-Boolean,System-Int32-'></a>
-### NavAgentMoveToPoint(navAgentHierarchyPath,desintation,waitForMoveToComplete,timeout) `method`
+### NavAgentMoveToPoint(navAgentHierarchyPath,destination,waitForMoveToComplete,timeout) `method`
 
 ##### Summary
 
-Move a NavAgent to a a destination point.
+Move a NavAgent to a destination point.
 
 ##### Returns
 
-Returns TRUE if the method call was successfully processed by the GameDriver agent.
+TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | navAgentHierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath to the NavAgent. |
-| desintation | [gdio.common.objects.Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') | The desintation vector to move to. |
+| destination | [gdio.common.objects.Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') | The destination vector to move to. |
 | waitForMoveToComplete | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for the NavAgent move-to operation to complete before the method returns. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+##### Example
+
+api.NavAgentMoveToPoint("//*[@name='Ellen']", new Vector3(20, 0, 20)); //Moves the 1st object named "Ellen" to position 20, 0, 20 on the NavMesh
 
 <a name='M-gdio-unity_api-v2-ApiClient-Raycast-gdio-common-objects-Vector3,System-String,System-Int32-'></a>
 ### Raycast(raycastPoint,cameraHierarchyPath,timeout) `method`
 
 ##### Summary
 
-Perform a Raycast to a point.
+Perform a Raycast to a point to find out what is in that position.
 
 ##### Returns
 
@@ -1175,16 +1354,35 @@ Returns an array of [RaycastResult](#T-gdio-common-objects-RaycastResult 'gdio.c
 | cameraHierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the  UnityEngine.Camera to use as a Raycast reference.  If the Camera is string.Empty, the Camera.main is used |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
+##### Example
+
+// Racast to an object named "Ellen"
+ RaycastResult[] rr = api.Raycast(api.GetObjectPosition("//*[@name='Ellen']"));
+ 
+ foreach (var res in rr)
+ {
+     Console.WriteLine(res);
+ }
+
+ // Output
+ // [RaycastResult]
+ // Type: Physics
+ // Tag: Untagged
+ // Name: Plane
+ // HasButton: False
+ // Point: (-5.217863, 0, -0.5770187)
+ // Type Name: UnityEngine.GameObject
+
 <a name='M-gdio-unity_api-v2-ApiClient-RotateObject-System-String,gdio-common-objects-Quaternion,System-Boolean,System-Int32-'></a>
 ### RotateObject(hierarchyPath,quaternion,waitForObject,timeout) `method`
 
 ##### Summary
 
-Rotate an object defined by the HierarchyPath and rotated by a Quaternion.
+Rotate an object defined by the HierarchyPath and rotated by a Quaternion. for more information.
 
 ##### Returns
 
-Returns TRUE if the method call was successfully processed by the GameDriver agent.
+TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Parameters
 
@@ -1192,19 +1390,23 @@ Returns TRUE if the method call was successfully processed by the GameDriver age
 | ---- | ---- | ----------- |
 | hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the object to rotate. |
 | quaternion | [gdio.common.objects.Quaternion](#T-gdio-common-objects-Quaternion 'gdio.common.objects.Quaternion') | The quaternion value to manipulate the object. |
-| waitForObject | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for th object to exist if it doesn't. |
+| waitForObject | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+##### Example
+
+api.RotateObject("//*[@name='Cylinder']", new Quaternion(0, 0, 2, 2), true);
 
 <a name='M-gdio-unity_api-v2-ApiClient-RotateObject-System-String,gdio-common-objects-Vector3,gdio-common-objects-Space,System-Boolean,System-Int32-'></a>
 ### RotateObject(hierarchyPath,eulers,relativeTo,waitForObject,timeout) `method`
 
 ##### Summary
 
-Rotate an object defined by the HierarchyPath and rotated by Eulers.
+Rotate an object defined by the HierarchyPath and rotated by Eulers. for more information.
 
 ##### Returns
 
-Returns TRUE if the method call was successfully processed by the GameDriver agent.
+TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Parameters
 
@@ -1213,19 +1415,23 @@ Returns TRUE if the method call was successfully processed by the GameDriver age
 | hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the object to rotate. |
 | eulers | [gdio.common.objects.Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') | The Eulers vector to manipulate the object. |
 | relativeTo | [gdio.common.objects.Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') | The [Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
-| waitForObject | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for th object to exist if it doesn't. |
+| waitForObject | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+##### Example
+
+api.RotateObject("//*[@name='Cylinder']", new Vector3(0, 30, 0), Space.Self, true); //Rotates an object with the name "Cylinder" by 30 degrees on the y axis.
 
 <a name='M-gdio-unity_api-v2-ApiClient-RotateObject-System-String,System-Single,System-Single,System-Single,gdio-common-objects-Space,System-Boolean,System-Int32-'></a>
 ### RotateObject(hierarchyPath,xAngle,yAngle,zAngle,relativeTo,waitForObject,timeout) `method`
 
 ##### Summary
 
-Rottate an objected defined by the HierarchyPath and rotated by the x, y, and z angles relative to the Space
+Rotate an object defined by the HierarchyPath and rotated by the x, y, and z angles relative to the Space
 
 ##### Returns
 
-Returns TRUE if the method call was successfully processed by the GameDriver agent.
+TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Parameters
 
@@ -1236,19 +1442,23 @@ Returns TRUE if the method call was successfully processed by the GameDriver age
 | yAngle | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The Y angle value to rotate. |
 | zAngle | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The Z angle value to rotate. |
 | relativeTo | [gdio.common.objects.Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') | The [Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
-| waitForObject | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for th object to exist if it doesn't. |
+| waitForObject | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+##### Example
+
+api.RotateObject("//*[@name='Cylinder']", 0, 0, 20); //Rotates an object with the name "Cylinder" by 20 degrees on the z axis
 
 <a name='M-gdio-unity_api-v2-ApiClient-RotateObject-System-String,gdio-common-objects-Vector3,System-Single,gdio-common-objects-Space,System-Boolean,System-Int32-'></a>
 ### RotateObject(hierarchyPath,axis,angle,relativeTo,waitForObject,timeout) `method`
 
 ##### Summary
 
-Rottate an objected defined by the HierarchyPath and rotated by the axis and angle, relative to the Space
+Rotate an object defined by the HierarchyPath and rotated by the axis and angle, relative to the Space
 
 ##### Returns
 
-Returns TRUE if the method call was successfully processed by the GameDriver agent.
+TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Parameters
 
@@ -1258,19 +1468,23 @@ Returns TRUE if the method call was successfully processed by the GameDriver age
 | axis | [gdio.common.objects.Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') |  |
 | angle | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') |  |
 | relativeTo | [gdio.common.objects.Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') | The [Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
-| waitForObject | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for th object to exist if it doesn't. |
+| waitForObject | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+##### Example
+
+api.RotateObject("//*[@name='Cylinder']", new Vector3(0, 0, 0), 45); // Will rotate an object named "Cylinder" on all 3 axis by 45-degrees
 
 <a name='M-gdio-unity_api-v2-ApiClient-SetInputFieldText-System-String,System-String,System-Boolean,System-Int32-'></a>
 ### SetInputFieldText(hierarchyPath,value,waitForObject,timeout) `method`
 
 ##### Summary
 
-Set the text of a InputField or TMP_InputField
+Set the text of an InputField or TMP_InputField
 
 ##### Returns
 
-Returns TRUE if the GameDriver agent was able to successfully set the InputField text.
+TRUE if the GameDriver agent was able to successfully set the InputField text.
 
 ##### Parameters
 
@@ -1281,6 +1495,11 @@ Returns TRUE if the GameDriver agent was able to successfully set the InputField
 | waitForObject | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | If TRUE, wait for the object to exist if it doesn't. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The time to wait for the object to exist. |
 
+##### Example
+
+//Sets the text field component attached to the "TextMeshPro InputField" object with the tag "FilterInputTxt" to the value of "America"
+api.SetInputFieldText("//FilterInputTxt[@name='TextMeshPro InputField']", "America");
+
 <a name='M-gdio-unity_api-v2-ApiClient-SetObjectFieldValue-System-String,System-String,System-Object,System-Boolean,System-Int32,gdio-plugin-serializer-ICustomSerializer-'></a>
 ### SetObjectFieldValue(hierarchyPath,fieldOrPropertyName,value,waitForObject,timeout,valueSerializer) `method`
 
@@ -1290,7 +1509,7 @@ Set the field or property of an object.
 
 ##### Returns
 
-Returns TRUE if the field/property was successfully set to the value.
+TRUE if the field/property was successfully set to the value.
 
 ##### Parameters
 
@@ -1303,6 +1522,11 @@ Returns TRUE if the field/property was successfully set to the value.
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The time to wait for the object to exist. |
 | valueSerializer | [gdio.plugin.serializer.ICustomSerializer](#T-gdio-plugin-serializer-ICustomSerializer 'gdio.plugin.serializer.ICustomSerializer') | The [ICustomSerializer](#T-gdio-plugin-serializer-ICustomSerializer 'gdio.plugin.serializer.ICustomSerializer') used to serialize the value.  This is only required if a a custom class of object is being used. |
 
+##### Example
+
+//Sets the text field component attached to the "TextMeshPro InputField" object with the tag "FilterInputTxt" to the value of "Asia"
+api.SetObjectFieldValue("/Untagged[@name='Canvas']/FilterInputTxt[@name='TextMeshPro InputField']/fn:component('TMPro.TMP_InputField')", "text", "string:Asia");
+
 <a name='M-gdio-unity_api-v2-ApiClient-Tap-gdio-common-objects-Vector2,System-Int32,System-UInt64,System-Int32-'></a>
 ### Tap(position,tapCount,frameCount,timeout) `method`
 
@@ -1312,7 +1536,7 @@ Tap the handheld device at the defined position.
 
 ##### Returns
 
-Returns TRUE if the GameDriver agent was able to process the request successfully.
+TRUE if the GameDriver agent was able to process the request successfully.
 
 ##### Parameters
 
@@ -1323,6 +1547,10 @@ Returns TRUE if the GameDriver agent was able to process the request successfull
 | frameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
+##### Example
+
+api.Tap(new Vector2(0, 0), 1, 10); // Performs a single tap at position 0, 0 for 10 frames
+
 <a name='M-gdio-unity_api-v2-ApiClient-Tap-System-Single,System-Single,System-Int32,System-UInt64,System-Int32-'></a>
 ### Tap(x,y,tapCount,frameCount,timeout) `method`
 
@@ -1332,17 +1560,21 @@ Tap the handheld device at the defined position.
 
 ##### Returns
 
-Returns TRUE if the GameDriver agent was able to process the request successfully.
+TRUE if the GameDriver agent was able to process the request successfully.
 
 ##### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| x | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The coordinate of the position to tap the device screen. |
-| y | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The coordinate position to tap the device screen. |
+| x | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The X coordinate of the position to tap the device screen. |
+| y | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The Y coordinate position to tap the device screen. |
 | tapCount | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of taps that should be registered. |
 | frameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+##### Example
+
+api.Tap(0, 0, 1, 10); // Performs a single tap at position 0, 0 for 10 frames
 
 <a name='M-gdio-unity_api-v2-ApiClient-TapObject-System-String,System-Int32,System-UInt64,System-Int32-'></a>
 ### TapObject(hierarchyPath,tapCount,frameCount,timeout) `method`
@@ -1353,7 +1585,7 @@ Tap an object.
 
 ##### Returns
 
-Returns TRUE if the GameDriver agent was able to process the request successfully.
+TRUE if the GameDriver agent was able to process the request successfully.
 
 ##### Parameters
 
@@ -1364,6 +1596,10 @@ Returns TRUE if the GameDriver agent was able to process the request successfull
 | frameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
+##### Example
+
+api.TapObject("//*[@name='Cube']", 1, 10); //Performs a single tap on an object with the name "Cube"
+
 <a name='M-gdio-unity_api-v2-ApiClient-TouchInput-gdio-common-objects-Vector2,gdio-common-objects-Vector2,System-Int32,System-Int32,System-UInt64,System-Boolean,System-Single,System-Single,System-Single,System-Single,System-Single,System-Int32-'></a>
 ### TouchInput(startPosition,destinationPosition,fingerId,tapCount,frameCount,waitForEmptyInput,radius,pressure,altitudeAngle,azmulthAngle,maximumPossiblePressure,timeout) `method`
 
@@ -1373,7 +1609,7 @@ Send a raw TouchInput event to the game.
 
 ##### Returns
 
-Returns TRUE if the GameDriver agent was able to process the request successfully.
+TRUE if the GameDriver agent was able to process the request successfully.
 
 ##### Parameters
 
@@ -1392,6 +1628,10 @@ Returns TRUE if the GameDriver agent was able to process the request successfull
 | maximumPossiblePressure | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The maximum possible pressure for the touch input. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
+##### Example
+
+api.TouchInput(new Vector2(0, 0), new Vector2(100, 100), 0, 1, 50);//Performs a single touch input from 0,0 to 100, 100 with a single "finger" over a duration of 50 frames
+
 <a name='M-gdio-unity_api-v2-ApiClient-TouchInput-System-Single,System-Single,System-Single,System-Single,System-Int32,System-Int32,System-UInt64,System-Boolean,System-Single,System-Single,System-Single,System-Single,System-Single,System-Int32-'></a>
 ### TouchInput(x1,y1,x2,y2,fingerId,tapCount,frameCount,waitForEmptyInput,radius,pressure,altitudeAngle,azmulthAngle,maximumPossiblePressure,timeout) `method`
 
@@ -1401,7 +1641,7 @@ Send a raw TouchInput event to the game.
 
 ##### Returns
 
-Returns TRUE if the GameDriver agent was able to process the request successfully.
+TRUE if the GameDriver agent was able to process the request successfully.
 
 ##### Parameters
 
@@ -1422,6 +1662,10 @@ Returns TRUE if the GameDriver agent was able to process the request successfull
 | maximumPossiblePressure | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The maximum possible pressure for the touch input. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
+##### Example
+
+api.TouchInput(0, 0, 100, 100, 0, 1, 50); //Performs a single touch input from 0,0 to 100, 100 with a single "finger" over a duration of 50 frames
+
 <a name='M-gdio-unity_api-v2-ApiClient-Wait-System-Int32-'></a>
 ### Wait(milliSeconds) `method`
 
@@ -1435,6 +1679,10 @@ Client side Wait or Pause.
 | ---- | ---- | ----------- |
 | milliSeconds | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of milliseconds to wait. |
 
+##### Example
+
+api.Wait(3000); //Waits 3 seconds before continuing
+
 <a name='M-gdio-unity_api-v2-ApiClient-WaitForObject-System-String,System-Int32-'></a>
 ### WaitForObject(hierarchyPath,timeout) `method`
 
@@ -1444,7 +1692,7 @@ Wait for an object to exist.
 
 ##### Returns
 
-Returns TRUE if the object exists within the alloted timeout.
+TRUE if the object exists within the alloted timeout.
 
 ##### Parameters
 
@@ -1452,6 +1700,10 @@ Returns TRUE if the object exists within the alloted timeout.
 | ---- | ---- | ----------- |
 | hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath of the object. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The amount of time to wait for the object to exist. |
+
+##### Example
+
+api.WaitForObject("//*[@name='Cube']"); //Waits for an object named "Cube" to exist
 
 <a name='M-gdio-unity_api-v2-ApiClient-WaitForObjectValue-System-String,System-String,System-Object,System-Boolean,System-Int32,gdio-plugin-serializer-ICustomSerializer-'></a>
 ### WaitForObjectValue(hierarchyPath,fieldOrPropertyName,value,waitForObject,timeout,valueSerializer) `method`
@@ -1462,7 +1714,7 @@ Wait for an object to exist and have a specific value for a specified field/prop
 
 ##### Returns
 
-Returns TRUE if the object exists with the specified value in the alloted timeout.
+TRUE if the object exists with the specified value in the alloted timeout.
 
 ##### Parameters
 
@@ -1474,6 +1726,11 @@ Returns TRUE if the object exists with the specified value in the alloted timeou
 | waitForObject | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | If TRUE, wait for the object to exist if it doesn't. |
 | timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The amount of time to wait for the object to exist with the specified value. |
 | valueSerializer | [gdio.plugin.serializer.ICustomSerializer](#T-gdio-plugin-serializer-ICustomSerializer 'gdio.plugin.serializer.ICustomSerializer') | The [ICustomSerializer](#T-gdio-plugin-serializer-ICustomSerializer 'gdio.plugin.serializer.ICustomSerializer') used to serialize the value.  This is only required if a a custom class of object is being used. |
+
+##### Example
+
+//Waits for the value of the TextMeshProUGUI input field with the name "Text" to be "America"
+api.WaitForObjectValue("//*[@name='Text']/fn:component('TMPro.TextMeshProUGUI')", "text", "America");
 
 <a name='T-gdio-unity_api-utilities-ScreenCapture-GDI32'></a>
 ## GDI32 `type`
@@ -1516,7 +1773,7 @@ The Application.DataPath of the connected game.
 
 ##### Summary
 
-Boolean value if the game is running in an UnityEditor instance.
+Boolean value if the game is running in an Unity editor instance.
 
 <a name='F-gdio-unity_api-v2-GameConnectionDetails-IsStandalone'></a>
 ### IsStandalone `constants`
