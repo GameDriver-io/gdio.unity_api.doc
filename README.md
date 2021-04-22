@@ -10,7 +10,7 @@
   - [AUTOPLAY_RECEIVE_PORT](#F-gdio-unity_api-v2-ApiClient-AUTOPLAY_RECEIVE_PORT 'gdio.unity_api.v2.ApiClient.AUTOPLAY_RECEIVE_PORT')
   - [THROW_EXCEPTIONS](#F-gdio-unity_api-v2-ApiClient-THROW_EXCEPTIONS 'gdio.unity_api.v2.ApiClient.THROW_EXCEPTIONS')
   - [CallMethod(hierarchyPath,methodName,arguments,timeout)](#M-gdio-unity_api-v2-ApiClient-CallMethod-System-String,System-String,System-Object[],System-Int32- 'gdio.unity_api.v2.ApiClient.CallMethod(System.String,System.String,System.Object[],System.Int32)')
-  - [CallMethod\`\`1(hierarchyPath,methodName,arguments,timeout)](#M-gdio-unity_api-v2-ApiClient-CallMethod``1-System-String,System-String,System-Object[],System-Int32- 'gdio.unity_api.v2.ApiClient.CallMethod``1(System.String,System.String,System.Object[],System.Int32)')
+  - [CallMethod\`\`1(hierarchyPath,methodName,arguments,timeout)](#M-gdio-unity_api-v2-ApiClient-CallMethod<T>-System-String,System-String,System-Object[],System-Int32- 'gdio.unity_api.v2.ApiClient.CallMethod<T>(System.String,System.String,System.Object[],System.Int32)')
   - [CaptureScreenshot(filename,storeInGameFolder,overwriteExisting,timeout)](#M-gdio-unity_api-v2-ApiClient-CaptureScreenshot-System-String,System-Boolean,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.CaptureScreenshot(System.String,System.Boolean,System.Boolean,System.Int32)')
   - [Click(buttonId,position,clickFrameCount,timeout)](#M-gdio-unity_api-v2-ApiClient-Click-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,System-Int32- 'gdio.unity_api.v2.ApiClient.Click(gdio.common.objects.MouseButtons,gdio.common.objects.Vector2,System.UInt64,System.Int32)')
   - [Click(buttonId,x,y,clickFrameCount,timeout)](#M-gdio-unity_api-v2-ApiClient-Click-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,System-Int32- 'gdio.unity_api.v2.ApiClient.Click(gdio.common.objects.MouseButtons,System.Single,System.Single,System.UInt64,System.Int32)')
@@ -35,7 +35,7 @@
   - [GetConnectedGameDetails()](#M-gdio-unity_api-v2-ApiClient-GetConnectedGameDetails 'gdio.unity_api.v2.ApiClient.GetConnectedGameDetails')
   - [GetLastFPS()](#M-gdio-unity_api-v2-ApiClient-GetLastFPS 'gdio.unity_api.v2.ApiClient.GetLastFPS')
   - [GetObjectDistance(objectA_HierarchyPath,objectB_HierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectDistance-System-String,System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectDistance(System.String,System.String,System.Int32)')
-  - [GetObjectFieldValue\`\`1(hierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue``1-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectFieldValue``1(System.String,System.Int32)')
+  - [GetObjectFieldValue\`\`1(hierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue<T>-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectFieldValue<T>(System.String,System.Int32)')
   - [GetObjectList(timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectList-System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectList(System.Int32)')
   - [GetObjectPosition(objectHierarchyPath,cordSpace,cameraHierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectPosition-System-String,gdio-common-objects-CoordinateConversion,System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectPosition(System.String,gdio.common.objects.CoordinateConversion,System.String,System.Int32)')
   - [GetSceneName(timeout)](#M-gdio-unity_api-v2-ApiClient-GetSceneName-System-Int32- 'gdio.unity_api.v2.ApiClient.GetSceneName(System.Int32)')
@@ -481,8 +481,8 @@ api.CallMethod("//*[@name='Canvas']/fn:component('CustomScript')",
                 "CustomMethod", new string[] { "string:The Test was run on " + DateTime.Now.ToShortDateString() });
 ```
 
-<a name='M-gdio-unity_api-v2-ApiClient-CallMethod``1-System-String,System-String,System-Object[],System-Int32-'></a>
-### CallMethod\`\`1(hierarchyPath,methodName,arguments,timeout) `method`
+<a name='M-gdio-unity_api-v2-ApiClient-CallMethod<T>-System-String,System-String,System-Object[],System-Int32-'></a>
+### CallMethod<T>(hierarchyPath,methodName,arguments,timeout) `method`
 
 ##### Summary
 
@@ -1139,8 +1139,8 @@ Returns the distance between the two objects as a float.
             Console.WriteLine(d.ToString()); // prints -5.0,-3.0,-1.0
 ```
 
-<a name='M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue``1-System-String,System-Int32-'></a>
-### GetObjectFieldValue\`\`1(hierarchyPath,timeout) `method`
+<a name='M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue<T>-System-String,System-Int32-'></a>
+### GetObjectFieldValue<T>(hierarchyPath,timeout) `method`
 
 ##### Summary
 
