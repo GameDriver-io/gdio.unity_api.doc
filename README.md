@@ -1177,7 +1177,7 @@ Assert.IsTrue(invisCube == false, "The invisible cube isn't active"); //Passes i
 
 ##### Summary
 
-This method returns of a list of all GameObjects as returned by [](#!-UnityEngine-GameObject-FindObjectsOfType-Type- 'UnityEngine.GameObject.FindObjectsOfType(Type)'), where Type is UnityEngine.GameObject.
+This method returns of a list of all GameObjects as returned by [](#!-UnityEngine-GameObject-FindObjectsOfType-Type-'UnityEngine.GameObject.FindObjectsOfType(Type)'), where Type is UnityEngine.GameObject.
 
 ##### Returns
 
