@@ -459,7 +459,7 @@ If TRUE, the API will throw exceptions instead of logging errors and where appli
 
 ##### Summary
 
-Use this function to execute a [Void](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Void 'System.Void') method on an object.
+Use this function to execute a [Void](https://docs.microsoft.com/en-us/dotnet/api/System.Void 'System.Void') method on an object.
 
 ##### Returns
 
@@ -469,10 +469,10 @@ Returns a boolean based on the successful execution of the return type void, met
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the object that the script component is attached to. |
-| methodName | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The name of the method to call. |
-| arguments | [System.Object[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Object[] 'System.Object[]') | An array of objects to pass as arguments to the method. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the request was processed. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object that the script component is attached to. |
+| methodName | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The name of the method to call. |
+| arguments | [System.Object[]](https://docs.microsoft.com/en-us/dotnet/api/System.Object[] 'System.Object[]') | An array of objects to pass as arguments to the method. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the request was processed. |
 
 ##### Example
 
@@ -496,10 +496,10 @@ Returns a deserialized object of type T. If T and the type of the returned objec
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the object that the script component is attached to. |
-| methodName | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The name of the method to call. |
-| arguments | [System.Object[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Object[] 'System.Object[]') | An array of objects to pass as arguments to the method. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the request was processed. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object that the script component is attached to. |
+| methodName | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The name of the method to call. |
+| arguments | [System.Object[]](https://docs.microsoft.com/en-us/dotnet/api/System.Object[] 'System.Object[]') | An array of objects to pass as arguments to the method. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the request was processed. |
 
 ##### Example
 
@@ -518,10 +518,10 @@ Use this function to capture a screenshot of the Game under test.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| filename | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The filename, and path, of the screen capture. |
-| storeInGameFolder | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | If true, this won't transfer the screen capture back to the client and instead will save it on the device where the game is running. |
-| overwriteExisting | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | If true, the operation will overwrite the file if it already exists. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the CaptureScreenshot request was processed. |
+| filename | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The filename, and path, of the screen capture. |
+| storeInGameFolder | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | If true, this won't transfer the screen capture back to the client and instead will save it on the device where the game is running. |
+| overwriteExisting | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | If true, the operation will overwrite the file if it already exists. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the CaptureScreenshot request was processed. |
 
 ##### Example
 
@@ -542,8 +542,8 @@ Use this function to perform in-game mouse-clicks.
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The [Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') position to perform the mouse click. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+| clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
 
@@ -563,10 +563,10 @@ Use this function to perform in-game mouse-clicks.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| x | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The X coordinate of the game to click in Screen space. |
-| y | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The Y coordinate of the game to click in Screen space. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+| x | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The X coordinate of the game to click in Screen space. |
+| y | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y coordinate of the game to click in Screen space. |
+| clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
 
@@ -587,14 +587,14 @@ Use this function to perform in-game mouse-clicks combined with key press operat
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The [Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') position to perform the mouse click. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
+| clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
-| keysNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
 | modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
-| modifiersNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in game.
+| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in game.
 If this delay is longer than that of the frame count for all of the key presses and click operations, the resulting behavior may not be what the user intends. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
 
@@ -616,16 +616,16 @@ Use this function to perform in game mouse-clicks combined with key press operat
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| x | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The X coordinate of the game to click in Screen space. |
-| y | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The Y coordinate of the game to click in Screen space. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
+| x | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The X coordinate of the game to click in Screen space. |
+| y | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y coordinate of the game to click in Screen space. |
+| clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
-| keysNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
 | modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
-| modifiersNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
+| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
 If this delay is longer than that of the frame count for all of the key presses and click operations, the resulting behavior may not be what the user intends. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
 
@@ -649,9 +649,9 @@ Use this function to interact with an in-game object using mouse-clicks.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the GameObject to perform a click on. |
-| frameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of frames to hold the keys down before clicking. Total press frame count is keyFrames + frames.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the GameObject to perform a click on. |
+| frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of frames to hold the keys down before clicking. Total press frame count is keyFrames + frames.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
 
@@ -673,15 +673,15 @@ Use this function to interact with an in-game object using mouse-clicks combined
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the GameObject to perform a click on. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the GameObject to perform a click on. |
+| clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
-| keysNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
 | modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
-| modifiersNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
+| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
 If this delay is longer than that of the frame count for all of the key presses and click operations, the resulting behavior may not be what the user intends. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickObjectEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickObjectEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
 
@@ -705,11 +705,11 @@ Use this function to connect to a Unity game with GameDriver Agent configured an
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hostname | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The hostname of the machine running the game. |
-| port | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The configured port that the GameDriver agent is configured to use. |
-| autoplay | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Autoplay allows you to automatically start a game in the Unity editor without manual intervention. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The amount of time in seconds to wait for connectivity to establish with the game. |
-| autoPortResolution | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Auto port resolution allows for the Unity editor or Standalone game to report what port it is using for the GameDriver agent. |
+| hostname | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The hostname of the machine running the game. |
+| port | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The configured port that the GameDriver agent is configured to use. |
+| autoplay | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Autoplay allows you to automatically start a game in the Unity editor without manual intervention. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The amount of time in seconds to wait for connectivity to establish with the game. |
+| autoPortResolution | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Auto port resolution allows for the Unity editor or Standalone game to report what port it is using for the GameDriver agent. |
 
 ##### Example
 
@@ -732,12 +732,12 @@ Use this function to connect to a Unity game with GameDriver Agent configured an
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hostname | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The hostname of the machine running the game. |
-| regex_MatchGamePath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | This parameter is a regular expression that will attempt to match a specfic game via its Application.DataPath if you have multiple games running. |
-| port | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The configured port that the GameDriver agent is configured to use. |
-| autoplay | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Autoplay allows you to automatically start a game in the Unity editor without manual intervention. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The amount of time in seconds to wait for connectivity to establish with the game. |
-| autoPortResolution | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Auto port resolution allows for the Unity editor or Standalone game to report what port it is using for the GameDriver agent. |
+| hostname | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The hostname of the machine running the game. |
+| regex_MatchGamePath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | This parameter is a regular expression that will attempt to match a specfic game via its Application.DataPath if you have multiple games running. |
+| port | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The configured port that the GameDriver agent is configured to use. |
+| autoplay | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Autoplay allows you to automatically start a game in the Unity editor without manual intervention. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The amount of time in seconds to wait for connectivity to establish with the game. |
+| autoPortResolution | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Auto port resolution allows for the Unity editor or Standalone game to report what port it is using for the GameDriver agent. |
 
 ##### Example
 
@@ -768,7 +768,7 @@ TRUE if the GameDriver agent successfully processed the request.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | hookObject | [gdio.unity_api.v2.HookingObject](#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') | The type of input hook to disable. See [HookingObject](#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -791,7 +791,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -829,8 +829,8 @@ Use this function to perform in-game mouse double-clicks.
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the double click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The Vector2 location to double click in Screen space. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to double click the specific position. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+| clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to double click the specific position. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
 
@@ -851,10 +851,10 @@ Use this function to perform in-game mouse double-clicks.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the double click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| x | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The X coordinate of the game to double click in Screen space. |
-| y | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The Y coordinate of the game to double click in Screen space. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific location. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+| x | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The X coordinate of the game to double click in Screen space. |
+| y | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y coordinate of the game to double click in Screen space. |
+| clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific location. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
 
@@ -880,14 +880,14 @@ TRUE if the GameDriver agent successfully processed the request.
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The Vector2 position of where to double click in Screen space. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
+| clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
-| keysNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
 | modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
-| modifiersNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
+| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
 If this delay is longer than the frame count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
 
@@ -915,16 +915,16 @@ TRUE if the GameDriver agent successfully processed the request.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| x | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The X coordinate of the game to double click in Screen space. |
-| y | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The Y coordinate of the game to double click in Screen space. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
+| x | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The X coordinate of the game to double click in Screen space. |
+| y | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y coordinate of the game to double click in Screen space. |
+| clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
-| keysNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
 | modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
-| modifiersNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
+| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
 If this delay is longer than the frame count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
 
@@ -952,9 +952,9 @@ TRUE if the GameDriver agent successfully processed the request.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the double click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the GameObject to perform a double click on. |
-| frameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to double-click the specific object. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the DoubleClickObject request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the GameObject to perform a double click on. |
+| frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to double-click the specific object. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the DoubleClickObject request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
 
@@ -980,15 +980,15 @@ TRUE if the GameDriver agent successfully processed the request.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the double click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the GameObject to perform a double-click on. |
-| clickFrameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to double-click the specific object. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the GameObject to perform a double-click on. |
+| clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to double-click the specific object. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
-| keysNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
 | modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
-| modifiersNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
+| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
 If this delay is longer than the frame count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of seconds to wait for a response that the DoubleClickObjectEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the DoubleClickObjectEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
 
@@ -1017,7 +1017,7 @@ TRUE if the GameDriver agent successfully processed the request.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | hookObject | [gdio.unity_api.v2.HookingObject](#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') | The type of input hook to enable. See [HookingObject](#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1030,7 +1030,7 @@ api.EnableHooks(HookingObject.ALL);
 
 ##### Summary
 
-Enable the use of object caching when performing HierarchyPath object resolution.  Object caching is per HierarchyPath stored in a [IDictionary](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.IDictionary 'System.Collections.IDictionary'). If a matching HierarchyPath is already in the dictionary, then the stored object is returned.
+Enable the use of object caching when performing HierarchyPath object resolution.  Object caching is per HierarchyPath stored in a [IDictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IDictionary 'System.Collections.IDictionary'). If a matching HierarchyPath is already in the dictionary, then the stored object is returned.
 The only way to update a cached reference is for the reference to be garbage collected or flush the cache with [FlushObjectLookupCache](#M-gdio-unity_api-v2-ApiClient-FlushObjectLookupCache-System-Int32- 'gdio.unity_api.v2.ApiClient.FlushObjectLookupCache(System.Int32)').
 
 ##### Returns
@@ -1041,7 +1041,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1064,7 +1064,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1126,9 +1126,9 @@ Returns the distance between the two objects as a float.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| objectA_HierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the first GameObject. |
-| objectB_HierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchYpath for the second GameObject. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| objectA_HierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the first GameObject. |
+| objectB_HierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchYpath for the second GameObject. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1148,20 +1148,20 @@ This method returns the field or property value of an object.
 
 ##### Returns
 
-Returns an object of type T for the value or throws an [Exception](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Exception 'System.Exception') on error.
+Returns an object of type T for the value or throws an [Exception](https://docs.microsoft.com/en-us/dotnet/api/System.Exception 'System.Exception') on error.
 
 ##### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath of the object and field/property to be inspected. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath of the object and field/property to be inspected. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Generic Types
 
 | Name | Description |
 | ---- | ----------- |
-| T | The [Type](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Type 'System.Type') of the field or property to be inspected. |
+| T | The [Type](https://docs.microsoft.com/en-us/dotnet/api/System.Type 'System.Type') of the field or property to be inspected. |
 
 ##### Example
 
@@ -1177,17 +1177,17 @@ Assert.IsTrue(invisCube == false, "The invisible cube isn't active"); //Passes i
 
 ##### Summary
 
-This method returns of a list of all GameObjects as returned by [UnityEngine.GameObject.FindObjectsOfType(Type)](#!-UnityEngine-GameObject-FindObjectsOfType-Type-'UnityEngine.GameObject.FindObjectsOfType(Type)'), where Type is UnityEngine.GameObject.
+This method returns of a list of all GameObjects as returned by [UnityEngine.GameObject.FindObjectsOfType(Type)](https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfType.html), where Type is UnityEngine.GameObject.
 
 ##### Returns
 
-This method returns a [IList](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.IList 'System.Collections.IList') of [LiteGameObject](#T-gdio-common-objects-LiteGameObject 'gdio.common.objects.LiteGameObject').  LiteGameObject is a slimmer representation of UnityEngine.GameObject
+This method returns a [IList](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IList 'System.Collections.IList') of [LiteGameObject](#T-gdio-common-objects-LiteGameObject 'gdio.common.objects.LiteGameObject').  LiteGameObject is a slimmer representation of UnityEngine.GameObject
 
 ##### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1223,10 +1223,10 @@ The Vector3 position of the specific object.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| objectHierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath of the object to return the position of. |
+| objectHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath of the object to return the position of. |
 | cordSpace | [gdio.common.objects.CoordinateConversion](#T-gdio-common-objects-CoordinateConversion 'gdio.common.objects.CoordinateConversion') | The coorindate space conversion to perform on the position before returning it. See [CoordinateConversion](#T-gdio-common-objects-CoordinateConversion 'gdio.common.objects.CoordinateConversion') for more information. |
-| cameraHierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchPath to the Camera GameObject to use.  The default is string.Empty, which uses Camera.main/> |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| cameraHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchPath to the Camera GameObject to use.  The default is string.Empty, which uses Camera.main/> |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1251,7 +1251,7 @@ The name of the scene as a string.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1286,11 +1286,11 @@ TRUE if the GameDriver agent successfully processed the request.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of keys([KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode')) to press. |
-| numberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to press and hold the keys for. |
+| numberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press and hold the keys for. |
 | modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of modifiers()[KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') to press. |
-| modifierNumberOfFrames | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to hold the modifiers down for, before pressing the keys. |
-| delayAfterModifiersMsec | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The delay to wait between holding the modifies and pressing the keys. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| modifierNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to hold the modifiers down for, before pressing the keys. |
+| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The delay to wait between holding the modifies and pressing the keys. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1321,8 +1321,8 @@ TRUE if the request was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| sceneName | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The name of the scene to load |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| sceneName | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The name of the scene to load |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1348,10 +1348,10 @@ TRUE if the requests was successfully processed by the GameDriver agent.
 | ---- | ---- | ----------- |
 | button | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button, [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'), to perform the drag operation with. |
 | destination | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The destination vector to drag the mouse to. |
-| frameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames taken to complete the drag operation. |
+| frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames taken to complete the drag operation. |
 | origin | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The origin to start the drag operation.  If null, the mouse drag operation will begin at the current position of Input.mousePosition. |
-| waitForEmptyInput | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for the empty input event to be returned from the agent before returning from the method call. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. If waitForEmptyInput is set to TRUE, then the method call will wait the timeout allotment to recieve the event. |
+| waitForEmptyInput | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the empty input event to be returned from the agent before returning from the method call. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. If waitForEmptyInput is set to TRUE, then the method call will wait the timeout allotment to recieve the event. |
 
 ##### Example
 
@@ -1375,11 +1375,11 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| objectHierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath to move the mouse pointer to. |
-| frameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to compelte the mouse move over. |
-| waitForObject | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | If TRUE, wait for the object to exist so that mouse move can complete successfully. |
-| waitForEmptyInput | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for the empty input event to be returned from the GameDriver agent, before returning from the method. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent.  If waitForEmptyInput is TRUE, then the method call will wait the timeout alotment to recieve the event. |
+| objectHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath to move the mouse pointer to. |
+| frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to compelte the mouse move over. |
+| waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | If TRUE, wait for the object to exist so that mouse move can complete successfully. |
+| waitForEmptyInput | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the empty input event to be returned from the GameDriver agent, before returning from the method. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent.  If waitForEmptyInput is TRUE, then the method call will wait the timeout alotment to recieve the event. |
 
 ##### Example
 
@@ -1404,10 +1404,10 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | destination | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | Destination vector to move the mouse to. |
-| frameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to complete the operaiton over. |
+| frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to complete the operaiton over. |
 | origin | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The origin to start the mouse move operation.  If null, the mouse move operation will begin at the current position of Input.mousePosition. |
-| waitForEmptyInput | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for the empty input event to be returned from the GameDriver agent, before returning from the method. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent.  If waitForEmptyInput is TRUE, then the method call will wait the timeout alotment to recieve the event. |
+| waitForEmptyInput | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the empty input event to be returned from the GameDriver agent, before returning from the method. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent.  If waitForEmptyInput is TRUE, then the method call will wait the timeout alotment to recieve the event. |
 
 ##### Example
 
@@ -1437,10 +1437,10 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| navAgentHierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath to the NavAgent. |
+| navAgentHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath to the NavAgent. |
 | destination | [gdio.common.objects.Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') | The destination vector to move to. |
-| waitForMoveToComplete | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for the NavAgent move-to operation to complete before the method returns. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| waitForMoveToComplete | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the NavAgent move-to operation to complete before the method returns. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1465,8 +1465,8 @@ Returns an array of [RaycastResult](#T-gdio-common-objects-RaycastResult 'gdio.c
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | raycastPoint | [gdio.common.objects.Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') | The vector to perform a raycast to. |
-| cameraHierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the  UnityEngine.Camera to use as a Raycast reference.  If the Camera is string.Empty, the Camera.main is used |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| cameraHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the UnityEngine.Camera to use as a Raycast reference.  If the Camera is string.Empty, the Camera.main is used |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1506,10 +1506,10 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the object to rotate. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
 | quaternion | [gdio.common.objects.Quaternion](#T-gdio-common-objects-Quaternion 'gdio.common.objects.Quaternion') | The quaternion value to manipulate the object. |
-| waitForObject | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1532,11 +1532,11 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the object to rotate. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
 | eulers | [gdio.common.objects.Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') | The Eulers vector to manipulate the object. |
 | relativeTo | [gdio.common.objects.Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') | The [Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
-| waitForObject | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1560,13 +1560,13 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the object to rotate. |
-| xAngle | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The X angle value to rotate. |
-| yAngle | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The Y angle value to rotate. |
-| zAngle | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The Z angle value to rotate. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
+| xAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The X angle value to rotate. |
+| yAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y angle value to rotate. |
+| zAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Z angle value to rotate. |
 | relativeTo | [gdio.common.objects.Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') | The [Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
-| waitForObject | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1590,12 +1590,12 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath for the object to rotate. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
 | axis | [gdio.common.objects.Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') |  |
-| angle | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') |  |
+| angle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') |  |
 | relativeTo | [gdio.common.objects.Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') | The [Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
-| waitForObject | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1619,10 +1619,10 @@ TRUE if the GameDriver agent was able to successfully set the InputField text.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath to the InputField or TMP_InputField. |
-| value | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The text value to set in the field. |
-| waitForObject | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | If TRUE, wait for the object to exist if it doesn't. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The time to wait for the object to exist. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath to the InputField or TMP_InputField. |
+| value | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The text value to set in the field. |
+| waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | If TRUE, wait for the object to exist if it doesn't. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The time to wait for the object to exist. |
 
 ##### Example
 
@@ -1646,11 +1646,11 @@ TRUE if the field/property was successfully set to the value.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath to the object to set the field/property value. |
-| fieldOrPropertyName | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The field or property name to set the value of. |
-| value | [System.Object](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Object 'System.Object') | The value to set for the field/property. |
-| waitForObject | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | If TRUE, wait for the object to exist if it doesn't. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The time to wait for the object to exist. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath to the object to set the field/property value. |
+| fieldOrPropertyName | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The field or property name to set the value of. |
+| value | [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.Object 'System.Object') | The value to set for the field/property. |
+| waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | If TRUE, wait for the object to exist if it doesn't. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The time to wait for the object to exist. |
 | valueSerializer | [gdio.plugin.serializer.ICustomSerializer](#T-gdio-plugin-serializer-ICustomSerializer 'gdio.plugin.serializer.ICustomSerializer') | The [ICustomSerializer](#T-gdio-plugin-serializer-ICustomSerializer 'gdio.plugin.serializer.ICustomSerializer') used to serialize the value.  This is only required if a a custom class of object is being used. |
 
 ##### Example
@@ -1676,9 +1676,9 @@ TRUE if the GameDriver agent was able to process the request successfully.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The vector position to tap the device screen. |
-| tapCount | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of taps that should be registered. |
-| frameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| tapCount | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of taps that should be registered. |
+| frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1702,11 +1702,11 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| x | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The X coordinate of the position to tap the device screen. |
-| y | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The Y coordinate position to tap the device screen. |
-| tapCount | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of taps that should be registered. |
-| frameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| x | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The X coordinate of the position to tap the device screen. |
+| y | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y coordinate position to tap the device screen. |
+| tapCount | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of taps that should be registered. |
+| frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1730,10 +1730,10 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath of the object to tap. |
-| tapCount | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of taps that should be registered. |
-| frameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath of the object to tap. |
+| tapCount | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of taps that should be registered. |
+| frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1759,16 +1759,16 @@ TRUE if the GameDriver agent was able to process the request successfully.
 | ---- | ---- | ----------- |
 | startPosition | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | Vector position of the start of the touch input. |
 | destinationPosition | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | Vector destination position of where the touch input ends. |
-| fingerId | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The finder id of the touch input. |
-| tapCount | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of taps that should be registered. |
-| frameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
-| waitForEmptyInput | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | If TRUE, wait for the Empty Input event to be broadcast before returning from the method. |
-| radius | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The radius of the touch input. |
-| pressure | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The pressure of the touch input. |
-| altitudeAngle | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The altitude angle of the touch input. |
-| azmulthAngle | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The azmulth ange of the touch input. |
-| maximumPossiblePressure | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The maximum possible pressure for the touch input. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| fingerId | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The finder id of the touch input. |
+| tapCount | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of taps that should be registered. |
+| frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
+| waitForEmptyInput | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | If TRUE, wait for the Empty Input event to be broadcast before returning from the method. |
+| radius | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The radius of the touch input. |
+| pressure | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The pressure of the touch input. |
+| altitudeAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The altitude angle of the touch input. |
+| azmulthAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The azmulth ange of the touch input. |
+| maximumPossiblePressure | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The maximum possible pressure for the touch input. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1792,20 +1792,20 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| x1 | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The X coordinate of the start position. |
-| y1 | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The Y coordinate of the start position. |
-| x2 | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The X coordinate of the end position. |
-| y2 | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The Y coordinate of the end position. |
-| fingerId | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The finder id of the touch input. |
-| tapCount | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of taps that should be registered. |
-| frameCount | [System.UInt64](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
-| waitForEmptyInput | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | If TRUE, wait for the Empty Input event to be broadcast before returning from the method. |
-| radius | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The radius of the touch input. |
-| pressure | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The pressure of the touch input. |
-| altitudeAngle | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The altitude angle of the touch input. |
-| azmulthAngle | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The azmulth ange of the touch input. |
-| maximumPossiblePressure | [System.Single](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Single 'System.Single') | The maximum possible pressure for the touch input. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| x1 | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The X coordinate of the start position. |
+| y1 | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y coordinate of the start position. |
+| x2 | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The X coordinate of the end position. |
+| y2 | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y coordinate of the end position. |
+| fingerId | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The finder id of the touch input. |
+| tapCount | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of taps that should be registered. |
+| frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
+| waitForEmptyInput | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | If TRUE, wait for the Empty Input event to be broadcast before returning from the method. |
+| radius | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The radius of the touch input. |
+| pressure | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The pressure of the touch input. |
+| altitudeAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The altitude angle of the touch input. |
+| azmulthAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The azmulth ange of the touch input. |
+| maximumPossiblePressure | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The maximum possible pressure for the touch input. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
 
@@ -1825,7 +1825,7 @@ Client side Wait or Pause.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| milliSeconds | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The number of milliseconds to wait. |
+| milliSeconds | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of milliseconds to wait. |
 
 ##### Example
 
@@ -1848,8 +1848,8 @@ TRUE if the object exists within the alloted timeout.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath of the object. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The amount of time to wait for the object to exist. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath of the object. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The amount of time to wait for the object to exist. |
 
 ##### Example
 
@@ -1872,11 +1872,11 @@ TRUE if the object exists with the specified value in the alloted timeout.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The HierarchyPath to the object. |
-| fieldOrPropertyName | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The field/property name for inspection. |
-| value | [System.Object](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Object 'System.Object') | The value to wait for. |
-| waitForObject | [System.Boolean](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Boolean 'System.Boolean') | If TRUE, wait for the object to exist if it doesn't. |
-| timeout | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | The amount of time to wait for the object to exist with the specified value. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath to the object. |
+| fieldOrPropertyName | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The field/property name for inspection. |
+| value | [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.Object 'System.Object') | The value to wait for. |
+| waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | If TRUE, wait for the object to exist if it doesn't. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The amount of time to wait for the object to exist with the specified value. |
 | valueSerializer | [gdio.plugin.serializer.ICustomSerializer](#T-gdio-plugin-serializer-ICustomSerializer 'gdio.plugin.serializer.ICustomSerializer') | The [ICustomSerializer](#T-gdio-plugin-serializer-ICustomSerializer 'gdio.plugin.serializer.ICustomSerializer') used to serialize the value.  This is only required if a a custom class of object is being used. |
 
 ##### Example
@@ -1913,7 +1913,7 @@ This class provides information about the currently connected game.
 
 ##### Summary
 
-The [IPAddress](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Net.IPAddress 'System.Net.IPAddress') of the connected game./>
+The [IPAddress](https://docs.microsoft.com/en-us/dotnet/api/System.Net.IPAddress 'System.Net.IPAddress') of the connected game./>
 
 <a name='F-gdio-unity_api-v2-GameConnectionDetails-GamePath'></a>
 ### GamePath `constants`
@@ -4291,8 +4291,8 @@ Captures a screen shot of the entire desktop, and saves it to a file
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| filename | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') |  |
-| format | [System.Drawing.Imaging.ImageFormat](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Drawing.Imaging.ImageFormat 'System.Drawing.Imaging.ImageFormat') |  |
+| filename | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') |  |
+| format | [System.Drawing.Imaging.ImageFormat](https://docs.microsoft.com/en-us/dotnet/api/System.Drawing.Imaging.ImageFormat 'System.Drawing.Imaging.ImageFormat') |  |
 
 <a name='M-gdio-unity_api-utilities-ScreenCapture-CaptureWindow-System-IntPtr-'></a>
 ### CaptureWindow(handle) `method`
@@ -4309,7 +4309,7 @@ Creates an Image object containing a screen shot of a specific window
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| handle | [System.IntPtr](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.IntPtr 'System.IntPtr') | The handle to the window. (In windows forms, this is obtained by the Handle property) |
+| handle | [System.IntPtr](https://docs.microsoft.com/en-us/dotnet/api/System.IntPtr 'System.IntPtr') | The handle to the window. (In windows forms, this is obtained by the Handle property) |
 
 <a name='M-gdio-unity_api-utilities-ScreenCapture-CaptureWindowToFile-System-IntPtr,System-String,System-Drawing-Imaging-ImageFormat-'></a>
 ### CaptureWindowToFile(handle,filename,format) `method`
@@ -4322,9 +4322,9 @@ Captures a screen shot of a specific window, and saves it to a file
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| handle | [System.IntPtr](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.IntPtr 'System.IntPtr') |  |
-| filename | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') |  |
-| format | [System.Drawing.Imaging.ImageFormat](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Drawing.Imaging.ImageFormat 'System.Drawing.Imaging.ImageFormat') |  |
+| handle | [System.IntPtr](https://docs.microsoft.com/en-us/dotnet/api/System.IntPtr 'System.IntPtr') |  |
+| filename | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') |  |
+| format | [System.Drawing.Imaging.ImageFormat](https://docs.microsoft.com/en-us/dotnet/api/System.Drawing.Imaging.ImageFormat 'System.Drawing.Imaging.ImageFormat') |  |
 
 <a name='T-gdio-unity_api-utilities-ScreenCapture-User32'></a>
 ## User32 `type`
