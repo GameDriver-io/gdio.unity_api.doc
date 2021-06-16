@@ -1,4 +1,9 @@
-[GDI32](#T-gdio-unity_api-utilities-ScreenCapture-GDI32 'gdio.unity_api.utilities.ScreenCapture.GDI32')
+<a name='assembly'></a>
+# ENUMS
+
+## Contents
+
+- [GDI32](#T-gdio-unity_api-utilities-ScreenCapture-GDI32 'gdio.unity_api.utilities.ScreenCapture.GDI32')
 - [GameConnectionDetails](#T-gdio-unity_api-v2-GameConnectionDetails 'gdio.unity_api.v2.GameConnectionDetails')
   - [Addr](#F-gdio-unity_api-v2-GameConnectionDetails-Addr 'gdio.unity_api.v2.GameConnectionDetails.Addr')
   - [GamePath](#F-gdio-unity_api-v2-GameConnectionDetails-GamePath 'gdio.unity_api.v2.GameConnectionDetails.GamePath')
@@ -340,8 +345,8 @@
   - [CaptureWindow(handle)](#M-gdio-unity_api-utilities-ScreenCapture-CaptureWindow-System-IntPtr- 'gdio.unity_api.utilities.ScreenCapture.CaptureWindow(System.IntPtr)')
   - [CaptureWindowToFile(handle,filename,format)](#M-gdio-unity_api-utilities-ScreenCapture-CaptureWindowToFile-System-IntPtr,System-String,System-Drawing-Imaging-ImageFormat- 'gdio.unity_api.utilities.ScreenCapture.CaptureWindowToFile(System.IntPtr,System.String,System.Drawing.Imaging.ImageFormat)')
 - [User32](#T-gdio-unity_api-utilities-ScreenCapture-User32 'gdio.unity_api.utilities.ScreenCapture.User32')
-
 <a name='T-gdio-unity_api-utilities-ScreenCapture-GDI32'></a>
+
 ## GDI32 `type`
 
 ##### Namespace
@@ -364,91 +369,6 @@ gdio.unity_api.v2
 This class provides information about the currently connected game.
 
 <a name='F-gdio-unity_api-v2-GameConnectionDetails-Addr'></a>
-
-<a name='T-gdio-unity_api-utilities-ScreenCapture'></a>
-## ScreenCapture `type`
-
-##### Namespace
-
-gdio.unity_api.utilities
-
-##### Summary
-
-Provides functions to capture the entire screen, or a particular window, and save it to a file.
-
-<a name='M-gdio-unity_api-utilities-ScreenCapture-CaptureScreen'></a>
-### CaptureScreen() `method`
-
-##### Summary
-
-Creates an Image object containing a screen shot of the entire desktop
-
-##### Returns
-
-
-
-##### Parameters
-
-This method has no parameters.
-
-<a name='M-gdio-unity_api-utilities-ScreenCapture-CaptureScreenToFile-System-String,System-Drawing-Imaging-ImageFormat-'></a>
-### CaptureScreenToFile(filename,format) `method`
-
-##### Summary
-
-Captures a screen shot of the entire desktop, and saves it to a file
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| filename | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') |  |
-| format | [System.Drawing.Imaging.ImageFormat](https://docs.microsoft.com/en-us/dotnet/api/System.Drawing.Imaging.ImageFormat 'System.Drawing.Imaging.ImageFormat') |  |
-
-<a name='M-gdio-unity_api-utilities-ScreenCapture-CaptureWindow-System-IntPtr-'></a>
-### CaptureWindow(handle) `method`
-
-##### Summary
-
-Creates an Image object containing a screen shot of a specific window
-
-##### Returns
-
-
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| handle | [System.IntPtr](https://docs.microsoft.com/en-us/dotnet/api/System.IntPtr 'System.IntPtr') | The handle to the window. (In windows forms, this is obtained by the Handle property) |
-
-<a name='M-gdio-unity_api-utilities-ScreenCapture-CaptureWindowToFile-System-IntPtr,System-String,System-Drawing-Imaging-ImageFormat-'></a>
-### CaptureWindowToFile(handle,filename,format) `method`
-
-##### Summary
-
-Captures a screen shot of a specific window, and saves it to a file
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| handle | [System.IntPtr](https://docs.microsoft.com/en-us/dotnet/api/System.IntPtr 'System.IntPtr') |  |
-| filename | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') |  |
-| format | [System.Drawing.Imaging.ImageFormat](https://docs.microsoft.com/en-us/dotnet/api/System.Drawing.Imaging.ImageFormat 'System.Drawing.Imaging.ImageFormat') |  |
-
-<a name='T-gdio-unity_api-utilities-ScreenCapture-User32'></a>
-## User32 `type`
-
-##### Namespace
-
-gdio.unity_api.utilities.ScreenCapture
-
-##### Summary
-
-Helper class containing User32 API functions
-
-
 ### Addr `constants`
 
 ##### Summary
@@ -2793,3 +2713,4 @@ y' key
 ##### Summary
 
 z' key
+
