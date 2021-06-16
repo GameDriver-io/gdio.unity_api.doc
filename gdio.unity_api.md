@@ -1,4 +1,5 @@
 <a name='assembly'></a>
+
 # gdio.unity_api
 
 ## Contents
@@ -319,8 +320,8 @@ Use this function to perform in-game mouse-clicks.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The [Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') position to perform the mouse click. |
+| buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
+| position | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | The [Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') position to perform the mouse click. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
@@ -341,7 +342,7 @@ Use this function to perform in-game mouse-clicks.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
+| buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | x | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The X coordinate of the game to click in Screen space. |
 | y | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y coordinate of the game to click in Screen space. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
@@ -364,8 +365,8 @@ Use this function to perform in-game mouse-clicks combined with key press operat
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The [Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') position to perform the mouse click. |
+| buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
+| position | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | The [Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') position to perform the mouse click. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
 | keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
@@ -394,7 +395,7 @@ Use this function to perform in game mouse-clicks combined with key press operat
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
+| buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | x | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The X coordinate of the game to click in Screen space. |
 | y | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y coordinate of the game to click in Screen space. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
@@ -427,7 +428,7 @@ Use this function to interact with an in-game object using mouse-clicks.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
+| buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the GameObject to perform a click on. |
 | frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of frames to hold the keys down before clicking. Total press frame count is keyFrames + frames.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
@@ -451,7 +452,7 @@ Use this function to interact with an in-game object using mouse-clicks combined
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
+| buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the GameObject to perform a click on. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
@@ -546,7 +547,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hookObject | [gdio.unity_api.v2.HookingObject](#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') | The type of input hook to disable. See [HookingObject](#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') |
+| hookObject | [gdio.unity_api.v2.HookingObject](/ENUMS.md#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') | The type of input hook to disable. See [HookingObject](/ENUMS.md#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
@@ -606,8 +607,8 @@ Use this function to perform in-game mouse double-clicks.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the double click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The Vector2 location to double click in Screen space. |
+| buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the double click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
+| position | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | The Vector2 location to double click in Screen space. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to double click the specific position. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
@@ -629,7 +630,7 @@ Use this function to perform in-game mouse double-clicks.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the double click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
+| buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the double click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | x | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The X coordinate of the game to double click in Screen space. |
 | y | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y coordinate of the game to double click in Screen space. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific location. |
@@ -657,8 +658,8 @@ TRUE if the GameDriver agent successfully processed the request.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The Vector2 position of where to double click in Screen space. |
+| buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
+| position | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | The Vector2 position of where to double click in Screen space. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
 | keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
@@ -693,7 +694,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
+| buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | x | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The X coordinate of the game to double click in Screen space. |
 | y | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y coordinate of the game to double click in Screen space. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
@@ -730,7 +731,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the double click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
+| buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the double click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the GameObject to perform a double click on. |
 | frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to double-click the specific object. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the DoubleClickObject request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
@@ -758,7 +759,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the double click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
+| buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the double click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the GameObject to perform a double-click on. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to double-click the specific object. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
@@ -795,7 +796,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hookObject | [gdio.unity_api.v2.HookingObject](#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') | The type of input hook to enable. See [HookingObject](#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') |
+| hookObject | [gdio.unity_api.v2.HookingObject](/ENUMS.md#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') | The type of input hook to enable. See [HookingObject](/ENUMS.md#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
@@ -1017,7 +1018,7 @@ This method returns of a list of all GameObjects as returned by [](#!-UnityEngin
 
 ##### Returns
 
-This method returns a [IList](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IList 'System.Collections.IList') of [LiteGameObject](#T-gdio-common-objects-LiteGameObject 'gdio.common.objects.LiteGameObject').  LiteGameObject is a slimmer representation of UnityEngine.GameObject
+This method returns a [IList](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IList 'System.Collections.IList') of [LiteGameObject](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-LiteGameObject 'gdio.common.objects.LiteGameObject').  LiteGameObject is a slimmer representation of UnityEngine.GameObject
 
 ##### Parameters
 
@@ -1060,7 +1061,7 @@ The Vector3 position of the specific object.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | objectHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath of the object to return the position of. |
-| cordSpace | [gdio.common.objects.CoordinateConversion](#T-gdio-common-objects-CoordinateConversion 'gdio.common.objects.CoordinateConversion') | The coorindate space conversion to perform on the position before returning it. See [CoordinateConversion](#T-gdio-common-objects-CoordinateConversion 'gdio.common.objects.CoordinateConversion') for more information. |
+| cordSpace | [gdio.common.objects.CoordinateConversion](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-CoordinateConversion 'gdio.common.objects.CoordinateConversion') | The coorindate space conversion to perform on the position before returning it. See [CoordinateConversion](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-CoordinateConversion 'gdio.common.objects.CoordinateConversion') for more information. |
 | cameraHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchPath to the Camera GameObject to use.  The default is string.Empty, which uses Camera.main/> |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
@@ -1200,10 +1201,10 @@ TRUE if the requests was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| button | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button, [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'), to perform the drag operation with. |
-| destination | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The destination vector to drag the mouse to. |
+| button | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button, [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'), to perform the drag operation with. |
+| destination | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | The destination vector to drag the mouse to. |
 | frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames taken to complete the drag operation. |
-| origin | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The origin to start the drag operation.  If null, the mouse drag operation will begin at the current position of Input.mousePosition. |
+| origin | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | The origin to start the drag operation.  If null, the mouse drag operation will begin at the current position of Input.mousePosition. |
 | waitForEmptyInput | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the empty input event to be returned from the agent before returning from the method call. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. If waitForEmptyInput is set to TRUE, then the method call will wait the timeout allotment to recieve the event. |
 
@@ -1257,9 +1258,9 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| destination | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | Destination vector to move the mouse to. |
+| destination | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | Destination vector to move the mouse to. |
 | frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to complete the operaiton over. |
-| origin | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The origin to start the mouse move operation.  If null, the mouse move operation will begin at the current position of Input.mousePosition. |
+| origin | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | The origin to start the mouse move operation.  If null, the mouse move operation will begin at the current position of Input.mousePosition. |
 | waitForEmptyInput | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the empty input event to be returned from the GameDriver agent, before returning from the method. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent.  If waitForEmptyInput is TRUE, then the method call will wait the timeout alotment to recieve the event. |
 
@@ -1292,7 +1293,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | navAgentHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath to the NavAgent. |
-| destination | [gdio.common.objects.Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') | The destination vector to move to. |
+| destination | [gdio.common.objects.Vector3](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector3 'gdio.common.objects.Vector3') | The destination vector to move to. |
 | waitForMoveToComplete | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the NavAgent move-to operation to complete before the method returns. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
@@ -1312,13 +1313,13 @@ Perform a Raycast to a point to find out what is in that position.
 
 ##### Returns
 
-Returns an array of [RaycastResult](#T-gdio-common-objects-RaycastResult 'gdio.common.objects.RaycastResult').
+Returns an array of [RaycastResult](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-RaycastResult 'gdio.common.objects.RaycastResult').
 
 ##### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| raycastPoint | [gdio.common.objects.Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') | The vector to perform a raycast to. |
+| raycastPoint | [gdio.common.objects.Vector3](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector3 'gdio.common.objects.Vector3') | The vector to perform a raycast to. |
 | cameraHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the  UnityEngine.Camera to use as a Raycast reference.  If the Camera is string.Empty, the Camera.main is used |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
@@ -1385,7 +1386,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
-| quaternion | [gdio.common.objects.Quaternion](#T-gdio-common-objects-Quaternion 'gdio.common.objects.Quaternion') | The quaternion value to manipulate the object. |
+| quaternion | [gdio.common.objects.Quaternion](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Quaternion 'gdio.common.objects.Quaternion') | The quaternion value to manipulate the object. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
@@ -1411,8 +1412,8 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
-| eulers | [gdio.common.objects.Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') | The Eulers vector to manipulate the object. |
-| relativeTo | [gdio.common.objects.Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') | The [Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
+| eulers | [gdio.common.objects.Vector3](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector3 'gdio.common.objects.Vector3') | The Eulers vector to manipulate the object. |
+| relativeTo | [gdio.common.objects.Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') | The [Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
@@ -1442,7 +1443,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 | xAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The X angle value to rotate. |
 | yAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y angle value to rotate. |
 | zAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Z angle value to rotate. |
-| relativeTo | [gdio.common.objects.Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') | The [Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
+| relativeTo | [gdio.common.objects.Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') | The [Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
@@ -1469,9 +1470,9 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
-| axis | [gdio.common.objects.Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') |  |
+| axis | [gdio.common.objects.Vector3](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector3 'gdio.common.objects.Vector3') |  |
 | angle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') |  |
-| relativeTo | [gdio.common.objects.Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') | The [Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
+| relativeTo | [gdio.common.objects.Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') | The [Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
@@ -1552,7 +1553,7 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The vector position to tap the device screen. |
+| position | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | The vector position to tap the device screen. |
 | tapCount | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of taps that should be registered. |
 | frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
@@ -1634,8 +1635,8 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| startPosition | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | Vector position of the start of the touch input. |
-| destinationPosition | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | Vector destination position of where the touch input ends. |
+| startPosition | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | Vector position of the start of the touch input. |
+| destinationPosition | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | Vector destination position of where the touch input ends. |
 | fingerId | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The finder id of the touch input. |
 | tapCount | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of taps that should be registered. |
 | frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
@@ -1904,8 +1905,8 @@ Use this function to perform in-game mouse-clicks.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The [Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') position to perform the mouse click. |
+| buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
+| position | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | The [Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') position to perform the mouse click. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the Click request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
@@ -1926,7 +1927,7 @@ Use this function to perform in-game mouse-clicks.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
+| buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | x | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The X coordinate of the game to click in Screen space. |
 | y | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y coordinate of the game to click in Screen space. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
@@ -1949,8 +1950,8 @@ Use this function to perform in-game mouse-clicks combined with key press operat
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The [Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') position to perform the mouse click. |
+| buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
+| position | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | The [Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') position to perform the mouse click. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
 | keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
@@ -1979,7 +1980,7 @@ Use this function to perform in game mouse-clicks combined with key press operat
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
+| buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | x | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The X coordinate of the game to click in Screen space. |
 | y | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y coordinate of the game to click in Screen space. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
@@ -2012,7 +2013,7 @@ Use this function to interact with an in-game object using mouse-clicks.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
+| buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the GameObject to perform a click on. |
 | frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of frames to hold the keys down before clicking. Total press frame count is keyFrames + frames.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
@@ -2036,7 +2037,7 @@ Use this function to interact with an in-game object using mouse-clicks combined
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| buttonId | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'). |
+| buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
 | hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the GameObject to perform a click on. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
@@ -2088,7 +2089,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hookObject | [gdio.unity_api.v2.HookingObject](#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') | The type of input hook to disable. See [HookingObject](#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') |
+| hookObject | [gdio.unity_api.v2.HookingObject](/ENUMS.md#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') | The type of input hook to disable. See [HookingObject](/ENUMS.md#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
@@ -2112,7 +2113,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hookObject | [gdio.unity_api.v2.HookingObject](#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') | The type of input hook to enable. See [HookingObject](#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') |
+| hookObject | [gdio.unity_api.v2.HookingObject](/ENUMS.md#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') | The type of input hook to enable. See [HookingObject](/ENUMS.md#T-gdio-unity_api-v2-HookingObject 'gdio.unity_api.v2.HookingObject') |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
@@ -2319,7 +2320,7 @@ This method returns of a list of all GameObjects as returned by [](#!-UnityEngin
 
 ##### Returns
 
-This method returns a [IList](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IList 'System.Collections.IList') of [LiteGameObject](#T-gdio-common-objects-LiteGameObject 'gdio.common.objects.LiteGameObject').  LiteGameObject is a slimmer representation of UnityEngine.GameObject
+This method returns a [IList](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IList 'System.Collections.IList') of [LiteGameObject](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-LiteGameObject 'gdio.common.objects.LiteGameObject').  LiteGameObject is a slimmer representation of UnityEngine.GameObject
 
 ##### Parameters
 
@@ -2362,7 +2363,7 @@ The Vector3 position of the specific object.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | objectHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath of the object to return the position of. |
-| cordSpace | [gdio.common.objects.CoordinateConversion](#T-gdio-common-objects-CoordinateConversion 'gdio.common.objects.CoordinateConversion') | The coorindate space conversion to perform on the position before returning it. See [CoordinateConversion](#T-gdio-common-objects-CoordinateConversion 'gdio.common.objects.CoordinateConversion') for more information. |
+| cordSpace | [gdio.common.objects.CoordinateConversion](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-CoordinateConversion 'gdio.common.objects.CoordinateConversion') | The coorindate space conversion to perform on the position before returning it. See [CoordinateConversion](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-CoordinateConversion 'gdio.common.objects.CoordinateConversion') for more information. |
 | cameraHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchPath to the Camera GameObject to use.  The default is string.Empty, which uses Camera.main/> |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
@@ -2484,10 +2485,10 @@ TRUE if the requests was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| button | [gdio.common.objects.MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button, [MouseButtons](#T-gdio-common-objects-MouseButtons 'gdio.common.objects.MouseButtons'), to perform the drag operation with. |
-| destination | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The destination vector to drag the mouse to. |
+| button | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button, [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'), to perform the drag operation with. |
+| destination | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | The destination vector to drag the mouse to. |
 | frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames taken to complete the drag operation. |
-| origin | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The origin to start the drag operation.  If null, the mouse drag operation will begin at the current position of Input.mousePosition. |
+| origin | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | The origin to start the drag operation.  If null, the mouse drag operation will begin at the current position of Input.mousePosition. |
 | waitForEmptyInput | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the empty input event to be returned from the agent before returning from the method call. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. If waitForEmptyInput is set to TRUE, then the method call will wait the timeout allotment to recieve the event. |
 
@@ -2541,9 +2542,9 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| destination | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | Destination vector to move the mouse to. |
+| destination | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | Destination vector to move the mouse to. |
 | frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to complete the operaiton over. |
-| origin | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The origin to start the mouse move operation.  If null, the mouse move operation will begin at the current position of Input.mousePosition. |
+| origin | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | The origin to start the mouse move operation.  If null, the mouse move operation will begin at the current position of Input.mousePosition. |
 | waitForEmptyInput | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the empty input event to be returned from the GameDriver agent, before returning from the method. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent.  If waitForEmptyInput is TRUE, then the method call will wait the timeout alotment to recieve the event. |
 
@@ -2576,7 +2577,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | navAgentHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath to the NavAgent. |
-| destination | [gdio.common.objects.Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') | The destination vector to move to. |
+| destination | [gdio.common.objects.Vector3](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector3 'gdio.common.objects.Vector3') | The destination vector to move to. |
 | waitForMoveToComplete | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the NavAgent move-to operation to complete before the method returns. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
@@ -2596,13 +2597,13 @@ Perform a Raycast to a point to find out what is in that position.
 
 ##### Returns
 
-Returns an array of [RaycastResult](#T-gdio-common-objects-RaycastResult 'gdio.common.objects.RaycastResult').
+Returns an array of [RaycastResult](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-RaycastResult 'gdio.common.objects.RaycastResult').
 
 ##### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| raycastPoint | [gdio.common.objects.Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') | The vector to perform a raycast to. |
+| raycastPoint | [gdio.common.objects.Vector3](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector3 'gdio.common.objects.Vector3') | The vector to perform a raycast to. |
 | cameraHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the  UnityEngine.Camera to use as a Raycast reference.  If the Camera is string.Empty, the Camera.main is used |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
@@ -2669,7 +2670,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
-| quaternion | [gdio.common.objects.Quaternion](#T-gdio-common-objects-Quaternion 'gdio.common.objects.Quaternion') | The quaternion value to manipulate the object. |
+| quaternion | [gdio.common.objects.Quaternion](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Quaternion 'gdio.common.objects.Quaternion') | The quaternion value to manipulate the object. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
@@ -2695,8 +2696,8 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
-| eulers | [gdio.common.objects.Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') | The Eulers vector to manipulate the object. |
-| relativeTo | [gdio.common.objects.Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') | The [Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
+| eulers | [gdio.common.objects.Vector3](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector3 'gdio.common.objects.Vector3') | The Eulers vector to manipulate the object. |
+| relativeTo | [gdio.common.objects.Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') | The [Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
@@ -2726,7 +2727,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 | xAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The X angle value to rotate. |
 | yAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y angle value to rotate. |
 | zAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Z angle value to rotate. |
-| relativeTo | [gdio.common.objects.Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') | The [Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
+| relativeTo | [gdio.common.objects.Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') | The [Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
@@ -2753,9 +2754,9 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
-| axis | [gdio.common.objects.Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') |  |
+| axis | [gdio.common.objects.Vector3](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector3 'gdio.common.objects.Vector3') |  |
 | angle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') |  |
-| relativeTo | [gdio.common.objects.Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') | The [Space](#T-gdio-common-objects-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
+| relativeTo | [gdio.common.objects.Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') | The [Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
@@ -2837,7 +2838,7 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| position | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | The vector position to tap the device screen. |
+| position | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | The vector position to tap the device screen. |
 | tapCount | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of taps that should be registered. |
 | frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
@@ -2919,8 +2920,8 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| startPosition | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | Vector position of the start of the touch input. |
-| destinationPosition | [gdio.common.objects.Vector2](#T-gdio-common-objects-Vector2 'gdio.common.objects.Vector2') | Vector destination position of where the touch input ends. |
+| startPosition | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | Vector position of the start of the touch input. |
+| destinationPosition | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | Vector destination position of where the touch input ends. |
 | fingerId | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The finder id of the touch input. |
 | tapCount | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of taps that should be registered. |
 | frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
