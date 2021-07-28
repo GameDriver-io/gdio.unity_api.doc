@@ -284,7 +284,7 @@ Returns a deserialized object of type T. If T and the type of the returned objec
 ##### Example
 
 ```
-api.CallMethod&lt;int&gt;("//*[@name='Canvas']/fn:component('CustomScript')", "DoMath", new object[] { 1, 2 });
+api.CallMethod<int>("//*[@name='Canvas']/fn:component('CustomScript')", "DoMath", new object[] { 1, 2 });
 ```
 
 <a name='M-gdio-unity_api-v2-ApiClient-CaptureScreenshot-System-String,System-Boolean,System-Boolean,System-Int32-'></a>
@@ -971,7 +971,7 @@ Returns an object of type T for the value or throws an [Exception](https://docs.
 // Searches for an object named 'HiddenCube' which is invisible in the scene, and checks whether the "Active" checkbox is enabled.
 
 ```
-bool invisCube = api.GetObjectFieldValue&lt;bool&gt;("//*[@name='HiddenCube']/fn:component('UnityEngine.Behaviour')/@isActiveAndEnabled");
+bool invisCube = api.GetObjectFieldValue<bool>("//*[@name='HiddenCube']/fn:component('UnityEngine.Behaviour')/@isActiveAndEnabled");
 Assert.IsTrue(invisCube == false, "The invisible cube isn't active"); //Passes if the object is Active in the scene
 ```
 
@@ -1005,7 +1005,7 @@ Returns an object of type T for the value or throws an [Exception](https://docs.
 // Searches for an object named 'HiddenCube' which is invisible in the scene, and checks whether the "Active" checkbox is enabled.
 
 ```
-bool invisCube = api.GetObjectFieldValue&lt;bool&gt;("//*[@name='HiddenCube']/fn:component('UnityEngine.Behaviour')", "isActiveAndEnabled");
+bool invisCube = api.GetObjectFieldValue<bool>("//*[@name='HiddenCube']/fn:component('UnityEngine.Behaviour')", "isActiveAndEnabled");
 Assert.IsTrue(invisCube == false, "The invisible cube isn't active"); //Passes if the object is Active in the scene
 ```
 
@@ -1031,7 +1031,7 @@ This method returns a [IList](https://docs.microsoft.com/en-us/dotnet/api/System
 //Print a list of the scene objects
 
 ```
- System.Collections.Generic.List&lt;LiteGameObject&gt; objects = api.GetObjectList();
+ System.Collections.Generic.List<LiteGameObject> objects = api.GetObjectList();
  //Test whether the list is null
  Assert.IsNotNull(objects, "GetObjectList failed!");
  //Print a full object list
@@ -1869,7 +1869,7 @@ Returns a deserialized object of type T. If T and the type of the returned objec
 ##### Example
 
 ```
-api.CallMethod&lt;int&gt;("//*[@name='Canvas']/fn:component('CustomScript')", "DoMath", new object[] { 1, 2 });
+api.CallMethod<int>("//*[@name='Canvas']/fn:component('CustomScript')", "DoMath", new object[] { 1, 2 });
 ```
 
 <a name='M-gdio-unity_api-v2-CoApiClient-CaptureScreenshot-System-String,System-Boolean,System-Boolean,System-Int32-'></a>
@@ -2273,7 +2273,7 @@ Returns an object of type T for the value or throws an [Exception](https://docs.
 // Searches for an object named 'HiddenCube' which is invisible in the scene, and checks whether the "Active" checkbox is enabled.
 
 ```
-bool invisCube = api.GetObjectFieldValue&lt;bool&gt;("//*[@name='HiddenCube']/fn:component('UnityEngine.Behaviour')/@isActiveAndEnabled");
+bool invisCube = api.GetObjectFieldValue<bool>("//*[@name='HiddenCube']/fn:component('UnityEngine.Behaviour')/@isActiveAndEnabled");
 Assert.IsTrue(invisCube == false, "The invisible cube isn't active"); //Passes if the object is Active in the scene
 ```
 
@@ -2307,7 +2307,7 @@ Returns an object of type T for the value or throws an [Exception](https://docs.
 // Searches for an object named 'HiddenCube' which is invisible in the scene, and checks whether the "Active" checkbox is enabled.
 
 ```
-bool invisCube = api.GetObjectFieldValue&lt;bool&gt;("//*[@name='HiddenCube']/fn:component('UnityEngine.Behaviour')", "isActiveAndEnabled");
+bool invisCube = api.GetObjectFieldValue<bool>("//*[@name='HiddenCube']/fn:component('UnityEngine.Behaviour')", "isActiveAndEnabled");
 Assert.IsTrue(invisCube == false, "The invisible cube isn't active"); //Passes if the object is Active in the scene
 ```
 
@@ -2333,7 +2333,7 @@ This method returns a [IList](https://docs.microsoft.com/en-us/dotnet/api/System
 //Print a list of the scene objects
 
 ```
- System.Collections.Generic.List&lt;LiteGameObject&gt; objects = api.GetObjectList();
+ System.Collections.Generic.List<LiteGameObject> objects = api.GetObjectList();
  //Test whether the list is null
  Assert.IsNotNull(objects, "GetObjectList failed!");
  //Print a full object list
