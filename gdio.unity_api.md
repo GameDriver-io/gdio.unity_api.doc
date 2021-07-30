@@ -369,12 +369,11 @@ Use this function to perform in-game mouse-clicks combined with key press operat
 | position | [gdio.common.objects.Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') | The [Vector2](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector2 'gdio.common.objects.Vector2') position to perform the mouse click. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
-| keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
 | modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
-| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in game.
-If this delay is longer than that of the frame count for all of the key presses and click operations, the resulting behavior may not be what the user intends. |
-| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object. This is needed when a delay is required to register the modifier keys have been pressed in game. If this delay is longer than that of the frame count for all of the key presses and click operations, the resulting behavior may not be what the user intends. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed. Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
 
@@ -402,9 +401,8 @@ Use this function to perform in game mouse-clicks combined with key press operat
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
 | keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
 | modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
-| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
-If this delay is longer than that of the frame count for all of the key presses and click operations, the resulting behavior may not be what the user intends. |
+| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object. This is needed when a delay is required to register the modifier keys have been pressed in the game. If this delay is longer than that of the frame count for all of the key presses and click operations, the resulting behavior may not be what the user intends. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
@@ -458,10 +456,9 @@ Use this function to interact with an in-game object using mouse-clicks combined
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
 | keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
 | modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
-| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
-If this delay is longer than that of the frame count for all of the key presses and click operations, the resulting behavior may not be what the user intends. |
-| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickObjectEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object. This is needed when a delay is required to register the modifier keys have been pressed in the game. If this delay is longer than that of the frame count for all of the key presses and click operations, the resulting behavior may not be what the user intends. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickObjectEx request was processed. Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
 
@@ -664,9 +661,8 @@ TRUE if the GameDriver agent successfully processed the request.
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
 | keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
 | modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
-| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
-If this delay is longer than the frame count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
+| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object. This is needed when a delay is required to register the modifier keys have been pressed in the game. If this delay is longer than the frame count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
@@ -699,12 +695,11 @@ TRUE if the GameDriver agent successfully processed the request.
 | y | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y coordinate of the game to double click in Screen space. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific position. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
-| keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
 | modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
-| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
-If this delay is longer than the frame count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
-| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object. This is needed when a delay is required to register the modifier keys have been pressed in the game. If this delay is longer than the frame count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed. Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
 
@@ -765,10 +760,9 @@ TRUE if the GameDriver agent successfully processed the request.
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
 | keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
 | modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
-| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
-If this delay is longer than the frame count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
-| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the DoubleClickObjectEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object. This is needed when a delay is required to register the modifier keys have been pressed in the game. If this delay is longer than the frame count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the DoubleClickObjectEx request was processed. Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
 
@@ -896,11 +890,11 @@ This method has no parameters.
 
 ##### Summary
 
-Collision events are stored in a FIFO queue.  Calling this method returns the next collision event that was returned.
+PREVIEW: Collision events are stored in a FIFO queue. Calling this method returns the next collision event that was returned.
 
 ##### Returns
 
-
+A gdio.common.objects.Collision object.
 
 ##### Parameters
 
@@ -1014,11 +1008,11 @@ Assert.IsTrue(invisCube == false, "The invisible cube isn't active"); //Passes i
 
 ##### Summary
 
-This method returns of a list of all GameObjects as returned by [](#!-UnityEngine-GameObject-FindObjectsOfType-Type- 'UnityEngine.GameObject.FindObjectsOfType(Type)'), where Type is UnityEngine.GameObject./>
+This method returns of a list of all GameObjects as returned by [](#!-UnityEngine-GameObject-FindObjectsOfType-Type- 'UnityEngine.GameObject.FindObjectsOfType(Type)'), where Type is [UnityEngine.GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html).
 
 ##### Returns
 
-This method returns a [IList](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IList 'System.Collections.IList') of [LiteGameObject](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-LiteGameObject 'gdio.common.objects.LiteGameObject').  LiteGameObject is a slimmer representation of UnityEngine.GameObject
+This method returns a [IList](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IList 'System.Collections.IList') of [LiteGameObject](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-LiteGameObject 'gdio.common.objects.LiteGameObject'). LiteGameObject is a slimmer representation of [UnityEngine.GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html).
 
 ##### Parameters
 
@@ -1062,7 +1056,7 @@ The Vector3 position of the specific object.
 | ---- | ---- | ----------- |
 | objectHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath of the object to return the position of. |
 | cordSpace | [gdio.common.objects.CoordinateConversion](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-CoordinateConversion 'gdio.common.objects.CoordinateConversion') | The coorindate space conversion to perform on the position before returning it. See [CoordinateConversion](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-CoordinateConversion 'gdio.common.objects.CoordinateConversion') for more information. |
-| cameraHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchPath to the Camera GameObject to use.  The default is string.Empty, which uses Camera.main/> |
+| cameraHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchPath to the Camera GameObject to use. The default is string.Empty, which uses [Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html). |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
@@ -1750,12 +1744,11 @@ api.WaitForCollisionEvent(eventId);
 
 ##### Summary
 
-Wait for a collision event to fire on an element that is being monitored for collisions. If the method has been called before, there is the potential that another event was recieved before waiting on the event again.  
-Check with [GetNextCollisionEvent<T>](#M-gdio-unity_api-v2-ApiClient-GetNextCollisionEvent<T>-System-String- 'gdio.unity_api.v2.ApiClient.GetNextCollisionEvent<T>(System.String)') to see if it returns null to see if an event was missed.
+Wait for a collision event to fire on an element that is being monitored for collisions. If the method has been called before, there is the potential that another event was recieved before waiting on the event again. Check with [GetNextCollisionEvent<T>](#M-gdio-unity_api-v2-ApiClient-GetNextCollisionEvent<T>-System-String- 'gdio.unity_api.v2.ApiClient.GetNextCollisionEvent<T>(System.String)') to see if it returns null to see if an event was missed.
 
 ##### Returns
 
-The collision messages. TODO: Return a translated collisionInfo object
+The collision messages.
 
 ##### Parameters
 
@@ -1779,7 +1772,7 @@ Wait for an Empty Input event to be received.
 
 ##### Returns
 
-
+TRUE when the Empty Input event is received.
 
 ##### Parameters
 
@@ -1957,8 +1950,7 @@ Use this function to perform in-game mouse-clicks combined with key press operat
 | keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
 | modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
 | modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in game.
-If this delay is longer than that of the frame count for all of the key presses and click operations, the resulting behavior may not be what the user intends. |
+| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in game. If this delay is longer than that of the frame count for all of the key presses and click operations, the resulting behavior may not be what the user intends. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
@@ -1987,10 +1979,9 @@ Use this function to perform in game mouse-clicks combined with key press operat
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
 | keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
 | modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
-| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
-If this delay is longer than that of the frame count for all of the key presses and click operations, the resulting behavior may not be what the user intends. |
-| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+| modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object. This is needed when a delay is required to register the modifier keys have been pressed in the game. If this delay is longer than that of the frame count for all of the key presses and click operations, the resulting behavior may not be what the user intends. |
+| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickEx request was processed. Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
 
@@ -2044,8 +2035,7 @@ Use this function to interact with an in-game object using mouse-clicks combined
 | keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
 | modifiers | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') modifier keys to press during the click operation. |
 | modifiersNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the modifier keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object.  This is needed when a delay is required to register the modifier keys have been pressed in the game.
-If this delay is longer than that of the frame count for all of the key presses and click operations, the resulting behavior may not be what the user intends. |
+| delayAfterModifiersMsec | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | Total time in milliseconds to wait after pressing modifier keys, before clicking the object. This is needed when a delay is required to register the modifier keys have been pressed in the game. If this delay is longer than that of the frame count for all of the key presses and click operations, the resulting behavior may not be what the user intends. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the ClickObjectEx request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ##### Example
@@ -2198,11 +2188,11 @@ This method has no parameters.
 
 ##### Summary
 
-Collision events are stored in a FIFO queue.  Calling this method returns the next collision event that was returned.
+PREVIEW: Collision events are stored in a FIFO queue. Calling this method returns the next collision event that was returned.
 
 ##### Returns
 
-
+A gdio.common.objects.Collision object.
 
 ##### Parameters
 
@@ -2214,7 +2204,7 @@ Collision events are stored in a FIFO queue.  Calling this method returns the ne
 
 | Name | Description |
 | ---- | ----------- |
-| T |  |
+| T | The Type of the field or property to be inspected. |
 
 <a name='M-gdio-unity_api-v2-CoApiClient-GetObjectDistance-System-String,System-String,System-Int32-'></a>
 ### GetObjectDistance(objectA_HierarchyPath,objectB_HierarchyPath,timeout) `method`
@@ -2316,11 +2306,11 @@ Assert.IsTrue(invisCube == false, "The invisible cube isn't active"); //Passes i
 
 ##### Summary
 
-This method returns of a list of all GameObjects as returned by [](#!-UnityEngine-GameObject-FindObjectsOfType-Type- 'UnityEngine.GameObject.FindObjectsOfType(Type)'), where Type is UnityEngine.GameObject./>
+This method returns of a list of all GameObjects as returned by [](#!-UnityEngine-GameObject-FindObjectsOfType-Type- 'UnityEngine.GameObject.FindObjectsOfType(Type)'), where Type is [UnityEngine.GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html).
 
 ##### Returns
 
-This method returns a [IList](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IList 'System.Collections.IList') of [LiteGameObject](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-LiteGameObject 'gdio.common.objects.LiteGameObject').  LiteGameObject is a slimmer representation of UnityEngine.GameObject
+This method returns a [IList](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IList 'System.Collections.IList') of [LiteGameObject](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-LiteGameObject 'gdio.common.objects.LiteGameObject'). LiteGameObject is a slimmer representation of [UnityEngine.GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html).
 
 ##### Parameters
 
@@ -2635,11 +2625,11 @@ Returns an array of [RaycastResult](/gdio.common.objects.md#T-gdio-common-object
 
 ##### Summary
 
-Register a collision monitor to recieve collision events on an object.
+PREVIEW: Register a collision monitor to recieve collision events on an object.
 
 ##### Returns
 
-String returned is the event identifier
+String returned is the event identifier.
 
 ##### Parameters
 
@@ -2982,7 +2972,7 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 ##### Summary
 
-Unregister the monitoring of collision events on a GameObject that has been previously registered for monitoring.
+PREVIEW: Unregister the monitoring of collision events on a GameObject that has been previously registered for monitoring.
 
 ##### Parameters
 
@@ -3013,7 +3003,7 @@ Wait for a fixed period of seconds.
 
 ##### Summary
 
-Wait for a collision event to fire on an element that is being monitored for collisions.
+PREVIEW: Wait for a collision event to fire on an element that is being monitored for collisions.
 
 ##### Parameters
 
@@ -3033,12 +3023,11 @@ api.WaitForCollisionEvent(eventId);
 
 ##### Summary
 
-Wait for a collision event to fire on an element that is being monitored for collisions. If the method has been called before, there is the potential that another event was recieved before waiting on the event again.  
-Check with [GetNextCollisionEvent<T>](#M-gdio-unity_api-v2-CoApiClient-GetNextCollisionEvent<T>-System-String- 'gdio.unity_api.v2.CoApiClient.GetNextCollisionEvent<T>(System.String)') to see if it returns null to see if an event was missed.
+PREVIEW: Wait for a collision event to fire on an element that is being monitored for collisions. If the method has been called before, there is the potential that another event was recieved before waiting on the event again. Check with [GetNextCollisionEvent<T>](#M-gdio-unity_api-v2-CoApiClient-GetNextCollisionEvent<T>-System-String- 'gdio.unity_api.v2.CoApiClient.GetNextCollisionEvent<T>(System.String)') to see if it returns null to see if an event was missed.
 
 ##### Returns
 
-The collision messages. TODO: Return a translated collisionInfo object
+The collision messages.
 
 ##### Parameters
 
