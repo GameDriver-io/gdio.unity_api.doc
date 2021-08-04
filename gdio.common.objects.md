@@ -228,7 +228,7 @@ The enumeration value of the collision type [COLLISION_EVENT](#T-gdio-common-obj
 
 ##### Summary
 
-The HierarchyPath of the GameObject that received the OnCollision event.
+The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) of the GameObject that received the OnCollision event.
 
 <a name='F-gdio-common-objects-Collision-Timestamp'></a>
 ### Timestamp `constants`
@@ -461,7 +461,7 @@ The lite version of the [GameObject](https://docs.unity3d.com/ScriptReference/Ga
 
 ##### Summary
 
-The HierarchyPath of the component.
+The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) of the component.
 
 <a name='F-gdio-common-objects-LiteComponent-tag'></a>
 ### tag `constants`
@@ -521,7 +521,7 @@ The Hash Code of the object.
 
 ##### Summary
 
-The HierarchyPath to the GameObject.
+The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) to the GameObject.
 
 <a name='F-gdio-common-objects-LiteGameObject-localPosition'></a>
 ### localPosition `constants`
