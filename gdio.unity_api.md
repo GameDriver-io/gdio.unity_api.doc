@@ -854,7 +854,7 @@ This method returns the details of the game that the API client is connected to.
 
 ##### Returns
 
-[GameConnectionDetails](#T-gdio-unity_api-v2-GameConnectionDetails 'gdio.unity_api.v2.GameConnectionDetails')
+[GameConnectionDetails](/gdio.common.objects.md#gameconnectiondetails-type 'gdio.unity_api.v2.GameConnectionDetails')
 
 ##### Parameters
 
