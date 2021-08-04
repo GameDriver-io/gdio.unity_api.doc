@@ -249,7 +249,7 @@ Returns a boolean based on the successful execution of the return type void, met
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object that the script component is attached to. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the object that the script component is attached to. |
 | methodName | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The name of the method to call. |
 | arguments | [System.Object[]](https://docs.microsoft.com/en-us/dotnet/api/System.Object[] 'System.Object[]') | An array of objects to pass as arguments to the method. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the request was processed. |
@@ -276,7 +276,7 @@ Returns a deserialized object of type T. If T and the type of the returned objec
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object that the script component is attached to. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the object that the script component is attached to. |
 | methodName | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The name of the method to call. |
 | arguments | [System.Object[]](https://docs.microsoft.com/en-us/dotnet/api/System.Object[] 'System.Object[]') | An array of objects to pass as arguments to the method. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the request was processed. |
@@ -427,7 +427,7 @@ Use this function to interact with an in-game object using mouse-clicks.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the GameObject to perform a click on. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the GameObject to perform a click on. |
 | frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of frames to hold the keys down before clicking. Total press frame count is keyFrames + frames.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
@@ -451,7 +451,7 @@ Use this function to interact with an in-game object using mouse-clicks combined
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the GameObject to perform a click on. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the GameObject to perform a click on. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
 | keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
@@ -558,7 +558,7 @@ api.DisableHooks(HookingObject.ALL);
 
 ##### Summary
 
-Disable the use of object caching when doing HierarchyPath object resolution.
+Disable the use of object caching when doing [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) object resolution.
 
 ##### Returns
 
@@ -727,7 +727,7 @@ TRUE if the GameDriver agent successfully processed the request.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the double click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the GameObject to perform a double click on. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the GameObject to perform a double click on. |
 | frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to double-click the specific object. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the DoubleClickObject request was processed.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
@@ -755,7 +755,7 @@ TRUE if the GameDriver agent successfully processed the request.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the double click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the GameObject to perform a double-click on. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the GameObject to perform a double-click on. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to double-click the specific object. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
 | keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
@@ -804,8 +804,7 @@ api.EnableHooks(HookingObject.ALL);
 
 ##### Summary
 
-Enable the use of object caching when performing HierarchyPath object resolution.  Object caching is per HierarchyPath stored in a [IDictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IDictionary 'System.Collections.IDictionary'). If a matching HierarchyPath is already in the dictionary, then the stored object is returned.
-The only way to update a cached reference is for the reference to be garbage collected or flush the cache with [FlushObjectLookupCache](#M-gdio-unity_api-v2-ApiClient-FlushObjectLookupCache-System-Int32- 'gdio.unity_api.v2.ApiClient.FlushObjectLookupCache(System.Int32)').
+Enable the use of object caching when performing [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) object resolution. Object caching is per HierarchyPath stored in a [IDictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IDictionary 'System.Collections.IDictionary'). If a matching HierarchyPath is already in the dictionary, then the stored object is returned. The only way to update a cached reference is for the reference to be garbage collected or flush the cache with [FlushObjectLookupCache](#M-gdio-unity_api-v2-ApiClient-FlushObjectLookupCache-System-Int32- 'gdio.unity_api.v2.ApiClient.FlushObjectLookupCache(System.Int32)').
 
 ##### Returns
 
@@ -923,8 +922,8 @@ Returns the distance between the two objects as a float.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| objectA_HierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the first GameObject. |
-| objectB_HierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchYpath for the second GameObject. |
+| objectA_HierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the first GameObject. |
+| objectB_HierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the second GameObject. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
@@ -984,7 +983,7 @@ Returns an object of type T for the value or throws an [Exception](https://docs.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath of the object and field/property to be inspected. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) of the object and field/property to be inspected. |
 | fieldOrPropertyName | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The field/property name to retreieve the value for/ |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
@@ -1054,7 +1053,7 @@ The Vector3 position of the specific object.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| objectHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath of the object to return the position of. |
+| objectHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) of the object to return the position of. |
 | cordSpace | [gdio.common.objects.CoordinateConversion](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-CoordinateConversion 'gdio.common.objects.CoordinateConversion') | The coorindate space conversion to perform on the position before returning it. See [CoordinateConversion](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-CoordinateConversion 'gdio.common.objects.CoordinateConversion') for more information. |
 | cameraHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchPath to the Camera GameObject to use. The default is string.Empty, which uses [Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html). |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
@@ -1214,7 +1213,7 @@ TRUE if the requests was successfully processed by the GameDriver agent.
 
 ##### Summary
 
-Move the mouse to the center of a specific object, identified by the HierarchyPath.
+Move the mouse to the center of a specific object, identified by the [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath).
 
 ##### Returns
 
@@ -1224,7 +1223,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| objectHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath to move the mouse pointer to. |
+| objectHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) to move the mouse pointer to. |
 | frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to compelte the mouse move over. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | If TRUE, wait for the object to exist so that mouse move can complete successfully. |
 | waitForEmptyInput | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the empty input event to be returned from the GameDriver agent, before returning from the method. |
@@ -1286,7 +1285,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| navAgentHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath to the NavAgent. |
+| navAgentHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) to the NavAgent. |
 | destination | [gdio.common.objects.Vector3](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector3 'gdio.common.objects.Vector3') | The destination vector to move to. |
 | waitForMoveToComplete | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the NavAgent move-to operation to complete before the method returns. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
@@ -1314,7 +1313,7 @@ Returns an array of [RaycastResult](/gdio.common.objects.md#T-gdio-common-object
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | raycastPoint | [gdio.common.objects.Vector3](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector3 'gdio.common.objects.Vector3') | The vector to perform a raycast to. |
-| cameraHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the  UnityEngine.Camera to use as a Raycast reference.  If the Camera is string.Empty, the Camera.main is used |
+| cameraHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the  UnityEngine.Camera to use as a Raycast reference.  If the Camera is string.Empty, the Camera.main is used |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
@@ -1355,7 +1354,7 @@ String returned is the event identifier
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the object to rotate. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
@@ -1369,7 +1368,7 @@ api.RegisterCollisionMonitor("//*[@name='Cylinder']");
 
 ##### Summary
 
-Rotate an object defined by the HierarchyPath and rotated by a Quaternion. for more information.
+Rotate an object defined by the [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) and rotated by a Quaternion. for more information.
 
 ##### Returns
 
@@ -1379,7 +1378,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the object to rotate. |
 | quaternion | [gdio.common.objects.Quaternion](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Quaternion 'gdio.common.objects.Quaternion') | The quaternion value to manipulate the object. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
@@ -1395,7 +1394,7 @@ api.RotateObject("//*[@name='Cylinder']", new Quaternion(0, 0, 2, 2), true);
 
 ##### Summary
 
-Rotate an object defined by the HierarchyPath and rotated by Eulers. for more information.
+Rotate an object defined by the [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) and rotated by Eulers. for more information.
 
 ##### Returns
 
@@ -1405,7 +1404,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the object to rotate. |
 | eulers | [gdio.common.objects.Vector3](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector3 'gdio.common.objects.Vector3') | The Eulers vector to manipulate the object. |
 | relativeTo | [gdio.common.objects.Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') | The [Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
@@ -1423,7 +1422,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Summary
 
-Rotate an object defined by the HierarchyPath and rotated by the x, y, and z angles relative to the Space
+Rotate an object defined by the [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) and rotated by the x, y, and z angles relative to the Space.
 
 ##### Returns
 
@@ -1433,7 +1432,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the object to rotate. |
 | xAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The X angle value to rotate. |
 | yAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y angle value to rotate. |
 | zAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Z angle value to rotate. |
@@ -1453,7 +1452,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Summary
 
-Rotate an object defined by the HierarchyPath and rotated by the axis and angle, relative to the Space
+Rotate an object defined by the [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) and rotated by the axis and angle, relative to the Space
 
 ##### Returns
 
@@ -1463,7 +1462,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the object to rotate. |
 | axis | [gdio.common.objects.Vector3](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector3 'gdio.common.objects.Vector3') |  |
 | angle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') |  |
 | relativeTo | [gdio.common.objects.Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') | The [Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
@@ -1492,7 +1491,7 @@ TRUE if the GameDriver agent was able to successfully set the InputField text.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath to the InputField or TMP_InputField. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) to the InputField or TMP_InputField. |
 | value | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The text value to set in the field. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | If TRUE, wait for the object to exist if it doesn't. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The time to wait for the object to exist. |
@@ -1519,7 +1518,7 @@ TRUE if the field/property was successfully set to the value.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath to the object to set the field/property value. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) to the object to set the field/property value. |
 | fieldOrPropertyName | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The field or property name to set the value of. |
 | value | [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.Object 'System.Object') | The value to set for the field/property. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | If TRUE, wait for the object to exist if it doesn't. |
@@ -1602,7 +1601,7 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath of the object to tap. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) of the object to tap. |
 | tapCount | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of taps that should be registered. |
 | frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
@@ -1795,7 +1794,7 @@ TRUE if the object exists within the alloted timeout.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath of the object. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) of the object. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The amount of time to wait for the object to exist. |
 
 ##### Example
@@ -1819,7 +1818,7 @@ TRUE if the object exists with the specified value in the alloted timeout.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath to the object. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) to the object. |
 | fieldOrPropertyName | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The field/property name for inspection. |
 | value | [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.Object 'System.Object') | The value to wait for. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | If TRUE, wait for the object to exist if it doesn't. |
@@ -1854,7 +1853,7 @@ Returns a deserialized object of type T. If T and the type of the returned objec
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object that the script component is attached to. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the object that the script component is attached to. |
 | methodName | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The name of the method to call. |
 | arguments | [System.Object[]](https://docs.microsoft.com/en-us/dotnet/api/System.Object[] 'System.Object[]') | An array of objects to pass as arguments to the method. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a response that the request was processed. |
@@ -2005,7 +2004,7 @@ Use this function to interact with an in-game object using mouse-clicks.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the GameObject to perform a click on. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the GameObject to perform a click on. |
 | frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of frames to hold the keys down before clicking. Total press frame count is keyFrames + frames.  Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
@@ -2029,7 +2028,7 @@ Use this function to interact with an in-game object using mouse-clicks combined
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | buttonId | [gdio.common.objects.MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons') | The mouse button to use for the click operation.  See [MouseButtons](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-MouseButtons 'gdio.common.objects.MouseButtons'). |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the GameObject to perform a click on. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the GameObject to perform a click on. |
 | clickFrameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to click the specific object. |
 | keys | [gdio.unity_api.KeyCode[]](#T-gdio-unity_api-KeyCode[] 'gdio.unity_api.KeyCode[]') | An array of [KeyCode](#T-gdio-unity_api-KeyCode 'gdio.unity_api.KeyCode') keys to press during the click operation. |
 | keysNumberOfFrames | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to press the keys parameter down.  This parameter is not additive to the total count and is automatically accumulated by the function call. |
@@ -2117,8 +2116,7 @@ api.EnableHooks(HookingObject.ALL);
 
 ##### Summary
 
-Enable the use of object caching when performing HierarchyPath object resolution.  Object caching is per HierarchyPath stored in a [IDictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IDictionary 'System.Collections.IDictionary'). If a matching HierarchyPath is already in the dictionary, then the stored object is returned.
-The only way to update a cached reference is for the reference to be garbage collected or flush the cache with [FlushObjectLookupCache](#M-gdio-unity_api-v2-ApiClient-FlushObjectLookupCache-System-Int32- 'gdio.unity_api.v2.ApiClient.FlushObjectLookupCache(System.Int32)').
+Enable the use of object caching when performing [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) object resolution. Object caching is per HierarchyPath stored in a [IDictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IDictionary 'System.Collections.IDictionary'). If a matching HierarchyPath is already in the dictionary, then the stored object is returned. The only way to update a cached reference is for the reference to be garbage collected or flush the cache with [FlushObjectLookupCache](#M-gdio-unity_api-v2-ApiClient-FlushObjectLookupCache-System-Int32- 'gdio.unity_api.v2.ApiClient.FlushObjectLookupCache(System.Int32)').
 
 ##### Returns
 
@@ -2221,7 +2219,7 @@ Returns the distance between the two objects as a float.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| objectA_HierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the first GameObject. |
+| objectA_HierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the first GameObject. |
 | objectB_HierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchYpath for the second GameObject. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
@@ -2249,7 +2247,7 @@ Returns an object of type T for the value or throws an [Exception](https://docs.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath of the object and field/property to be inspected. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) of the object and field/property to be inspected. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Generic Types
@@ -2282,7 +2280,7 @@ Returns an object of type T for the value or throws an [Exception](https://docs.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath of the object and field/property to be inspected. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) of the object and field/property to be inspected. |
 | fieldOrPropertyName | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The field/property name to retreieve the value for/ |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
@@ -2352,7 +2350,7 @@ The Vector3 position of the specific object.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| objectHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath of the object to return the position of. |
+| objectHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) of the object to return the position of. |
 | cordSpace | [gdio.common.objects.CoordinateConversion](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-CoordinateConversion 'gdio.common.objects.CoordinateConversion') | The coorindate space conversion to perform on the position before returning it. See [CoordinateConversion](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-CoordinateConversion 'gdio.common.objects.CoordinateConversion') for more information. |
 | cameraHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchPath to the Camera GameObject to use.  The default is string.Empty, which uses Camera.main/> |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
@@ -2494,7 +2492,7 @@ TRUE if the requests was successfully processed by the GameDriver agent.
 
 ##### Summary
 
-Move the mouse to the center of a specific object, identified by the HierarchyPath.
+Move the mouse to the center of a specific object, identified by the [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath).
 
 ##### Returns
 
@@ -2504,7 +2502,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| objectHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath to move the mouse pointer to. |
+| objectHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) to move the mouse pointer to. |
 | frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to compelte the mouse move over. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | If TRUE, wait for the object to exist so that mouse move can complete successfully. |
 | waitForEmptyInput | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the empty input event to be returned from the GameDriver agent, before returning from the method. |
@@ -2566,7 +2564,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| navAgentHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath to the NavAgent. |
+| navAgentHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) to the NavAgent. |
 | destination | [gdio.common.objects.Vector3](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector3 'gdio.common.objects.Vector3') | The destination vector to move to. |
 | waitForMoveToComplete | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the NavAgent move-to operation to complete before the method returns. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
@@ -2594,7 +2592,7 @@ Returns an array of [RaycastResult](/gdio.common.objects.md#T-gdio-common-object
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | raycastPoint | [gdio.common.objects.Vector3](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector3 'gdio.common.objects.Vector3') | The vector to perform a raycast to. |
-| cameraHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the  UnityEngine.Camera to use as a Raycast reference.  If the Camera is string.Empty, the Camera.main is used |
+| cameraHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the UnityEngine.Camera to use as a Raycast reference.  If the Camera is string.Empty, the Camera.main is used |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
@@ -2635,7 +2633,7 @@ String returned is the event identifier.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the object to rotate. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
@@ -2649,7 +2647,7 @@ api.RegisterCollisionMonitor("//*[@name='Cylinder']");
 
 ##### Summary
 
-Rotate an object defined by the HierarchyPath and rotated by a Quaternion. for more information.
+Rotate an object defined by the [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) and rotated by a Quaternion. for more information.
 
 ##### Returns
 
@@ -2659,7 +2657,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the object to rotate. |
 | quaternion | [gdio.common.objects.Quaternion](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Quaternion 'gdio.common.objects.Quaternion') | The quaternion value to manipulate the object. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
@@ -2675,7 +2673,7 @@ api.RotateObject("//*[@name='Cylinder']", new Quaternion(0, 0, 2, 2), true);
 
 ##### Summary
 
-Rotate an object defined by the HierarchyPath and rotated by Eulers. for more information.
+Rotate an object defined by the [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) and rotated by Eulers. for more information.
 
 ##### Returns
 
@@ -2685,7 +2683,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the object to rotate. |
 | eulers | [gdio.common.objects.Vector3](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector3 'gdio.common.objects.Vector3') | The Eulers vector to manipulate the object. |
 | relativeTo | [gdio.common.objects.Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') | The [Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | Wait for the object to exist if it doesn't. |
@@ -2703,7 +2701,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Summary
 
-Rotate an object defined by the HierarchyPath and rotated by the x, y, and z angles relative to the Space
+Rotate an object defined by the [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) and rotated by the x, y, and z angles relative to the Space
 
 ##### Returns
 
@@ -2713,7 +2711,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the object to rotate. |
 | xAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The X angle value to rotate. |
 | yAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Y angle value to rotate. |
 | zAngle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') | The Z angle value to rotate. |
@@ -2733,7 +2731,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Summary
 
-Rotate an object defined by the HierarchyPath and rotated by the axis and angle, relative to the Space
+Rotate an object defined by the [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) and rotated by the axis and angle, relative to the Space
 
 ##### Returns
 
@@ -2743,7 +2741,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath for the object to rotate. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the object to rotate. |
 | axis | [gdio.common.objects.Vector3](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector3 'gdio.common.objects.Vector3') |  |
 | angle | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') |  |
 | relativeTo | [gdio.common.objects.Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') | The [Space](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Space 'gdio.common.objects.Space') to perform the rotation relative to. |
@@ -2772,7 +2770,7 @@ TRUE if the GameDriver agent was able to successfully set the InputField text.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath to the InputField or TMP_InputField. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) to the InputField or TMP_InputField. |
 | value | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The text value to set in the field. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | If TRUE, wait for the object to exist if it doesn't. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The time to wait for the object to exist. |
@@ -2799,7 +2797,7 @@ TRUE if the field/property was successfully set to the value.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath to the object to set the field/property value. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) to the object to set the field/property value. |
 | fieldOrPropertyName | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The field or property name to set the value of. |
 | value | [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.Object 'System.Object') | The value to set for the field/property. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | If TRUE, wait for the object to exist if it doesn't. |
@@ -2883,7 +2881,7 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath of the object to tap. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) of the object to tap. |
 | tapCount | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of taps that should be registered. |
 | frameCount | [System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64') | The number of frames to complete the tap input over. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
@@ -3089,7 +3087,7 @@ Returns TRUE if the object exists within the alloted timeout.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath of the object. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) of the object. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The amount of time to wait for the object to exist. |
 
 <a name='M-gdio-unity_api-v2-CoApiClient-WaitForObjectValue-System-String,System-String,System-Object,System-Boolean,System-Int32,gdio-plugin-serializer-ICustomSerializer-'></a>
@@ -3107,7 +3105,7 @@ TRUE if the object exists with the specified value in the alloted timeout.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The HierarchyPath to the object. |
+| hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) to the object. |
 | fieldOrPropertyName | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The field/property name for inspection. |
 | value | [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.Object 'System.Object') | The value to wait for. |
 | waitForObject | [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean') | If TRUE, wait for the object to exist if it doesn't. |
