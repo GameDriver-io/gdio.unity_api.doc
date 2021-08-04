@@ -1313,7 +1313,7 @@ Returns an array of [RaycastResult](/gdio.common.objects.md#T-gdio-common-object
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | raycastPoint | [gdio.common.objects.Vector3](/gdio.common.objects.md#T-gdio-common-objects-MouseButtons-Vector3 'gdio.common.objects.Vector3') | The vector to perform a raycast to. |
-| cameraHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the  UnityEngine.Camera to use as a Raycast reference.  If the Camera is string.Empty, the Camera.main is used |
+| cameraHierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) for the [UnityEngine.Camera](https://docs.unity3d.com/ScriptReference/Camera.html) to use as a Raycast reference. If the Camera is string.Empty, the Camera.main is used |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ##### Example
