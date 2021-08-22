@@ -37,7 +37,7 @@
   - [FlushObjectLookupCache(timeout)](#M-gdio-unity_api-v2-ApiClient-FlushObjectLookupCache-System-Int32- 'gdio.unity_api.v2.ApiClient.FlushObjectLookupCache(System.Int32)')
   - [GetConnectedGameDetails()](#M-gdio-unity_api-v2-ApiClient-GetConnectedGameDetails 'gdio.unity_api.v2.ApiClient.GetConnectedGameDetails')
   - [GetLastFPS()](#M-gdio-unity_api-v2-ApiClient-GetLastFPS 'gdio.unity_api.v2.ApiClient.GetLastFPS')
-  - [GetNextCollisionEvent<T>(eventId)](#M-gdio-unity_api-v2-ApiClient-GetNextCollisionEvent<T>-System-String- 'gdio.unity_api.v2.ApiClient.GetNextCollisionEvent<T>(System.String)')
+  - [GetNextCollisionEvent(eventId)](#M-gdio-unity_api-v2-ApiClient-GetNextCollisionEvent-System-String- 'gdio.unity_api.v2.ApiClient.GetNextCollisionEvent(System.String)')
   - [GetObjectDistance(objectA_HierarchyPath,objectB_HierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectDistance-System-String,System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectDistance(System.String,System.String,System.Int32)')
   - [GetObjectFieldValue<T>(hierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue<T>-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectFieldValue<T>(System.String,System.Int32)')
   - [GetObjectFieldValue<T>(hierarchyPath,fieldOrPropertyName,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue<T>-System-String,System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectFieldValue<T>(System.String,System.String,System.Int32)')
@@ -68,7 +68,7 @@
   - [UnregisterCollisionMonitor(hierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-UnregisterCollisionMonitor-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.UnregisterCollisionMonitor(System.String,System.Int32)')
   - [Wait(milliSeconds)](#M-gdio-unity_api-v2-ApiClient-Wait-System-Int32- 'gdio.unity_api.v2.ApiClient.Wait(System.Int32)')
   - [WaitForCollisionEvent(eventId,timeout)](#M-gdio-unity_api-v2-ApiClient-WaitForCollisionEvent-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.WaitForCollisionEvent(System.String,System.Int32)')
-  - [WaitForCollisionEvent<T>(eventId,timeout)](#M-gdio-unity_api-v2-ApiClient-WaitForCollisionEvent<T>-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.WaitForCollisionEvent<T>(System.String,System.Int32)')
+  - [WaitForCollisionEvent(eventId,timeout)](#M-gdio-unity_api-v2-ApiClient-WaitForCollisionEvent-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.WaitForCollisionEvent(System.String,System.Int32)')
   - [WaitForEmptyInput(timeout)](#M-gdio-unity_api-v2-ApiClient-WaitForEmptyInput-System-Int32- 'gdio.unity_api.v2.ApiClient.WaitForEmptyInput(System.Int32)')
   - [WaitForObject(hierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-WaitForObject-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.WaitForObject(System.String,System.Int32)')
   - [WaitForObjectValue(hierarchyPath,fieldOrPropertyName,value,waitForObject,timeout,valueSerializer)](#M-gdio-unity_api-v2-ApiClient-WaitForObjectValue-System-String,System-String,System-Object,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.WaitForObjectValue(System.String,System.String,System.Object,System.Boolean,System.Int32)')
@@ -87,7 +87,7 @@
   - [EnableObjectCaching(timeout)](#M-gdio-unity_api-v2-CoApiClient-EnableObjectCaching-System-Int32- 'gdio.unity_api.v2.CoApiClient.EnableObjectCaching(System.Int32)')
   - [FlushObjectLookupCache(timeout)](#M-gdio-unity_api-v2-CoApiClient-FlushObjectLookupCache-System-Int32- 'gdio.unity_api.v2.CoApiClient.FlushObjectLookupCache(System.Int32)')
   - [GetLastFPS()](#M-gdio-unity_api-v2-CoApiClient-GetLastFPS 'gdio.unity_api.v2.CoApiClient.GetLastFPS')
-  - [GetNextCollisionEvent<T>(eventId)](#M-gdio-unity_api-v2-CoApiClient-GetNextCollisionEvent<T>-System-String- 'gdio.unity_api.v2.CoApiClient.GetNextCollisionEvent<T>(System.String)')
+  - [GetNextCollisionEvent(eventId)](#M-gdio-unity_api-v2-CoApiClient-GetNextCollisionEvent-System-String- 'gdio.unity_api.v2.CoApiClient.GetNextCollisionEvent(System.String)')
   - [GetObjectDistance(objectA_HierarchyPath,objectB_HierarchyPath,timeout)](#M-gdio-unity_api-v2-CoApiClient-GetObjectDistance-System-String,System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.GetObjectDistance(System.String,System.String,System.Int32)')
   - [GetObjectFieldValue<T>(hierarchyPath,timeout)](#M-gdio-unity_api-v2-CoApiClient-GetObjectFieldValue<T>-System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.GetObjectFieldValue<T>(System.String,System.Int32)')
   - [GetObjectFieldValue<T>(hierarchyPath,fieldOrPropertyName,timeout)](#M-gdio-unity_api-v2-CoApiClient-GetObjectFieldValue<T>-System-String,System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.GetObjectFieldValue<T>(System.String,System.String,System.Int32)')
@@ -117,7 +117,7 @@
   - [UnregisterCollisionMonitor(hierarchyPath,timeout)](#M-gdio-unity_api-v2-CoApiClient-UnregisterCollisionMonitor-System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.UnregisterCollisionMonitor(System.String,System.Int32)')
   - [Wait(waitMaxSeconds)](#M-gdio-unity_api-v2-CoApiClient-Wait-System-Single- 'gdio.unity_api.v2.CoApiClient.Wait(System.Single)')
   - [WaitForCollisionEvent(eventId,timeout)](#M-gdio-unity_api-v2-CoApiClient-WaitForCollisionEvent-System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.WaitForCollisionEvent(System.String,System.Int32)')
-  - [WaitForCollisionEvent<T>(eventId,timeout)](#M-gdio-unity_api-v2-CoApiClient-WaitForCollisionEvent<T>-System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.WaitForCollisionEvent<T>(System.String,System.Int32)')
+  - [WaitForCollisionEvent(eventId,timeout)](#M-gdio-unity_api-v2-CoApiClient-WaitForCollisionEvent-System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.WaitForCollisionEvent(System.String,System.Int32)')
   - [WaitForEmptyInput(timeout)](#M-gdio-unity_api-v2-CoApiClient-WaitForEmptyInput-System-Int32- 'gdio.unity_api.v2.CoApiClient.WaitForEmptyInput(System.Int32)')
   - [WaitForFixedUpdate()](#M-gdio-unity_api-v2-CoApiClient-WaitForFixedUpdate 'gdio.unity_api.v2.CoApiClient.WaitForFixedUpdate')
   - [WaitForObject(hierarchyPath,timeout)](#M-gdio-unity_api-v2-CoApiClient-WaitForObject-System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.WaitForObject(System.String,System.Int32)')
@@ -884,12 +884,12 @@ This method has no parameters.
             
 ```
 
-<a name='M-gdio-unity_api-v2-ApiClient-GetNextCollisionEvent<T>-System-String-'></a>
-### GetNextCollisionEvent<T>(eventId) `method`
+<a name='M-gdio-unity_api-v2-ApiClient-GetNextCollisionEvent-System-String-'></a>
+### GetNextCollisionEvent(eventId) `method`
 
 ##### Summary
 
-PREVIEW: Collision events are stored in a FIFO queue. Calling this method returns the next collision event that was returned.
+Collision events are stored in a FIFO queue. Calling this method returns the next collision event that was returned from [RegisterCollisionMonitor](#M-gdio-unity_api-v2-ApiClient-RegisterCollisionMonitor-System-String,System-Int32 'gdio.unity_api.v2.ApiClient.RegisterCollisionMonitor(System.String,System.Int32)')
 
 ##### Returns
 
@@ -900,12 +900,6 @@ A gdio.common.objects.Collision object.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | eventId | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The eventId returned from [RegisterCollisionMonitor](#M-gdio-unity_api-v2-ApiClient-RegisterCollisionMonitor-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.RegisterCollisionMonitor(System.String,System.Int32)') |
-
-##### Generic Types
-
-| Name | Description |
-| ---- | ----------- |
-| T |  |
 
 <a name='M-gdio-unity_api-v2-ApiClient-GetObjectDistance-System-String,System-String,System-Int32-'></a>
 ### GetObjectDistance(objectA_HierarchyPath,objectB_HierarchyPath,timeout) `method`
@@ -1729,7 +1723,7 @@ Wait for a collision event to fire on an element that is being monitored for col
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| eventId | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The eventId received from the [RegisterCollisionMonitor](#M-gdio-unity_api-v2-ApiClient-RegisterCollisionMonitor-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.RegisterCollisionMonitor(System.String,System.Int32)') call. |
+| eventId | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The eventId received from the [RegisterCollisionMonitor](#M-gdio-unity_api-v2-ApiClient-RegisterCollisionMonitor-System-String,System-Int32 'gdio.unity_api.v2.ApiClient.RegisterCollisionMonitor(System.String,System.Int32)') call. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a collision event to be fired. |
 
 ##### Example
@@ -1738,12 +1732,12 @@ Wait for a collision event to fire on an element that is being monitored for col
 api.WaitForCollisionEvent(eventId);
 ```
 
-<a name='M-gdio-unity_api-v2-ApiClient-WaitForCollisionEvent<T>-System-String,System-Int32-'></a>
-### WaitForCollisionEvent<T>(eventId,timeout) `method`
+<a name='M-gdio-unity_api-v2-ApiClient-WaitForCollisionEvent-System-String,System-Int32-'></a>
+### WaitForCollisionEvent(eventId,timeout) `method`
 
 ##### Summary
 
-Wait for a collision event to fire on an element that is being monitored for collisions. If the method has been called before, there is the potential that another event was recieved before waiting on the event again. Check with [GetNextCollisionEvent<T>](#M-gdio-unity_api-v2-ApiClient-GetNextCollisionEvent<T>-System-String- 'gdio.unity_api.v2.ApiClient.GetNextCollisionEvent<T>(System.String)') to see if it returns null to see if an event was missed.
+Wait for a collision event to fire on an element that is being monitored for collisions. If the method has been called before, there is the potential that another event was recieved before waiting on the event again. Check with [GetNextCollisionEvent](#M-gdio-unity_api-v2-ApiClient-GetNextCollisionEvent-System-String- 'gdio.unity_api.v2.ApiClient.GetNextCollisionEvent(System.String)') to see if it returns null to see if an event was missed.
 
 ##### Returns
 
@@ -2181,12 +2175,12 @@ This method has no parameters.
             
 ```
 
-<a name='M-gdio-unity_api-v2-CoApiClient-GetNextCollisionEvent<T>-System-String-'></a>
-### GetNextCollisionEvent<T>(eventId) `method`
+<a name='M-gdio-unity_api-v2-CoApiClient-GetNextCollisionEvent-System-String-'></a>
+### GetNextCollisionEvent(eventId) `method`
 
 ##### Summary
 
-PREVIEW: Collision events are stored in a FIFO queue. Calling this method returns the next collision event that was returned.
+Collision events are stored in a FIFO queue. Calling this method returns the next collision event that was returned.
 
 ##### Returns
 
@@ -2623,7 +2617,7 @@ Returns an array of [RaycastResult](/gdio.common.objects.md#T-gdio-common-object
 
 ##### Summary
 
-PREVIEW: Register a collision monitor to recieve collision events on an object.
+Register a collision monitor to recieve collision events on an object.
 
 ##### Returns
 
@@ -2970,7 +2964,7 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 ##### Summary
 
-PREVIEW: Unregister the monitoring of collision events on a GameObject that has been previously registered for monitoring.
+Unregister the monitoring of collision events on a GameObject that has been previously registered for monitoring.
 
 ##### Parameters
 
@@ -3001,7 +2995,7 @@ Wait for a fixed period of seconds.
 
 ##### Summary
 
-PREVIEW: Wait for a collision event to fire on an element that is being monitored for collisions.
+Wait for a collision event to fire on an element that is being monitored for collisions.
 
 ##### Parameters
 
@@ -3016,12 +3010,12 @@ PREVIEW: Wait for a collision event to fire on an element that is being monitore
 api.WaitForCollisionEvent(eventId);
 ```
 
-<a name='M-gdio-unity_api-v2-CoApiClient-WaitForCollisionEvent<T>-System-String,System-Int32-'></a>
-### WaitForCollisionEvent<T>(eventId,timeout) `method`
+<a name='M-gdio-unity_api-v2-CoApiClient-WaitForCollisionEvent-System-String,System-Int32-'></a>
+### WaitForCollisionEvent(eventId,timeout) `method`
 
 ##### Summary
 
-PREVIEW: Wait for a collision event to fire on an element that is being monitored for collisions. If the method has been called before, there is the potential that another event was recieved before waiting on the event again. Check with [GetNextCollisionEvent<T>](#M-gdio-unity_api-v2-CoApiClient-GetNextCollisionEvent<T>-System-String- 'gdio.unity_api.v2.CoApiClient.GetNextCollisionEvent<T>(System.String)') to see if it returns null to see if an event was missed.
+Wait for a collision event to fire on an element that is being monitored for collisions. If the method has been called before, there is the potential that another event was recieved before waiting on the event again. Check with [GetNextCollisionEvent](#M-gdio-unity_api-v2-CoApiClient-GetNextCollisionEvent-System-String- 'gdio.unity_api.v2.CoApiClient.GetNextCollisionEvent(System.String)') to see if it returns null to see if an event was missed.
 
 ##### Returns
 
