@@ -408,7 +408,7 @@ This class provides information about the currently connected game.
 
 ##### Summary
 
-The [IPAddress](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Net.IPAddress 'System.Net.IPAddress') of the connected game.
+The [IPAddress](https://docs.microsoft.com/en-us/dotnet/api/system.net.ipaddress 'System.Net.IPAddress') of the connected game.
 
 <a name='F-gdio-common-objects-GameConnectionDetails-GamePath'></a>
 ### GamePath `constants`
