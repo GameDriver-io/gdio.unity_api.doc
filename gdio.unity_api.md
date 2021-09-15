@@ -1778,7 +1778,7 @@ TRUE when the Empty Input event is received.
 
 ##### Summary
 
-Wait for an object to exist.
+Wait for an object to exist in the hierarchy.
 
 ##### Returns
 
