@@ -113,6 +113,7 @@
   - [y](#F-gdio-common-objects-Vector4-y 'gdio.common.objects.Vector4.y')
   - [z](#F-gdio-common-objects-Vector4-z 'gdio.common.objects.Vector4.z')
 
+
 <a name='T-gdio-common-objects-COLLISION_EVENT'></a>
 ## COLLISION_EVENT `type`
 
@@ -124,12 +125,14 @@ gdio.common.objects
 
 The type of collision event received.
 
+
 <a name='F-gdio-common-objects-COLLISION_EVENT-COLLISION_ENTER'></a>
 ### COLLISION_ENTER `constants`
 
 ##### Summary
 
 Colliding object has entered the collision bounds.
+
 
 <a name='F-gdio-common-objects-COLLISION_EVENT-COLLISION_EXIT'></a>
 ### COLLISION_EXIT `constants`
@@ -138,12 +141,14 @@ Colliding object has entered the collision bounds.
 
 Colliding object exited collision bounds.
 
+
 <a name='F-gdio-common-objects-COLLISION_EVENT-COLLISION_STAY'></a>
 ### COLLISION_STAY `constants`
 
 ##### Summary
 
 Colliding object still loated in the collision bounds
+
 
 <a name='T-gdio-common-objects-Collider'></a>
 ## Collider `type`
@@ -156,12 +161,14 @@ gdio.common.objects
 
 The lite version of the [UnityEngine.Collider](https://docs.unity3d.com/ScriptReference/Collider.html)
 
+
 <a name='F-gdio-common-objects-Collider-attachedRigidbody'></a>
 ### attachedRigidbody `constants`
 
 ##### Summary
 
 The [Rigidbody](#T-gdio-common-objects-Rigidbody 'gdio.common.objects.Rigidbody') that the collider is attached to.
+
 
 <a name='F-gdio-common-objects-Collider-bounds'></a>
 ### bounds `constants`
@@ -170,12 +177,14 @@ The [Rigidbody](#T-gdio-common-objects-Rigidbody 'gdio.common.objects.Rigidbody'
 
 The [Bounds](#T-gdio-common-objects-Bounds 'gdio.common.objects.Bounds') of the collider.
 
+
 <a name='F-gdio-common-objects-Collider-contactOffset'></a>
 ### contactOffset `constants`
 
 ##### Summary
 
 Contact offset value of the collider.
+
 
 <a name='F-gdio-common-objects-Collider-enabled'></a>
 ### enabled `constants`
@@ -184,12 +193,14 @@ Contact offset value of the collider.
 
 Boolean if the collider is enabled or not.
 
+
 <a name='F-gdio-common-objects-Collider-isTrigger'></a>
 ### isTrigger `constants`
 
 ##### Summary
 
 Boolean if the collider is a trigger or not.
+
 
 <a name='F-gdio-common-objects-Collider-material'></a>
 ### material `constants`
@@ -198,12 +209,14 @@ Boolean if the collider is a trigger or not.
 
 The [PhysicMaterial](#T-gdio-common-objects-PhysicMaterial 'gdio.common.objects.PhysicMaterial') of the collider.
 
+
 <a name='F-gdio-common-objects-Collider-sharedMaterial'></a>
 ### sharedMaterial `constants`
 
 ##### Summary
 
 The shared [PhysicMaterial](#T-gdio-common-objects-PhysicMaterial 'gdio.common.objects.PhysicMaterial') of the collider.
+
 
 <a name='T-gdio-common-objects-Collision'></a>
 ## Collision `type`
@@ -216,12 +229,14 @@ gdio.common.objects
 
 Describes a collision.
 
+
 <a name='F-gdio-common-objects-Collision-CollisionType'></a>
 ### CollisionType `constants`
 
 ##### Summary
 
 The enumeration value of the collision type [COLLISION_EVENT](#T-gdio-common-objects-COLLISION_EVENT 'gdio.common.objects.COLLISION_EVENT')
+
 
 <a name='F-gdio-common-objects-Collision-HierarchyPath'></a>
 ### HierarchyPath `constants`
@@ -230,12 +245,14 @@ The enumeration value of the collision type [COLLISION_EVENT](#T-gdio-common-obj
 
 The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) of the GameObject that received the OnCollision event.
 
+
 <a name='F-gdio-common-objects-Collision-Timestamp'></a>
 ### Timestamp `constants`
 
 ##### Summary
 
 The timestamp of when the collision occurred.
+
 
 <a name='F-gdio-common-objects-Collision-contactCount'></a>
 ### contactCount `constants`
@@ -244,12 +261,14 @@ The timestamp of when the collision occurred.
 
 The number of contacts in the collision.
 
+
 <a name='F-gdio-common-objects-Collision-contacts'></a>
 ### contacts `constants`
 
 ##### Summary
 
 Array of contacts, [ContactPoint](#T-gdio-common-objects-ContactPoint 'gdio.common.objects.ContactPoint')
+
 
 <a name='F-gdio-common-objects-Collision-gameObject'></a>
 ### gameObject `constants`
@@ -258,12 +277,14 @@ Array of contacts, [ContactPoint](#T-gdio-common-objects-ContactPoint 'gdio.comm
 
 The [LiteGameObject](#T-gdio-common-objects-LiteGameObject 'gdio.common.objects.LiteGameObject') of the collision.
 
+
 <a name='F-gdio-common-objects-Collision-impulse'></a>
 ### impulse `constants`
 
 ##### Summary
 
 A [Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') describing the impulse value.
+
 
 <a name='F-gdio-common-objects-Collision-relativeVelocity'></a>
 ### relativeVelocity `constants`
@@ -272,6 +293,7 @@ A [Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') descri
 
 A [Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') describing the relative velocity value.
 
+
 <a name='F-gdio-common-objects-Collision-rigidbody'></a>
 ### rigidbody `constants`
 
@@ -279,12 +301,14 @@ A [Vector3](#T-gdio-common-objects-Vector3 'gdio.common.objects.Vector3') descri
 
 The [Rigidbody](#T-gdio-common-objects-Rigidbody 'gdio.common.objects.Rigidbody') of the collision.
 
+
 <a name='F-gdio-common-objects-Collision-transform'></a>
 ### transform `constants`
 
 ##### Summary
 
 The [Transform](#T-gdio-common-objects-Transform 'gdio.common.objects.Transform') of the GameObject.
+
 
 <a name='T-gdio-common-objects-Color'></a>
 ## Color `type`
@@ -297,12 +321,14 @@ gdio.common.objects
 
 A numerical representation of Color.
 
+
 <a name='F-gdio-common-objects-Color-a'></a>
 ### a `constants`
 
 ##### Summary
 
 The alpha (transparency) value.
+
 
 <a name='F-gdio-common-objects-Color-b'></a>
 ### b `constants`
@@ -311,6 +337,7 @@ The alpha (transparency) value.
 
 The blue value.
 
+
 <a name='F-gdio-common-objects-Color-g'></a>
 ### g `constants`
 
@@ -318,12 +345,14 @@ The blue value.
 
 The green value.
 
+
 <a name='F-gdio-common-objects-Color-r'></a>
 ### r `constants`
 
 ##### Summary
 
 The red value.
+
 
 <a name='T-gdio-common-objects-CoordinateConversion'></a>
 ## CoordinateConversion `type`
@@ -336,12 +365,14 @@ gdio.common.objects
 
 Enumeration for the type of coordinate conversion.
 
+
 <a name='F-gdio-common-objects-CoordinateConversion-Local'></a>
 ### Local `constants`
 
 ##### Summary
 
 Local returns the [GameObject.Transform.localPosition](https://docs.unity3d.com/ScriptReference/Transform-localPosition.html) without any conversion.
+
 
 <a name='F-gdio-common-objects-CoordinateConversion-None'></a>
 ### None `constants`
@@ -350,12 +381,14 @@ Local returns the [GameObject.Transform.localPosition](https://docs.unity3d.com/
 
 None returns the [GameObject.Transform.position](https://docs.unity3d.com/ScriptReference/Transform-position.html) without any conversion.
 
+
 <a name='F-gdio-common-objects-CoordinateConversion-ScreenToViewportPoint'></a>
 ### ScreenToViewportPoint `constants`
 
 ##### Summary
 
 ScreenToViewPortPoint returns the coordinates of the object in the viewport space of the specified Camera. The default is [Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html).
+
 
 <a name='F-gdio-common-objects-CoordinateConversion-ScreenToWorldPoint'></a>
 ### ScreenToWorldPoint `constants`
@@ -364,12 +397,14 @@ ScreenToViewPortPoint returns the coordinates of the object in the viewport spac
 
 ScreenToWorldPoint returns the coordinates of the object in the world space of the specified Camera. The default is [Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html).
 
+
 <a name='F-gdio-common-objects-CoordinateConversion-ViewportToScreenPoint'></a>
 ### ViewportToScreenPoint `constants`
 
 ##### Summary
 
 ScreenToViewPortPoint returns the coordinates of the object in the viewport space of the specified Camera. The default is [Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html).
+
 
 <a name='F-gdio-common-objects-CoordinateConversion-ViewportToWorldPoint'></a>
 ### ViewportToWorldPoint `constants`
@@ -378,6 +413,7 @@ ScreenToViewPortPoint returns the coordinates of the object in the viewport spac
 
 ScreenToWorldPoint returns the coordinates of the object in the world space of the specified Camera. The default is [Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html).
 
+
 <a name='F-gdio-common-objects-CoordinateConversion-WorldToScreenPoint'></a>
 ### WorldToScreenPoint `constants`
 
@@ -385,12 +421,14 @@ ScreenToWorldPoint returns the coordinates of the object in the world space of t
 
 WorldToScreenPoint returns the coordinates of the object transformed from World-To-Screen by the specified Camera. The default is [Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html).
 
+
 <a name='F-gdio-common-objects-CoordinateConversion-WorldToViewportPoint'></a>
 ### WorldToViewportPoint `constants`
 
 ##### Summary
 
 WorldToViewPortPoint returns the coordinates of the object in the screen space of the specified Camera. The default is [Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html).
+
 
 <a name='T-gdio-common-objects-GameConnectionDetails'></a>
 ## GameConnectionDetails `type`
@@ -403,12 +441,14 @@ gdio.common.objects
 
 This class provides information about the currently connected game.
 
+
 <a name='F-gdio-common-objects-GameConnectionDetails-Addr'></a>
 ### Addr `constants`
 
 ##### Summary
 
 The [IPAddress](https://docs.microsoft.com/en-us/dotnet/api/system.net.ipaddress 'System.Net.IPAddress') of the connected game.
+
 
 <a name='F-gdio-common-objects-GameConnectionDetails-GamePath'></a>
 ### GamePath `constants`
@@ -417,12 +457,14 @@ The [IPAddress](https://docs.microsoft.com/en-us/dotnet/api/system.net.ipaddress
 
 The [Application.dataPath](https://docs.unity3d.com/ScriptReference/Application-dataPath.html) of the connected game.
 
+
 <a name='F-gdio-common-objects-GameConnectionDetails-IsEditor'></a>
 ### IsEditor `constants`
 
 ##### Summary
 
 Boolean value if the game is running in an Unity editor instance.
+
 
 <a name='F-gdio-common-objects-GameConnectionDetails-Platform'></a>
 ### Platform `constants`
@@ -431,12 +473,14 @@ Boolean value if the game is running in an Unity editor instance.
 
 The [Application.platform](https://docs.unity3d.com/ScriptReference/Application-platform.html) of the connected game.
 
+
 <a name='F-gdio-common-objects-GameConnectionDetails-Port'></a>
 ### Port `constants`
 
 ##### Summary
 
 The port number of the connected game.
+
 
 <a name='T-gdio-common-objects-LiteComponent'></a>
 ## LiteComponent `type`
@@ -449,12 +493,14 @@ gdio.common.objects
 
 A simplistic version of [UnityEngine.Component](https://docs.unity3d.com/ScriptReference/Component.html)
 
+
 <a name='F-gdio-common-objects-LiteComponent-gameObject'></a>
 ### gameObject `constants`
 
 ##### Summary
 
 The lite version of the [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) the component is attached to.
+
 
 <a name='F-gdio-common-objects-LiteComponent-hierarchyPath'></a>
 ### hierarchyPath `constants`
@@ -463,12 +509,14 @@ The lite version of the [GameObject](https://docs.unity3d.com/ScriptReference/Ga
 
 The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) of the component.
 
+
 <a name='F-gdio-common-objects-LiteComponent-tag'></a>
 ### tag `constants`
 
 ##### Summary
 
 The tag of the [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html).
+
 
 <a name='F-gdio-common-objects-LiteComponent-transform'></a>
 ### transform `constants`
@@ -477,12 +525,14 @@ The tag of the [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.
 
 The transform attached to the [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html).
 
+
 <a name='F-gdio-common-objects-LiteComponent-typeFullName'></a>
 ### typeFullName `constants`
 
 ##### Summary
 
 The Type fullname of the class.
+
 
 <a name='T-gdio-common-objects-LiteGameObject'></a>
 ## LiteGameObject `type`
@@ -495,12 +545,14 @@ gdio.common.objects
 
 This is a lite version of the [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html).
 
+
 <a name='F-gdio-common-objects-LiteGameObject-Components'></a>
 ### Components `constants`
 
 ##### Summary
 
 A list of the Component Types associated with the object.
+
 
 <a name='F-gdio-common-objects-LiteGameObject-activeSelf'></a>
 ### activeSelf `constants`
@@ -509,12 +561,14 @@ A list of the Component Types associated with the object.
 
 A boolean indicating whether the object is active in the scene.
 
+
 <a name='F-gdio-common-objects-LiteGameObject-hashCode'></a>
 ### hashCode `constants`
 
 ##### Summary
 
 The Hash Code of the object.
+
 
 <a name='F-gdio-common-objects-LiteGameObject-hierarchyPath'></a>
 ### hierarchyPath `constants`
@@ -523,12 +577,14 @@ The Hash Code of the object.
 
 The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) to the GameObject.
 
+
 <a name='F-gdio-common-objects-LiteGameObject-localPosition'></a>
 ### localPosition `constants`
 
 ##### Summary
 
 The Local Position of the object.
+
 
 <a name='F-gdio-common-objects-LiteGameObject-parentHashCode'></a>
 ### parentHashCode `constants`
@@ -537,12 +593,14 @@ The Local Position of the object.
 
 The Hash Code of the Parent object.
 
+
 <a name='F-gdio-common-objects-LiteGameObject-position'></a>
 ### position `constants`
 
 ##### Summary
 
 The Absolute Position of the object.
+
 
 <a name='F-gdio-common-objects-LiteGameObject-rotation'></a>
 ### rotation `constants`
@@ -551,12 +609,14 @@ The Absolute Position of the object.
 
 The Rotation of the object.
 
+
 <a name='F-gdio-common-objects-LiteGameObject-sceneId'></a>
 ### sceneId `constants`
 
 ##### Summary
 
 The Scene ID.
+
 
 <a name='F-gdio-common-objects-LiteGameObject-sceneName'></a>
 ### sceneName `constants`
@@ -565,12 +625,14 @@ The Scene ID.
 
 The Name of the Scene.
 
+
 <a name='F-gdio-common-objects-LiteGameObject-scenePath'></a>
 ### scenePath `constants`
 
 ##### Summary
 
 The Path of the Scene.
+
 
 <a name='F-gdio-common-objects-LiteGameObject-tag'></a>
 ### tag `constants`
@@ -579,6 +641,7 @@ The Path of the Scene.
 
 The Tag of the object.
 
+
 <a name='F-gdio-common-objects-LiteGameObject-transform'></a>
 ### transform `constants`
 
@@ -586,12 +649,14 @@ The Tag of the object.
 
 Position, rotation, and scale of the object.
 
+
 <a name='F-gdio-common-objects-LiteGameObject-typeFullName'></a>
 ### typeFullName `constants`
 
 ##### Summary
 
 The Full Type the object.
+
 
 <a name='T-gdio-common-objects-LiteObject'></a>
 ## LiteObject `type`
@@ -604,6 +669,7 @@ gdio.common.objects
 
 A simplistic version of [UnityEngine.GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html)
 
+
 <a name='F-gdio-common-objects-LiteObject-instanceId'></a>
 ### instanceId `constants`
 
@@ -611,12 +677,14 @@ A simplistic version of [UnityEngine.GameObject](https://docs.unity3d.com/Script
 
 The instanceId of the object.
 
+
 <a name='F-gdio-common-objects-LiteObject-name'></a>
 ### name `constants`
 
 ##### Summary
 
 The name of the object.
+
 
 <a name='T-gdio-common-objects-Matrix4x4'></a>
 ## Matrix4x4 `type`
@@ -629,6 +697,7 @@ gdio.common.objects
 
 A standard 4x4 transformation matrix.
 
+
 <a name='T-gdio-common-objects-MouseButtons'></a>
 ## MouseButtons `type`
 
@@ -640,12 +709,14 @@ gdio.common.objects
 
 Mouse button enumerations to use for input.
 
+
 <a name='F-gdio-common-objects-MouseButtons-LEFT'></a>
 ### LEFT `constants`
 
 ##### Summary
 
 Left Mouse Button
+
 
 <a name='F-gdio-common-objects-MouseButtons-MIDDLE'></a>
 ### MIDDLE `constants`
@@ -654,12 +725,14 @@ Left Mouse Button
 
 Middle Mouse Button
 
+
 <a name='F-gdio-common-objects-MouseButtons-RIGHT'></a>
 ### RIGHT `constants`
 
 ##### Summary
 
 Right Mouse Button
+
 
 <a name='T-gdio-common-objects-ObjectListFilter'></a>
 ## ObjectListFilter `type`
@@ -672,12 +745,14 @@ gdio.common.objects
 
 Enumeration to filter objects by.
 
+
 <a name='F-gdio-common-objects-ObjectListFilter-ALL'></a>
 ### ALL `constants`
 
 ##### Summary
 
 All objects, returns tagged and untagged object list
+
 
 <a name='F-gdio-common-objects-ObjectListFilter-TAGGED'></a>
 ### TAGGED `constants`
@@ -686,12 +761,14 @@ All objects, returns tagged and untagged object list
 
 TAGGED objects, returns their tag
 
+
 <a name='F-gdio-common-objects-ObjectListFilter-UNTAGGED'></a>
 ### UNTAGGED `constants`
 
 ##### Summary
 
 Untagged objects, returns their name
+
 
 <a name='T-gdio-common-objects-PhysicMaterial'></a>
 ## PhysicMaterial `type`
@@ -704,12 +781,14 @@ gdio.common.objects
 
 Physics material describes how to handle collisions.
 
+
 <a name='F-gdio-common-objects-PhysicMaterial-bounceCombine'></a>
 ### bounceCombine `constants`
 
 ##### Summary
 
 Determines how the bounciness is combined. (Unity 2018)
+
 
 <a name='F-gdio-common-objects-PhysicMaterial-bounciness'></a>
 ### bounciness `constants`
@@ -718,12 +797,14 @@ Determines how the bounciness is combined. (Unity 2018)
 
 How bouncy a surface is.
 
+
 <a name='F-gdio-common-objects-PhysicMaterial-dynamicFriction'></a>
 ### dynamicFriction `constants`
 
 ##### Summary
 
 The friction used when already moving.
+
 
 <a name='F-gdio-common-objects-PhysicMaterial-frictionCombine'></a>
 ### frictionCombine `constants`
@@ -732,12 +813,14 @@ The friction used when already moving.
 
 Determines how the friction is combined. (Unity 2018)
 
+
 <a name='F-gdio-common-objects-PhysicMaterial-staticFriction'></a>
 ### staticFriction `constants`
 
 ##### Summary
 
 The friction coefficient used when an object is lying on the surface.
+
 
 <a name='T-gdio-common-objects-Quaternion'></a>
 ## Quaternion `type`
@@ -751,12 +834,14 @@ gdio.common.objects
 A mathematical representation of 3D rotation. See [here](#!-https-//scriptinghelpers-org/blog/how-to-think-about-quaternions 'https://scriptinghelpers.org/blog/how-to-think-about-quaternions') for more information.
 
 
+
 <a name='F-gdio-common-objects-Quaternion-w'></a>
 ### w `constants`
 
 ##### Summary
 
 The w component.
+
 
 <a name='F-gdio-common-objects-Quaternion-x'></a>
 ### x `constants`
@@ -765,6 +850,7 @@ The w component.
 
 The x component.
 
+
 <a name='F-gdio-common-objects-Quaternion-y'></a>
 ### y `constants`
 
@@ -772,12 +858,14 @@ The x component.
 
 The y component.
 
+
 <a name='F-gdio-common-objects-Quaternion-z'></a>
 ### z `constants`
 
 ##### Summary
 
 The x component.
+
 
 <a name='T-gdio-common-objects-RaycastResult'></a>
 ## RaycastResult `type`
@@ -790,12 +878,14 @@ gdio.common.objects
 
 Structure used to get information back from a raycast. Used for visual objects only.
 
+
 <a name='P-gdio-common-objects-RaycastResult-hasButton'></a>
 ### hasButton `property`
 
 ##### Summary
 
 Boolean of whether the object hit by the raycast has a Button component.
+
 
 <a name='P-gdio-common-objects-RaycastResult-name'></a>
 ### name `property`
@@ -804,12 +894,14 @@ Boolean of whether the object hit by the raycast has a Button component.
 
 The Name of the object hit by the raycast.
 
+
 <a name='P-gdio-common-objects-RaycastResult-point'></a>
 ### point `property`
 
 ##### Summary
 
 The impact point in world space where the ray hit the collider.
+
 
 <a name='P-gdio-common-objects-RaycastResult-tag'></a>
 ### tag `property`
@@ -818,6 +910,7 @@ The impact point in world space where the ray hit the collider.
 
 The Tag of the object hit by the raycast.
 
+
 <a name='P-gdio-common-objects-RaycastResult-type'></a>
 ### type `property`
 
@@ -825,12 +918,14 @@ The Tag of the object hit by the raycast.
 
 The Type of object hit by the raycase (e.g. Physics).
 
+
 <a name='P-gdio-common-objects-RaycastResult-typeFullName'></a>
 ### typeFullName `property`
 
 ##### Summary
 
 The name of the object class (e.g. [UnityEngine.GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html))
+
 
 <a name='T-gdio-common-objects-Space'></a>
 ## Space `type`
@@ -843,6 +938,7 @@ gdio.common.objects
 
 Enumeration of the Space type.
 
+
 <a name='F-gdio-common-objects-Space-Self'></a>
 ### Self `constants`
 
@@ -850,12 +946,14 @@ Enumeration of the Space type.
 
 The Self Space enumeration.
 
+
 <a name='F-gdio-common-objects-Space-World'></a>
 ### World `constants`
 
 ##### Summary
 
 The World Space enumeration.
+
 
 <a name='T-gdio-common-objects-Vector2'></a>
 ## Vector2 `type`
@@ -868,6 +966,7 @@ gdio.common.objects
 
 A representation of 2D vectors and points.
 
+
 <a name='F-gdio-common-objects-Vector2-x'></a>
 ### x `constants`
 
@@ -875,12 +974,14 @@ A representation of 2D vectors and points.
 
 The x component.
 
+
 <a name='F-gdio-common-objects-Vector2-y'></a>
 ### y `constants`
 
 ##### Summary
 
 The y component.
+
 
 <a name='T-gdio-common-objects-Vector3'></a>
 ## Vector3 `type`
@@ -893,12 +994,14 @@ gdio.common.objects
 
 A representation of 3D vectors and points.
 
+
 <a name='F-gdio-common-objects-Vector3-x'></a>
 ### x `constants`
 
 ##### Summary
 
 The x coordinate of the position.
+
 
 <a name='F-gdio-common-objects-Vector3-y'></a>
 ### y `constants`
@@ -907,12 +1010,14 @@ The x coordinate of the position.
 
 The y coordinate of the position.
 
+
 <a name='F-gdio-common-objects-Vector3-z'></a>
 ### z `constants`
 
 ##### Summary
 
 The z coordinate of the position.
+
 
 <a name='T-gdio-common-objects-Vector4'></a>
 ## Vector4 `type`
@@ -925,12 +1030,14 @@ gdio.common.objects
 
 A representation of 3D vectors and points.
 
+
 <a name='F-gdio-common-objects-Vector4-w'></a>
 ### w `constants`
 
 ##### Summary
 
 The w component.
+
 
 <a name='F-gdio-common-objects-Vector4-x'></a>
 ### x `constants`
@@ -939,12 +1046,14 @@ The w component.
 
 The x component.
 
+
 <a name='F-gdio-common-objects-Vector4-y'></a>
 ### y `constants`
 
 ##### Summary
 
 The y component.
+
 
 <a name='F-gdio-common-objects-Vector4-z'></a>
 ### z `constants`

@@ -6,4 +6,4 @@ The documentation is divided into the main [API methods](https://github.com/Game
 
 If you find an issue with this documentation, please let us know in the Issues tab, or by sending an email to support@gamedriver.io
 
-Thank you for choosing GameDriver for your automation needs!
+Thank you for choosing GameDriver for your test automation needs!
