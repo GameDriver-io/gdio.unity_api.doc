@@ -72,7 +72,6 @@
   - [UnregisterCollisionMonitor(hierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-UnregisterCollisionMonitor-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.UnregisterCollisionMonitor(System.String,System.Int32)')
   - [Wait(milliSeconds)](#M-gdio-unity_api-v2-ApiClient-Wait-System-Int32- 'gdio.unity_api.v2.ApiClient.Wait(System.Int32)')
   - [WaitForCollisionEvent(eventId,timeout)](#M-gdio-unity_api-v2-ApiClient-WaitForCollisionEvent-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.WaitForCollisionEvent(System.String,System.Int32)')
-  - [WaitForCollisionEvent(eventId,timeout)](#M-gdio-unity_api-v2-ApiClient-WaitForCollisionEvent-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.WaitForCollisionEvent(System.String,System.Int32)')
   - [WaitForEmptyInput(timeout)](#M-gdio-unity_api-v2-ApiClient-WaitForEmptyInput-System-Int32- 'gdio.unity_api.v2.ApiClient.WaitForEmptyInput(System.Int32)')
   - [WaitForObject(hierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-WaitForObject-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.WaitForObject(System.String,System.Int32)')
   - [WaitForObjectValue(hierarchyPath,fieldOrPropertyName,value,waitForObject,timeout,valueSerializer)](#M-gdio-unity_api-v2-ApiClient-WaitForObjectValue-System-String,System-String,System-Object,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.WaitForObjectValue(System.String,System.String,System.Object,System.Boolean,System.Int32)')
@@ -120,7 +119,6 @@
   - [TouchInput(x1,y1,x2,y2,fingerId,tapCount,frameCount,waitForEmptyInput,radius,pressure,altitudeAngle,azmulthAngle,maximumPossiblePressure,timeout)](#M-gdio-unity_api-v2-CoApiClient-TouchInput-System-Single,System-Single,System-Single,System-Single,System-Int32,System-Int32,System-UInt64,System-Boolean,System-Single,System-Single,System-Single,System-Single,System-Single,System-Int32- 'gdio.unity_api.v2.CoApiClient.TouchInput(System.Single,System.Single,System.Single,System.Single,System.Int32,System.Int32,System.UInt64,System.Boolean,System.Single,System.Single,System.Single,System.Single,System.Single,System.Int32)')
   - [UnregisterCollisionMonitor(hierarchyPath,timeout)](#M-gdio-unity_api-v2-CoApiClient-UnregisterCollisionMonitor-System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.UnregisterCollisionMonitor(System.String,System.Int32)')
   - [Wait(waitMaxSeconds)](#M-gdio-unity_api-v2-CoApiClient-Wait-System-Single- 'gdio.unity_api.v2.CoApiClient.Wait(System.Single)')
-  - [WaitForCollisionEvent(eventId,timeout)](#M-gdio-unity_api-v2-CoApiClient-WaitForCollisionEvent-System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.WaitForCollisionEvent(System.String,System.Int32)')
   - [WaitForCollisionEvent(eventId,timeout)](#M-gdio-unity_api-v2-CoApiClient-WaitForCollisionEvent-System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.WaitForCollisionEvent(System.String,System.Int32)')
   - [WaitForEmptyInput(timeout)](#M-gdio-unity_api-v2-CoApiClient-WaitForEmptyInput-System-Int32- 'gdio.unity_api.v2.CoApiClient.WaitForEmptyInput(System.Int32)')
   - [WaitForFixedUpdate()](#M-gdio-unity_api-v2-CoApiClient-WaitForFixedUpdate 'gdio.unity_api.v2.CoApiClient.WaitForFixedUpdate')
@@ -1850,28 +1848,6 @@ Client side Wait or Pause.
 api.Wait(3000); //Waits 3 seconds before continuing
 ```
 
-
-<a name='M-gdio-unity_api-v2-ApiClient-WaitForCollisionEvent-System-String,System-Int32-'></a>
-### WaitForCollisionEvent(eventId,timeout) `method`
-
-##### Summary
-
-Wait for a collision event to fire on an element that is being monitored for collisions.
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| eventId | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The eventId received from the [RegisterCollisionMonitor](#M-gdio-unity_api-v2-ApiClient-RegisterCollisionMonitor-System-String,System-Int32 'gdio.unity_api.v2.ApiClient.RegisterCollisionMonitor(System.String,System.Int32)') call. |
-| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a collision event to be fired. |
-
-##### Example
-
-```
-api.WaitForCollisionEvent(eventId);
-```
-
-
 <a name='M-gdio-unity_api-v2-ApiClient-WaitForCollisionEvent-System-String,System-Int32-'></a>
 ### WaitForCollisionEvent(eventId,timeout) `method`
 
@@ -3171,27 +3147,6 @@ Wait for a fixed period of seconds.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | waitMaxSeconds | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') |  |
-
-
-<a name='M-gdio-unity_api-v2-CoApiClient-WaitForCollisionEvent-System-String,System-Int32-'></a>
-### WaitForCollisionEvent(eventId,timeout) `method`
-
-##### Summary
-
-Wait for a collision event to fire on an element that is being monitored for collisions.
-
-##### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| eventId | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The eventId received from the [RegisterCollisionMonitor](#M-gdio-unity_api-v2-CoApiClient-RegisterCollisionMonitor-System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.RegisterCollisionMonitor(System.String,System.Int32)') call. |
-| timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The number of seconds to wait for a collision event to be fired. |
-
-##### Example
-
-```
-api.WaitForCollisionEvent(eventId);
-```
 
 
 <a name='M-gdio-unity_api-v2-CoApiClient-WaitForCollisionEvent-System-String,System-Int32-'></a>
