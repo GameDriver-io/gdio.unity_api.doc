@@ -959,7 +959,7 @@ A gdio.common.objects.Collision object.
 
 ##### Summary
 
-This method returns the distance of two objects using vector subtraction.
+This method returns the distance between two objects using vector subtraction.
 
 ##### Returns
 
