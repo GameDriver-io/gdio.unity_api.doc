@@ -2922,6 +2922,9 @@ TRUE if the GameDriver agent was able to successfully set the InputField text.
 
 ##### Example
 
+Note: The actual text field changed in this example appears as a grandchild of the object referenced in the example, such as:
+![image](https://user-images.githubusercontent.com/69934036/157325157-61215f01-46bc-497c-ac5c-17e9bb06f682.png)
+
 ```
 //Sets the text field component attached to the "TextMeshPro InputField" object with the tag "FilterInputTxt" to the value of "America"
 api.SetInputFieldText("//FilterInputTxt[@name='TextMeshPro InputField']", "America");
