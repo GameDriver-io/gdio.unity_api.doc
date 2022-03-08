@@ -24,7 +24,7 @@
   - [Connect(hostname,port,autoplay,timeout,autoPortResolution)](#M-gdio-unity_api-v2-ApiClient-Connect-System-String,System-Int32,System-Boolean,System-Int32,System-Boolean- 'gdio.unity_api.v2.ApiClient.Connect(System.String,System.Int32,System.Boolean,System.Int32,System.Boolean)')
   - [Connect(hostname,regex_MatchGamePath,port,autoplay,timeout,autoPortResolution)](#M-gdio-unity_api-v2-ApiClient-Connect-System-String,System-String,System-Int32,System-Boolean,System-Int32,System-Boolean- 'gdio.unity_api.v2.ApiClient.Connect(System.String,System.String,System.Int32,System.Boolean,System.Int32,System.Boolean)')
   - [DisableHooks(hookObject,timeout)](#M-gdio-unity_api-v2-ApiClient-DisableHooks-gdio-unity_api-v2-HookingObject,System-Int32- 'gdio.unity_api.v2.ApiClient.DisableHooks(gdio.unity_api.v2.HookingObject,System.Int32)')
-  - [DisbleObjectCaching(timeout)](#M-gdio-unity_api-v2-ApiClient-DisbleObjectCaching-System-Int32- 'gdio.unity_api.v2.ApiClient.DisbleObjectCaching(System.Int32)')
+  - [DisableObjectCaching(timeout)](#M-gdio-unity_api-v2-ApiClient-DisableObjectCaching-System-Int32- 'gdio.unity_api.v2.ApiClient.DisableObjectCaching(System.Int32)')
   - [Disconnect()](#M-gdio-unity_api-v2-ApiClient-Disconnect 'gdio.unity_api.v2.ApiClient.Disconnect')
   - [DoubleClick(buttonId,position,clickFrameCount,timeout)](#M-gdio-unity_api-v2-ApiClient-DoubleClick-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,System-Int32- 'gdio.unity_api.v2.ApiClient.DoubleClick(gdio.common.objects.MouseButtons,gdio.common.objects.Vector2,System.UInt64,System.Int32)')
   - [DoubleClick(buttonId,x,y,clickFrameCount,timeout)](#M-gdio-unity_api-v2-ApiClient-DoubleClick-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,System-Int32- 'gdio.unity_api.v2.ApiClient.DoubleClick(gdio.common.objects.MouseButtons,System.Single,System.Single,System.UInt64,System.Int32)')
@@ -590,8 +590,8 @@ api.DisableHooks(HookingObject.ALL);
 ```
 
 
-<a name='M-gdio-unity_api-v2-ApiClient-DisbleObjectCaching-System-Int32-'></a>
-### DisbleObjectCaching(timeout) `method`
+<a name='M-gdio-unity_api-v2-ApiClient-DisableObjectCaching-System-Int32-'></a>
+### DisableObjectCaching(timeout) `method`
 
 ##### Summary
 
@@ -1564,11 +1564,13 @@ TRUE if the GameDriver agent was able to successfully set the InputField text.
 
 ##### Example
 
+Note: The actual text field changed in this example appears as a grandchild of the object referenced in the example, such as:
+![image](https://user-images.githubusercontent.com/69934036/157325157-61215f01-46bc-497c-ac5c-17e9bb06f682.png)
+  
 ```
 //Sets the text field component attached to the "TextMeshPro InputField" object with the tag "FilterInputTxt" to the value of "America"
 api.SetInputFieldText("//FilterInputTxt[@name='TextMeshPro InputField']", "America");
 ```
-
 
 <a name='M-gdio-unity_api-v2-ApiClient-StopEditorPlay'></a>
 ### StopEditorPlay() `method`
