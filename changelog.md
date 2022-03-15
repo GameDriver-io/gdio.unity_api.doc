@@ -35,13 +35,13 @@ It is required to remove all previously-installed GameDriver components from you
 
 Now you can deploy and test against Android build targets, including emulators and physical devices via the Android SDK or an Appium server. To enable communications with the device, you need to issue the command:
 
-```
+```bash
 adb forward tcp:19734 tcp:19734
 ```
 
 This forwards port 19734 from your machine to the emulator or device running the GameDriver agent, allowing you to connect on localhost:19734. Replace 19734 with whatever port you are using for the GameDriver agent. To remove port forwarding after a test (if needed), run the command:
 
-```
+```bash
 adb forward --remove tcp:19734
 ```
 
@@ -49,7 +49,7 @@ Additional Android details can be found in this article.
 
 - New API notation. Eg:
 
-```
+```c#
 ApiClient api = new ApiClient();
 api.Connect("localhost", 19734);
 api.WaitForObject("//*[@name = 'Capsule']");
@@ -62,7 +62,7 @@ api.MoveMouseToPoint(new Vector2(0, 0), 4000);
 
 These examples are all generally the same thing when running on localhost. If you use a *, it will broadcast and any Unity Instance running on your network could respond with games that are playable via AutoPlay plugin. Supports Regular expression for matching a specific game when you have multiple instances running.
 
-```
+```c#
 api.Connect("localhost", 19734, true); // Connects to a running Unity Editor. AutoPlay = true is the default
 
 api.Connect("localhost", 19734, false); // Connects to a standalone build (no AutoPlay to Unity Editor)
@@ -78,10 +78,9 @@ api.Connect("*"); // Connects to any running instance of the Unity editor on the
 
 Note that launching the agent is not supported across hosts and that it is required to set the project into a running state first.
 
-
 - Updated SetInputFieldText() so that it calls the InputMethod text fields for standard or TMP Pro InputField.
 
-```
+```c#
 api.SetInputFieldText("//*[@name='InputField']", "Hello GDIO API");   
 
 api.SetObjectFieldValue("//*[@name='Text']/fn:component('UnityEngine.UI.Text')", "text", Guid.NewGuid().ToString());
@@ -95,7 +94,7 @@ api.SetObjectFieldValue("//*[@name='Text']/fn:component('UnityEngine.UI.Text')",
 
 - CallMethod now supports native types for public and private game methods. Use CallMethod\<T> to execute methods attached to game objects using various types and formats Examples:
 
-```
+```c#
 // void return type
 api.CallMethod("//*[@name = 'Capsule']/fn:component('KeyTest')", "TestMethod1",null);
 
@@ -115,7 +114,7 @@ api.CallMethod("//*[@name = 'Capsule']/fn:component('KeyTest')", "TestMethod6", 
 
 - Added a tracing level to the logging which shows the commit hash for major components, which is useful for troubleshooting. Enable by adding the following line to GDIO/Resources/config/gdio.unity_agent.config.txt:
 
-```
+```xml
 <logging><trace enabled="true" /></logging>
 ```
 
@@ -127,12 +126,13 @@ api.CallMethod("//*[@name = 'Capsule']/fn:component('KeyTest')", "TestMethod6", 
 
 Old:
 
-```
+```c#
 MouseDrag(Api.MouseButtons.Button, float x1, float y1, float x2, float y2, ulong frameCount);
 ```
 
 New:
-```
+
+```c#
 MouseDrag(MouseButtons.Button, Vector2 destination, ulong frameCount, [Vector2 origin = null], [bool waitForEmptyInput = true], [int timeout = 60])
 ```
 
@@ -146,10 +146,9 @@ MouseDrag(MouseButtons.Button, Vector2 destination, ulong frameCount, [Vector2 o
 
 - EnableMouseHooks and EnableKeybordHooks have been replaced with EnableHooks(HookingObject), which now includes KEYBOARD, MOUSE, GAMEPAD, TOUCHINPUT, and ALL) options. Likewise, DisableKeybordHooks and DisableMouseHooks have been replaced with DisableHooks(HookingObject).
 
-
 - GetObjectFieldValue now supports native object types, such as the primitives: string, int, float, and bool as well as translation classes such as color, vertex, and transform. Certain containers such as List and Dictionary are also supported. Type is dependent on the target object, component, and field. For example:
 
-```
+```c#
 String invisCube = api.GetObjectFieldValue<String>("//*[@name='HiddenCube']/fn:component('UnityEngine.Behaviour')/@isActiveAndEnabled");
 ```
 
@@ -157,7 +156,7 @@ Note: Object types supported by GameDriver are representations of their UnityEng
 
 - GetObjectList now returns additional information as a gdio.common.objects.LiteGameObject. Example usage:
 
-```
+```c#
 // Pull a list of the scene objects
 System.Collections.Generic.List<LiteGameObject> objects = api.GetObjectList();
 
@@ -176,7 +175,7 @@ Console.WriteLine("Object Rotation: " + obj.Rotation);
 
 Output:
 
-```
+```bash
 Object Name: GameDriver
 Object Tag: Untagged
 Object Position: (0, 0, 0)
@@ -203,11 +202,11 @@ Object Position: (0, 0, 0)
 Object Rotation (w): 1, (x): 0, (y): 0, (z): 0
 ```
 
-etc... 
+etc...
 
 - New Logging Control. To enable logging, you will need to register to receive logging events in the client (test). To do so, simply add the following to your test script, or substitute with your own output method as desired.
 
-```
+```c#
 ApiClient api = new ApiClient(); // This should already be part of your test
 
 api.LoggedMessage += (s, e) =>
@@ -220,8 +219,8 @@ api.LoggedMessage += (s, e) =>
 
 - Fixed an issue where the text property of a TMP Input Field object appends an unprintable Unicode character on the end, making it impossible to query the field from within a test. Now when doing string comparisons, by default, users have the option to ignore that code point. Configure via a new config value in GDIO/Resources/config/gdio.unity_agent.config.txt:
 
-```
+```c#
 <unicode><ignoreZeroWidthSpace enabled="true"/></unicode>
 ```
 
-Note this setting is not applicable to GetObjectFieldValue\<T>, which is intended to capture the precise value of the field, including unprintable characters.
+**Note** this setting is not applicable to GetObjectFieldValue\<T>, which is intended to capture the precise value of the field, including unprintable characters.

@@ -1,5 +1,3 @@
-<a name='assembly'></a>
-
 # gdio.unity_api
 
 ## Contents
@@ -13,7 +11,7 @@
   - [AxisPress(axisId,value,numberOfFrames,timeout)](#M-gdio-unity_api-v2-ApiClient-AxisPress-System-String,System-Single,System-UInt64,System-Int32- 'gdio.unity_api.v2.ApiClient.AxisPress(System.String,System.Single,System.UInt64,System.Int32)')
   - [ButtonPress(buttonId,numberOfFrames,timeout)](#M-gdio-unity_api-v2-ApiClient-ButtonPress-System-String,System-UInt64,System-Int32- 'gdio.unity_api.v2.ApiClient.ButtonPress(System.String,System.UInt64,System.Int32)')
   - [CallMethod(hierarchyPath,methodName,arguments,timeout)](#M-gdio-unity_api-v2-ApiClient-CallMethod-System-String,System-String,System-Object[],System-Int32- 'gdio.unity_api.v2.ApiClient.CallMethod(System.String,System.String,System.Object[],System.Int32)')
-  - [CallMethod<T>(hierarchyPath,methodName,arguments,timeout)](#M-gdio-unity_api-v2-ApiClient-CallMethod<T>-System-String,System-String,System-Object[],System-Int32- 'gdio.unity_api.v2.ApiClient.CallMethod<T>(System.String,System.String,System.Object[],System.Int32)')
+  - [CallMethod\<T>(hierarchyPath,methodName,arguments,timeout)](#M-gdio-unity_api-v2-ApiClient-CallMethod\<T>-System-String,System-String,System-Object[],System-Int32- 'gdio.unity_api.v2.ApiClient.CallMethod\<T>(System.String,System.String,System.Object[],System.Int32)')
   - [CaptureScreenshot(filename,storeInGameFolder,overwriteExisting,timeout)](#M-gdio-unity_api-v2-ApiClient-CaptureScreenshot-System-String,System-Boolean,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.CaptureScreenshot(System.String,System.Boolean,System.Boolean,System.Int32)')
   - [Click(buttonId,position,clickFrameCount,timeout)](#M-gdio-unity_api-v2-ApiClient-Click-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,System-Int32- 'gdio.unity_api.v2.ApiClient.Click(gdio.common.objects.MouseButtons,gdio.common.objects.Vector2,System.UInt64,System.Int32)')
   - [Click(buttonId,x,y,clickFrameCount,timeout)](#M-gdio-unity_api-v2-ApiClient-Click-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,System-Int32- 'gdio.unity_api.v2.ApiClient.Click(gdio.common.objects.MouseButtons,System.Single,System.Single,System.UInt64,System.Int32)')
@@ -39,8 +37,8 @@
   - [GetLastFPS()](#M-gdio-unity_api-v2-ApiClient-GetLastFPS 'gdio.unity_api.v2.ApiClient.GetLastFPS')
   - [GetNextCollisionEvent(eventId)](#M-gdio-unity_api-v2-ApiClient-GetNextCollisionEvent-System-String- 'gdio.unity_api.v2.ApiClient.GetNextCollisionEvent(System.String)')
   - [GetObjectDistance(objectA_HierarchyPath,objectB_HierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectDistance-System-String,System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectDistance(System.String,System.String,System.Int32)')
-  - [GetObjectFieldValue<T>(hierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue<T>-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectFieldValue<T>(System.String,System.Int32)')
-  - [GetObjectFieldValue<T>(hierarchyPath,fieldOrPropertyName,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue<T>-System-String,System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectFieldValue<T>(System.String,System.String,System.Int32)')
+  - [GetObjectFieldValue\<T>(hierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue\<T>-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectFieldValue\<T>(System.String,System.Int32)')
+  - [GetObjectFieldValue\<T>(hierarchyPath,fieldOrPropertyName,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue\<T>-System-String,System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectFieldValue\<T>(System.String,System.String,System.Int32)')
   - [GetObjectList(timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectList-System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectList(System.Int32)')
   - [GetObjectPosition(objectHierarchyPath,cordSpace,cameraHierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectPosition-System-String,gdio-common-objects-CoordinateConversion,System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectPosition(System.String,gdio.common.objects.CoordinateConversion,System.String,System.Int32)')
   - [GetSceneName(timeout)](#M-gdio-unity_api-v2-ApiClient-GetSceneName-System-Int32- 'gdio.unity_api.v2.ApiClient.GetSceneName(System.Int32)')
@@ -76,7 +74,7 @@
   - [WaitForObject(hierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-WaitForObject-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.WaitForObject(System.String,System.Int32)')
   - [WaitForObjectValue(hierarchyPath,fieldOrPropertyName,value,waitForObject,timeout,valueSerializer)](#M-gdio-unity_api-v2-ApiClient-WaitForObjectValue-System-String,System-String,System-Object,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.WaitForObjectValue(System.String,System.String,System.Object,System.Boolean,System.Int32)')
 - [CoApiClient](#T-gdio-unity_api-v2-CoApiClient 'gdio.unity_api.v2.CoApiClient')
-  - [CallMethod<T>(hierarchyPath,methodName,arguments,timeout)](#M-gdio-unity_api-v2-CoApiClient-CallMethod<T>-System-String,System-String,System-Object[],System-Int32- 'gdio.unity_api.v2.CoApiClient.CallMethod<T>(System.String,System.String,System.Object[],System.Int32)')
+  - [CallMethod\<T>(hierarchyPath,methodName,arguments,timeout)](#M-gdio-unity_api-v2-CoApiClient-CallMethod\<T>-System-String,System-String,System-Object[],System-Int32- 'gdio.unity_api.v2.CoApiClient.CallMethod\<T>(System.String,System.String,System.Object[],System.Int32)')
   - [CaptureScreenshot(filename,storeInGameFolder,overwriteExisting,timeout)](#M-gdio-unity_api-v2-CoApiClient-CaptureScreenshot-System-String,System-Boolean,System-Boolean,System-Int32- 'gdio.unity_api.v2.CoApiClient.CaptureScreenshot(System.String,System.Boolean,System.Boolean,System.Int32)')
   - [Click(buttonId,position,clickFrameCount,timeout)](#M-gdio-unity_api-v2-CoApiClient-Click-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,System-Int32- 'gdio.unity_api.v2.CoApiClient.Click(gdio.common.objects.MouseButtons,gdio.common.objects.Vector2,System.UInt64,System.Int32)')
   - [Click(buttonId,x,y,clickFrameCount,timeout)](#M-gdio-unity_api-v2-CoApiClient-Click-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,System-Int32- 'gdio.unity_api.v2.CoApiClient.Click(gdio.common.objects.MouseButtons,System.Single,System.Single,System.UInt64,System.Int32)')
@@ -92,8 +90,8 @@
   - [GetLastFPS()](#M-gdio-unity_api-v2-CoApiClient-GetLastFPS 'gdio.unity_api.v2.CoApiClient.GetLastFPS')
   - [GetNextCollisionEvent(eventId)](#M-gdio-unity_api-v2-CoApiClient-GetNextCollisionEvent-System-String- 'gdio.unity_api.v2.CoApiClient.GetNextCollisionEvent(System.String)')
   - [GetObjectDistance(objectA_HierarchyPath,objectB_HierarchyPath,timeout)](#M-gdio-unity_api-v2-CoApiClient-GetObjectDistance-System-String,System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.GetObjectDistance(System.String,System.String,System.Int32)')
-  - [GetObjectFieldValue<T>(hierarchyPath,timeout)](#M-gdio-unity_api-v2-CoApiClient-GetObjectFieldValue<T>-System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.GetObjectFieldValue<T>(System.String,System.Int32)')
-  - [GetObjectFieldValue<T>(hierarchyPath,fieldOrPropertyName,timeout)](#M-gdio-unity_api-v2-CoApiClient-GetObjectFieldValue<T>-System-String,System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.GetObjectFieldValue<T>(System.String,System.String,System.Int32)')
+  - [GetObjectFieldValue\<T>(hierarchyPath,timeout)](#M-gdio-unity_api-v2-CoApiClient-GetObjectFieldValue\<T>-System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.GetObjectFieldValue\<T>(System.String,System.Int32)')
+  - [GetObjectFieldValue\<T>(hierarchyPath,fieldOrPropertyName,timeout)](#M-gdio-unity_api-v2-CoApiClient-GetObjectFieldValue\<T>-System-String,System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.GetObjectFieldValue\<T>(System.String,System.String,System.Int32)')
   - [GetObjectList(timeout)](#M-gdio-unity_api-v2-CoApiClient-GetObjectList-System-Int32- 'gdio.unity_api.v2.CoApiClient.GetObjectList(System.Int32)')
   - [GetObjectPosition(objectHierarchyPath,cordSpace,cameraHierarchyPath,timeout)](#M-gdio-unity_api-v2-CoApiClient-GetObjectPosition-System-String,gdio-common-objects-CoordinateConversion,System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.GetObjectPosition(System.String,gdio.common.objects.CoordinateConversion,System.String,System.Int32)')
   - [GetSceneName(timeout)](#M-gdio-unity_api-v2-CoApiClient-GetSceneName-System-Int32- 'gdio.unity_api.v2.CoApiClient.GetSceneName(System.Int32)')
@@ -126,6 +124,7 @@
   - [WaitForObjectValue(hierarchyPath,fieldOrPropertyName,value,waitForObject,timeout,valueSerializer)](#M-gdio-unity_api-v2-CoApiClient-WaitForObjectValue-System-String,System-String,System-Object,System-Boolean,System-Int32,gdio-plugin-serializer-ICustomSerializer- 'gdio.unity_api.v2.CoApiClient.WaitForObjectValue(System.String,System.String,System.Object,System.Boolean,System.Int32,gdio.plugin.serializer.ICustomSerializer)')
 
 <a name='T-gdio-unity_api-v2-ApiClient'></a>
+
 ## ApiClient `type`
 
 ##### Namespace
@@ -137,8 +136,8 @@ gdio.unity_api.v2
 GameDriver.io Unity API Client class.
 
 <a name='M-gdio-unity_api-v2-ApiClient-#ctor'></a>
-### #ctor() `constructor`
 
+### #ctor() `constructor`
 
 ##### Summary
 
@@ -148,40 +147,40 @@ GameDriver.io Unity API Client class constructor.
 
 This constructor has no parameters.
 
-
 <a name='F-gdio-unity_api-v2-ApiClient-AUTOPLAY_DEFAULT_PORT'></a>
+
 ### AUTOPLAY_DEFAULT_PORT `constants`
 
 ##### Summary
 
 The default AUTOPLAY port to use when searching for running games.  This port is configured in the Unity preferences.
 
-
 <a name='F-gdio-unity_api-v2-ApiClient-AUTOPLAY_ENABLED'></a>
+
 ### AUTOPLAY_ENABLED `constants`
 
 ##### Summary
 
 NOT IN USE.
 
-
 <a name='F-gdio-unity_api-v2-ApiClient-AUTOPLAY_RECEIVE_PORT'></a>
+
 ### AUTOPLAY_RECEIVE_PORT `constants`
 
 ##### Summary
 
 The port to listen for responses from the AutoPlay plugin running in Unity.  Due to loopback limitations, this port must be different than the [AUTOPLAY_DEFAULT_PORT](#F-gdio-unity_api-v2-ApiClient-AUTOPLAY_DEFAULT_PORT 'gdio.unity_api.v2.ApiClient.AUTOPLAY_DEFAULT_PORT')
 
-
 <a name='F-gdio-unity_api-v2-ApiClient-THROW_EXCEPTIONS'></a>
+
 ### THROW_EXCEPTIONS `constants`
 
 ##### Summary
 
 If TRUE, the API will throw exceptions instead of logging errors and where applicable returning false/NULL.  The default is FALSE.
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-AxisPress-System-String,System-Single,System-UInt64,System-Int32-'></a>
+
 ### AxisPress(axisId,value,numberOfFrames,timeout) `method`
 
 ##### Summary
@@ -203,7 +202,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ##### Example
 
-```
+```c#
 //Press the down then right keys in sequence
 api.AxisPress("Horizontal1", 1, 100);
 api.Wait(300);
@@ -212,8 +211,8 @@ api.Wait(300);
             
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-ButtonPress-System-String,System-UInt64,System-Int32-'></a>
+
 ### ButtonPress(buttonId,numberOfFrames,timeout) `method`
 
 ##### Summary
@@ -234,7 +233,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ##### Example
 
-```
+```c#
 //Press the down, left, up, then right keys in sequence
 api.ButtonPress("Fire1", 100);
 api.Wait(300);
@@ -243,8 +242,8 @@ api.Wait(300);
             
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-CallMethod-System-String,System-String,System-Object[],System-Int32-'></a>
+
 ### CallMethod(hierarchyPath,methodName,arguments,timeout) `method`
 
 ##### Summary
@@ -266,14 +265,14 @@ Returns a boolean based on the successful execution of the return type void, met
 
 ##### Example
 
-```
+```c#
 api.CallMethod("//*[@name='Canvas']/fn:component('CustomScript')",
     "CustomMethod", new string[] { "string:The Test was run on " + DateTime.Now.ToShortDateString() });
 ```
 
+<a name='M-gdio-unity_api-v2-ApiClient-CallMethod\<T>-System-String,System-String,System-Object[],System-Int32-'></a>
 
-<a name='M-gdio-unity_api-v2-ApiClient-CallMethod<T>-System-String,System-String,System-Object[],System-Int32-'></a>
-### CallMethod<T>(hierarchyPath,methodName,arguments,timeout) `method`
+### CallMethod\<T>(hierarchyPath,methodName,arguments,timeout) `method`
 
 ##### Summary
 
@@ -294,13 +293,13 @@ Returns a deserialized object of type T. If T and the type of the returned objec
 
 ##### Example
 
-```
+```c#
 api.CallMethod<int>("//*[@name='Canvas']/fn:component('CustomScript')",
     "DoMath", new object[] { 1, 2 });
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-CaptureScreenshot-System-String,System-Boolean,System-Boolean,System-Int32-'></a>
+
 ### CaptureScreenshot(filename,storeInGameFolder,overwriteExisting,timeout) `method`
 
 ##### Summary
@@ -318,12 +317,12 @@ Use this function to capture a screenshot of the Game under test.
 
 ##### Example
 
-```
+```c#
 api.CaptureScreenshot(@"c:\temp\screen1.png", false, true);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-Click-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,System-Int32-'></a>
+
 ### Click(buttonId,position,clickFrameCount,timeout) `method`
 
 ##### Summary
@@ -341,12 +340,12 @@ Use this function to perform in-game mouse-clicks.
 
 ##### Example
 
-```
+```c#
 api.Click(MouseButtons.LEFT, new Vector2 (0, 0), 30, 30); //Clicks the left mouse button at 0,0 for 30 frames
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-Click-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,System-Int32-'></a>
+
 ### Click(buttonId,x,y,clickFrameCount,timeout) `method`
 
 ##### Summary
@@ -365,12 +364,12 @@ Use this function to perform in-game mouse-clicks.
 
 ##### Example
 
-```
+```c#
 api.Click(MouseButtons.LEFT, 0, 0, 30, 30); //Clicks the left mouse button at 0,0 for 30 frames
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-ClickEx-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
+
 ### ClickEx(buttonId,position,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
 
 ##### Summary
@@ -393,14 +392,14 @@ Use this function to perform in-game mouse-clicks combined with key press operat
 
 ##### Example
 
-```
+```c#
 //Clicks the left mouse button at 0,0 for 30 frames while holding the left-shift key for 3 frames, and the C key for 5 frames.
 api.ClickEx(MouseButtons.LEFT, new Vector2(0, 0), 30, new KeyCode[] { KeyCode.C }, 5, new KeyCode[] { KeyCode.LeftShift }, 3, 500, 30);
             
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-ClickEx-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
+
 ### ClickEx(buttonId,x,y,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
 
 ##### Summary
@@ -424,7 +423,7 @@ Use this function to perform in game mouse-clicks combined with key press operat
 
 ##### Example
 
-```
+```c#
 //Clicks the left mouse button at 0,0 for 30 frames while holding the left-shift key for 3 frames, and the C key for 5 frames.
 api.ClickEx(MouseButtons.LEFT, 0, 0, 30,
     new KeyCode[] { KeyCode.C }, 5,
@@ -432,8 +431,8 @@ api.ClickEx(MouseButtons.LEFT, 0, 0, 30,
     500, 30);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-ClickObject-gdio-common-objects-MouseButtons,System-String,System-UInt64,System-String,System-Int32-'></a>
+
 ### ClickObject(buttonId,hierarchyPath,frameCount,cameraHierarchyPath,timeout) `method`
 
 ##### Summary
@@ -452,17 +451,18 @@ Use this function to interact with an in-game object using mouse-clicks.
 
 ##### Example
 
-```
+```c#
 //Locates and clicks the first object with the name "Cube" for 30 frames using the left mouse button, and the default camera.
 api.ClickObject(MouseButtons.LEFT, "//*[@name='Cube']", 30, "", 30);
 ```
 
-```
+```c#
 //Locates and clicks the first object with the name "Cube" for 30 frames using the left mouse button, using a specific camera for reference.
 api.ClickObject(MouseButtons.LEFT, "//*[@name='Cube']", 30, "//*[@name='UICamera']/fn:component('UnityEngine.Camera')", 30);
 ```
 
 <a name='M-gdio-unity_api-v2-ApiClient-ClickObjectEx-gdio-common-objects-MouseButtons,System-String,System-UInt64,System-String,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
+
 ### ClickObjectEx(buttonId,hierarchyPath,clickFrameCount,cameraHierarchyPath,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,cameraHierarchyPath,delayAfterModifiersMsec,timeout) `method`
 
 ##### Summary
@@ -486,7 +486,7 @@ Use this function to interact with an in-game object using mouse-clicks combined
 
 ##### Example
 
-```
+```c#
 //Locates and clicks the first object with the name "Cube" for 30 frames with the left mouse button while holding the left-shift key for 3 frames, and the left-CTRL key for 5 frames, using the default camera.
 api.ClickObjectEx(MouseButtons.LEFT,
     "//*[@name='Cube']", 30, "",
@@ -495,7 +495,7 @@ api.ClickObjectEx(MouseButtons.LEFT,
     500, 30);
 ```
 
-```
+```c#
 //Locates and clicks the first object with the name "Cube" for 30 frames with the left mouse button while holding the left-shift key for 3 frames, and the left-CTRL key for 5 frames, using an alternate camera.
 api.ClickObjectEx(MouseButtons.LEFT,
     "//*[@name='Cube']", 30, "//*[@name='UICamera']/fn:component('UnityEngine.Camera')",
@@ -504,8 +504,8 @@ api.ClickObjectEx(MouseButtons.LEFT,
     500, 30);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-Connect-System-String,System-Int32,System-Boolean,System-Int32,System-Boolean-'></a>
+
 ### Connect(hostname,port,autoplay,timeout,autoPortResolution) `method`
 
 ##### Summary
@@ -524,7 +524,7 @@ Use this function to connect to a Unity game with GameDriver Agent configured an
 
 ##### Example
 
-```
+```c#
 //Connects to a local instance of the Unity editor with the default port of 19734 configured and starts Play mode automatically.
 api.Connect("localhost");
 
@@ -532,8 +532,8 @@ api.Connect("localhost");
 api.Connect("10.0.0.20", 19191, false, 60);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-Connect-System-String,System-String,System-Int32,System-Boolean,System-Int32,System-Boolean-'></a>
+
 ### Connect(hostname,regex_MatchGamePath,port,autoplay,timeout,autoPortResolution) `method`
 
 ##### Summary
@@ -553,7 +553,7 @@ Use this function to connect to a Unity game with GameDriver Agent configured an
 
 ##### Example
 
-```
+```c#
 //Connects to any running instance of the Unity editor on the local network (broadcast) with the project name of "myunitygame".
 api.Connect("*", ".*?myunitygame.**");
 
@@ -564,8 +564,8 @@ api.Connect("localhost", ".*?myunitygame.*");
 api.Connect("*");
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-DisableHooks-gdio-unity_api-v2-HookingObject,System-Int32-'></a>
+
 ### DisableHooks(hookObject,timeout) `method`
 
 ##### Summary
@@ -585,12 +585,12 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ##### Example
 
-```
+```c#
 api.DisableHooks(HookingObject.ALL);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-DisableObjectCaching-System-Int32-'></a>
+
 ### DisableObjectCaching(timeout) `method`
 
 ##### Summary
@@ -609,12 +609,12 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ##### Example
 
-```
+```c#
 api.DisableObjectCaching();
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-Disconnect'></a>
+
 ### Disconnect() `method`
 
 ##### Summary
@@ -627,12 +627,12 @@ This method has no parameters.
 
 ##### Example
 
-```
+```c#
 api.Disconnect();
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-DoubleClick-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,System-Int32-'></a>
+
 ### DoubleClick(buttonId,position,clickFrameCount,timeout) `method`
 
 ##### Summary
@@ -650,13 +650,13 @@ Use this function to perform in-game mouse double-clicks.
 
 ##### Example
 
-```
+```c#
 //Double-clicks the left mouse button at position 0, 0 on the screen over a duration of 30 frames.
 api.DoubleClick(MouseButtons.LEFT, new Vector2(0, 0), 30, 30);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-DoubleClick-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,System-Int32-'></a>
+
 ### DoubleClick(buttonId,x,y,clickFrameCount,timeout) `method`
 
 ##### Summary
@@ -675,13 +675,13 @@ Use this function to perform in-game mouse double-clicks.
 
 ##### Example
 
-```
+```c#
 //Double-clicks the left mouse button at position 0, 0 on the screen over a duration of 30 frames.
 api.DoubleClick(MouseButtons.LEFT, 0, 0, 30, 30);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-DoubleClickEx-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
+
 ### DoubleClickEx(buttonId,position,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
 
 ##### Summary
@@ -708,7 +708,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ##### Example
 
-```
+```c#
 //Double-clicks the left mouse button at the position 0, 0 for 30 frames with the left mouse button while holding the left-shift key for 3 frames, and the left-CTRL key for 5 frames.
 api.DoubleClickEx(MouseButtons.LEFT, new Vector2 (0, 0), 30,
     new KeyCode[] { KeyCode.LeftControl }, 5,
@@ -716,8 +716,8 @@ api.DoubleClickEx(MouseButtons.LEFT, new Vector2 (0, 0), 30,
     500, 30);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-DoubleClickEx-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
+
 ### DoubleClickEx(buttonId,x,y,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
 
 ##### Summary
@@ -745,7 +745,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ##### Example
 
-```
+```c#
 //Double-clicks the left mouse button at the position 0, 0 for 30 frames with the left mouse button while holding the left-shift key for 3 frames, and the left-CTRL key for 5 frames.
 api.DoubleClickEx(MouseButtons.LEFT, 0, 0, 30,
     new KeyCode[] { KeyCode.LeftControl }, 5,
@@ -753,8 +753,8 @@ api.DoubleClickEx(MouseButtons.LEFT, 0, 0, 30,
     500, 30);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-DoubleClickObject-gdio-common-objects-MouseButtons,System-String,System-UInt64,System-Int32-'></a>
+
 ### DoubleClickObject(buttonId,hierarchyPath,frameCount,timeout) `method`
 
 ##### Summary
@@ -776,14 +776,14 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ##### Example
 
-```
+```c#
 //Locates and double-clicks the first object with the name "Cube" over a period of 30 frames using the left mouse button.
 api.DoubleClickObject(MouseButtons.LEFT,
     "//*[@name='Cube']", 30, 30);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-DoubleClickObjectEx-gdio-common-objects-MouseButtons,System-String,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
+
 ### DoubleClickObjectEx(buttonId,hierarchyPath,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
 
 ##### Summary
@@ -810,7 +810,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ##### Example
 
-```
+```c#
 //Locates and clicks the first object with the name "Cube" for 30 frames with the left mouse button while holding the left-shift key for 3 frames, and the left-CTRL key for 5 frames.
 api.DoubleClickObjectEx(MouseButtons.LEFT,
     "//*[@name='Cube']", 30,
@@ -819,8 +819,8 @@ api.DoubleClickObjectEx(MouseButtons.LEFT,
     500, 30);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-EnableHooks-gdio-unity_api-v2-HookingObject,System-Int32-'></a>
+
 ### EnableHooks(hookObject,timeout) `method`
 
 ##### Summary
@@ -840,12 +840,12 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ##### Example
 
-```
+```c#
 api.EnableHooks(HookingObject.ALL);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-EnableObjectCaching-System-Int32-'></a>
+
 ### EnableObjectCaching(timeout) `method`
 
 ##### Summary
@@ -864,12 +864,12 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ##### Example
 
-```
+```c#
 api.EnableObjectCaching();
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-FlushObjectLookupCache-System-Int32-'></a>
+
 ### FlushObjectLookupCache(timeout) `method`
 
 ##### Summary
@@ -888,12 +888,12 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ##### Example
 
-```
+```c#
 api.FlushObjectLookupCache();
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-GetConnectedGameDetails'></a>
+
 ### GetConnectedGameDetails() `method`
 
 ##### Summary
@@ -908,8 +908,8 @@ This method returns the details of the game that the API client is connected to.
 
 This method has no parameters.
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-GetLastFPS'></a>
+
 ### GetLastFPS() `method`
 
 ##### Summary
@@ -926,15 +926,15 @@ This method has no parameters.
 
 ##### Example
 
-```
+```c#
 //Can be used as input for time-sensitive functions such as input.
 //For example, this will press the Down key for roughly 1 second:
 api.KeyPress(new KeyCode[] { KeyCode.DownArrow }, (ulong)api.GetLastFPS());
             
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-GetNextCollisionEvent-System-String-'></a>
+
 ### GetNextCollisionEvent(eventId) `method`
 
 ##### Summary
@@ -943,7 +943,7 @@ Collision events are stored in a FIFO queue. Calling this method returns the nex
 
 ##### Returns
 
-A gdio.common.objects.Collision object.
+A [gdio.common.objects.Collision](/gdio.common.objects.md#T-gdio-common-objects-Collision) object.
 
 ##### Parameters
 
@@ -951,8 +951,8 @@ A gdio.common.objects.Collision object.
 | ---- | ---- | ----------- |
 | eventId | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The eventId returned from [RegisterCollisionMonitor](#M-gdio-unity_api-v2-ApiClient-RegisterCollisionMonitor-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.RegisterCollisionMonitor(System.String,System.Int32)') |
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-GetObjectDistance-System-String,System-String,System-Int32-'></a>
+
 ### GetObjectDistance(objectA_HierarchyPath,objectB_HierarchyPath,timeout) `method`
 
 ##### Summary
@@ -973,16 +973,16 @@ Returns the distance between the two objects as a float.
 
 ##### Example
 
-```
+```c#
 // CubeA.Transform = Vector3(1, 2, 3)
 // CubeB.Transform = Vector3(6, 5, 4)
 d = api.GetObjectDistance("//*[@name = 'CubeA']", "//*[@name = 'CubeB']");
 Console.WriteLine(d.ToString()); // prints -5.0,-3.0,-1.0
 ```
 
+<a name='M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue\<T>-System-String,System-Int32-'></a>
 
-<a name='M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue<T>-System-String,System-Int32-'></a>
-### GetObjectFieldValue<T>(hierarchyPath,timeout) `method`
+### GetObjectFieldValue\<T>(hierarchyPath,timeout) `method`
 
 ##### Summary
 
@@ -1009,14 +1009,14 @@ Returns an object of type T for the value or throws an [Exception](https://docs.
 
 // Searches for an object named 'HiddenCube' which is invisible in the scene, and checks whether the "Active" checkbox is enabled.
 
-```
+```c#
 bool invisCube = api.GetObjectFieldValue<bool>("//*[@name='HiddenCube']/fn:component('UnityEngine.Behaviour')/@isActiveAndEnabled");
 Assert.IsTrue(invisCube == false, "The invisible cube isn't active"); //Passes if the object is Active in the scene
 ```
 
+<a name='M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue\<T>-System-String,System-String,System-Int32-'></a>
 
-<a name='M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue<T>-System-String,System-String,System-Int32-'></a>
-### GetObjectFieldValue<T>(hierarchyPath,fieldOrPropertyName,timeout) `method`
+### GetObjectFieldValue\<T>(hierarchyPath,fieldOrPropertyName,timeout) `method`
 
 ##### Summary
 
@@ -1044,13 +1044,13 @@ Returns an object of type T for the value or throws an [Exception](https://docs.
 
 // Searches for an object named 'HiddenCube' which is invisible in the scene, and checks whether the "Active" checkbox is enabled.
 
-```
+```c#
 bool invisCube = api.GetObjectFieldValue<bool>("//*[@name='HiddenCube']/fn:component('UnityEngine.Behaviour')", "isActiveAndEnabled");
 Assert.IsTrue(invisCube == false, "The invisible cube isn't active"); //Passes if the object is Active in the scene
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-GetObjectList-System-Int32-'></a>
+
 ### GetObjectList(timeout) `method`
 
 ##### Summary
@@ -1071,7 +1071,7 @@ This method returns a [IList](https://docs.microsoft.com/en-us/dotnet/api/System
 
 //Print a list of the scene objects
 
-```
+```c#
  System.Collections.Generic.List<LiteGameObject> objects = api.GetObjectList();
  //Test whether the list is null
  Assert.IsNotNull(objects, "GetObjectList failed!");
@@ -1086,8 +1086,8 @@ This method returns a [IList](https://docs.microsoft.com/en-us/dotnet/api/System
  
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-GetObjectPosition-System-String,gdio-common-objects-CoordinateConversion,System-String,System-Int32-'></a>
+
 ### GetObjectPosition(objectHierarchyPath,cordSpace,cameraHierarchyPath,timeout) `method`
 
 ##### Summary
@@ -1109,17 +1109,18 @@ The Vector3 position of the specific object.
 
 ##### Example
 
-```
+```c#
 // spot is set to the Vector3 value of the object position on screen
 Vector3 spot = api.GetObjectPosition("//*[@name = 'Player prefab(Clone)']", CoordinateConversion.WorldToScreenPoint);
 ```
 
-```
+```c#
 // spot is set to the Vector3 value of the object position on screen, using an alternate camera.
 Vector3 spot = api.GetObjectPosition("//*[@name = 'Player prefab(Clone)']", CoordinateConversion.WorldToScreenPoint, "//*[@name='UICamera']/fn:component('UnityEngine.Camera')");
 ```
 
 <a name='M-gdio-unity_api-v2-ApiClient-GetSceneName-System-Int32-'></a>
+
 ### GetSceneName(timeout) `method`
 
 ##### Summary
@@ -1138,12 +1139,12 @@ The name of the scene as a string.
 
 ##### Example
 
-```
+```c#
 string activeScene = api.GetSceneName();
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-GetVersionsString'></a>
+
 ### GetVersionsString() `method`
 
 ##### Summary
@@ -1154,8 +1155,8 @@ Returns the GameDriver component versions in this build.
 
 This method has no parameters.
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-KeyPress-gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
+
 ### KeyPress(keys,numberOfFrames,modifiers,modifierNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
 
 ##### Summary
@@ -1179,7 +1180,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ##### Example
 
-```
+```c#
 //Press the down, left, up, then right keys in sequence
 api.KeyPress(new KeyCode[] { KeyCode.DownArrow}, 100);
 api.Wait(300);
@@ -1191,8 +1192,8 @@ api.KeyPress(new KeyCode[] { KeyCode.RightArrow }, 100);
 api.Wait(3000);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-Launch-System-String,System-String-'></a>
+
 ### Launch(filename,arguments) `method`
 
 ##### Summary
@@ -1210,8 +1211,8 @@ Returns true if the API successfully launches the game.
 | filename | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The path to the executable. In Windows, this should follow the standard “C:\folder\subfolder\filename.exe” convention. |
 | arguments | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | Command line arguments to pass to the executable. |
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-LoadScene-System-String,System-Int32-'></a>
+
 ### LoadScene(sceneName,timeout) `method`
 
 ##### Summary
@@ -1231,13 +1232,13 @@ TRUE if the request was successfully processed by the GameDriver agent.
 
 ##### Example
 
-```
+```c#
 //Loads the FinalBoss scene
 api.LoadScene("FinalBoss");
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-MouseDrag-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32-'></a>
+
 ### MouseDrag(button,destination,frameCount,origin,waitForEmptyInput,timeout) `method`
 
 ##### Summary
@@ -1261,13 +1262,13 @@ TRUE if the requests was successfully processed by the GameDriver agent.
 
 ##### Example
 
-```
+```c#
 //Drags the left mouse button to the position 180, 0 on the screen over 30 frames
 api.MouseDrag(MouseButtons.LEFT, new Vector2(180, 0), 30, start, true);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-MouseMoveToObject-System-String,System-UInt64,System-Boolean,System-Boolean,System-Int32-'></a>
+
 ### MouseMoveToObject(objectHierarchyPath,frameCount,waitForObject,waitForEmptyInput,timeout) `method`
 
 ##### Summary
@@ -1290,13 +1291,13 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Example
 
-```
+```c#
 //Moves the mouse to the center of the object named "Cylinder" over 300 frames
 api.MouseMoveToObject("//*[@name='Cylinder']", 300, true, true);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-MoveMouseToPoint-gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32-'></a>
+
 ### MoveMouseToPoint(destination,frameCount,origin,waitForEmptyInput,timeout) `method`
 
 ##### Summary
@@ -1319,7 +1320,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Example
 
-```
+```c#
 //First get the position of an object named "Cube" on screen
 Vector3 cubePos = api.GetObjectPosition("//*[@name='Cube']", CoordinateConversion.WorldToScreenPoint);
 
@@ -1330,8 +1331,8 @@ Vector2 cubePos2 = new Vector2(cubePos.x, cubePos.y);
 api.MoveMouseToPoint(cubePos2, (ulong) api.GetLastFPS());
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-NavAgentMoveToPoint-System-String,gdio-common-objects-Vector3,System-Boolean,System-Int32-'></a>
+
 ### NavAgentMoveToPoint(navAgentHierarchyPath,destination,waitForMoveToComplete,timeout) `method`
 
 ##### Summary
@@ -1353,13 +1354,13 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Example
 
-```
+```c#
 //Moves the 1st object named "Ellen" to position 20, 0, 20 on the NavMesh
 api.NavAgentMoveToPoint("//*[@name='Ellen']", new Vector3(20, 0, 20));
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-Raycast-gdio-common-objects-Vector3,System-String,System-Int32-'></a>
+
 ### Raycast(raycastPoint,cameraHierarchyPath,timeout) `method`
 
 ##### Summary
@@ -1380,7 +1381,7 @@ Returns an array of [RaycastResult](/gdio.common.objects.md#T-gdio-common-object
 
 ##### Example
 
-```
+```c#
 // Racast to an object named "Ellen"
 RaycastResult[] rr = api.Raycast(api.GetObjectPosition("//*[@name='Ellen']"));
 
@@ -1399,8 +1400,8 @@ foreach (var res in rr)
 // Type Name: UnityEngine.GameObject
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-RegisterCollisionMonitor-System-String,System-Int32-'></a>
+
 ### RegisterCollisionMonitor(hierarchyPath,timeout) `method`
 
 ##### Summary
@@ -1420,12 +1421,12 @@ String returned is the event identifier
 
 ##### Example
 
-```
+```c#
 api.RegisterCollisionMonitor("//*[@name='Cylinder']");
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-RotateObject-System-String,gdio-common-objects-Quaternion,System-Boolean,System-Int32-'></a>
+
 ### RotateObject(hierarchyPath,quaternion,waitForObject,timeout) `method`
 
 ##### Summary
@@ -1447,12 +1448,12 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Example
 
-```
+```c#
 api.RotateObject("//*[@name='Cylinder']", new Quaternion(0, 0, 2, 2), true);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-RotateObject-System-String,gdio-common-objects-Vector3,gdio-common-objects-Space,System-Boolean,System-Int32-'></a>
+
 ### RotateObject(hierarchyPath,eulers,relativeTo,waitForObject,timeout) `method`
 
 ##### Summary
@@ -1475,13 +1476,13 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Example
 
-```
+```c#
 //Rotates an object with the name "Cylinder" by 30 degrees on the y axis.
 api.RotateObject("//*[@name='Cylinder']", new Vector3(0, 30, 0), Space.Self, true);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-RotateObject-System-String,System-Single,System-Single,System-Single,gdio-common-objects-Space,System-Boolean,System-Int32-'></a>
+
 ### RotateObject(hierarchyPath,xAngle,yAngle,zAngle,relativeTo,waitForObject,timeout) `method`
 
 ##### Summary
@@ -1506,13 +1507,13 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Example
 
-```
+```c#
 //Rotates an object with the name "Cylinder" by 20 degrees on the z axis
 api.RotateObject("//*[@name='Cylinder']", 0, 0, 20);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-RotateObject-System-String,gdio-common-objects-Vector3,System-Single,gdio-common-objects-Space,System-Boolean,System-Int32-'></a>
+
 ### RotateObject(hierarchyPath,axis,angle,relativeTo,waitForObject,timeout) `method`
 
 ##### Summary
@@ -1536,13 +1537,13 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Example
 
-```
+```c#
 //Will rotate an object named "Cylinder" on all 3 axis by 45-degrees
 api.RotateObject("//*[@name='Cylinder']", new Vector3(0, 0, 0), 45);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-SetInputFieldText-System-String,System-String,System-Boolean,System-Int32-'></a>
+
 ### SetInputFieldText(hierarchyPath,value,waitForObject,timeout) `method`
 
 ##### Summary
@@ -1567,25 +1568,25 @@ TRUE if the GameDriver agent was able to successfully set the InputField text.
 Note: The actual text field changed in this example appears as a grandchild of the object referenced in the example, such as:
 ![image](https://user-images.githubusercontent.com/69934036/157325157-61215f01-46bc-497c-ac5c-17e9bb06f682.png)
   
-```
+```c#
 //Sets the text field component attached to the "TextMeshPro InputField" object with the tag "FilterInputTxt" to the value of "America"
 api.SetInputFieldText("//FilterInputTxt[@name='TextMeshPro InputField']", "America");
 ```
 
 <a name='M-gdio-unity_api-v2-ApiClient-StopEditorPlay'></a>
+
 ### StopEditorPlay() `method`
 
 ##### Summary
 
 Stops Play Mode in the Unity Editor.
 
-
 ##### Parameters
 
 This method has no parameters.
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-SetObjectFieldValue-System-String,System-String,System-Object,System-Boolean,System-Int32-'></a>
+
 ### SetObjectFieldValue(hierarchyPath,fieldOrPropertyName,value,waitForObject,timeout,valueSerializer) `method`
 
 ##### Summary
@@ -1608,13 +1609,13 @@ TRUE if the field/property was successfully set to the value.
 
 ##### Example
 
-```
+```c#
 //Sets the text field component attached to the "TextMeshPro InputField" object with the tag "FilterInputTxt" to the value of "Asia"
 api.SetObjectFieldValue("/Untagged[@name='Canvas']/FilterInputTxt[@name='TextMeshPro InputField']/fn:component('TMPro.TMP_InputField')", "text", "string:Asia");
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-Tap-gdio-common-objects-Vector2,System-Int32,System-UInt64,System-Int32-'></a>
+
 ### Tap(position,tapCount,frameCount,timeout) `method`
 
 ##### Summary
@@ -1636,13 +1637,13 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 ##### Example
 
-```
+```c#
 //Performs a single tap at position 0, 0 for 10 frames
 api.Tap(new Vector2(0, 0), 1, 10); 
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-Tap-System-Single,System-Single,System-Int32,System-UInt64,System-Int32-'></a>
+
 ### Tap(x,y,tapCount,frameCount,timeout) `method`
 
 ##### Summary
@@ -1665,13 +1666,13 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 ##### Example
 
-```
+```c#
 //Performs a single tap at position 0, 0 for 10 frames
 api.Tap(0, 0, 1, 10);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-TapObject-System-String,System-Int32,System-UInt64,System-String,System-Int32-'></a>
+
 ### TapObject(hierarchyPath,tapCount,frameCount,cameraHierarchyPath,timeout) `method`
 
 ##### Summary
@@ -1694,31 +1695,30 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 ##### Example
 
-```
+```c#
 //Performs a single tap on an object with the name "Cube"
 api.TapObject("//*[@name='Cube']", 1, "", 10);
 ```
 
-```
+```c#
 //Performs a single tap on an object with the name "Cube", using an alternate camera to locate the object.
 api.TapObject("//*[@name='Cube']", 1, "//*[@name='UICamera']/fn:component('UnityEngine.Camera')", 10);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-TerminateGame'></a>
+
 ### TerminateGame() `method`
 
 ##### Summary
 
 Terminates the running standalone executable. Executable can be launched via [ApiClient.Launch](#M-gdio-unity_api-v2-ApiClient-Launch-System-String,System-String- 'gdio.unity_api.v2.ApiClient.Launch(System.String,System.String)').
 
-
 ##### Parameters
 
 This method has no parameters.
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-ToggleEditorPause'></a>
+
 ### ToggleEditorPause() `method`
 
 ##### Summary
@@ -1729,8 +1729,8 @@ Toggles Pause in the Unity Editor while Play Mode is active.
 
 This method has no parameters.
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-ToggleEditorPlay'></a>
+
 ### ToggleEditorPlay() `method`
 
 ##### Summary
@@ -1741,8 +1741,8 @@ Toggles Play Mode in the Unity Editor.
 
 This method has no parameters.
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-TouchInput-gdio-common-objects-Vector2,gdio-common-objects-Vector2,System-Int32,System-Int32,System-UInt64,System-Boolean,System-Single,System-Single,System-Single,System-Single,System-Single,System-Int32-'></a>
+
 ### TouchInput(startPosition,destinationPosition,fingerId,tapCount,frameCount,waitForEmptyInput,radius,pressure,altitudeAngle,azmulthAngle,maximumPossiblePressure,timeout) `method`
 
 ##### Summary
@@ -1772,13 +1772,13 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 ##### Example
 
-```
+```c#
 //Performs a single touch input from 0,0 to 100, 100 with a single "finger" over a duration of 50 frames
 api.TouchInput(new Vector2(0, 0), new Vector2(100, 100), 0, 1, 50);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-TouchInput-System-Single,System-Single,System-Single,System-Single,System-Int32,System-Int32,System-UInt64,System-Boolean,System-Single,System-Single,System-Single,System-Single,System-Single,System-Int32-'></a>
+
 ### TouchInput(x1,y1,x2,y2,fingerId,tapCount,frameCount,waitForEmptyInput,radius,pressure,altitudeAngle,azmulthAngle,maximumPossiblePressure,timeout) `method`
 
 ##### Summary
@@ -1810,13 +1810,13 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 ##### Example
 
-```
+```c#
 //Performs a single touch input from 0,0 to 100, 100 with a single "finger" over a duration of 50 frames
 api.TouchInput(0, 0, 100, 100, 0, 1, 50);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-UnregisterCollisionMonitor-System-String,System-Int32-'></a>
+
 ### UnregisterCollisionMonitor(hierarchyPath,timeout) `method`
 
 ##### Summary
@@ -1830,8 +1830,8 @@ Unregister the monitoring of collision events on a GameObject that has been prev
 | hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') |  |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') |  |
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-Wait-System-Int32-'></a>
+
 ### Wait(milliSeconds) `method`
 
 ##### Summary
@@ -1846,11 +1846,12 @@ Client side Wait or Pause.
 
 ##### Example
 
-```
+```c#
 api.Wait(3000); //Waits 3 seconds before continuing
 ```
 
 <a name='M-gdio-unity_api-v2-ApiClient-WaitForCollisionEvent-System-String,System-Int32-'></a>
+
 ### WaitForCollisionEvent(eventId,timeout) `method`
 
 ##### Summary
@@ -1870,12 +1871,12 @@ The collision messages.
 
 ##### Example
 
-```
+```c#
 api.WaitForCollisionEvent{object}(eventId);
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-WaitForEmptyInput-System-Int32-'></a>
+
 ### WaitForEmptyInput(timeout) `method`
 
 ##### Summary
@@ -1892,8 +1893,8 @@ TRUE when the Empty Input event is received.
 | ---- | ---- | ----------- |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The time to wait for the event. |
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-WaitForObject-System-String,System-Int32-'></a>
+
 ### WaitForObject(hierarchyPath,timeout) `method`
 
 ##### Summary
@@ -1913,12 +1914,12 @@ TRUE if the object exists within the alloted timeout.
 
 ##### Example
 
-```
+```c#
 api.WaitForObject("//*[@name='Cube']"); //Waits for an object named "Cube" to exist
 ```
 
-
 <a name='M-gdio-unity_api-v2-ApiClient-WaitForObjectValue-System-String,System-String,System-Object,System-Boolean,System-Int32-'></a>
+
 ### WaitForObjectValue(hierarchyPath,fieldOrPropertyName,value,waitForObject,timeout,valueSerializer) `method`
 
 ##### Summary
@@ -1941,22 +1942,22 @@ TRUE if the object exists with the specified value in the alloted timeout.
 
 ##### Example
 
-```
+```c#
 //Waits for the value of the TextMeshProUGUI input field with the name "Text" to be "America"
 api.WaitForObjectValue("//*[@name='Text']/fn:component('TMPro.TextMeshProUGUI')", "text", "America");
 ```
 
-
 <a name='T-gdio-unity_api-v2-CoApiClient'></a>
+
 ## CoApiClient `type`
 
 ##### Namespace
 
 gdio.unity_api.v2
 
+<a name='M-gdio-unity_api-v2-CoApiClient-CallMethod\<T>-System-String,System-String,System-Object[],System-Int32-'></a>
 
-<a name='M-gdio-unity_api-v2-CoApiClient-CallMethod<T>-System-String,System-String,System-Object[],System-Int32-'></a>
-### CallMethod<T>(hierarchyPath,methodName,arguments,timeout) `method`
+### CallMethod\<T>(hierarchyPath,methodName,arguments,timeout) `method`
 
 ##### Summary
 
@@ -1977,12 +1978,12 @@ Returns a deserialized object of type T. If T and the type of the returned objec
 
 ##### Example
 
-```
+```c#
 api.CallMethod<int>("//*[@name='Canvas']/fn:component('CustomScript')", "DoMath", new object[] { 1, 2 });
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-CaptureScreenshot-System-String,System-Boolean,System-Boolean,System-Int32-'></a>
+
 ### CaptureScreenshot(filename,storeInGameFolder,overwriteExisting,timeout) `method`
 
 ##### Summary
@@ -2000,12 +2001,12 @@ Use this function to capture a screenshot of the Game under test.
 
 ##### Example
 
-```
+```c#
 api.CaptureScreenshot(@"c:\temp\screen1.png", false, true);
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-Click-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,System-Int32-'></a>
+
 ### Click(buttonId,position,clickFrameCount,timeout) `method`
 
 ##### Summary
@@ -2023,12 +2024,12 @@ Use this function to perform in-game mouse-clicks.
 
 ##### Example
 
-```
+```c#
 api.Click(MouseButtons.LEFT, new Vector2 (0, 0), 30, 30); //Clicks the left mouse button at 0,0 for 30 frames
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-Click-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,System-Int32-'></a>
+
 ### Click(buttonId,x,y,clickFrameCount,timeout) `method`
 
 ##### Summary
@@ -2047,12 +2048,12 @@ Use this function to perform in-game mouse-clicks.
 
 ##### Example
 
-```
+```c#
 api.Click(MouseButtons.LEFT, 0, 0, 30, 30); //Clicks the left mouse button at 0,0 for 30 frames
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-ClickEx-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
+
 ### ClickEx(buttonId,position,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
 
 ##### Summary
@@ -2075,14 +2076,14 @@ Use this function to perform in-game mouse-clicks combined with key press operat
 
 ##### Example
 
-```
+```c#
 //Clicks the left mouse button at 0,0 for 30 frames while holding the left-shift key for 3 frames, and the C key for 5 frames.
 api.ClickEx(MouseButtons.LEFT, new Vector2(0, 0), 30, new KeyCode[] { KeyCode.C }, 5, new KeyCode[] { KeyCode.LeftShift }, 3, 500, 30);
             
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-ClickEx-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
+
 ### ClickEx(buttonId,x,y,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
 
 ##### Summary
@@ -2106,7 +2107,7 @@ Use this function to perform in game mouse-clicks combined with key press operat
 
 ##### Example
 
-```
+```c#
 //Clicks the left mouse button at 0,0 for 30 frames while holding the left-shift key for 3 frames, and the C key for 5 frames.
 api.ClickEx(MouseButtons.LEFT, 0, 0, 30,
     new KeyCode[] { KeyCode.C }, 5,
@@ -2114,8 +2115,8 @@ api.ClickEx(MouseButtons.LEFT, 0, 0, 30,
     500, 30);
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-ClickObject-gdio-common-objects-MouseButtons,System-String,System-UInt64,System-Int32-'></a>
+
 ### ClickObject(buttonId,hierarchyPath,frameCount,timeout) `method`
 
 ##### Summary
@@ -2133,14 +2134,14 @@ Use this function to interact with an in-game object using mouse-clicks.
 
 ##### Example
 
-```
+```c#
 //Locates and clicks the first object with the name "Cube" for 30 frames using the left mouse button.
 api.ClickObject(MouseButtons.LEFT,
     "//*[@name='Cube']", 30, 30);
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-ClickObjectEx-gdio-common-objects-MouseButtons,System-String,System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
+
 ### ClickObjectEx(buttonId,hierarchyPath,clickFrameCount,keys,keysNumberOfFrames,modifiers,modifiersNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
 
 ##### Summary
@@ -2163,7 +2164,7 @@ Use this function to interact with an in-game object using mouse-clicks combined
 
 ##### Example
 
-```
+```c#
 //Locates and clicks the first object with the name "Cube" for 30 frames with the left mouse button while holding the left-shift key for 3 frames, and the left-CTRL key for 5 frames.
 api.ClickObjectEx(MouseButtons.LEFT,
     "//*[@name='Cube']", 30,
@@ -2172,8 +2173,8 @@ api.ClickObjectEx(MouseButtons.LEFT,
     500, 30);
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-Connect-System-String,System-Int32,System-Int32-'></a>
+
 ### Connect(hostname,port,timeout) `method`
 
 ##### Summary
@@ -2188,8 +2189,8 @@ Use this function to connect to a Unity game with GameDriver Agent configured an
 | port | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The configured port that the GameDriver agent is configured to use. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The amount of time in seconds to wait for connectivity to establish with the game. |
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-DisableHooks-gdio-unity_api-v2-HookingObject,System-Int32-'></a>
+
 ### DisableHooks(hookObject,timeout) `method`
 
 ##### Summary
@@ -2209,12 +2210,12 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ##### Example
 
-```
+```c#
 api.DisableHooks(HookingObject.ALL);
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-EnableHooks-gdio-unity_api-v2-HookingObject,System-Int32-'></a>
+
 ### EnableHooks(hookObject,timeout) `method`
 
 ##### Summary
@@ -2234,12 +2235,12 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ##### Example
 
-```
+```c#
 api.EnableHooks(HookingObject.ALL);
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-EnableObjectCaching-System-Int32-'></a>
+
 ### EnableObjectCaching(timeout) `method`
 
 ##### Summary
@@ -2258,12 +2259,12 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ##### Example
 
-```
+```c#
 api.EnableObjectCaching();
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-FlushObjectLookupCache-System-Int32-'></a>
+
 ### FlushObjectLookupCache(timeout) `method`
 
 ##### Summary
@@ -2282,12 +2283,12 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ##### Example
 
-```
+```c#
 api.FlushObjectLookupCache();
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-GetLastFPS'></a>
+
 ### GetLastFPS() `method`
 
 ##### Summary
@@ -2304,14 +2305,14 @@ This method has no parameters.
 
 ##### Example
 
-```
+```c#
 //Can be used as input for time-sensitive functions such as input.
 //For example, this will press the Down key for roughly 1 second:
 api.KeyPress(new KeyCode[] { KeyCode.DownArrow }, (ulong)api.GetLastFPS());     
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-GetNextCollisionEvent-System-String-'></a>
+
 ### GetNextCollisionEvent(eventId) `method`
 
 ##### Summary
@@ -2320,7 +2321,7 @@ Collision events are stored in a FIFO queue. Calling this method returns the nex
 
 ##### Returns
 
-A gdio.common.objects.Collision object.
+A [gdio.common.objects.Collision](/gdio.common.objects.md#T-gdio-common-objects-Collision) object.
 
 ##### Parameters
 
@@ -2334,8 +2335,8 @@ A gdio.common.objects.Collision object.
 | ---- | ----------- |
 | T | The Type of the field or property to be inspected. |
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-GetObjectDistance-System-String,System-String,System-Int32-'></a>
+
 ### GetObjectDistance(objectA_HierarchyPath,objectB_HierarchyPath,timeout) `method`
 
 ##### Summary
@@ -2356,16 +2357,16 @@ Returns the distance between the two objects as a float.
 
 ##### Example
 
-```
+```c#
 // CubeA.Transform = Vector3(1, 2, 3)
 // CubeB.Transform = Vector3(6, 5, 4)
 d = api.GetObjectDistance("//*[@name = 'CubeA']", "//*[@name = 'CubeB']");
 Console.WriteLine(d.ToString()); // prints -5.0,-3.0,-1.0
 ```
 
+<a name='M-gdio-unity_api-v2-CoApiClient-GetObjectFieldValue\<T>-System-String,System-Int32-'></a>
 
-<a name='M-gdio-unity_api-v2-CoApiClient-GetObjectFieldValue<T>-System-String,System-Int32-'></a>
-### GetObjectFieldValue<T>(hierarchyPath,timeout) `method`
+### GetObjectFieldValue\<T>(hierarchyPath,timeout) `method`
 
 ##### Summary
 
@@ -2392,14 +2393,14 @@ Returns an object of type T for the value or throws an [Exception](https://docs.
 
 // Searches for an object named 'HiddenCube' which is invisible in the scene, and checks whether the "Active" checkbox is enabled.
 
-```
+```c#
 bool invisCube = api.GetObjectFieldValue<bool>("//*[@name='HiddenCube']/fn:component('UnityEngine.Behaviour')/@isActiveAndEnabled");
 Assert.IsTrue(invisCube == false, "The invisible cube isn't active"); //Passes if the object is Active in the scene
 ```
 
+<a name='M-gdio-unity_api-v2-CoApiClient-GetObjectFieldValue\<T>-System-String,System-String,System-Int32-'></a>
 
-<a name='M-gdio-unity_api-v2-CoApiClient-GetObjectFieldValue<T>-System-String,System-String,System-Int32-'></a>
-### GetObjectFieldValue<T>(hierarchyPath,fieldOrPropertyName,timeout) `method`
+### GetObjectFieldValue\<T>(hierarchyPath,fieldOrPropertyName,timeout) `method`
 
 ##### Summary
 
@@ -2427,13 +2428,13 @@ Returns an object of type T for the value or throws an [Exception](https://docs.
 
 // Searches for an object named 'HiddenCube' which is invisible in the scene, and checks whether the "Active" checkbox is enabled.
 
-```
+```c#
 bool invisCube = api.GetObjectFieldValue<bool>("//*[@name='HiddenCube']/fn:component('UnityEngine.Behaviour')", "isActiveAndEnabled");
 Assert.IsTrue(invisCube == false, "The invisible cube isn't active"); //Passes if the object is Active in the scene
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-GetObjectList-System-Int32-'></a>
+
 ### GetObjectList(timeout) `method`
 
 ##### Summary
@@ -2454,7 +2455,7 @@ This method returns a [IList](https://docs.microsoft.com/en-us/dotnet/api/System
 
 //Print a list of the scene objects
 
-```
+```c#
  System.Collections.Generic.List<LiteGameObject> objects = api.GetObjectList();
  //Test whether the list is null
  Assert.IsNotNull(objects, "GetObjectList failed!");
@@ -2469,8 +2470,8 @@ This method returns a [IList](https://docs.microsoft.com/en-us/dotnet/api/System
  
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-GetObjectPosition-System-String,gdio-common-objects-CoordinateConversion,System-String,System-Int32-'></a>
+
 ### GetObjectPosition(objectHierarchyPath,cordSpace,cameraHierarchyPath,timeout) `method`
 
 ##### Summary
@@ -2492,13 +2493,13 @@ The Vector3 position of the specific object.
 
 ##### Example
 
-```
+```c#
 // spot is set to the Vector3 value of the object position on screen
 Vector3 spot = api.GetObjectPosition("//*[@name = 'Player prefab(Clone)']", CoordinateConversion.WorldToScreenPoint);
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-GetSceneName-System-Int32-'></a>
+
 ### GetSceneName(timeout) `method`
 
 ##### Summary
@@ -2517,12 +2518,12 @@ The name of the scene as a string.
 
 ##### Example
 
-```
+```c#
 string activeScene = api.GetSceneName();
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-GetVersionsString'></a>
+
 ### GetVersionsString() `method`
 
 ##### Summary
@@ -2533,8 +2534,8 @@ Returns the GameDriver component versions in this build.
 
 This method has no parameters.
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-KeyPress-gdio-unity_api-KeyCode[],System-UInt64,gdio-unity_api-KeyCode[],System-UInt64,System-Int32,System-Int32-'></a>
+
 ### KeyPress(keys,numberOfFrames,modifiers,modifierNumberOfFrames,delayAfterModifiersMsec,timeout) `method`
 
 ##### Summary
@@ -2558,7 +2559,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ##### Example
 
-```
+```c#
 //Press the down, left, up, then right keys in sequence
 api.KeyPress(new KeyCode[] { KeyCode.DownArrow}, 100);
 api.Wait(300);
@@ -2570,8 +2571,8 @@ api.KeyPress(new KeyCode[] { KeyCode.RightArrow }, 100);
 api.Wait(3000);
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-LoadScene-System-String,System-Int32-'></a>
+
 ### LoadScene(sceneName,timeout) `method`
 
 ##### Summary
@@ -2591,13 +2592,13 @@ TRUE if the request was successfully processed by the GameDriver agent.
 
 ##### Example
 
-```
+```c#
 //Loads the FinalBoss scene
 api.LoadScene("FinalBoss");
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-MouseDrag-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32-'></a>
+
 ### MouseDrag(button,destination,frameCount,origin,waitForEmptyInput,timeout) `method`
 
 ##### Summary
@@ -2621,13 +2622,13 @@ TRUE if the requests was successfully processed by the GameDriver agent.
 
 ##### Example
 
-```
+```c#
 //Drags the left mouse button to the position 180, 0 on the screen over 30 frames
 api.MouseDrag(MouseButtons.LEFT, new Vector2(180, 0), 30, start, true);
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-MouseMoveToObject-System-String,System-UInt64,System-Boolean,System-Boolean,System-Int32-'></a>
+
 ### MouseMoveToObject(objectHierarchyPath,frameCount,waitForObject,waitForEmptyInput,timeout) `method`
 
 ##### Summary
@@ -2650,13 +2651,13 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Example
 
-```
+```c#
 //Moves the mouse to the center of the object named "Cylinder" over 300 frames
 api.MouseMoveToObject("//*[@name='Cylinder']", 300, true, true);
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-MoveMouseToPoint-gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32-'></a>
+
 ### MoveMouseToPoint(destination,frameCount,origin,waitForEmptyInput,timeout) `method`
 
 ##### Summary
@@ -2679,7 +2680,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Example
 
-```
+```c#
 //First get the position of an object named "Cube" on screen
 Vector3 cubePos = api.GetObjectPosition("//*[@name='Cube']", CoordinateConversion.WorldToScreenPoint);
 
@@ -2690,8 +2691,8 @@ Vector2 cubePos2 = new Vector2(cubePos.x, cubePos.y);
 api.MoveMouseToPoint(cubePos2, (ulong)api.GetLastFPS());
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-NavAgentMoveToPoint-System-String,gdio-common-objects-Vector3,System-Boolean,System-Int32-'></a>
+
 ### NavAgentMoveToPoint(navAgentHierarchyPath,destination,waitForMoveToComplete,timeout) `method`
 
 ##### Summary
@@ -2713,12 +2714,13 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Example
 
-```
+```c#
 //Moves the 1st object named "Ellen" to position 20, 0, 20 on the NavMesh
 api.NavAgentMoveToPoint("//*[@name='Ellen']", new Vector3(20, 0, 20));
 ```
 
 <a name='M-gdio-unity_api-v2-CoApiClient-Raycast-gdio-common-objects-Vector3,System-String,System-Int32-'></a>
+
 ### Raycast(raycastPoint,cameraHierarchyPath,timeout) `method`
 
 ##### Summary
@@ -2739,7 +2741,7 @@ Returns an array of [RaycastResult](/gdio.common.objects.md#T-gdio-common-object
 
 ##### Example
 
-```
+```c#
 // Racast to an object named "Ellen"
 RaycastResult[] rr = api.Raycast(api.GetObjectPosition("//*[@name='Ellen']"));
 
@@ -2758,8 +2760,8 @@ foreach (var res in rr)
 // Type Name: UnityEngine.GameObject       
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-RegisterCollisionMonitor-System-String,System-Int32-'></a>
+
 ### RegisterCollisionMonitor(hierarchyPath,timeout) `method`
 
 ##### Summary
@@ -2779,12 +2781,12 @@ String returned is the event identifier.
 
 ##### Example
 
-```
+```c#
 api.RegisterCollisionMonitor("//*[@name='Cylinder']");
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-RotateObject-System-String,gdio-common-objects-Quaternion,System-Boolean,System-Int32-'></a>
+
 ### RotateObject(hierarchyPath,quaternion,waitForObject,timeout) `method`
 
 ##### Summary
@@ -2806,12 +2808,12 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Example
 
-```
+```c#
 api.RotateObject("//*[@name='Cylinder']", new Quaternion(0, 0, 2, 2), true);
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-RotateObject-System-String,gdio-common-objects-Vector3,gdio-common-objects-Space,System-Boolean,System-Int32-'></a>
+
 ### RotateObject(hierarchyPath,eulers,relativeTo,waitForObject,timeout) `method`
 
 ##### Summary
@@ -2834,13 +2836,13 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Example
 
-```
+```c#
 //Rotates an object with the name "Cylinder" by 30 degrees on the y axis.
 api.RotateObject("//*[@name='Cylinder']", new Vector3(0, 30, 0), Space.Self, true);
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-RotateObject-System-String,System-Single,System-Single,System-Single,gdio-common-objects-Space,System-Boolean,System-Int32-'></a>
+
 ### RotateObject(hierarchyPath,xAngle,yAngle,zAngle,relativeTo,waitForObject,timeout) `method`
 
 ##### Summary
@@ -2865,13 +2867,13 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Example
 
-```
+```c#
 //Rotates an object with the name "Cylinder" by 20 degrees on the z axis
 api.RotateObject("//*[@name='Cylinder']", 0, 0, 20);
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-RotateObject-System-String,gdio-common-objects-Vector3,System-Single,gdio-common-objects-Space,System-Boolean,System-Int32-'></a>
+
 ### RotateObject(hierarchyPath,axis,angle,relativeTo,waitForObject,timeout) `method`
 
 ##### Summary
@@ -2895,12 +2897,13 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 ##### Example
 
-```
+```c#
 //Will rotate an object named "Cylinder" on all 3 axis by 45-degrees
 api.RotateObject("//*[@name='Cylinder']", new Vector3(0, 0, 0), 45);
 ```
 
 <a name='M-gdio-unity_api-v2-CoApiClient-SetInputFieldText-System-String,System-String,System-Boolean,System-Int32-'></a>
+
 ### SetInputFieldText(hierarchyPath,value,waitForObject,timeout) `method`
 
 ##### Summary
@@ -2925,13 +2928,13 @@ TRUE if the GameDriver agent was able to successfully set the InputField text.
 Note: The actual text field changed in this example appears as a grandchild of the object referenced in the example, such as:
 ![image](https://user-images.githubusercontent.com/69934036/157325157-61215f01-46bc-497c-ac5c-17e9bb06f682.png)
 
-```
+```c#
 //Sets the text field component attached to the "TextMeshPro InputField" object with the tag "FilterInputTxt" to the value of "America"
 api.SetInputFieldText("//FilterInputTxt[@name='TextMeshPro InputField']", "America");
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-SetObjectFieldValue-System-String,System-String,System-Object,System-Boolean,System-Int32,gdio-plugin-serializer-ICustomSerializer-'></a>
+
 ### SetObjectFieldValue(hierarchyPath,fieldOrPropertyName,value,waitForObject,timeout,valueSerializer) `method`
 
 ##### Summary
@@ -2955,13 +2958,13 @@ TRUE if the field/property was successfully set to the value.
 
 ##### Example
 
-```
+```c#
 //Sets the text field component attached to the "TextMeshPro InputField" object with the tag "FilterInputTxt" to the value of "Asia"
 api.SetObjectFieldValue("/Untagged[@name='Canvas']/FilterInputTxt[@name='TextMeshPro InputField']/fn:component('TMPro.TMP_InputField')", "text", "string:Asia");
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-Tap-gdio-common-objects-Vector2,System-Int32,System-UInt64,System-Int32-'></a>
+
 ### Tap(position,tapCount,frameCount,timeout) `method`
 
 ##### Summary
@@ -2983,13 +2986,13 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 ##### Example
 
-```
+```c#
 //Performs a single tap at position 0, 0 for 10 frames
 api.Tap(new Vector2(0, 0), 1, 10); 
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-Tap-System-Single,System-Single,System-Int32,System-UInt64,System-Int32-'></a>
+
 ### Tap(x,y,tapCount,frameCount,timeout) `method`
 
 ##### Summary
@@ -3012,13 +3015,13 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 ##### Example
 
-```
+```c#
 //Performs a single tap at position 0, 0 for 10 frames
 api.Tap(0, 0, 1, 10);
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-TapObject-System-String,System-Int32,System-UInt64,System-String,System-Int32-'></a>
+
 ### TapObject(hierarchyPath,tapCount,frameCount,cameraHierarchyPath,timeout) `method`
 
 ##### Summary
@@ -3041,17 +3044,18 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 ##### Example
 
-```
+```c#
 //Performs a single tap on an object with the name "Cube".
 api.TapObject("//*[@name='Cube']", 1, "", 10);
 ```
 
-```
+```c#
 //Performs a single tap on an object with the name "Cube" using an alternate camera to locate the object.
 api.TapObject("//*[@name='Cube']", 1, "//*[@name='UICamera']/fn:component('UnityEngine.Camera')", 10);
 ```
 
 <a name='M-gdio-unity_api-v2-CoApiClient-TouchInput-gdio-common-objects-Vector2,gdio-common-objects-Vector2,System-Int32,System-Int32,System-UInt64,System-Boolean,System-Single,System-Single,System-Single,System-Single,System-Single,System-Int32-'></a>
+
 ### TouchInput(startPosition,destinationPosition,fingerId,tapCount,frameCount,waitForEmptyInput,radius,pressure,altitudeAngle,azmulthAngle,maximumPossiblePressure,timeout) `method`
 
 ##### Summary
@@ -3081,13 +3085,13 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 ##### Example
 
-```
+```c#
 //Performs a single touch input from 0,0 to 100, 100 with a single "finger" over a duration of 50 frames
 api.TouchInput(new Vector2(0, 0), new Vector2(100, 100), 0, 1, 50);
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-TouchInput-System-Single,System-Single,System-Single,System-Single,System-Int32,System-Int32,System-UInt64,System-Boolean,System-Single,System-Single,System-Single,System-Single,System-Single,System-Int32-'></a>
+
 ### TouchInput(x1,y1,x2,y2,fingerId,tapCount,frameCount,waitForEmptyInput,radius,pressure,altitudeAngle,azmulthAngle,maximumPossiblePressure,timeout) `method`
 
 ##### Summary
@@ -3119,13 +3123,13 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 ##### Example
 
-```
+```c#
 //Performs a single touch input from 0,0 to 100, 100 with a single "finger" over a duration of 50 frames
 api.TouchInput(0, 0, 100, 100, 0, 1, 50);
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-UnregisterCollisionMonitor-System-String,System-Int32-'></a>
+
 ### UnregisterCollisionMonitor(hierarchyPath,timeout) `method`
 
 ##### Summary
@@ -3139,8 +3143,8 @@ Unregister the monitoring of collision events on a GameObject that has been prev
 | hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') |  |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') |  |
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-Wait-System-Single-'></a>
+
 ### Wait(waitMaxSeconds) `method`
 
 ##### Summary
@@ -3153,8 +3157,8 @@ Wait for a fixed period of seconds.
 | ---- | ---- | ----------- |
 | waitMaxSeconds | [System.Single](https://docs.microsoft.com/en-us/dotnet/api/System.Single 'System.Single') |  |
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-WaitForCollisionEvent-System-String,System-Int32-'></a>
+
 ### WaitForCollisionEvent(eventId,timeout) `method`
 
 ##### Summary
@@ -3174,12 +3178,12 @@ The collision messages.
 
 ##### Example
 
-```
+```c#
 api.WaitForCollisionEvent{object}(eventId);
 ```
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-WaitForEmptyInput-System-Int32-'></a>
+
 ### WaitForEmptyInput(timeout) `method`
 
 ##### Summary
@@ -3192,8 +3196,8 @@ Wait for an Empty Input event to be received.
 | ---- | ---- | ----------- |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The time to wait for the event. |
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-WaitForFixedUpdate'></a>
+
 ### WaitForFixedUpdate() `method`
 
 ##### Summary
@@ -3204,8 +3208,8 @@ Wait for a fixed update in the UnityEngine game loop.
 
 This method has no parameters.
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-WaitForObject-System-String,System-Int32-'></a>
+
 ### WaitForObject(hierarchyPath,timeout) `method`
 
 ##### Summary
@@ -3223,8 +3227,8 @@ Returns TRUE if the object exists within the alloted timeout.
 | hierarchyPath | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') | The [HierarchyPath](https://support.gamedriver.io/support/solutions/articles/69000385849-working-with-hierarchypath) of the object. |
 | timeout | [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32') | The amount of time to wait for the object to exist. |
 
-
 <a name='M-gdio-unity_api-v2-CoApiClient-WaitForObjectValue-System-String,System-String,System-Object,System-Boolean,System-Int32,gdio-plugin-serializer-ICustomSerializer-'></a>
+
 ### WaitForObjectValue(hierarchyPath,fieldOrPropertyName,value,waitForObject,timeout,valueSerializer) `method`
 
 ##### Summary
@@ -3248,13 +3252,13 @@ TRUE if the object exists with the specified value in the alloted timeout.
 
 ##### Example
 
-```
+```c#
 //Waits for the value of the TextMeshProUGUI input field with the name "Text" to be "America"
 api.WaitForObjectValue("//*[@name='Text']/fn:component('TMPro.TextMeshProUGUI')", "text", "America");
 ```
 
-
 <a name='T-gdio-unity_api-utilities-ScreenCapture'></a>
+
 ## ScreenCapture `type`
 
 ##### Namespace
@@ -3265,8 +3269,8 @@ gdio.unity_api.utilities
 
 Provides functions to capture the entire screen, or a particular window, and save it to a file.
 
-
 <a name='M-gdio-unity_api-utilities-ScreenCapture-CaptureScreen'></a>
+
 ### CaptureScreen() `method`
 
 ##### Summary
@@ -3277,8 +3281,8 @@ Creates an Image object containing a screen shot of the entire desktop
 
 This method has no parameters.
 
-
 <a name='M-gdio-unity_api-utilities-ScreenCapture-CaptureScreenToFile-System-String,System-Drawing-Imaging-ImageFormat-'></a>
+
 ### CaptureScreenToFile(filename,format) `method`
 
 ##### Summary
@@ -3292,8 +3296,8 @@ Captures a screen shot of the entire desktop, and saves it to a file
 | filename | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') |  |
 | format | [System.Drawing.Imaging.ImageFormat](https://docs.microsoft.com/en-us/dotnet/api/System.Drawing.Imaging.ImageFormat 'System.Drawing.Imaging.ImageFormat') |  |
 
-
 <a name='M-gdio-unity_api-utilities-ScreenCapture-CaptureWindow-System-IntPtr-'></a>
+
 ### CaptureWindow(handle) `method`
 
 ##### Summary
@@ -3306,8 +3310,8 @@ Creates an Image object containing a screen shot of a specific window
 | ---- | ---- | ----------- |
 | handle | [System.IntPtr](https://docs.microsoft.com/en-us/dotnet/api/System.IntPtr 'System.IntPtr') | The handle to the window. (In windows forms, this is obtained by the Handle property) |
 
-
 <a name='M-gdio-unity_api-utilities-ScreenCapture-CaptureWindowToFile-System-IntPtr,System-String,System-Drawing-Imaging-ImageFormat-'></a>
+
 ### CaptureWindowToFile(handle,filename,format) `method`
 
 ##### Summary
@@ -3322,8 +3326,8 @@ Captures a screen shot of a specific window, and saves it to a file
 | filename | [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String') |  |
 | format | [System.Drawing.Imaging.ImageFormat](https://docs.microsoft.com/en-us/dotnet/api/System.Drawing.Imaging.ImageFormat 'System.Drawing.Imaging.ImageFormat') |  |
 
-
 <a name='T-gdio-unity_api-utilities-ScreenCapture-User32'></a>
+
 ## User32 `type`
 
 ##### Namespace
