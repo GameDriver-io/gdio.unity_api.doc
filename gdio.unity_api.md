@@ -11,7 +11,7 @@
   - [AxisPress(axisId,value,numberOfFrames,timeout)](#M-gdio-unity_api-v2-ApiClient-AxisPress-System-String,System-Single,System-UInt64,System-Int32- 'gdio.unity_api.v2.ApiClient.AxisPress(System.String,System.Single,System.UInt64,System.Int32)')
   - [ButtonPress(buttonId,numberOfFrames,timeout)](#M-gdio-unity_api-v2-ApiClient-ButtonPress-System-String,System-UInt64,System-Int32- 'gdio.unity_api.v2.ApiClient.ButtonPress(System.String,System.UInt64,System.Int32)')
   - [CallMethod(hierarchyPath,methodName,arguments,timeout)](#M-gdio-unity_api-v2-ApiClient-CallMethod-System-String,System-String,System-Object[],System-Int32- 'gdio.unity_api.v2.ApiClient.CallMethod(System.String,System.String,System.Object[],System.Int32)')
-  - [CallMethod\<T>(hierarchyPath,methodName,arguments,timeout)](#M-gdio-unity_api-v2-ApiClient-CallMethod\<T>-System-String,System-String,System-Object[],System-Int32- 'gdio.unity_api.v2.ApiClient.CallMethod\<T>(System.String,System.String,System.Object[],System.Int32)')
+  - [CallMethod\<T>(hierarchyPath,methodName,arguments,timeout)](#M-gdio-unity_api-v2-ApiClient-CallMethod<T>-System-String,System-String,System-Object[],System-Int32- 'gdio.unity_api.v2.ApiClient.CallMethod\<T>(System.String,System.String,System.Object[],System.Int32)')
   - [CaptureScreenshot(filename,storeInGameFolder,overwriteExisting,timeout)](#M-gdio-unity_api-v2-ApiClient-CaptureScreenshot-System-String,System-Boolean,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.CaptureScreenshot(System.String,System.Boolean,System.Boolean,System.Int32)')
   - [Click(buttonId,position,clickFrameCount,timeout)](#M-gdio-unity_api-v2-ApiClient-Click-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,System-Int32- 'gdio.unity_api.v2.ApiClient.Click(gdio.common.objects.MouseButtons,gdio.common.objects.Vector2,System.UInt64,System.Int32)')
   - [Click(buttonId,x,y,clickFrameCount,timeout)](#M-gdio-unity_api-v2-ApiClient-Click-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,System-Int32- 'gdio.unity_api.v2.ApiClient.Click(gdio.common.objects.MouseButtons,System.Single,System.Single,System.UInt64,System.Int32)')
@@ -37,8 +37,8 @@
   - [GetLastFPS()](#M-gdio-unity_api-v2-ApiClient-GetLastFPS 'gdio.unity_api.v2.ApiClient.GetLastFPS')
   - [GetNextCollisionEvent(eventId)](#M-gdio-unity_api-v2-ApiClient-GetNextCollisionEvent-System-String- 'gdio.unity_api.v2.ApiClient.GetNextCollisionEvent(System.String)')
   - [GetObjectDistance(objectA_HierarchyPath,objectB_HierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectDistance-System-String,System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectDistance(System.String,System.String,System.Int32)')
-  - [GetObjectFieldValue\<T>(hierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue\<T>-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectFieldValue\<T>(System.String,System.Int32)')
-  - [GetObjectFieldValue\<T>(hierarchyPath,fieldOrPropertyName,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue\<T>-System-String,System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectFieldValue\<T>(System.String,System.String,System.Int32)')
+  - [GetObjectFieldValue\<T>(hierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue<T>-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectFieldValue\<T>(System.String,System.Int32)')
+  - [GetObjectFieldValue\<T>(hierarchyPath,fieldOrPropertyName,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue<T>-System-String,System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectFieldValue\<T>(System.String,System.String,System.Int32)')
   - [GetObjectList(timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectList-System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectList(System.Int32)')
   - [GetObjectPosition(objectHierarchyPath,cordSpace,cameraHierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-GetObjectPosition-System-String,gdio-common-objects-CoordinateConversion,System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.GetObjectPosition(System.String,gdio.common.objects.CoordinateConversion,System.String,System.Int32)')
   - [GetSceneName(timeout)](#M-gdio-unity_api-v2-ApiClient-GetSceneName-System-Int32- 'gdio.unity_api.v2.ApiClient.GetSceneName(System.Int32)')
@@ -74,7 +74,7 @@
   - [WaitForObject(hierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-WaitForObject-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.WaitForObject(System.String,System.Int32)')
   - [WaitForObjectValue(hierarchyPath,fieldOrPropertyName,value,waitForObject,timeout,valueSerializer)](#M-gdio-unity_api-v2-ApiClient-WaitForObjectValue-System-String,System-String,System-Object,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.WaitForObjectValue(System.String,System.String,System.Object,System.Boolean,System.Int32)')
 - [CoApiClient](#T-gdio-unity_api-v2-CoApiClient 'gdio.unity_api.v2.CoApiClient')
-  - [CallMethod\<T>(hierarchyPath,methodName,arguments,timeout)](#M-gdio-unity_api-v2-CoApiClient-CallMethod\<T>-System-String,System-String,System-Object[],System-Int32- 'gdio.unity_api.v2.CoApiClient.CallMethod\<T>(System.String,System.String,System.Object[],System.Int32)')
+  - [CallMethod\<T>(hierarchyPath,methodName,arguments,timeout)](#M-gdio-unity_api-v2-CoApiClient-CallMethod<T>-System-String,System-String,System-Object[],System-Int32- 'gdio.unity_api.v2.CoApiClient.CallMethod\<T>(System.String,System.String,System.Object[],System.Int32)')
   - [CaptureScreenshot(filename,storeInGameFolder,overwriteExisting,timeout)](#M-gdio-unity_api-v2-CoApiClient-CaptureScreenshot-System-String,System-Boolean,System-Boolean,System-Int32- 'gdio.unity_api.v2.CoApiClient.CaptureScreenshot(System.String,System.Boolean,System.Boolean,System.Int32)')
   - [Click(buttonId,position,clickFrameCount,timeout)](#M-gdio-unity_api-v2-CoApiClient-Click-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,System-Int32- 'gdio.unity_api.v2.CoApiClient.Click(gdio.common.objects.MouseButtons,gdio.common.objects.Vector2,System.UInt64,System.Int32)')
   - [Click(buttonId,x,y,clickFrameCount,timeout)](#M-gdio-unity_api-v2-CoApiClient-Click-gdio-common-objects-MouseButtons,System-Single,System-Single,System-UInt64,System-Int32- 'gdio.unity_api.v2.CoApiClient.Click(gdio.common.objects.MouseButtons,System.Single,System.Single,System.UInt64,System.Int32)')
@@ -90,8 +90,8 @@
   - [GetLastFPS()](#M-gdio-unity_api-v2-CoApiClient-GetLastFPS 'gdio.unity_api.v2.CoApiClient.GetLastFPS')
   - [GetNextCollisionEvent(eventId)](#M-gdio-unity_api-v2-CoApiClient-GetNextCollisionEvent-System-String- 'gdio.unity_api.v2.CoApiClient.GetNextCollisionEvent(System.String)')
   - [GetObjectDistance(objectA_HierarchyPath,objectB_HierarchyPath,timeout)](#M-gdio-unity_api-v2-CoApiClient-GetObjectDistance-System-String,System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.GetObjectDistance(System.String,System.String,System.Int32)')
-  - [GetObjectFieldValue\<T>(hierarchyPath,timeout)](#M-gdio-unity_api-v2-CoApiClient-GetObjectFieldValue\<T>-System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.GetObjectFieldValue\<T>(System.String,System.Int32)')
-  - [GetObjectFieldValue\<T>(hierarchyPath,fieldOrPropertyName,timeout)](#M-gdio-unity_api-v2-CoApiClient-GetObjectFieldValue\<T>-System-String,System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.GetObjectFieldValue\<T>(System.String,System.String,System.Int32)')
+  - [GetObjectFieldValue\<T>(hierarchyPath,timeout)](#M-gdio-unity_api-v2-CoApiClient-GetObjectFieldValue<T>-System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.GetObjectFieldValue\<T>(System.String,System.Int32)')
+  - [GetObjectFieldValue\<T>(hierarchyPath,fieldOrPropertyName,timeout)](#M-gdio-unity_api-v2-CoApiClient-GetObjectFieldValue<T>-System-String,System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.GetObjectFieldValue\<T>(System.String,System.String,System.Int32)')
   - [GetObjectList(timeout)](#M-gdio-unity_api-v2-CoApiClient-GetObjectList-System-Int32- 'gdio.unity_api.v2.CoApiClient.GetObjectList(System.Int32)')
   - [GetObjectPosition(objectHierarchyPath,cordSpace,cameraHierarchyPath,timeout)](#M-gdio-unity_api-v2-CoApiClient-GetObjectPosition-System-String,gdio-common-objects-CoordinateConversion,System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.GetObjectPosition(System.String,gdio.common.objects.CoordinateConversion,System.String,System.Int32)')
   - [GetSceneName(timeout)](#M-gdio-unity_api-v2-CoApiClient-GetSceneName-System-Int32- 'gdio.unity_api.v2.CoApiClient.GetSceneName(System.Int32)')
@@ -270,7 +270,7 @@ api.CallMethod("//*[@name='Canvas']/fn:component('CustomScript')",
     "CustomMethod", new string[] { "string:The Test was run on " + DateTime.Now.ToShortDateString() });
 ```
 
-<a name='M-gdio-unity_api-v2-ApiClient-CallMethod\<T>-System-String,System-String,System-Object[],System-Int32-'></a>
+<a name='M-gdio-unity_api-v2-ApiClient-CallMethod<T>-System-String,System-String,System-Object[],System-Int32-'></a>
 
 ### CallMethod\<T>(hierarchyPath,methodName,arguments,timeout) `method`
 
@@ -980,7 +980,7 @@ d = api.GetObjectDistance("//*[@name = 'CubeA']", "//*[@name = 'CubeB']");
 Console.WriteLine(d.ToString()); // prints -5.0,-3.0,-1.0
 ```
 
-<a name='M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue\<T>-System-String,System-Int32-'></a>
+<a name='M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue<T>-System-String,System-Int32-'></a>
 
 ### GetObjectFieldValue\<T>(hierarchyPath,timeout) `method`
 
@@ -1014,7 +1014,7 @@ bool invisCube = api.GetObjectFieldValue<bool>("//*[@name='HiddenCube']/fn:compo
 Assert.IsTrue(invisCube == false, "The invisible cube isn't active"); //Passes if the object is Active in the scene
 ```
 
-<a name='M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue\<T>-System-String,System-String,System-Int32-'></a>
+<a name='M-gdio-unity_api-v2-ApiClient-GetObjectFieldValue<T>-System-String,System-String,System-Int32-'></a>
 
 ### GetObjectFieldValue\<T>(hierarchyPath,fieldOrPropertyName,timeout) `method`
 
@@ -2364,7 +2364,7 @@ d = api.GetObjectDistance("//*[@name = 'CubeA']", "//*[@name = 'CubeB']");
 Console.WriteLine(d.ToString()); // prints -5.0,-3.0,-1.0
 ```
 
-<a name='M-gdio-unity_api-v2-CoApiClient-GetObjectFieldValue\<T>-System-String,System-Int32-'></a>
+<a name='M-gdio-unity_api-v2-CoApiClient-GetObjectFieldValue<T>-System-String,System-Int32-'></a>
 
 ### GetObjectFieldValue\<T>(hierarchyPath,timeout) `method`
 
@@ -2398,7 +2398,7 @@ bool invisCube = api.GetObjectFieldValue<bool>("//*[@name='HiddenCube']/fn:compo
 Assert.IsTrue(invisCube == false, "The invisible cube isn't active"); //Passes if the object is Active in the scene
 ```
 
-<a name='M-gdio-unity_api-v2-CoApiClient-GetObjectFieldValue\<T>-System-String,System-String,System-Int32-'></a>
+<a name='M-gdio-unity_api-v2-CoApiClient-GetObjectFieldValue<T>-System-String,System-String,System-Int32-'></a>
 
 ### GetObjectFieldValue\<T>(hierarchyPath,fieldOrPropertyName,timeout) `method`
 
