@@ -48,7 +48,7 @@
   - [LoadScene(sceneName,timeout)](#M-gdio-unity_api-v2-ApiClient-LoadScene-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.LoadScene(System.String,System.Int32)')
   - [MouseDrag(button,destination,frameCount,origin,waitForEmptyInput,timeout)](#M-gdio-unity_api-v2-ApiClient-MouseDrag-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.MouseDrag(gdio.common.objects.MouseButtons,gdio.common.objects.Vector2,System.UInt64,gdio.common.objects.Vector2,System.Boolean,System.Int32)')
   - [MouseMoveToObject(objectHierarchyPath,frameCount,waitForObject,waitForEmptyInput,timeout)](#M-gdio-unity_api-v2-ApiClient-MouseMoveToObject-System-String,System-UInt64,System-Boolean,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.MouseMoveToObject(System.String,System.UInt64,System.Boolean,System.Boolean,System.Int32)')
-  - [MoveMouseToPoint(destination,frameCount,origin,waitForEmptyInput,timeout)](#M-gdio-unity_api-v2-ApiClient-MoveMouseToPoint-gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.MoveMouseToPoint(gdio.common.objects.Vector2,System.UInt64,gdio.common.objects.Vector2,System.Boolean,System.Int32)')
+  - [MouseMoveToPoint(destination,frameCount,origin,waitForEmptyInput,timeout)](#M-gdio-unity_api-v2-ApiClient-MouseMoveToPoint-gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.MouseMoveToPoint(gdio.common.objects.Vector2,System.UInt64,gdio.common.objects.Vector2,System.Boolean,System.Int32)')
   - [NavAgentMoveToPoint(navAgentHierarchyPath,destination,waitForMoveToComplete,timeout)](#M-gdio-unity_api-v2-ApiClient-NavAgentMoveToPoint-System-String,gdio-common-objects-Vector3,System-Boolean,System-Int32- 'gdio.unity_api.v2.ApiClient.NavAgentMoveToPoint(System.String,gdio.common.objects.Vector3,System.Boolean,System.Int32)')
   - [Raycast(raycastPoint,cameraHierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-Raycast-gdio-common-objects-Vector3,System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.Raycast(gdio.common.objects.Vector3,System.String,System.Int32)')
   - [RegisterCollisionMonitor(hierarchyPath,timeout)](#M-gdio-unity_api-v2-ApiClient-RegisterCollisionMonitor-System-String,System-Int32- 'gdio.unity_api.v2.ApiClient.RegisterCollisionMonitor(System.String,System.Int32)')
@@ -100,7 +100,7 @@
   - [LoadScene(sceneName,timeout)](#M-gdio-unity_api-v2-CoApiClient-LoadScene-System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.LoadScene(System.String,System.Int32)')
   - [MouseDrag(button,destination,frameCount,origin,waitForEmptyInput,timeout)](#M-gdio-unity_api-v2-CoApiClient-MouseDrag-gdio-common-objects-MouseButtons,gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32- 'gdio.unity_api.v2.CoApiClient.MouseDrag(gdio.common.objects.MouseButtons,gdio.common.objects.Vector2,System.UInt64,gdio.common.objects.Vector2,System.Boolean,System.Int32)')
   - [MouseMoveToObject(objectHierarchyPath,frameCount,waitForObject,waitForEmptyInput,timeout)](#M-gdio-unity_api-v2-CoApiClient-MouseMoveToObject-System-String,System-UInt64,System-Boolean,System-Boolean,System-Int32- 'gdio.unity_api.v2.CoApiClient.MouseMoveToObject(System.String,System.UInt64,System.Boolean,System.Boolean,System.Int32)')
-  - [MoveMouseToPoint(destination,frameCount,origin,waitForEmptyInput,timeout)](#M-gdio-unity_api-v2-CoApiClient-MoveMouseToPoint-gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32- 'gdio.unity_api.v2.CoApiClient.MoveMouseToPoint(gdio.common.objects.Vector2,System.UInt64,gdio.common.objects.Vector2,System.Boolean,System.Int32)')
+  - [MouseMoveToPoint(destination,frameCount,origin,waitForEmptyInput,timeout)](#M-gdio-unity_api-v2-CoApiClient-MouseMoveToPoint-gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32- 'gdio.unity_api.v2.CoApiClient.MouseMoveToPoint(gdio.common.objects.Vector2,System.UInt64,gdio.common.objects.Vector2,System.Boolean,System.Int32)')
   - [NavAgentMoveToPoint(navAgentHierarchyPath,destination,waitForMoveToComplete,timeout)](#M-gdio-unity_api-v2-CoApiClient-NavAgentMoveToPoint-System-String,gdio-common-objects-Vector3,System-Boolean,System-Int32- 'gdio.unity_api.v2.CoApiClient.NavAgentMoveToPoint(System.String,gdio.common.objects.Vector3,System.Boolean,System.Int32)')
   - [Raycast(raycastPoint,cameraHierarchyPath,timeout)](#M-gdio-unity_api-v2-CoApiClient-Raycast-gdio-common-objects-Vector3,System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.Raycast(gdio.common.objects.Vector3,System.String,System.Int32)')
   - [RegisterCollisionMonitor(hierarchyPath,timeout)](#M-gdio-unity_api-v2-CoApiClient-RegisterCollisionMonitor-System-String,System-Int32- 'gdio.unity_api.v2.CoApiClient.RegisterCollisionMonitor(System.String,System.Int32)')
@@ -1296,9 +1296,9 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 api.MouseMoveToObject("//*[@name='Cylinder']", 300, true, true);
 ```
 
-<a name='M-gdio-unity_api-v2-ApiClient-MoveMouseToPoint-gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32-'></a>
+<a name='M-gdio-unity_api-v2-ApiClient-MouseMoveToPoint-gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32-'></a>
 
-### MoveMouseToPoint(destination,frameCount,origin,waitForEmptyInput,timeout) `method`
+### MouseMoveToPoint(destination,frameCount,origin,waitForEmptyInput,timeout) `method`
 
 ##### Summary
 
@@ -1328,7 +1328,7 @@ Vector3 cubePos = api.GetObjectPosition("//*[@name='Cube']", CoordinateConversio
 Vector2 cubePos2 = new Vector2(cubePos.x, cubePos.y);
 
 //Move the mouse to the cube on-screen position over 30 frames
-api.MoveMouseToPoint(cubePos2, (ulong) api.GetLastFPS());
+api.MouseMoveToPoint(cubePos2, (ulong) api.GetLastFPS());
 ```
 
 <a name='M-gdio-unity_api-v2-ApiClient-NavAgentMoveToPoint-System-String,gdio-common-objects-Vector3,System-Boolean,System-Int32-'></a>
@@ -2656,9 +2656,9 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 api.MouseMoveToObject("//*[@name='Cylinder']", 300, true, true);
 ```
 
-<a name='M-gdio-unity_api-v2-CoApiClient-MoveMouseToPoint-gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32-'></a>
+<a name='M-gdio-unity_api-v2-CoApiClient-MouseMoveToPoint-gdio-common-objects-Vector2,System-UInt64,gdio-common-objects-Vector2,System-Boolean,System-Int32-'></a>
 
-### MoveMouseToPoint(destination,frameCount,origin,waitForEmptyInput,timeout) `method`
+### MouseMoveToPoint(destination,frameCount,origin,waitForEmptyInput,timeout) `method`
 
 ##### Summary
 
@@ -2688,7 +2688,7 @@ Vector3 cubePos = api.GetObjectPosition("//*[@name='Cube']", CoordinateConversio
 Vector2 cubePos2 = new Vector2(cubePos.x, cubePos.y);
 
 //Move the mouse to the cube on-screen position over 30 frames
-api.MoveMouseToPoint(cubePos2, (ulong)api.GetLastFPS());
+api.MouseMoveToPoint(cubePos2, (ulong)api.GetLastFPS());
 ```
 
 <a name='M-gdio-unity_api-v2-CoApiClient-NavAgentMoveToPoint-System-String,gdio-common-objects-Vector3,System-Boolean,System-Int32-'></a>
