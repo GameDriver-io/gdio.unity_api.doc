@@ -1,5 +1,20 @@
 # Changelog for GameDriver releases
 
+## 07-16-2022 Version 2022.07
+- XR Simulated Input
+- New Recording tool
+- New Input System commands
+- HPath REPL (Read, Evaluate, Print, Loop)
+- Various HierarchyPath (HPath) improvements and fixes
+- Updated KeyCode mappings
+- Improved agent stability
+- Unity 2021 LTS support
+- Apple Silicon support
+- Python Client (beta)
+- Linux support (beta)
+
+For more information, visit https://gamedriver.io/2022.07
+
 ## 10-9-2021 (Beta)
 
 - Added support for Unity New Input System
