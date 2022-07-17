@@ -13,7 +13,7 @@
 - Python Client (beta)
 - Linux support (beta)
 
-For more information, visit https://gamedriver.io/2022.07
+For more information, visit https://gamedriver.io/latest
 
 ## 10-9-2021 (Beta)
 
