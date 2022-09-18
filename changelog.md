@@ -1,5 +1,10 @@
 # Changelog for GameDriver releases
 
+## 09-19-2022 Version 2022.09
+- Added argument to GetObjectList to include/exclude HPath for all objects returned
+- Fixed an issue where destroying/recreating the agent would result in connection failures
+- Minor bug fixes
+
 ## 07-16-2022 Version 2022.07
 - XR Simulated Input
 - New Recording tool

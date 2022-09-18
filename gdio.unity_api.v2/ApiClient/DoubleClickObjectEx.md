@@ -4,8 +4,9 @@ Use this function to interact with an object in game using a mouse double-click,
 
 ```csharp
 public bool DoubleClickObjectEx(MouseButtons buttonId, string hierarchyPath, ulong clickFrameCount, 
-    KeyCode[] keys = null, ulong keysNumberOfFrames = 5, KeyCode[] modifiers = null, 
-    ulong modifiersNumberOfFrames = 3, int delayAfterModifiersMsec = 500, int timeout = 30)
+    string cameraHierarchyPath = "", KeyCode[] keys = null, ulong keysNumberOfFrames = 5, 
+    KeyCode[] modifiers = null, ulong modifiersNumberOfFrames = 3, 
+    int delayAfterModifiersMsec = 500, int timeout = 30)
 ```
 
 | parameter | description |
@@ -13,6 +14,7 @@ public bool DoubleClickObjectEx(MouseButtons buttonId, string hierarchyPath, ulo
 | buttonId | The mouse button to use for the double click operation. See MouseButtons. |
 | hierarchyPath | The HierarchyPath for the GameObject to perform a double-click on. |
 | clickFrameCount | The number of frames to double-click the specific object. |
+| cameraHierarchyPath | The HierarchyPath to the Camera rendering the object. An empty string uses Camera.main |
 | keys | An array of [`KeyCode`](../../gdio.unity_api/KeyCode.md) keys to press during the click operation. |
 | keysNumberOfFrames | The number of frames to press the keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
 | modifiers | An array of [`KeyCode`](../../gdio.unity_api/KeyCode.md) modifier keys to press during the click operation. |

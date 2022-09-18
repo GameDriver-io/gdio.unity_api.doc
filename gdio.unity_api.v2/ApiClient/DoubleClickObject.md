@@ -4,7 +4,7 @@ Use this function to interact with an object in game using a mouse double-click.
 
 ```csharp
 public bool DoubleClickObject(MouseButtons buttonId, string hierarchyPath, ulong frameCount, 
-    int timeout = 30)
+    string cameraHierarchyPath = "", int timeout = 30)
 ```
 
 | parameter | description |
@@ -12,6 +12,7 @@ public bool DoubleClickObject(MouseButtons buttonId, string hierarchyPath, ulong
 | buttonId | The mouse button to use for the double click operation. See MouseButtons. |
 | hierarchyPath | The HierarchyPath for the GameObject to perform a double click on. |
 | frameCount | The number of frames to double-click the specific object. |
+| cameraHierarchyPath | The HierarchyPath to the Camera rendering the object. An empty string uses Camera.main |
 | timeout | The number of seconds to wait for a response that the DoubleClickObject request was processed. Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ## Return Value

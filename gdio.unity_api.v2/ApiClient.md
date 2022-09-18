@@ -39,7 +39,7 @@ public class ApiClient
 | [GetNextCollisionEvent](ApiClient/GetNextCollisionEvent.md)(…) | Collision events are stored in a FIFO queue. Calling this method returns the next collision event that was returned. |
 | [GetObjectDistance](ApiClient/GetObjectDistance.md)(…) | This method returns the distance of two objects using vector subtraction. |
 | [GetObjectFieldValue&lt;T&gt;](ApiClient/GetObjectFieldValue.md)(…) | This method returns the field or property value of an object. (2 methods) |
-| [GetObjectList](ApiClient/GetObjectList.md)(…) | This method returns of a list of all GameObjects as returned by !:UnityEngine.GameObject.FindObjectsOfType(Type), where Type is UnityEngine.GameObject./&gt; |
+| [GetObjectList](ApiClient/GetObjectList.md)(…) | This method returns of a list of all GameObjects as returned by !:UnityEngine.GameObject.FindObjectsOfType(Type), where Type is UnityEngine.GameObject./&gt; (2 methods) |
 | [GetObjectPosition](ApiClient/GetObjectPosition.md)(…) | Return the position of a specific object. |
 | [GetSceneName](ApiClient/GetSceneName.md)(…) | Return the name of the current active scene. |
 | [IntegerInputEvent](ApiClient/IntegerInputEvent.md)(…) |  |
