@@ -12,6 +12,7 @@ public class ApiClient
 | --- | --- |
 | [ApiClient](ApiClient/ApiClient.md)() | GameDriver.io Unity API Client class constructor. |
 | event [LoggedMessage](ApiClient/LoggedMessage.md) | Event handler for logged messages. Add a callback method to this handler to recieve all logging messages from the API. |
+| event [UnityLoggedMessage](ApiClient/UnityLoggedMessage.md) |  |
 | [AxisPress](ApiClient/AxisPress.md)(…) | Use this function to send arbitrary Axis states to the game. |
 | [ButtonPress](ApiClient/ButtonPress.md)(…) | Use this function to send arbitrary button states to the game. Defaults to LEFT ALT/CTRL/SHIFT/WINDOWS(COMMAND) (2 methods) |
 | [CallMethod](ApiClient/CallMethod.md)(…) | Use this function to execute a Void method on an object. |
@@ -42,7 +43,7 @@ public class ApiClient
 | [GetObjectList](ApiClient/GetObjectList.md)(…) | This method returns of a list of all GameObjects as returned by !:UnityEngine.GameObject.FindObjectsOfType(Type), where Type is UnityEngine.GameObject./&gt; (2 methods) |
 | [GetObjectPosition](ApiClient/GetObjectPosition.md)(…) | Return the position of a specific object. |
 | [GetSceneName](ApiClient/GetSceneName.md)(…) | Return the name of the current active scene. |
-| [IntegerInputEvent](ApiClient/IntegerInputEvent.md)(…) |  |
+| [IntegerInputEvent](ApiClient/IntegerInputEvent.md)(…) | Use this function to send diferent kinds of Input Events to an action based Input System. |
 | [KeyPress](ApiClient/KeyPress.md)(…) | Use this function to send arbitrary button states to the game. Defaults to LEFT ALT/CTRL/SHIFT/WINDOWS(COMMAND) |
 | [LoadScene](ApiClient/LoadScene.md)(…) | This method loads the scene, defined by the scene name passed as an argument. |
 | [MapInputControlPathsUsed](ApiClient/MapInputControlPathsUsed.md)(…) | This method returns all the control input paths being used. |

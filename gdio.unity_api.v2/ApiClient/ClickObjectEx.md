@@ -27,10 +27,15 @@ public bool ClickObjectEx(MouseButtons buttonId, string hierarchyPath, ulong cli
 ```csharp
 //Locates and clicks the first object with the name "Cube" for 30 frames with the left mouse button while holding the left-shift key for 3 frames, and the left-CTRL key for 5 frames.
             api.ClickObjectEx(MouseButtons.LEFT,
-                "//*[@name='Cube']", 30,
+                "//*[@name='Cube']", 30, "",
                 new KeyCode[] { KeyCode.LeftControl }, 5,
                 new KeyCode[] { KeyCode.LeftShift }, 3,
                 500, 30);
+            api.ClickObjectEx(MouseButtons.LEFT,
+                "//*[@name='Cube']", 30, "//*[@name='AlternateCamera']/fn:component('UnityEngine.Camera')",
+                new KeyCode[] { KeyCode.LeftControl }, 5,
+                new KeyCode[] { KeyCode.LeftShift }, 3,
+                500, 30); // Using AlternateCamera to locate the button.
 ```
 
 ## See Also

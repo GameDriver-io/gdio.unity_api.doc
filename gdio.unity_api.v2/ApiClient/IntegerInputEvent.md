@@ -1,8 +1,28 @@
 # ApiClient.IntegerInputEvent method
 
+Use this function to send diferent kinds of Input Events to an action based Input System.
+
 ```csharp
 public bool IntegerInputEvent(string inputControlPath, int value, ulong numberOfFrames, 
     int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| inputControlPath | The path to the control input desired |
+| value | Value to change on event |
+| numberOfFrames | The number of frames to hold for. If 0, value will remain, if not, value will revert after the frames. |
+| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+## Return Value
+
+TRUE if the GameDriver agent successfully processed the request.
+
+## Examples
+
+```csharp
+//Hold the trigger for 5 frames, and release
+            api.ActionBasedInputEvent("LeftController{LeftHand}/triggerPressed", 1.0f, 5);
 ```
 
 ## See Also

@@ -24,7 +24,9 @@ TRUE if the GameDriver agent successfully processed the request.
 ```csharp
 //Locates and double-clicks the first object with the name "Cube" over a period of 30 frames using the left mouse button.
             api.DoubleClickObject(MouseButtons.LEFT,
-                "//*[@name='Cube']", 30, 30);
+                "//*[@name='Cube']", 30, "", 30); // Using the default camera to locate the object.
+            api.DoubleClickObject(MouseButtons.LEFT,
+                "//*[@name='Cube']", 30, "//*[@name='AlternateCamera']/fn:component('UnityEngine.Camera')", 30); // Using AlternateCamera to locate the object.
 ```
 
 ## See Also

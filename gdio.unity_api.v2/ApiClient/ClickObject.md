@@ -20,7 +20,9 @@ public bool ClickObject(MouseButtons buttonId, string hierarchyPath, ulong frame
 ```csharp
 //Locates and clicks the first object with the name "Cube" for 30 frames using the left mouse button.
             api.ClickObject(MouseButtons.LEFT,
-                "//*[@name='Cube']", 30, 30);
+                "//*[@name='Cube']", 30, "", 30); // Using the default camera to locate the object.
+            api.ClickObject(MouseButtons.LEFT,
+                "//*[@name='Cube']", 30, "//*[@name='AlternateCamera']/fn:component('UnityEngine.Camera')", 30); // Using AlternateCamera to locate the button.
 ```
 
 ## See Also
