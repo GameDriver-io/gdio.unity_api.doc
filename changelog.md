@@ -1,5 +1,15 @@
 # Changelog for GameDriver releases
 
+## 11-10-2022 Version 2022.11
+- Added support for XR Recording
+- Updated HierarchyPath Engine and new HPath Debugger
+- New UnityLoggedMessage for passing unhandled exceptions to the ApiClient
+- Added argument to GetObjectList to specify a root object via HPath
+- Linux support (beta)
+- Fixed an issue with Object Explorer throwing exceptions in some component types
+- Fixed an issue with the Recorder flipping the origin and destination for MouseDrag events
+- Additional bug fixes
+
 ## 09-19-2022 Version 2022.09
 - Added argument to GetObjectList to include/exclude HPath for all objects returned
 - Fixed an issue where destroying/recreating the agent would result in connection failures
@@ -16,7 +26,6 @@
 - Unity 2021 LTS support
 - Apple Silicon support
 - Python Client (beta)
-- Linux support (beta)
 
 For more information, visit https://gamedriver.io/latest
 

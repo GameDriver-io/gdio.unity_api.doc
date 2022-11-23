@@ -31,10 +31,15 @@ TRUE if the GameDriver agent successfully processed the request.
 ```csharp
 //Locates and clicks the first object with the name "Cube" for 30 frames with the left mouse button while holding the left-shift key for 3 frames, and the left-CTRL key for 5 frames.
             api.DoubleClickObjectEx(MouseButtons.LEFT,
-                "//*[@name='Cube']", 30,
+                "//*[@name='Cube']", 30, "",
                 new KeyCode[] { KeyCode.LeftControl }, 5,
                 new KeyCode[] { KeyCode.LeftShift }, 3,
-                500, 30);
+                500, 30); // Using the default camera to locate the object
+            api.DoubleClickObjectEx(MouseButtons.LEFT,
+                "//*[@name='Cube']", 30, "//*[@name='AlternateCamera']/fn:component('UnityEngine.Camera')",
+                new KeyCode[] { KeyCode.LeftControl }, 5,
+                new KeyCode[] { KeyCode.LeftShift }, 3,
+                500, 30); // Using AlternateCamera to locate the object
 ```
 
 ## See Also
