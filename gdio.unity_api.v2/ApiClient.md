@@ -51,6 +51,7 @@ public class ApiClient
 | [MouseMoveToObject](ApiClient/MouseMoveToObject.md)(…) | Move the mouse to the center of a specific object, identified by the HierarchyPath. |
 | [MouseMoveToPoint](ApiClient/MouseMoveToPoint.md)(…) | Move the mouse to the destination vector. |
 | [NavAgentMoveToPoint](ApiClient/NavAgentMoveToPoint.md)(…) | Move a NavAgent to a destination point. |
+| [ObjectExists](ApiClient/ObjectExists.md)(…) | Check for an object to exist. Do NOT use this to poll, use WaitForObject instead. There is a builtin response timeout of 5 seconds if the Agent/Game does not respond. |
 | [QuaternionInputEvent](ApiClient/QuaternionInputEvent.md)(…) | Use this function to send arbitrary Quaternion Event states to the game. |
 | [Raycast](ApiClient/Raycast.md)(…) | Perform a Raycast to a point to find out what is in that position. |
 | [RegisterCollisionMonitor](ApiClient/RegisterCollisionMonitor.md)(…) | Register a collision monitor to recieve collision events on an object. |

@@ -1,5 +1,15 @@
 # Changelog for GameDriver releases
 
+## 12-27-2022 Version 2022.12
+- Added UTF-8 support in license validation
+- Added ObjectExists api
+- Added `match` function for HPath using regular expressions
+- Added `datetime` function for using date formats in HPath
+- Added quote escaping in HPath strings
+- Added descendant axis search to HPath
+- Fixed several minor issues with the Recorder tool
+- Various additional fixes
+
 ## 11-10-2022 Version 2022.11
 - Added support for XR Recording
 - Updated HierarchyPath Engine and new HPath Debugger
