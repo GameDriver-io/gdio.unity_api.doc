@@ -1,4 +1,4 @@
-# ApiClient.TapObject method
+# ApiClient.TapObject method (1 of 2)
 
 Tap an object.
 
@@ -12,6 +12,45 @@ public bool TapObject(string hierarchyPath, int tapCount = 1, ulong frameCount =
 | hierarchyPath | The HierarchyPath of the object to tap. |
 | tapCount | The number of taps that should be registered. |
 | frameCount | The number of frames to complete the tap input over. |
+| cameraHierarchyPath | The HierarchyPath to the Camera rendering the object. An empty string uses Camera.main |
+| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+## Return Value
+
+TRUE if the GameDriver agent was able to process the request successfully.
+
+## Examples
+
+```csharp
+//Performs a single tap on an object with the name "Cube"
+            api.TapObject("//*[@name='Cube']", 1, 10);
+```
+
+## See Also
+
+* class [ApiClient](../ApiClient.md)
+* namespace [gdio.unity_api.v2](../../gdio.unity_api.md)
+
+---
+
+# ApiClient.TapObject method (2 of 2)
+
+Tap an object.
+
+```csharp
+public bool TapObject(string hierarchyPathDevice, string hierarchyPath, int tapCount = 1, 
+    ulong positionMoveFrameCount = 200, ulong buttonPressFrameCount = 30, 
+    ulong moveToPressDelay = 10, string cameraHierarchyPath = "", int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| hierarchyPathDevice | Device HPath returned from CreateInputDevice to send the events to. |
+| hierarchyPath | The HierarchyPath of the object to tap. |
+| tapCount | The number of taps that should be registered. |
+| positionMoveFrameCount | The number of frames to complete navigate to over. |
+| buttonPressFrameCount | The number of frames to complete the tap input over. |
+| moveToPressDelay | The delay in frames between the position move and the button press. |
 | cameraHierarchyPath | The HierarchyPath to the Camera rendering the object. An empty string uses Camera.main |
 | timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 

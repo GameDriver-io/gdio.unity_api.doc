@@ -1,6 +1,6 @@
 # ApiClient.RemoveInputDevices method
 
-Use this function to remove all devices that have the usage tag "GDIO".
+Removes all devices created by GDIO "CreateDevice" methods. Should be used in OneTimeTearDown to prevent issues with controllers remaining in the scene.
 
 ```csharp
 public void RemoveInputDevices(int timeout = 30)
@@ -13,7 +13,7 @@ public void RemoveInputDevices(int timeout = 30)
 ## Examples
 
 ```csharp
-// Removes all devices and layouts with the tag "GDIO"
+// Removes all devices and layouts created by GDIO "CreateDevice" methods.
             api.RemoveInputDevices();
 ```
 

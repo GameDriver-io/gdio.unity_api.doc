@@ -28,6 +28,11 @@ TRUE if the field/property was successfully set to the value.
             api.SetObjectFieldValue("/Untagged[@name='Canvas']/FilterInputTxt[@name='TextMeshPro InputField']/fn:component('TMPro.TMP_InputField')", "text", "string:Asia");
 ```
 
+```csharp
+//Sets the boolean field value for "DisableSetupForDebug" to true.
+            api.SetObjectFieldValue("//*[@name='XR Rig']/fn:component('MasterController')", "DisableSetupForDebug", true );
+```
+
 ## See Also
 
 * class [CoApiClient](../CoApiClient.md)

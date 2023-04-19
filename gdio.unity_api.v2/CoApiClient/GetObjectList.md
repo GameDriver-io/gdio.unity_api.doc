@@ -8,6 +8,7 @@ public IEnumerator<List<LiteGameObject>> GetObjectList(int timeout = 30)
 
 | parameter | description |
 | --- | --- |
+| includeHPath | Generate full path for GameObjects |
 | timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ## Return Value
@@ -19,7 +20,7 @@ This method returns a IList of LiteGameObject. LiteGameObject is a slimmer repre
 //Print a list of the scene objects
 
 ```csharp
-System.Collections.Generic.List<LiteGameObject> objects = api.GetObjectList();
+System.Collections.Generic.List<LiteGameObject> objects = api.GetObjectList(false, 60);
 
 //Test whether the list is null
 Assert.IsNotNull(objects, "GetObjectList failed!");
@@ -27,10 +28,10 @@ Assert.IsNotNull(objects, "GetObjectList failed!");
 //Print a full object list
 foreach (var obj in objects)
 {
-    Console.WriteLine("Object Name: " + obj.Name);
-    Console.WriteLine("Object Tag: " + obj.Tag);
-    Console.WriteLine("Object Position: " + obj.Position);
-    Console.WriteLine($"Object Rotation (w): {obj.Rotation.w}, (x): {obj.Rotation.x}, (y): {obj.Rotation.x}, (z): {obj.Rotation.z}");
+    Console.WriteLine("Object Name: " + obj.name);
+    Console.WriteLine("Object Tag: " + obj.tag);
+    Console.WriteLine("Object Position: " + obj.position);
+    Console.WriteLine($"Object Rotation (w): {obj.rotation.w}, (x): {obj.rotation.x}, (y): {obj.rotation.x}, (z): {obj.rotation.z}");
 }
 ```
 
