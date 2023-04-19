@@ -1,5 +1,25 @@
 # Changelog for GameDriver releases
 
+## 04-13-2023 Version 2023.04
+- Added support for WebGL target builds
+- Added support for SteamVR target builds
+- Added support Nintendo Switch target builds (Beta)
+- Added support for Xbox target builds (Beta)
+- Added support for additional Unity Input Methods:
+  - Gamepad Support
+  - Updated XR Simulation workflow
+  - Legacy XR Support
+- Added support for UI Toolkit:
+  - Click, ClickEx, (Double)ClickObject MouseMoveToObject, and Tap commands now support `fn:q` for accessing UIToolkit document nodes
+  - Added `ClickObject_UIElement` and `ClickUIToolkit` commands
+- Additional HierarchyPath Improvements:
+  - Allow GameObjects to be resolved as method arguments using HPath
+  - Search by `@class`
+- Added menu option to enable/disable trace level logging
+- Fixed issue with `EulerToQuat` maths
+- Fixed issue with `WaitForObject` flooding the logs when an object was not found
+- Additional documentation fixes
+
 ## 12-27-2022 Version 2022.12
 - Added UTF-8 support in license validation
 - Added ObjectExists api
