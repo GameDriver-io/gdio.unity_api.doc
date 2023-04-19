@@ -19,7 +19,7 @@ public bool ClickObject_UIElement(MouseButtons buttonId, string hierarchyPath,
 ## Examples
 
 ```csharp
-api.ClickUIToolkit(MouseButtons.LEFT, 0, 0, 30, new Keycode[] { Keycode.LeftShift } 30); //Clicks the left mouse button at 0,0 for 30 frames with Shift modifier pressed
+api.ClickObject_UIElement(MouseButtons.LEFT, "//*[@name='UIDocument']/fn:component('UnityEngine.UIElements.UIDocument')/@rootVisualElement/fn:q('button-1')", "", 30, new KeyCode[] { KeyCode.LeftShift }, 30); //Clicks the left mouse button on an object having hpath: //*[@name='UIDocument']/fn:component('UnityEngine.UIElements.UIDocument')/@rootVisualElement/fn:q('button-1') for 30 frames with Shift modifier pressed
 ```
 
 ## See Also

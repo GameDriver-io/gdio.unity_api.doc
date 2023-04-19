@@ -19,7 +19,7 @@ public bool Click_UIElement(MouseButtons buttonId, float x, float y, ulong click
 ## Examples
 
 ```csharp
-api.ClickUIToolkit(MouseButtons.LEFT, 0, 0, 30, new Keycode[] { Keycode.LeftShift } 30); //Clicks the left mouse button at 0,0 for 30 frames with Shift modifier pressed
+api.Click_UIElement(MouseButtons.LEFT, 100, 200, 30, new KeyCode[] { KeyCode.LeftShift }, 30); //Clicks the left mouse button at 100, 200 for 30 frames with Shift modifier pressed
 ```
 
 ## See Also
