@@ -14,7 +14,8 @@ public enum HookingObject
 | MOUSE | `2` | Mouse input |
 | GAMEPAD | `4` | Gamepad input, CURRENTLY NOT SUPPORTED |
 | TOUCHINPUT | `8` | Touch input, enum value is currently not used. Enabled/Disabled via MOUSE enumeration. |
-| ALL | `15` | All inputs |
+| XRLEGACY | `16` | Legacy XR input |
+| ALL | `31` | All inputs |
 
 ## See Also
 

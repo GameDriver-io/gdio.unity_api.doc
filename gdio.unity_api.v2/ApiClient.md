@@ -22,8 +22,11 @@ public class ApiClient
 | [ClickEx](ApiClient/ClickEx.md)(…) | Use this function to perform in-game mouse-clicks combined with key press operations. The total frame count of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames (2 methods) |
 | [ClickObject](ApiClient/ClickObject.md)(…) | Use this function to interact with an in-game object using mouse-clicks. |
 | [ClickObjectEx](ApiClient/ClickObjectEx.md)(…) | Use this function to interact with an in-game object using mouse-clicks combined with key press operations. The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames. |
+| [ClickObject_UIElement](ApiClient/ClickObject_UIElement.md)(…) | Use this function to perform in-game mouse-clicks with the UIToolkit. |
+| [Click_UIElement](ApiClient/Click_UIElement.md)(…) | Use this function to perform in-game mouse-clicks with the UIToolkit. |
 | [Connect](ApiClient/Connect.md)(…) | Use this function to connect to a Unity game with GameDriver Agent configured and active. This function can connect to the Unity editor or a Standalone deployment of a game. (2 methods) |
 | [CreateInputDevice](ApiClient/CreateInputDevice.md)(…) | Use this function to create a device of any type from a Unity layout (OculusHMD, Mouse, etc). |
+| [CreateInputDeviceFromDescription](ApiClient/CreateInputDeviceFromDescription.md)(…) | Use this function to create a device of from a controller's description file. Use "LoadDeviceDescription" to obtain the jsonDescription string, or create your own. |
 | [DisableHooks](ApiClient/DisableHooks.md)(…) | Disable input hooks in the game. |
 | [DisableObjectCaching](ApiClient/DisableObjectCaching.md)(…) | Disable the use of object caching when doing HierarchyPath object resolution. |
 | [Disconnect](ApiClient/Disconnect.md)() | Use this function to disconnect the API client from the Game. |
@@ -34,6 +37,8 @@ public class ApiClient
 | [EnableHooks](ApiClient/EnableHooks.md)(…) | Enable input hooks in the game, which is required to perform various input types during replay. |
 | [EnableObjectCaching](ApiClient/EnableObjectCaching.md)(…) | Enable the use of object caching when performing HierarchyPath object resolution. Object caching is per HierarchyPath stored in a IDictionary. If a matching HierarchyPath is already in the dictionary, then the stored object is returned. The only way to update a cached reference is for the reference to be garbage collected or flush the cache with [`FlushObjectLookupCache`](./ApiClient/FlushObjectLookupCache.md). |
 | [EulerToQuat](ApiClient/EulerToQuat.md)(…) | Method will convert Euler Angles to Quaternion, if using Vector3 is an issue. (2 methods) |
+| [ExecuteScript](ApiClient/ExecuteScript.md)(…) | This method executes a Lua script. |
+| [ExecuteScript&lt;T&gt;](ApiClient/ExecuteScript.md)(…) | This method executes a Lua script and returns the value of type T. Since a return value is expected, this script can only be executed once. |
 | [FlushObjectLookupCache](ApiClient/FlushObjectLookupCache.md)(…) | If object caching is enabled, this method will request that the agent flush the cache being held for all object lookups. |
 | [GetConnectedGameDetails](ApiClient/GetConnectedGameDetails.md)() | This method returns the details of the game that the API client is connected to. |
 | [GetLastFPS](ApiClient/GetLastFPS.md)() | This method returns the last frames per second that the API client has recieved from the GameDriver agent. |
@@ -45,6 +50,7 @@ public class ApiClient
 | [GetSceneName](ApiClient/GetSceneName.md)(…) | Return the name of the current active scene. |
 | [IntegerInputEvent](ApiClient/IntegerInputEvent.md)(…) | Use this function to send diferent kinds of Input Events to an action based Input System. |
 | [KeyPress](ApiClient/KeyPress.md)(…) | Use this function to send arbitrary button states to the game. Defaults to LEFT ALT/CTRL/SHIFT/WINDOWS(COMMAND) |
+| [LoadDeviceDescription](ApiClient/LoadDeviceDescription.md)(…) | Loads a controller description file. Can be obtained in Unity in the Input Debug by right clicking a device and selecting "Copy Device Description" then pasting to a .json file |
 | [LoadScene](ApiClient/LoadScene.md)(…) | This method loads the scene, defined by the scene name passed as an argument. |
 | [MapInputControlPathsUsed](ApiClient/MapInputControlPathsUsed.md)(…) | This method returns all the control input paths being used. |
 | [MouseDrag](ApiClient/MouseDrag.md)(…) | Perform a mouse drag operation. |
@@ -52,21 +58,25 @@ public class ApiClient
 | [MouseMoveToPoint](ApiClient/MouseMoveToPoint.md)(…) | Move the mouse to the destination vector. |
 | [NavAgentMoveToPoint](ApiClient/NavAgentMoveToPoint.md)(…) | Move a NavAgent to a destination point. |
 | [ObjectExists](ApiClient/ObjectExists.md)(…) | Check for an object to exist. Do NOT use this to poll, use WaitForObject instead. There is a builtin response timeout of 5 seconds if the Agent/Game does not respond. |
+| [PoseInputEvent](ApiClient/PoseInputEvent.md)(…) | Use this function to send arbitrary combinations of Vector3 and Quaternions to a game. This is usually the way when dealing with matrices. This is only used by SteamVR for now. |
 | [QuaternionInputEvent](ApiClient/QuaternionInputEvent.md)(…) | Use this function to send arbitrary Quaternion Event states to the game. |
 | [Raycast](ApiClient/Raycast.md)(…) | Perform a Raycast to a point to find out what is in that position. |
 | [RegisterCollisionMonitor](ApiClient/RegisterCollisionMonitor.md)(…) | Register a collision monitor to recieve collision events on an object. |
-| [RemoveInputDevices](ApiClient/RemoveInputDevices.md)(…) | Use this function to remove all devices that have the usage tag "GDIO". |
+| [RemoveInputDevices](ApiClient/RemoveInputDevices.md)(…) | Removes all devices created by GDIO "CreateDevice" methods. Should be used in OneTimeTearDown to prevent issues with controllers remaining in the scene. |
 | [RotateObject](ApiClient/RotateObject.md)(…) | Rotate an object defined by the HierarchyPath and rotated by a Quaternion. [https://scriptinghelpers.org/blog/how-to-think-about-quaternions](https://scriptinghelpers.org/blog/how-to-think-about-quaternions) for more information. (4 methods) |
+| [ScheduleScript](ApiClient/ScheduleScript.md)(…) | This method schedules the execution of a Lua script. |
 | [Scroll](ApiClient/Scroll.md)(…) | Use this function to simulate mouse wheel scrolling. NOTE: The new input system values are a factor of 120 |
 | [SetInputFieldText](ApiClient/SetInputFieldText.md)(…) | Set the text of an InputField or TMP_InputField |
 | [SetObjectFieldValue](ApiClient/SetObjectFieldValue.md)(…) | Set the field or property of an object. |
 | [StopEditorPlay](ApiClient/StopEditorPlay.md)() | Stop a game from playing in the Editor, if it is currently in Play mode. |
 | [Tap](ApiClient/Tap.md)(…) | Tap the handheld device at the defined position. (2 methods) |
-| [TapObject](ApiClient/TapObject.md)(…) | Tap an object. |
+| [TapObject](ApiClient/TapObject.md)(…) | Tap an object. (2 methods) |
 | [ToggleEditorPause](ApiClient/ToggleEditorPause.md)() | Toggle the Pause mode in the Editor, if a game is in Play mode. If AutoPlay is not used, then 127.0.0.1 will be used as a default. |
 | [ToggleEditorPlay](ApiClient/ToggleEditorPlay.md)() | Toggle the Play mode in the Editor. If AutoPlay is not used, then 127.0.0.1 will be used as a default. |
 | [TouchInput](ApiClient/TouchInput.md)(…) | Send a raw TouchInput event to the game. (2 methods) |
 | [UnregisterCollisionMonitor](ApiClient/UnregisterCollisionMonitor.md)(…) | Unregister the monitoring of collision events on a GameObject that has been previously registered for monitoring. |
+| [UnscheduleScript](ApiClient/UnscheduleScript.md)(…) |  |
+| [UseWebSockets](ApiClient/UseWebSockets.md)(…) | Configure a WebSocket server for a client (GDIOAgent) to connect to. |
 | [Vector2InputEvent](ApiClient/Vector2InputEvent.md)(…) | Use this function to send arbitrary Vector2 Event states to the game. |
 | [Vector3InputEvent](ApiClient/Vector3InputEvent.md)(…) | Use this function to send arbitrary Vector3 Event states to the game. |
 | [Wait](ApiClient/Wait.md)(…) | Client side Wait or Pause. |

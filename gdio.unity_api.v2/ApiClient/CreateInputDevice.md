@@ -4,22 +4,22 @@ Use this function to create a device of any type from a Unity layout (OculusHMD,
 
 ```csharp
 public string CreateInputDevice(string deviceType, string deviceName, string[] deviceTags = null, 
-    bool appendName = true, int timeout = 30)
+    bool appendName = false, int timeout = 30)
 ```
 
 | parameter | description |
 | --- | --- |
 | deviceType | The type of device to be created, according to a layout. |
-| deviceName | The custom name for the device. Can act as a tag of sorts. |
-| deviceTags | Tags attached to this device, used in finding a path to it. NOTE: The GDIO tag will always be tag index 0 upon creation. |
-| appendName | Whether the name will have GDIO appended to it at the beginning. |
+| deviceName | The custom name for the device. Duplicated names will only return the already existing device. This MUST be different from deviceType. Ex: deviceType OculusHMD, deviceName OculusVirtualHMD or VirtualHMD, etc and NOT OculusHMD |
+| deviceTags | Tags attached to this device, used in finding a path to it. Tags "Gamepad" should be added for gamepads and "LeftHand" or "RightHand" for VR controllers. Failure to add tags for these device types may result in an inability to simulate input. |
+| appendName | Whether the name will have GDIO appended to it at the beginning. Note that if using the recorder, this should be false. |
 | timeout | The amount of time in seconds to wait for connectivity to establish with the game. |
 
 ## Examples
 
 ```csharp
-// Creates an Oculus headset device
-            api.CreateInputDevice("OculusHMD", "GDIOOculusHMD", new string[] { "GDIOHMD" });
+// Creates an Oculus headset device with the name "VirtualOculusHMD"
+            api.CreateInputDevice("OculusHMD", "VirtualOculusHMD");
 ```
 
 ## See Also
