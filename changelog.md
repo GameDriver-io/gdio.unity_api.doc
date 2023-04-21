@@ -20,6 +20,9 @@
 - Fixed issue with `WaitForObject` flooding the logs when an object was not found
 - Additional documentation fixes
 
+## Known Issues
+- UTF Tests are not able to connect in 2023.04. Please continue to use the previous version until this is resolved.
+
 ## 12-27-2022 Version 2022.12
 - Added UTF-8 support in license validation
 - Added ObjectExists api
