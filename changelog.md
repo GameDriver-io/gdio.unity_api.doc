@@ -14,7 +14,7 @@
   - Added `ClickObject_UIElement` and `ClickUIToolkit` commands
 - Additional HierarchyPath Improvements:
   - Allow GameObjects to be resolved as method arguments using HPath
-  - Search by `@class`
+  - Search by `fn:type`
 - Added menu option to enable/disable trace level logging
 - Fixed issue with `EulerToQuat` maths
 - Fixed issue with `WaitForObject` flooding the logs when an object was not found
