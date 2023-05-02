@@ -20,6 +20,7 @@ This method returns a IList of LiteGameObject. LiteGameObject is a slimmer repre
 //Print a list of the scene objects
 
 ```csharp
+// Get the full list of objects in the scene
 System.Collections.Generic.List<LiteGameObject> objects = api.GetObjectList();
 
 //Test whether the list is null
@@ -28,10 +29,10 @@ Assert.IsNotNull(objects, "GetObjectList failed!");
 //Print a full object list
 foreach (var obj in objects)
 {
-    Console.WriteLine("Object Name: " + obj.Name);
-    Console.WriteLine("Object Tag: " + obj.Tag);
-    Console.WriteLine("Object Position: " + obj.Position);
-    Console.WriteLine($"Object Rotation (w): {obj.Rotation.w}, (x): {obj.Rotation.x}, (y): {obj.Rotation.x}, (z): {obj.Rotation.z}");
+    Console.WriteLine("Object Name: " + obj.name);
+    Console.WriteLine("Object Tag: " + obj.tag);
+    Console.WriteLine("Object Position: " + obj.position);
+    Console.WriteLine($"Object Rotation (w): {obj.rotation.w}, (x): {obj.rotation.x}, (y): {obj.rotation.x}, (z): {obj.rotation.z}");
 }
 ```
 
@@ -66,18 +67,18 @@ This method returns a IList of LiteGameObject. LiteGameObject is a slimmer repre
 //Print a list of the scene objects
 
 ```csharp
-System.Collections.Generic.List<LiteGameObject> objects = api.GetObjectList();
+// Get the full list of objects in the scene, starting from "InitialObject".
+var objectList = api.GetObjectList("//*[@name='InitialObject']/*", true, 60);
 
 //Test whether the list is null
-Assert.IsNotNull(objects, "GetObjectList failed!");
+Assert.IsNotNull(objectList, "GetObjectList failed!");
 
-//Print a full object list
-foreach (var obj in objects)
+foreach (var obj in objectList)
 {
-    Console.WriteLine("Object Name: " + obj.Name);
-    Console.WriteLine("Object Tag: " + obj.Tag);
-    Console.WriteLine("Object Position: " + obj.Position);
-    Console.WriteLine($"Object Rotation (w): {obj.Rotation.w}, (x): {obj.Rotation.x}, (y): {obj.Rotation.x}, (z): {obj.Rotation.z}");
+    Console.WriteLine("Object Name: " + obj.name);
+    Console.WriteLine("Object Tag: " + obj.tag);
+    Console.WriteLine("Object Tag: " + obj.hierarchyPath);
+    Console.WriteLine($"Object Rotation (w): {obj.rotation.w}, (x): {obj.rotation.x}, (y): {obj.rotation.x}, (z): {obj.rotation.z}");
 }
 ```
 
