@@ -23,7 +23,10 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 ```csharp
 //Performs a single tap on an object with the name "Cube"
-            api.TapObject("//*[@name='Cube']", 1, 10);
+api.TapObject("//*[@name='Cube']", 1, 10);
+
+//Performs a single tap on an object with the name "Cube", which is rendered using the AlternateCamera
+api.TapObject("//*[@name='Cube']", 1, 10, "//*[@name='AlternateCamera']/fn:component('UnityEngine.Camera')");
 ```
 
 ## See Also
