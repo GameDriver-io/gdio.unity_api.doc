@@ -1,14 +1,14 @@
-# ApiClient.GetConnectedGameDetails method
+# ApiClient.GetDeviceLicenseIdentifier method
 
-This method returns the details of the game that the API client is connected to.
+This method retrieves the License Identifier for the device running the Unity Game.
 
 ```csharp
-public GameConnectionDetails GetConnectedGameDetails()
+public string GetDeviceLicenseIdentifier()
 ```
 
 ## Return Value
 
-GameConnectionDetails
+Device License Identifier
 
 ## See Also
 

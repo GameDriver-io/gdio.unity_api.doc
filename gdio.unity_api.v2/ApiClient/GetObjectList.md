@@ -1,6 +1,6 @@
 # ApiClient.GetObjectList method (1 of 2)
 
-This method returns of a list of all GameObjects as returned by !:UnityEngine.GameObject.FindObjectsOfType(Type), where Type is UnityEngine.GameObject./&gt;
+This method returns of a list of all GameObjects as returned by [UnityEngine.GameObject.FindObjectsOfType(Type)](https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfType.html), where Type is UnityEngine.GameObject.
 
 ```csharp
 public List<LiteGameObject> GetObjectList(bool includeHPath = false, int timeout = 30)
@@ -13,14 +13,13 @@ public List<LiteGameObject> GetObjectList(bool includeHPath = false, int timeout
 
 ## Return Value
 
-This method returns a IList of LiteGameObject. LiteGameObject is a slimmer representation of UnityEngine.GameObject
+This method returns a [System.Collections.IList](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ilist-1) of LiteGameObject. LiteGameObject is a slimmer representation of UnityEngine.GameObject
 
 ## Examples
 
 //Print a list of the scene objects
 
 ```csharp
-// Get the full list of objects in the scene
 System.Collections.Generic.List<LiteGameObject> objects = api.GetObjectList();
 
 //Test whether the list is null
@@ -29,10 +28,10 @@ Assert.IsNotNull(objects, "GetObjectList failed!");
 //Print a full object list
 foreach (var obj in objects)
 {
-    Console.WriteLine("Object Name: " + obj.name);
-    Console.WriteLine("Object Tag: " + obj.tag);
-    Console.WriteLine("Object Position: " + obj.position);
-    Console.WriteLine($"Object Rotation (w): {obj.rotation.w}, (x): {obj.rotation.x}, (y): {obj.rotation.x}, (z): {obj.rotation.z}");
+    Console.WriteLine("Object Name: " + obj.Name);
+    Console.WriteLine("Object Tag: " + obj.Tag);
+    Console.WriteLine("Object Position: " + obj.Position);
+    Console.WriteLine($"Object Rotation (w): {obj.Rotation.w}, (x): {obj.Rotation.x}, (y): {obj.Rotation.x}, (z): {obj.Rotation.z}");
 }
 ```
 
@@ -45,7 +44,7 @@ foreach (var obj in objects)
 
 # ApiClient.GetObjectList method (2 of 2)
 
-This method returns of a list of all GameObjects as returned by !:UnityEngine.GameObject.FindObjectsOfType(Type), where Type is UnityEngine.GameObject./&gt;
+This method returns of a list of all GameObjects as returned by [UnityEngine.GameObject.FindObjectsOfType(Type)](https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfType.html), where Type is UnityEngine.GameObject.
 
 ```csharp
 public List<LiteGameObject> GetObjectList(string hierarchyPath, bool includeHPath = false, 
@@ -60,25 +59,26 @@ public List<LiteGameObject> GetObjectList(string hierarchyPath, bool includeHPat
 
 ## Return Value
 
-This method returns a IList of LiteGameObject. LiteGameObject is a slimmer representation of UnityEngine.GameObject
+This method returns a [System.Collections.IList"](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ilist-1) of LiteGameObject. LiteGameObject is a slimmer representation of UnityEngine.GameObject
 
 ## Examples
 
 //Print a list of the scene objects
 
 ```csharp
-// Get the full list of objects in the scene, starting from "InitialObject".
+//Get the full list of objects in the scene, starting from "InitialObject".
 var objectList = api.GetObjectList("//*[@name='InitialObject']/*", true, 60);
 
 //Test whether the list is null
-Assert.IsNotNull(objectList, "GetObjectList failed!");
+Assert.IsNotNull(objects, "GetObjectList failed!");
 
-foreach (var obj in objectList)
+//Print a full object list
+foreach (var obj in objects)
 {
-    Console.WriteLine("Object Name: " + obj.name);
-    Console.WriteLine("Object Tag: " + obj.tag);
-    Console.WriteLine("Object Tag: " + obj.hierarchyPath);
-    Console.WriteLine($"Object Rotation (w): {obj.rotation.w}, (x): {obj.rotation.x}, (y): {obj.rotation.x}, (z): {obj.rotation.z}");
+    Console.WriteLine("Object Name: " + obj.Name);
+    Console.WriteLine("Object Tag: " + obj.Tag);
+    Console.WriteLine("Object HPath: " + obj.hierarchyPath);
+    Console.WriteLine($"Object Rotation (w): {obj.Rotation.w}, (x): {obj.Rotation.x}, (y): {obj.Rotation.x}, (z): {obj.Rotation.z}");
 }
 ```
 

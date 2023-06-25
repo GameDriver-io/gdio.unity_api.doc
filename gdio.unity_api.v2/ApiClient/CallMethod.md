@@ -1,6 +1,6 @@
 # ApiClient.CallMethod method (1 of 2)
 
-Use this function to execute a Void method on an object.
+Use this function to execute a [System.Void](https://learn.microsoft.com/en-us/dotnet/api/system.void) method on an object.
 
 ```csharp
 public bool CallMethod(string hierarchyPath, string methodName, object[] arguments, 

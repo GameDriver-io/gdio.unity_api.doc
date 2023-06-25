@@ -24,6 +24,8 @@ TRUE if the GameDriver agent was able to process the request successfully.
 ```csharp
 //Performs a single tap on an object with the name "Cube"
             api.TapObject("//*[@name='Cube']", 1, 10);
+            //Performs a single tap on an object with the name "Cube", which is rendered using the AlternateCamera
+            api.TapObject("//*[@name='Cube']", 1, 10, "//*[@name='AlternateCamera']/fn:component('UnityEngine.Camera')");
 ```
 
 ## See Also
@@ -61,8 +63,12 @@ TRUE if the GameDriver agent was able to process the request successfully.
 ## Examples
 
 ```csharp
-//Performs a single tap on an object with the name "Cube"
-            api.TapObject("//*[@name='Cube']", 1, 10);
+//Taps on a UI Elements object named "button-1" using a simulated pen input device named "VirtualPen"
+            path = api.CreateInputDevice("Pen", "VirtualPen", new string[] { "Pen" });
+            api.TapObject(path, "//*[@name='UIDocument']/fn:component('UnityEngine.UIElements.UIDocument')/@rootVisualElement/fn:q('button-1')", 1, 15, 5, 7);
+            //Taps on a UI Elements object named "button-1", which is rendered using the AlternateCamera, using a simulated pen input device named "VirtualPen"
+            path = api.CreateInputDevice("Pen", "VirtualPen", new string[] { "Pen" });
+            api.TapObject(path, "//*[@name='UIDocument']/fn:component('UnityEngine.UIElements.UIDocument')/@rootVisualElement/fn:q('button-1')", 1, 200, 30, 10, "//*[@name='AlternateCamera']/fn:component('UnityEngine.Camera')");
 ```
 
 ## See Also
