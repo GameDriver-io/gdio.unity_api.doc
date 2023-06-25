@@ -1,6 +1,20 @@
-# Changelog for GameDriver releases
+# Changelog for GameDriver for Unity releases
+
+## 06-15-2023 Version 2023.06
+
+- Added support for Unity 2022.3 LTS
+- Added TouchInput UI Toolkit support, including ScrollView objects
+- Added Recorder support for Legaxy XR implementations (non Input System)
+- Various Bug Fixes
+  - Fixed a UTF Connection issue where the initial connection would loop indefinitely
+  - Fixed an issue where `CreateDevice` with multiple devices using the same name and type strings would cause a StackOverflow exception
+  - Fixed multiple IL2CPP issues
+    - Added support for high code stripping
+    - Removed requirement for custom script defines
+    - Fixed an issue with `CreateInputDeviceFromDescription`
 
 ## 04-13-2023 Version 2023.04
+
 - Added support for WebGL target builds
 - Added support for SteamVR target builds
 - Added support Nintendo Switch target builds (Beta)
@@ -21,9 +35,11 @@
 - Additional documentation fixes
 
 ## Known Issues
+
 - UTF Tests are not able to connect in 2023.04. Please continue to use the previous version until this is resolved.
 
 ## 12-27-2022 Version 2022.12
+
 - Added UTF-8 support in license validation
 - Added ObjectExists api
 - Added `match` function for HPath using regular expressions
@@ -34,6 +50,7 @@
 - Various additional fixes
 
 ## 11-10-2022 Version 2022.11
+
 - Added support for XR Recording
 - Updated HierarchyPath Engine and new HPath Debugger
 - New UnityLoggedMessage for passing unhandled exceptions to the ApiClient
@@ -44,11 +61,13 @@
 - Additional bug fixes
 
 ## 09-19-2022 Version 2022.09
+
 - Added argument to GetObjectList to include/exclude HPath for all objects returned
 - Fixed an issue where destroying/recreating the agent would result in connection failures
 - Minor bug fixes
 
 ## 07-16-2022 Version 2022.07
+
 - XR Simulated Input
 - New Recording tool
 - New Input System commands

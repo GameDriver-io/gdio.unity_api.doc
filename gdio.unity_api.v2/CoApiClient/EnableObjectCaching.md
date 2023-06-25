@@ -1,6 +1,6 @@
 # CoApiClient.EnableObjectCaching method
 
-Enable the use of object caching when performing HierarchyPath object resolution. Object caching is per HierarchyPath stored in a IDictionary. If a matching HierarchyPath is already in the dictionary, then the stored object is returned. The only way to update a cached reference is for the reference to be garbage collected or flush the cache with [`FlushObjectLookupCache`](../ApiClient/FlushObjectLookupCache.md).
+Enable the use of object caching when performing HierarchyPath object resolution. Object caching is per HierarchyPath stored in a [System.Collections.IDictionary](https://learn.microsoft.com/en-us/dotnet/api/system.collections.idictionary). If a matching HierarchyPath is already in the dictionary, then the stored object is returned. The only way to update a cached reference is for the reference to be garbage collected or flush the cache with [`FlushObjectLookupCache`](../ApiClient/FlushObjectLookupCache.md).
 
 ```csharp
 public IEnumerator<bool> EnableObjectCaching(int timeout = 30)

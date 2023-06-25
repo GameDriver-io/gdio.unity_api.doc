@@ -40,13 +40,13 @@ public T ExecuteScript<T>(string script, int timeout = 30)
 
 | parameter | description |
 | --- | --- |
-| T | The Type of the field or property to be inspected. |
+| T | The [System.Type](https://learn.microsoft.com/en-us/dotnet/api/system.type) of the field or property to be inspected. |
 | script | The Lua script to be executed |
 | timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ## Return Value
 
-Returns an object of type T for the value or throws an Exception on error.
+Returns an object of type T for the value or throws an [System.Exception](https://learn.microsoft.com/en-us/dotnet/api/system.exception) on error.
 
 ## Examples
 

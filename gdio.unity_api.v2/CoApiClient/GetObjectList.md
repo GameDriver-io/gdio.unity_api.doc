@@ -1,6 +1,6 @@
 # CoApiClient.GetObjectList method
 
-This method returns of a list of all GameObjects as returned by !:UnityEngine.GameObject.FindObjectsOfType(Type), where Type is UnityEngine.GameObject./&gt;
+This method returns of a list of all GameObjects as returned by [UnityEngine.GameObject.FindObjectsOfType(Type)](https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfType.html), where Type is UnityEngine.GameObject./&gt;
 
 ```csharp
 public IEnumerator<List<LiteGameObject>> GetObjectList(int timeout = 30)
@@ -13,7 +13,7 @@ public IEnumerator<List<LiteGameObject>> GetObjectList(int timeout = 30)
 
 ## Return Value
 
-This method returns a IList of LiteGameObject. LiteGameObject is a slimmer representation of UnityEngine.GameObject
+This method returns a [System.Collections.IList](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ilist-1) of LiteGameObject. LiteGameObject is a slimmer representation of UnityEngine.GameObject
 
 ## Examples
 

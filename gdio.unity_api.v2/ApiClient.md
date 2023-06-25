@@ -15,7 +15,7 @@ public class ApiClient
 | event [UnityLoggedMessage](ApiClient/UnityLoggedMessage.md) |  |
 | [AxisPress](ApiClient/AxisPress.md)(…) | Use this function to send arbitrary Axis states to the game. |
 | [ButtonPress](ApiClient/ButtonPress.md)(…) | Use this function to send arbitrary button states to the game. Defaults to LEFT ALT/CTRL/SHIFT/WINDOWS(COMMAND) (2 methods) |
-| [CallMethod](ApiClient/CallMethod.md)(…) | Use this function to execute a Void method on an object. |
+| [CallMethod](ApiClient/CallMethod.md)(…) | Use this function to execute a [System.Void](https://learn.microsoft.com/en-us/dotnet/api/system.void) method on an object. |
 | [CallMethod&lt;T&gt;](ApiClient/CallMethod.md)(…) | Use this function to execute a method on an object. |
 | [CaptureScreenshot](ApiClient/CaptureScreenshot.md)(…) | Use this function to capture a screenshot of the Game under test. |
 | [Click](ApiClient/Click.md)(…) | Use this function to perform in-game mouse-clicks. (2 methods) |
@@ -35,17 +35,18 @@ public class ApiClient
 | [DoubleClickObject](ApiClient/DoubleClickObject.md)(…) | Use this function to interact with an object in game using a mouse double-click. |
 | [DoubleClickObjectEx](ApiClient/DoubleClickObjectEx.md)(…) | Use this function to interact with an object in game using a mouse double-click, combinated with key press operations. The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames |
 | [EnableHooks](ApiClient/EnableHooks.md)(…) | Enable input hooks in the game, which is required to perform various input types during replay. |
-| [EnableObjectCaching](ApiClient/EnableObjectCaching.md)(…) | Enable the use of object caching when performing HierarchyPath object resolution. Object caching is per HierarchyPath stored in a IDictionary. If a matching HierarchyPath is already in the dictionary, then the stored object is returned. The only way to update a cached reference is for the reference to be garbage collected or flush the cache with [`FlushObjectLookupCache`](./ApiClient/FlushObjectLookupCache.md). |
+| [EnableObjectCaching](ApiClient/EnableObjectCaching.md)(…) | Enable the use of object caching when performing HierarchyPath object resolution. Object caching is per HierarchyPath stored in a [System.Collections.IDictionary](https://learn.microsoft.com/en-us/dotnet/api/system.collections.idictionary). If a matching HierarchyPath is already in the dictionary, then the stored object is returned. The only way to update a cached reference is for the reference to be garbage collected or flush the cache with [`FlushObjectLookupCache`](./ApiClient/FlushObjectLookupCache.md). |
 | [EulerToQuat](ApiClient/EulerToQuat.md)(…) | Method will convert Euler Angles to Quaternion, if using Vector3 is an issue. (2 methods) |
 | [ExecuteScript](ApiClient/ExecuteScript.md)(…) | This method executes a Lua script. |
 | [ExecuteScript&lt;T&gt;](ApiClient/ExecuteScript.md)(…) | This method executes a Lua script and returns the value of type T. Since a return value is expected, this script can only be executed once. |
 | [FlushObjectLookupCache](ApiClient/FlushObjectLookupCache.md)(…) | If object caching is enabled, this method will request that the agent flush the cache being held for all object lookups. |
 | [GetConnectedGameDetails](ApiClient/GetConnectedGameDetails.md)() | This method returns the details of the game that the API client is connected to. |
+| [GetDeviceLicenseIdentifier](ApiClient/GetDeviceLicenseIdentifier.md)() | This method retrieves the License Identifier for the device running the Unity Game. |
 | [GetLastFPS](ApiClient/GetLastFPS.md)() | This method returns the last frames per second that the API client has recieved from the GameDriver agent. |
 | [GetNextCollisionEvent](ApiClient/GetNextCollisionEvent.md)(…) | Collision events are stored in a FIFO queue. Calling this method returns the next collision event that was returned. |
 | [GetObjectDistance](ApiClient/GetObjectDistance.md)(…) | This method returns the distance of two objects using vector subtraction. |
 | [GetObjectFieldValue&lt;T&gt;](ApiClient/GetObjectFieldValue.md)(…) | This method returns the field or property value of an object. (2 methods) |
-| [GetObjectList](ApiClient/GetObjectList.md)(…) | This method returns of a list of all GameObjects as returned by !:UnityEngine.GameObject.FindObjectsOfType(Type), where Type is UnityEngine.GameObject./&gt; (2 methods) |
+| [GetObjectList](ApiClient/GetObjectList.md)(…) | This method returns of a list of all GameObjects as returned by [UnityEngine.GameObject.FindObjectsOfType(Type)](https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfType.html), where Type is UnityEngine.GameObject. (2 methods) |
 | [GetObjectPosition](ApiClient/GetObjectPosition.md)(…) | Return the position of a specific object. |
 | [GetSceneName](ApiClient/GetSceneName.md)(…) | Return the name of the current active scene. |
 | [IntegerInputEvent](ApiClient/IntegerInputEvent.md)(…) | Use this function to send diferent kinds of Input Events to an action based Input System. |
