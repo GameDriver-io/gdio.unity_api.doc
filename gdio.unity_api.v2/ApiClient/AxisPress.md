@@ -21,10 +21,10 @@ TRUE if the GameDriver agent successfully processed the request.
 ## Examples
 
 ```csharp
-//Press the down, left, up, then right keys in sequence
-            api.AxisPress("Horizontal1", 100);
+//Press the right, then down keys in sequence
+            api.AxisPress("Horizontal1", 1f, 100);
             api.Wait(300);
-            api.AxisPress("Vertical1", 100);
+            api.AxisPress("Vertical1", -1f, 100);
             api.Wait(300);
 ```
 

@@ -13,12 +13,27 @@ public Collision WaitForCollisionEvent(string eventId, int timeout = 60)
 
 ## Return Value
 
-The Collision contains information about the collision. NULL is returned if the request timesout.
+The Collision contains information about the collision. NULL is returned if the request times out.
 
 ## Examples
 
 ```csharp
-api.WaitForCollisionEvent{object}(eventId);
+// Register a Collision event, which returns a string ID.
+// Note: This should be done for the moving/controlled object which has the RigidBody attached
+string id = api.RegisterCollisionMonitor("//*[@name='Ellen']");
+
+// Move the player character to the enemy character to initiate the collision.
+// Movement in this example is expected to take several seconds.
+api.NavAgentMoveToPoint("//*[@name='Ellen']", new Vector3(chomper.x, chomper.y, chomper.z), false);
+
+// Wait for a collision event to occur, capturing the ID from the registered monitor above.
+Collision didFire = api.WaitForCollisionEvent(id);
+
+// Check if the event was detected. This could be where the test performs some action as a result of the event.
+if (didFire != null)
+    Console.WriteLine("Got event.");
+else
+    Console.WriteLine("Never got event...");
 ```
 
 ## See Also

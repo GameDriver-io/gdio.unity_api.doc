@@ -1,22 +1,22 @@
 # ApiClient.CallMethod method (1 of 2)
 
-Use this function to execute a [System.Void](https://learn.microsoft.com/en-us/dotnet/api/system.void) method on an object.
+Use this function to execute a [System.Void](https://learn.microsoft.com/en-us/dotnet/api/system.void) method on an object or from a static class.
 
 ```csharp
-public bool CallMethod(string hierarchyPath, string methodName, object[] arguments, 
+public bool CallMethod(string hierarchyPath, string methodName, object[] arguments = null, 
     int timeout = 30)
 ```
 
 | parameter | description |
 | --- | --- |
-| hierarchyPath | The HierarchyPath for the object that the script component is attached to. |
+| hierarchyPath | The HierarchyPath for the object that the script component is attached to or the static class. |
 | methodName | The name of the method to call. |
 | arguments | An array of objects to pass as arguments to the method. |
 | timeout | The number of seconds to wait for a response that the request was processed. |
 
 ## Return Value
 
-Returns a boolean based on the successful execution of the return type void, method.
+Returns a boolean based on the successful execution of the return type void method.
 
 ## Examples
 
@@ -34,16 +34,16 @@ api.CallMethod("//*[@name='Canvas']/fn:component('CustomScript')",
 
 # ApiClient.CallMethod&lt;T&gt; method (2 of 2)
 
-Use this function to execute a method on an object.
+Use this function to execute a method on an object or from a static class.
 
 ```csharp
-public T CallMethod<T>(string hierarchyPath, string methodName, object[] arguments, 
+public T CallMethod<T>(string hierarchyPath, string methodName, object[] arguments = null, 
     int timeout = 30)
 ```
 
 | parameter | description |
 | --- | --- |
-| hierarchyPath | The HierarchyPath for the object that the script component is attached to. |
+| hierarchyPath | The HierarchyPath for the object that the script component is attached to or the static class. |
 | methodName | The name of the method to call. |
 | arguments | An array of objects to pass as arguments to the method. |
 | timeout | The number of seconds to wait for a response that the request was processed. |
@@ -56,6 +56,7 @@ Returns a deserialized object of type T. If T and the type of the returned objec
 
 ```csharp
 api.CallMethod<int>("//*[@name='Canvas']/fn:component('CustomScript')", "DoMath", new object[] { 1, 2 });
+api.CallMethod<Quaternion>("fn:type('UnityEngine.Quaternion')", "RotateTowards", new object[] { new Quaternion(), new Quaternion(), maxDegreesDelta }); //Example usage of calling Static methods
 ```
 
 ## See Also

@@ -21,22 +21,21 @@ Returns an array of RaycastResult.
 
 ```csharp
 // Racast to an object named "Ellen"
-             RaycastResult[] rr = api.Raycast(api.GetObjectPosition("//*[@name='Ellen']"));
-             
-             foreach (var res in rr)
-             {
-                 Console.WriteLine(res);
-             }
-            
-             // Output
-             // [RaycastResult]
-             // Type: Physics
-             // Tag: Untagged
-             // Name: Plane
-             // HasButton: False
-             // Point: (-5.217863, 0, -0.5770187)
-             // Type Name: UnityEngine.GameObject
-             
+RaycastResult[] rr = api.Raycast(api.GetObjectPosition("//*[@name='Ellen']"));
+
+foreach (var res in rr)
+{
+    Console.WriteLine(res);
+}
+
+// Output
+// [RaycastResult]
+// Type: Physics
+// Tag: Untagged
+// Name: Plane
+// HasButton: False
+// Point: (-5.217863, 0, -0.5770187)
+// Type Name: UnityEngine.GameObject
 ```
 
 ## See Also

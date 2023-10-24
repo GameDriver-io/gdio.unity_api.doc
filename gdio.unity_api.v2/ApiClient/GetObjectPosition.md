@@ -22,9 +22,9 @@ The Vector3 position of the specific object.
 ## Examples
 
 ```csharp
- // spot is set to the Vector3 value of the object position on screen
-            Vector3 spot = api.GetObjectPosition("//*[@name = 'Player prefab(Clone)']",
-                CoordinateConversion.WorldToScreenPoint);
+// spot is set to the Vector3 value of the object position on screen
+Vector3 spot = api.GetObjectPosition("//*[@name = 'Player prefab(Clone)']",
+    CoordinateConversion.WorldToScreenPoint);
 ```
 
 ## See Also

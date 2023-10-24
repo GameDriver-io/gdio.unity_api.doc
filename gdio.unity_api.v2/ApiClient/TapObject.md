@@ -22,10 +22,11 @@ TRUE if the GameDriver agent was able to process the request successfully.
 ## Examples
 
 ```csharp
-//Performs a single tap on an object with the name "Cube"
-            api.TapObject("//*[@name='Cube']", 1, 10);
-            //Performs a single tap on an object with the name "Cube", which is rendered using the AlternateCamera
-            api.TapObject("//*[@name='Cube']", 1, 10, "//*[@name='AlternateCamera']/fn:component('UnityEngine.Camera')");
+// Performs a single tap on an object with the name "Cube"
+api.TapObject("//*[@name='Cube']", 1, 10);
+
+// Performs a single tap on an object with the name "Cube", which is rendered using the AlternateCamera
+api.TapObject("//*[@name='Cube']", 1, 10, "//*[@name='AlternateCamera']/fn:component('UnityEngine.Camera')");
 ```
 
 ## See Also
@@ -40,14 +41,14 @@ TRUE if the GameDriver agent was able to process the request successfully.
 Tap an object.
 
 ```csharp
-public bool TapObject(string hierarchyPathDevice, string hierarchyPath, int tapCount = 1, 
+public bool TapObject(string deviceControlPath, string hierarchyPath, int tapCount = 1, 
     ulong positionMoveFrameCount = 200, ulong buttonPressFrameCount = 30, 
     ulong moveToPressDelay = 10, string cameraHierarchyPath = "", int timeout = 30)
 ```
 
 | parameter | description |
 | --- | --- |
-| hierarchyPathDevice | Device HPath returned from CreateInputDevice to send the events to. |
+| deviceControlPath | Device control path returned from CreateInputDevice to send the events to. |
 | hierarchyPath | The HierarchyPath of the object to tap. |
 | tapCount | The number of taps that should be registered. |
 | positionMoveFrameCount | The number of frames to complete navigate to over. |
@@ -63,12 +64,13 @@ TRUE if the GameDriver agent was able to process the request successfully.
 ## Examples
 
 ```csharp
-//Taps on a UI Elements object named "button-1" using a simulated pen input device named "VirtualPen"
-            path = api.CreateInputDevice("Pen", "VirtualPen", new string[] { "Pen" });
-            api.TapObject(path, "//*[@name='UIDocument']/fn:component('UnityEngine.UIElements.UIDocument')/@rootVisualElement/fn:q('button-1')", 1, 15, 5, 7);
-            //Taps on a UI Elements object named "button-1", which is rendered using the AlternateCamera, using a simulated pen input device named "VirtualPen"
-            path = api.CreateInputDevice("Pen", "VirtualPen", new string[] { "Pen" });
-            api.TapObject(path, "//*[@name='UIDocument']/fn:component('UnityEngine.UIElements.UIDocument')/@rootVisualElement/fn:q('button-1')", 1, 200, 30, 10, "//*[@name='AlternateCamera']/fn:component('UnityEngine.Camera')");
+// Taps on a UI Elements object named "button-1" using a simulated pen input device named "VirtualPen"
+path = api.CreateInputDevice("Pen", "VirtualPen", new string[] { "Pen" });
+api.TapObject(path, "//*[@name='UIDocument']/fn:component('UnityEngine.UIElements.UIDocument')/@rootVisualElement/fn:q('button-1')", 1, 15, 5, 7);
+
+// Taps on a UI Elements object named "button-1", which is rendered using the AlternateCamera, using a simulated pen input device named "VirtualPen"
+path = api.CreateInputDevice("Pen", "VirtualPen", new string[] { "Pen" });
+api.TapObject(path, "//*[@name='UIDocument']/fn:component('UnityEngine.UIElements.UIDocument')/@rootVisualElement/fn:q('button-1')", 1, 200, 30, 10, "//*[@name='AlternateCamera']/fn:component('UnityEngine.Camera')");
 ```
 
 ## See Also

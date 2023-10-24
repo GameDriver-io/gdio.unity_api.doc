@@ -21,8 +21,8 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 ## Examples
 
 ```csharp
-//Moves the 1st object named "Ellen" to position 20, 0, 20 on the NavMesh
-            api.NavAgentMoveToPoint("//*[@name='Ellen']", new Vector3(20, 0, 20));
+// Moves the 1st object named "Ellen" to position 20, 0, 20 on the NavMesh
+api.NavAgentMoveToPoint("//*[@name='Ellen']", new Vector3(20, 0, 20));
 ```
 
 ## See Also

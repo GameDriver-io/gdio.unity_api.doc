@@ -1,6 +1,6 @@
 # ApiClient.CreateInputDeviceFromDescription method
 
-Use this function to create a device of from a controller's description file. Use "LoadDeviceDescription" to obtain the jsonDescription string, or create your own.
+Use this function to create a device from a controller's description file. Use "LoadDeviceDescription" to obtain the jsonDescription string, or create your own.
 
 ```csharp
 public string CreateInputDeviceFromDescription(string jsonDescription, string deviceName, 

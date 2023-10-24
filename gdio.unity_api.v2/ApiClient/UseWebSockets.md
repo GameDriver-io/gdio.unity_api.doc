@@ -14,6 +14,14 @@ public void UseWebSockets(string hostname, int port, bool waitForAgentConnection
 | waitForAgentConnection |  |
 | timeout |  |
 
+## Examples
+
+```csharp
+ //Waits for an inbound connection on localhost port 7072 for 120s.
+            var task = new Task(() => api.UseWebSockets(testHost, 7072, true, 120));
+            task.Start();
+```
+
 ## See Also
 
 * class [ApiClient](../ApiClient.md)

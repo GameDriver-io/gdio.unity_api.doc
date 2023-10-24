@@ -8,12 +8,12 @@ public string RegisterCollisionMonitor(string hierarchyPath, int timeout = 60)
 
 | parameter | description |
 | --- | --- |
-| hierarchyPath | The HierarchyPath for the object to rotate. |
+| hierarchyPath | The HierarchyPath for the object to register a collection detection monitor. |
 | timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ## Return Value
 
-String returned is the event identifier
+Returns a String representing the event identifier
 
 ## Examples
 

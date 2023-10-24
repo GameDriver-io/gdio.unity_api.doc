@@ -13,9 +13,9 @@ The last published FPS as a double.
 ## Examples
 
 ```csharp
-//Can be used as input for time-sensitive functions such as input.
-            //For example, this will press the Down key for roughly 1 second:
-            api.KeyPress(new KeyCode[] { KeyCode.DownArrow }, (ulong)api.GetLastFPS());
+// Can be used as input for time-sensitive functions such as input.
+// For example, this will press the Down key for roughly 1 second:
+api.KeyPress(new KeyCode[] { KeyCode.DownArrow }, (ulong)api.GetLastFPS());
 ```
 
 ## See Also

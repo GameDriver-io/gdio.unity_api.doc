@@ -23,6 +23,8 @@ public bool ClickObject(MouseButtons buttonId, string hierarchyPath, ulong frame
                 "//*[@name='Cube']", 30, "", 30); // Using the default camera to locate the object.
             api.ClickObject(MouseButtons.LEFT,
                 "//*[@name='Cube']", 30, "//*[@name='AlternateCamera']/fn:component('UnityEngine.Camera')", 30); // Using AlternateCamera to locate the button.
+            api.ClickObject(MouseButtons.LEFT, 
+                "//*[@name='UIDocument']/fn:component('UnityEngine.UIElements.UIDocument')/@rootVisualElement/fn:q('button-1')", 10); // Example usage with a UIToolkit button.
 ```
 
 ## See Also

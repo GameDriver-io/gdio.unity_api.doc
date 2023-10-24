@@ -31,8 +31,8 @@ TRUE if the GameDriver agent was able to process the request successfully.
 ## Examples
 
 ```csharp
-//Performs a single touch input from 0,0 to 100, 100 with a single "finger" over a duration of 50 frames
-            api.TouchInput(new Vector2(0, 0), new Vector2(100, 100), 0, 1, 50);
+// Performs a single touch input from 0,0 to 100, 100 with a single "finger" over a duration of 50 frames
+api.TouchInput(new Vector2(0, 0), new Vector2(100, 100), 0, 1, 50);
 ```
 
 ## See Also
@@ -77,8 +77,8 @@ TRUE if the GameDriver agent was able to process the request successfully.
 ## Examples
 
 ```csharp
-//Performs a single touch input from 0,0 to 100, 100 with a single "finger" over a duration of 50 frames
-            api.TouchInput(0, 0, 100, 100, 0, 1, 50);
+// Performs a single touch input from 0,0 to 100, 100 with a single "finger" over a duration of 50 frames
+api.TouchInput(0, 0, 100, 100, 0, 1, 50);
 ```
 
 ## See Also

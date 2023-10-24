@@ -1,6 +1,6 @@
 # ApiClient constructor
 
-GameDriver.io Unity API Client class constructor.
+GameDriver Unity API Client class constructor.
 
 ```csharp
 public ApiClient()

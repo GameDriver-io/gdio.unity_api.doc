@@ -55,8 +55,8 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 ## Examples
 
 ```csharp
-//Rotates an object with the name "Cylinder" by 30 degrees on the y axis.
-            api.RotateObject("//*[@name='Cylinder']", new Vector3(0, 30, 0), Space.Self, true);
+// Rotates an object with the name "Cylinder" by 30 degrees on the y axis.
+api.RotateObject("//*[@name='Cylinder']", new Vector3(0, 30, 0), Space.Self, true);
 ```
 
 ## See Also
@@ -68,7 +68,7 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 
 # ApiClient.RotateObject method (3 of 4)
 
-Rotate an object defined by the HierarchyPath and rotated by the axis and angle, relative to the Space
+Rotate an object defined by the HierarchyPath and rotated by the axis and angle, relative to the Space.
 
 ```csharp
 public bool RotateObject(string hierarchyPath, Vector3 axis, float angle, 
@@ -91,8 +91,8 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 ## Examples
 
 ```csharp
-//Will rotate an object named "Cylinder" on all 3 axis by 45-degrees
-            api.RotateObject("//*[@name='Cylinder']", new Vector3(0, 0, 0), 45);
+// Rotates an object named "Cylinder" on all 3 axis by 45-degrees
+api.RotateObject("//*[@name='Cylinder']", new Vector3(0, 0, 0), 45);
 ```
 
 ## See Also
@@ -128,8 +128,8 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 ## Examples
 
 ```csharp
-//Rotates an object with the name "Cylinder" by 20 degrees on the z axis
-            api.RotateObject("//*[@name='Cylinder']", 0, 0, 20);
+// Rotates an object with the name "Cylinder" by 20 degrees on the z axis
+api.RotateObject("//*[@name='Cylinder']", 0, 0, 20);
 ```
 
 ## See Also

@@ -21,8 +21,8 @@ TRUE if the GameDriver agent successfully processed the request.
 ## Examples
 
 ```csharp
-//Hold the trigger for 5 frames, and release
-            api.ActionBasedInputEvent("LeftController{LeftHand}/triggerPressed", 1.0f, 5);
+// Hold the trigger for 5 frames, and release
+api.ActionBasedInputEvent("LeftController{LeftHand}/triggerPressed", 1.0f, 5);
 ```
 
 ## See Also

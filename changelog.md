@@ -1,5 +1,25 @@
 # Changelog for GameDriver for Unity releases
 
+## 10-22-2023 Version 2023.10
+- **GameDriver SmartAgents**
+  - Embedded LUA scripting engine (Moonsharp)
+  - Allows for complex agent-side behavior
+  - Schedule and Execute scripts at runtime
+- Nintendo Switch Support (GA)
+- MRTK 2.0 Support
+- OculusVR (OVR) Support
+- Standalone Object Explorer (Beta)
+- Re-enabled Unity 2019 with limited functionality (see [Product Availability Matrix](https://support.gamedriver.io/support/solutions/articles/69000836923) for details)
+- Updated Input Recorder to perform post-processing of events. This will greatly improve performance while recording from XR devices such as the Meta Quest 2
+- Added PoseInputEvent command for working with SteamVR
+- Added support for HostID license locking
+- Fixed several input hooking issues with IL2CPP
+- Fixed an issue where an error was thrown while searching for disabled UI Documents in a scene
+- Fixed an issue where the GameDriver version was not displayed in the Get Started dialog
+- Fixed an issue with duplicate simulated XR device creation
+- Fixed several issues with TouchObject
+- Fixed several docs issues
+
 ## 06-15-2023 Version 2023.06
 
 - Added support for Unity 2022.3 LTS

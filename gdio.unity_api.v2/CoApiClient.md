@@ -9,7 +9,7 @@ public class CoApiClient
 | name | description |
 | --- | --- |
 | [CoApiClient](CoApiClient/CoApiClient.md)() | The default constructor. |
-| event [LoggedMessage](CoApiClient/LoggedMessage.md) |  |
+| event [LoggedMessage](CoApiClient/LoggedMessage.md) | Event handler for logged messages. Add a callback method to this handler to recieve all logging messages from the API. |
 | [CallMethod&lt;T&gt;](CoApiClient/CallMethod.md)(…) | Use this function to execute a method on an object. |
 | [CaptureScreenshot](CoApiClient/CaptureScreenshot.md)(…) | Use this function to capture a screenshot of the Game under test. |
 | [Click](CoApiClient/Click.md)(…) | Use this function to perform in-game mouse-clicks. (2 methods) |
@@ -21,13 +21,17 @@ public class CoApiClient
 | [DisableHooks](CoApiClient/DisableHooks.md)(…) | Disable input hooks in the game. |
 | [EnableHooks](CoApiClient/EnableHooks.md)(…) | Enable input hooks in the game, which is required to perform various input types during replay. |
 | [EnableObjectCaching](CoApiClient/EnableObjectCaching.md)(…) | Enable the use of object caching when performing HierarchyPath object resolution. Object caching is per HierarchyPath stored in a [System.Collections.IDictionary](https://learn.microsoft.com/en-us/dotnet/api/system.collections.idictionary). If a matching HierarchyPath is already in the dictionary, then the stored object is returned. The only way to update a cached reference is for the reference to be garbage collected or flush the cache with [`FlushObjectLookupCache`](./ApiClient/FlushObjectLookupCache.md). |
+| [ExecuteScript](CoApiClient/ExecuteScript.md)(…) | This method executes a Lua script. |
+| [ExecuteScript&lt;T&gt;](CoApiClient/ExecuteScript.md)(…) |  |
 | [FlushObjectLookupCache](CoApiClient/FlushObjectLookupCache.md)(…) | If object caching is enabled, this method will request that the agent flush the cache being held for all object lookups. |
 | [GetLastFPS](CoApiClient/GetLastFPS.md)() | This method returns the last frames per second that the API client has recieved from the GameDriver agent. |
+| [GetMethodList](CoApiClient/GetMethodList.md)(…) | Returns a dictionary of the methods attached to the target object. The key of the dictionary is a string representing the method signature. The value of the dictionary is the hierarchy path of the object the method is attached to. |
 | [GetNextCollisionEvent&lt;T&gt;](CoApiClient/GetNextCollisionEvent.md)(…) | Collision events are stored in a FIFO queue. Calling this method returns the next collision event that was returned. |
 | [GetObjectDistance](CoApiClient/GetObjectDistance.md)(…) | This method returns the distance of two objects using vector subtraction. |
 | [GetObjectFieldValue&lt;T&gt;](CoApiClient/GetObjectFieldValue.md)(…) | This method returns the field or property value of an object. (2 methods) |
 | [GetObjectList](CoApiClient/GetObjectList.md)(…) | This method returns of a list of all GameObjects as returned by [UnityEngine.GameObject.FindObjectsOfType(Type)](https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfType.html), where Type is UnityEngine.GameObject./&gt; |
 | [GetObjectPosition](CoApiClient/GetObjectPosition.md)(…) | Return the position of a specific object. |
+| [GetPropertyList](CoApiClient/GetPropertyList.md)(…) | Returns a dictionary of the properties and fields attached to the target object. The key of the dictionary is the hierarchy path of the property. The value of the dictionary is the value of the property represented as a string. |
 | [GetSceneName](CoApiClient/GetSceneName.md)(…) | Return the name of the current active scene. |
 | [KeyPress](CoApiClient/KeyPress.md)(…) | Use this function to send arbitrary button states to the game. Defaults to LEFT ALT/CTRL/SHIFT/WINDOWS(COMMAND) |
 | [LoadScene](CoApiClient/LoadScene.md)(…) | This method loads the scene, defined by the scene name passed as an argument. |
@@ -38,12 +42,14 @@ public class CoApiClient
 | [Raycast](CoApiClient/Raycast.md)(…) | Perform a Raycast to a point to find out what is in that position. |
 | [RegisterCollisionMonitor](CoApiClient/RegisterCollisionMonitor.md)(…) | Register a collision monitor to recieve collision events on an object. |
 | [RotateObject](CoApiClient/RotateObject.md)(…) | Rotate an object defined by the HierarchyPath and rotated by a Quaternion. [https://scriptinghelpers.org/blog/how-to-think-about-quaternions](https://scriptinghelpers.org/blog/how-to-think-about-quaternions) for more information. (4 methods) |
+| [ScheduleScript](CoApiClient/ScheduleScript.md)(…) | This method schedules the execution of a Lua script. |
 | [SetInputFieldText](CoApiClient/SetInputFieldText.md)(…) | Set the text of an InputField or TMP_InputField |
 | [SetObjectFieldValue](CoApiClient/SetObjectFieldValue.md)(…) | Set the field or property of an object. |
 | [Tap](CoApiClient/Tap.md)(…) | Tap the handheld device at the defined position. (2 methods) |
 | [TapObject](CoApiClient/TapObject.md)(…) | Tap an object. |
 | [TouchInput](CoApiClient/TouchInput.md)(…) | Send a raw TouchInput event to the game. (2 methods) |
 | [UnregisterCollisionMonitor](CoApiClient/UnregisterCollisionMonitor.md)(…) | Unregister the monitoring of collision events on a GameObject that has been previously registered for monitoring. |
+| [UnscheduleScript](CoApiClient/UnscheduleScript.md)(…) | Unschedules a Script that was scheduled by the ScheduleScript command. |
 | [Wait](CoApiClient/Wait.md)(…) | Wait for a fixed period of seconds. |
 | [WaitForCollisionEvent](CoApiClient/WaitForCollisionEvent.md)(…) | Wait for a collision event to fire on an element that is being monitored for collisions. |
 | [WaitForCollisionEvent&lt;T&gt;](CoApiClient/WaitForCollisionEvent.md)(…) | Wait for a collision event to fire on an element that is being monitored for collisions. If the method has been called before, there is the potential that another event was recieved before waiting on the event again. Check with [`GetNextCollisionEvent`](./CoApiClient/GetNextCollisionEvent.md) to see if it returns null to see if an event was missed. |

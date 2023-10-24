@@ -22,8 +22,8 @@ TRUE if the field/property was successfully set to the value.
 ## Examples
 
 ```csharp
-//Sets the text field component attached to the "TextMeshPro InputField" object with the tag "FilterInputTxt" to the value of "Asia"
-            api.SetObjectFieldValue("/Untagged[@name='Canvas']/FilterInputTxt[@name='TextMeshPro InputField']/fn:component('TMPro.TMP_InputField')", "text", "string:Asia");
+// Sets the text field component attached to the "TextMeshPro InputField" object with the tag "FilterInputTxt" to the value of "Asia"
+api.SetObjectFieldValue("/Untagged[@name='Canvas']/FilterInputTxt[@name='TextMeshPro InputField']/fn:component('TMPro.TMP_InputField')", "text", "string:Asia");
 ```
 
 ## See Also
