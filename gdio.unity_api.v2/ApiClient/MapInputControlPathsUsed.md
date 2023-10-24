@@ -19,7 +19,7 @@ The Debug string (DEBUG and MULTI) or Json string (JSON).
 
 ```csharp
 // Maps the control paths to debug.
-            api.MapInputControlPathsUsed(Cmd_MapInputControlPathsUsedRequest.OutputTypes.DEBUG);
+api.MapInputControlPathsUsed(Cmd_MapInputControlPathsUsedRequest.OutputTypes.DEBUG);
 ```
 
 ## See Also

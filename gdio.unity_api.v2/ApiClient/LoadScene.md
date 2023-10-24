@@ -18,8 +18,8 @@ TRUE if the request was successfully processed by the GameDriver agent.
 ## Examples
 
 ```csharp
-//Loads the FinalBoss scene
-            api.LoadScene("FinalBoss");
+// Loads the FinalBoss scene
+api.LoadScene("FinalBoss");
 ```
 
 ## See Also

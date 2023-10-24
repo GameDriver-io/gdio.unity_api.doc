@@ -10,23 +10,22 @@ public class ApiClient
 
 | name | description |
 | --- | --- |
-| [ApiClient](ApiClient/ApiClient.md)() | GameDriver.io Unity API Client class constructor. |
+| [ApiClient](ApiClient/ApiClient.md)() | GameDriver Unity API Client class constructor. |
 | event [LoggedMessage](ApiClient/LoggedMessage.md) | Event handler for logged messages. Add a callback method to this handler to recieve all logging messages from the API. |
-| event [UnityLoggedMessage](ApiClient/UnityLoggedMessage.md) |  |
+| event [ScriptSignal](ApiClient/ScriptSignal.md) | Event handler for SmartAgent events. Add a callback method to this handler to recieve all event signals from an executing Lua script. |
+| event [UnityLoggedMessage](ApiClient/UnityLoggedMessage.md) | Event handler for Unity logged messages. Add a callback method to this handler to recieve all logging messages from the Agent. |
 | [AxisPress](ApiClient/AxisPress.md)(…) | Use this function to send arbitrary Axis states to the game. |
 | [ButtonPress](ApiClient/ButtonPress.md)(…) | Use this function to send arbitrary button states to the game. Defaults to LEFT ALT/CTRL/SHIFT/WINDOWS(COMMAND) (2 methods) |
-| [CallMethod](ApiClient/CallMethod.md)(…) | Use this function to execute a [System.Void](https://learn.microsoft.com/en-us/dotnet/api/system.void) method on an object. |
-| [CallMethod&lt;T&gt;](ApiClient/CallMethod.md)(…) | Use this function to execute a method on an object. |
+| [CallMethod](ApiClient/CallMethod.md)(…) | Use this function to execute a [System.Void](https://learn.microsoft.com/en-us/dotnet/api/system.void) method on an object or from a static class. |
+| [CallMethod&lt;T&gt;](ApiClient/CallMethod.md)(…) | Use this function to execute a method on an object or from a static class. |
 | [CaptureScreenshot](ApiClient/CaptureScreenshot.md)(…) | Use this function to capture a screenshot of the Game under test. |
 | [Click](ApiClient/Click.md)(…) | Use this function to perform in-game mouse-clicks. (2 methods) |
-| [ClickEx](ApiClient/ClickEx.md)(…) | Use this function to perform in-game mouse-clicks combined with key press operations. The total frame count of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames (2 methods) |
+| [ClickEx](ApiClient/ClickEx.md)(…) | Use this function to interact with an in-game object or UI items using mouse-clicks combined with modifier key press operations. The total frame count of this operation is clickFrameCount + modifiersNumberOfFrames (3 methods) |
 | [ClickObject](ApiClient/ClickObject.md)(…) | Use this function to interact with an in-game object using mouse-clicks. |
-| [ClickObjectEx](ApiClient/ClickObjectEx.md)(…) | Use this function to interact with an in-game object using mouse-clicks combined with key press operations. The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames. |
-| [ClickObject_UIElement](ApiClient/ClickObject_UIElement.md)(…) | Use this function to perform in-game mouse-clicks with the UIToolkit. |
-| [Click_UIElement](ApiClient/Click_UIElement.md)(…) | Use this function to perform in-game mouse-clicks with the UIToolkit. |
+| [ClickObjectEx](ApiClient/ClickObjectEx.md)(…) | Use this function to interact with an in-game object using mouse-clicks combined with key press operations. The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames. (2 methods) |
 | [Connect](ApiClient/Connect.md)(…) | Use this function to connect to a Unity game with GameDriver Agent configured and active. This function can connect to the Unity editor or a Standalone deployment of a game. (2 methods) |
 | [CreateInputDevice](ApiClient/CreateInputDevice.md)(…) | Use this function to create a device of any type from a Unity layout (OculusHMD, Mouse, etc). |
-| [CreateInputDeviceFromDescription](ApiClient/CreateInputDeviceFromDescription.md)(…) | Use this function to create a device of from a controller's description file. Use "LoadDeviceDescription" to obtain the jsonDescription string, or create your own. |
+| [CreateInputDeviceFromDescription](ApiClient/CreateInputDeviceFromDescription.md)(…) | Use this function to create a device from a controller's description file. Use "LoadDeviceDescription" to obtain the jsonDescription string, or create your own. |
 | [DisableHooks](ApiClient/DisableHooks.md)(…) | Disable input hooks in the game. |
 | [DisableObjectCaching](ApiClient/DisableObjectCaching.md)(…) | Disable the use of object caching when doing HierarchyPath object resolution. |
 | [Disconnect](ApiClient/Disconnect.md)() | Use this function to disconnect the API client from the Game. |
@@ -38,16 +37,18 @@ public class ApiClient
 | [EnableObjectCaching](ApiClient/EnableObjectCaching.md)(…) | Enable the use of object caching when performing HierarchyPath object resolution. Object caching is per HierarchyPath stored in a [System.Collections.IDictionary](https://learn.microsoft.com/en-us/dotnet/api/system.collections.idictionary). If a matching HierarchyPath is already in the dictionary, then the stored object is returned. The only way to update a cached reference is for the reference to be garbage collected or flush the cache with [`FlushObjectLookupCache`](./ApiClient/FlushObjectLookupCache.md). |
 | [EulerToQuat](ApiClient/EulerToQuat.md)(…) | Method will convert Euler Angles to Quaternion, if using Vector3 is an issue. (2 methods) |
 | [ExecuteScript](ApiClient/ExecuteScript.md)(…) | This method executes a Lua script. |
-| [ExecuteScript&lt;T&gt;](ApiClient/ExecuteScript.md)(…) | This method executes a Lua script and returns the value of type T. Since a return value is expected, this script can only be executed once. |
+| [ExecuteScript&lt;T&gt;](ApiClient/ExecuteScript.md)(…) |  |
 | [FlushObjectLookupCache](ApiClient/FlushObjectLookupCache.md)(…) | If object caching is enabled, this method will request that the agent flush the cache being held for all object lookups. |
 | [GetConnectedGameDetails](ApiClient/GetConnectedGameDetails.md)() | This method returns the details of the game that the API client is connected to. |
 | [GetDeviceLicenseIdentifier](ApiClient/GetDeviceLicenseIdentifier.md)() | This method retrieves the License Identifier for the device running the Unity Game. |
 | [GetLastFPS](ApiClient/GetLastFPS.md)() | This method returns the last frames per second that the API client has recieved from the GameDriver agent. |
+| [GetMethodList](ApiClient/GetMethodList.md)(…) | Returns a dictionary of the methods attached to the target object. The key of the dictionary is a string representing the method signature. The value of the dictionary is the hierarchy path of the object the method is attached to. |
 | [GetNextCollisionEvent](ApiClient/GetNextCollisionEvent.md)(…) | Collision events are stored in a FIFO queue. Calling this method returns the next collision event that was returned. |
 | [GetObjectDistance](ApiClient/GetObjectDistance.md)(…) | This method returns the distance of two objects using vector subtraction. |
 | [GetObjectFieldValue&lt;T&gt;](ApiClient/GetObjectFieldValue.md)(…) | This method returns the field or property value of an object. (2 methods) |
 | [GetObjectList](ApiClient/GetObjectList.md)(…) | This method returns of a list of all GameObjects as returned by [UnityEngine.GameObject.FindObjectsOfType(Type)](https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfType.html), where Type is UnityEngine.GameObject. (2 methods) |
 | [GetObjectPosition](ApiClient/GetObjectPosition.md)(…) | Return the position of a specific object. |
+| [GetPropertyList](ApiClient/GetPropertyList.md)(…) | Returns a dictionary of the properties and fields attached to the target object. The key of the dictionary is the hierarchy path of the property. The value of the dictionary is the value of the property represented as a string. |
 | [GetSceneName](ApiClient/GetSceneName.md)(…) | Return the name of the current active scene. |
 | [IntegerInputEvent](ApiClient/IntegerInputEvent.md)(…) | Use this function to send diferent kinds of Input Events to an action based Input System. |
 | [KeyPress](ApiClient/KeyPress.md)(…) | Use this function to send arbitrary button states to the game. Defaults to LEFT ALT/CTRL/SHIFT/WINDOWS(COMMAND) |
@@ -76,13 +77,13 @@ public class ApiClient
 | [ToggleEditorPlay](ApiClient/ToggleEditorPlay.md)() | Toggle the Play mode in the Editor. If AutoPlay is not used, then 127.0.0.1 will be used as a default. |
 | [TouchInput](ApiClient/TouchInput.md)(…) | Send a raw TouchInput event to the game. (2 methods) |
 | [UnregisterCollisionMonitor](ApiClient/UnregisterCollisionMonitor.md)(…) | Unregister the monitoring of collision events on a GameObject that has been previously registered for monitoring. |
-| [UnscheduleScript](ApiClient/UnscheduleScript.md)(…) |  |
+| [UnscheduleScript](ApiClient/UnscheduleScript.md)(…) | Unschedules a Script that was scheduled by the ScheduleScript command. |
 | [UseWebSockets](ApiClient/UseWebSockets.md)(…) | Configure a WebSocket server for a client (GDIOAgent) to connect to. |
 | [Vector2InputEvent](ApiClient/Vector2InputEvent.md)(…) | Use this function to send arbitrary Vector2 Event states to the game. |
 | [Vector3InputEvent](ApiClient/Vector3InputEvent.md)(…) | Use this function to send arbitrary Vector3 Event states to the game. |
 | [Wait](ApiClient/Wait.md)(…) | Client side Wait or Pause. |
 | [WaitForCollisionEvent](ApiClient/WaitForCollisionEvent.md)(…) | Wait for a collision event to fire on an element that is being monitored for collisions. If the method has been called before, there is the potential that another event was recieved before waiting on the event again. Check with [`GetNextCollisionEvent`](./ApiClient/GetNextCollisionEvent.md) to see if it returns null to see if an event was missed. |
-| [WaitForEmptyInput](ApiClient/WaitForEmptyInput.md)(…) | Wait for an Empty Input event to be received. |
+| [WaitForEmptyInput](ApiClient/WaitForEmptyInput.md)(…) | Wait for an Empty Input event to be received. (2 methods) |
 | [WaitForObject](ApiClient/WaitForObject.md)(…) | Wait for an object to exist. |
 | [WaitForObjectValue](ApiClient/WaitForObjectValue.md)(…) | Wait for an object to exist and have a specific value for a specified field/property. |
 | static [AUTOPLAY_DEFAULT_PORT](ApiClient/AUTOPLAY_DEFAULT_PORT.md) | The default AUTOPLAY port to use when searching for running games. This port is configured in the Unity preferences. |

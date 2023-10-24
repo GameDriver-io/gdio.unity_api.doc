@@ -1,7 +1,18 @@
 # CoApiClient.LoggedMessage event
 
+Event handler for logged messages. Add a callback method to this handler to recieve all logging messages from the API.
+
 ```csharp
 public event EventHandler<LogEventEventArgs> LoggedMessage;
+```
+
+## Examples
+
+```csharp
+api.LoggedMessage += (s, e) =>
+{
+    Console.WriteLine(e.Message);
+};
 ```
 
 ## See Also

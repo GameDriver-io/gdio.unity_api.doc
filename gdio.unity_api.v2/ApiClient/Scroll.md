@@ -17,6 +17,13 @@ public bool Scroll(float x, float y, ulong frame_count, int timeout = 30)
 
 TRUE if the GameDriver agent was able to successfully process the request.
 
+## Examples
+
+```csharp
+// Scrolls from 0 to 10 over 100 frames
+api.Scroll(0, 0, 100);
+```
+
 ## See Also
 
 * class [ApiClient](../ApiClient.md)

@@ -19,7 +19,7 @@ TRUE if the GameDriver agent successfully processed the request.
 ## Examples
 
 ```csharp
-//Press the down, left, up, then right keys in sequence
+//Press the Fire1 then Fire2 buttons in sequence
             api.ButtonPress("Fire1", 100);
             api.Wait(300);
             api.ButtonPress("Fire2", 100);

@@ -1,4 +1,48 @@
-# ApiClient.ClickObjectEx method
+# ApiClient.ClickObjectEx method (1 of 2)
+
+Use this function to interact with an in-game object or UI items using mouse-clicks combined with modifier key press operations. The total frame count execution of this operation is clickFrameCount + modifiersNumberOfFrames.
+
+```csharp
+public bool ClickObjectEx(MouseButtons buttonId, string hierarchyPath, ulong clickFrameCount, 
+    KeyCode[] modifiers = null, ulong modifiersNumberOfFrames = 3, string cameraHierarchyPath = "", 
+    int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| buttonId | The mouse button to use for the click operation. See MouseButtons. |
+| hierarchyPath | The HierarchyPath for the GameObject to perform a click on. |
+| clickFrameCount | The number of frames to click the specific object. |
+| modifiers | An array of [`KeyCode`](../../gdio.unity_api/KeyCode.md) modifier keys to press during the click operation. |
+| modifiersNumberOfFrames | The number of frames to press the modifier keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| cameraHierarchyPath | The HierarchyPath to the Camera rendering the object. An empty string uses Camera.main |
+| timeout | The number of seconds to wait for a response that the ClickObjectEx request was processed. Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+
+## Examples
+
+```csharp
+//Locates and clicks the first object with the name "Cube" for 10 frames with the left mouse button while holding the left-shift key for 3 frames longer.
+            api.ClickObjectEx(MouseButtons.LEFT,
+                "//*[@name='Cube']", 10,
+                new KeyCode[] { KeyCode.LeftShift }, 3);
+            api.ClickObjectEx(MouseButtons.LEFT,
+                "//*[@name='Cube']", 10,
+                new KeyCode[] { KeyCode.LeftShift }, 3, 
+                "//*[@name='AlternateCamera']/fn:component('UnityEngine.Camera')", 30); // Using AlternateCamera to locate the button.
+            api.ClickObjectEx(MouseButtons.LEFT, 
+                "//*[@name='UIDocument']/fn:component('UnityEngine.UIElements.UIDocument')/@rootVisualElement/fn:q('button-1')", 10, 
+                new KeyCode[] { KeyCode.LeftShift }); // Example usage with a UIToolkit button.
+```
+
+## See Also
+
+* enum [KeyCode](../../gdio.unity_api/KeyCode.md)
+* class [ApiClient](../ApiClient.md)
+* namespace [gdio.unity_api.v2](../../gdio.unity_api.md)
+
+---
+
+# ApiClient.ClickObjectEx method (2 of 2)
 
 Use this function to interact with an in-game object using mouse-clicks combined with key press operations. The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames.
 

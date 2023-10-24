@@ -1,4 +1,4 @@
-# ApiClient.WaitForEmptyInput method
+# ApiClient.WaitForEmptyInput method (1 of 2)
 
 Wait for an Empty Input event to be received.
 
@@ -9,6 +9,34 @@ public bool WaitForEmptyInput(int timeout = 30)
 | parameter | description |
 | --- | --- |
 | timeout | The time to wait for the event. |
+
+## Return Value
+
+TRUE if the GameDriver agent successfully processed the request.
+
+## See Also
+
+* class [ApiClient](../ApiClient.md)
+* namespace [gdio.unity_api.v2](../../gdio.unity_api.md)
+
+---
+
+# ApiClient.WaitForEmptyInput method (2 of 2)
+
+Wait for an Empty Input event in a specific path to be received.
+
+```csharp
+public bool WaitForEmptyInput(string path, int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| path | The input path to wait for. |
+| timeout | The time to wait for the event. |
+
+## Return Value
+
+TRUE if the GameDriver agent successfully processed the request.
 
 ## See Also
 

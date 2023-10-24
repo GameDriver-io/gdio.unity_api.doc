@@ -1,7 +1,18 @@
 # ApiClient.UnityLoggedMessage event
 
+Event handler for Unity logged messages. Add a callback method to this handler to recieve all logging messages from the Agent.
+
 ```csharp
 public event EventHandler<UnityLogEventEventArgs> UnityLoggedMessage;
+```
+
+## Examples
+
+```csharp
+api.UnityLoggedMessage += (s, e) =>
+{
+    Console.WriteLine($"Type: {e.type.ToString()}\r\nCondition: {e.condition}\r\nStackTrace: {e.stackTrace}");
+};
 ```
 
 ## See Also

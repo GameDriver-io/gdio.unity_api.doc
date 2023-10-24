@@ -1,4 +1,37 @@
-# ApiClient.ClickEx method (1 of 2)
+# ApiClient.ClickEx method (1 of 3)
+
+Use this function to interact with an in-game object or UI items using mouse-clicks combined with modifier key press operations. The total frame count of this operation is clickFrameCount + modifiersNumberOfFrames
+
+```csharp
+public bool ClickEx(MouseButtons buttonId, ulong clickFrameCount, Vector2 position, 
+    KeyCode[] modifiers = null, ulong modifiersNumberOfFrames = 3, int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| buttonId | The mouse button to use for the click operation. See MouseButtons. |
+| clickFrameCount | The number of frames to click the specific position. |
+| position | The Vector2 position to perform the mouse click. |
+| modifiers | An array of [`KeyCode`](../../gdio.unity_api/KeyCode.md) modifier keys to press during the click operation. |
+| modifiersNumberOfFrames | The number of frames to press the modifier keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
+| timeout | The number of seconds to wait for a response that the ClickEx request was processed. Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+
+## Examples
+
+```csharp
+//Clicks the left mouse button at coordinates 0,0 for 10 frames while holding the left-shift key for 3 frames longer.
+            api.ClickEx(MouseButtons.LEFT, 10, new Vector2(0, 0), new KeyCode[] { KeyCode.LeftShift }, 3, 30);
+```
+
+## See Also
+
+* enum [KeyCode](../../gdio.unity_api/KeyCode.md)
+* class [ApiClient](../ApiClient.md)
+* namespace [gdio.unity_api.v2](../../gdio.unity_api.md)
+
+---
+
+# ApiClient.ClickEx method (2 of 3)
 
 Use this function to perform in-game mouse-clicks combined with key press operations. The total frame count of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames
 
@@ -35,7 +68,7 @@ public bool ClickEx(MouseButtons buttonId, Vector2 position, ulong clickFrameCou
 
 ---
 
-# ApiClient.ClickEx method (2 of 2)
+# ApiClient.ClickEx method (3 of 3)
 
 Use this function to perform in game mouse-clicks combined with key press operations. The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames.
 

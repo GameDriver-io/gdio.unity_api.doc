@@ -20,8 +20,8 @@ TRUE if the GameDriver agent was able to process the request successfully.
 ## Examples
 
 ```csharp
-//Performs a single tap at position 0, 0 for 10 frames
-            api.Tap(new Vector2(0, 0), 1, 10); 
+// Performs a single tap at position 0, 0 for 10 frames
+api.Tap(new Vector2(0, 0), 1, 10);
 ```
 
 ## See Also
@@ -54,8 +54,8 @@ TRUE if the GameDriver agent was able to process the request successfully.
 ## Examples
 
 ```csharp
-//Performs a single tap at position 0, 0 for 10 frames
-            api.Tap(0, 0, 1, 10);
+// Performs a single tap at position 0, 0 for 10 frames
+api.Tap(0, 0, 1, 10);
 ```
 
 ## See Also

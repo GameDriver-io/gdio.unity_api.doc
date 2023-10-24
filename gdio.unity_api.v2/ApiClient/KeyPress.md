@@ -23,15 +23,15 @@ TRUE if the GameDriver agent successfully processed the request.
 ## Examples
 
 ```csharp
-//Press the down, left, up, then right keys in sequence
-            api.KeyPress(new KeyCode[] { KeyCode.DownArrow}, 100);
-            api.Wait(300);
-            api.KeyPress(new KeyCode[] { KeyCode.LeftArrow}, 100);
-            api.Wait(300);
-            api.KeyPress(new KeyCode[] { KeyCode.UpArrow }, 100);
-            api.Wait(300);
-            api.KeyPress(new KeyCode[] { KeyCode.RightArrow }, 100);
-            api.Wait(3000);
+// Press the down, left, up, then right keys in sequence
+api.KeyPress(new KeyCode[] { KeyCode.DownArrow}, 100);
+api.Wait(300);
+api.KeyPress(new KeyCode[] { KeyCode.LeftArrow}, 100);
+api.Wait(300);
+api.KeyPress(new KeyCode[] { KeyCode.UpArrow }, 100);
+api.Wait(300);
+api.KeyPress(new KeyCode[] { KeyCode.RightArrow }, 100);
+api.Wait(3000);
 ```
 
 ## See Also

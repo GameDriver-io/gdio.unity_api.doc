@@ -22,14 +22,14 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 ## Examples
 
 ```csharp
-//First get the position of an object named "Cube" on screen
-             Vector3 cubePos = api.GetObjectPosition("//*[@name='Cube']", CoordinateConversion.WorldToScreenPoint);
-            
-             //Take the x,y values of the on-screen object
-             Vector2 cubePos2 = new Vector2(cubePos.x, cubePos.y);
-             
-             //Move the mouse to the cube on-screen position over 30 frames
-             api.MoveMouseToPoint(cubePos2, (ulong) api.GetLastFPS());
+// First get the position of an object named "Cube" on screen
+Vector3 cubePos = api.GetObjectPosition("//*[@name='Cube']", CoordinateConversion.WorldToScreenPoint);
+
+// Take the x,y values of the on-screen object
+Vector2 cubePos2 = new Vector2(cubePos.x, cubePos.y);
+
+//Move the mouse to the cube on-screen position over 30 frames
+api.MoveMouseToPoint(cubePos2, (ulong) api.GetLastFPS());
 ```
 
 ## See Also

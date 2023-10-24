@@ -23,8 +23,8 @@ TRUE if the requests was successfully processed by the GameDriver agent.
 ## Examples
 
 ```csharp
-//Drags the left mouse button to the position 180, 0 on the screen over 30 frames
-            api.MouseDrag(MouseButtons.LEFT, new Vector2(180, 0), 30, start, true);
+// Drags the left mouse button to the position 180, 0 on the screen over 30 frames
+api.MouseDrag(MouseButtons.LEFT, new Vector2(180, 0), 30, start, true);
 ```
 
 ## See Also

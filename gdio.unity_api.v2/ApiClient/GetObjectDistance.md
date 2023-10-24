@@ -21,9 +21,9 @@ Returns the distance between the two objects as a float.
 
 ```csharp
 // CubeA.Transform = Vector3(1, 2, 3)
-            // CubeB.Transform = Vector3(6, 5, 4)
-            d = api.GetObjectDistance("//*[@name = 'CubeA']", "//*[@name = 'CubeB']");
-            Console.WriteLine(d.ToString()); // prints -5.0,-3.0,-1.0
+// CubeB.Transform = Vector3(6, 5, 4)
+d = api.GetObjectDistance("//*[@name = 'CubeA']", "//*[@name = 'CubeB']");
+Console.WriteLine(d.ToString()); // prints -5.0,-3.0,-1.0
 ```
 
 ## See Also

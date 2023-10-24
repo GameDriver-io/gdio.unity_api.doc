@@ -22,8 +22,8 @@ TRUE if the method call was successfully processed by the GameDriver agent.
 ## Examples
 
 ```csharp
-//Moves the mouse to the center of the object named "Cylinder" over 300 frames
-            api.MouseMoveToObject("//*[@name='Cylinder']", 300, true, true);
+// Moves the mouse to the center of the object named "Cylinder" over 300 frames
+api.MouseMoveToObject("//*[@name='Cylinder']", 300, true, true);
 ```
 
 ## See Also
