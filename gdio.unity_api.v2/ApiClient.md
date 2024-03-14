@@ -70,6 +70,7 @@ public class ApiClient
 | [Scroll](ApiClient/Scroll.md)(…) | Use this function to simulate mouse wheel scrolling. NOTE: The new input system values are a factor of 120 |
 | [SetInputFieldText](ApiClient/SetInputFieldText.md)(…) | Set the text of an InputField or TMP_InputField |
 | [SetObjectFieldValue](ApiClient/SetObjectFieldValue.md)(…) | Set the field or property of an object. |
+| [SkeletonInputEvent](ApiClient/SkeletonInputEvent.md)(…) | Use this function to send arbitrary Skeleton Event states to the game. (2 methods) |
 | [StopEditorPlay](ApiClient/StopEditorPlay.md)() | Stop a game from playing in the Editor, if it is currently in Play mode. |
 | [Tap](ApiClient/Tap.md)(…) | Tap the handheld device at the defined position. (2 methods) |
 | [TapObject](ApiClient/TapObject.md)(…) | Tap an object. (2 methods) |

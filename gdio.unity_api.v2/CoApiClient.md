@@ -10,6 +10,7 @@ public class CoApiClient
 | --- | --- |
 | [CoApiClient](CoApiClient/CoApiClient.md)() | The default constructor. |
 | event [LoggedMessage](CoApiClient/LoggedMessage.md) | Event handler for logged messages. Add a callback method to this handler to recieve all logging messages from the API. |
+| event [ScriptSignal](CoApiClient/ScriptSignal.md) |  |
 | [CallMethod&lt;T&gt;](CoApiClient/CallMethod.md)(…) | Use this function to execute a method on an object. |
 | [CaptureScreenshot](CoApiClient/CaptureScreenshot.md)(…) | Use this function to capture a screenshot of the Game under test. |
 | [Click](CoApiClient/Click.md)(…) | Use this function to perform in-game mouse-clicks. (2 methods) |

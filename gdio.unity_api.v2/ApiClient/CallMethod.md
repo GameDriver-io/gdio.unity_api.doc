@@ -23,6 +23,10 @@ Returns a boolean based on the successful execution of the return type void meth
 ```csharp
 api.CallMethod("//*[@name='Canvas']/fn:component('CustomScript')",
                 "CustomMethod", new string[] { "string:The Test was run on " + DateTime.Now.ToShortDateString() });
+            
+//CallMethod can even be used to pass HPathObjects without the need for custom serialization.
+api.CallMethod("//*[@name='HPathDataObject']/fn:component('HPathObjectScript')",
+    "HPathObjectMethod", new object[] { new HPathObject("//*[@name='ObjecHPathRef']") });
 ```
 
 ## See Also
@@ -56,6 +60,7 @@ Returns a deserialized object of type T. If T and the type of the returned objec
 
 ```csharp
 api.CallMethod<int>("//*[@name='Canvas']/fn:component('CustomScript')", "DoMath", new object[] { 1, 2 });
+
 api.CallMethod<Quaternion>("fn:type('UnityEngine.Quaternion')", "RotateTowards", new object[] { new Quaternion(), new Quaternion(), maxDegreesDelta }); //Example usage of calling Static methods
 ```
 
