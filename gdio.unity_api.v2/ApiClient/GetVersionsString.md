@@ -6,6 +6,17 @@ Returns the GameDriver component versions in this build.
 public static string GetVersionsString()
 ```
 
+## Return Value
+
+A string containing the GameDriver component version.
+
+## Examples
+
+```csharp
+// Log the current GameDriver component version.
+Console.WriteLine("GameDriver Version: " + api.GetVersionString());
+```
+
 ## See Also
 
 * class [ApiClient](../ApiClient.md)

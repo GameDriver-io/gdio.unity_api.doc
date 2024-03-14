@@ -1,6 +1,36 @@
 # Changelog for GameDriver for Unity releases
 
+## 03-13-2024 Version 2024.03
+
+- Unity 2023 Support
+- ECS/DOTS Support - contact <support@gamedriver.io> for more info
+- Rewired Input Support
+- Meta OVR Gesture Support
+- Enforcement for node-locked licenses - read the EULA at <https://gamedriver.io/download>
+- Additional GDIOAgent configuration updates:
+  - Add Agent option added under the GameDriver menu
+  - Change font type - Requires user to drop a .ttf file in the resources folder
+  - Change font size and color
+  - Change background size, color, and opacity
+- Added support for debugging SmartAgents
+- Misc Bug fixes
+  - SmartAgent support for getting primitive type properties
+  - TouchInput/Tap fixes
+  - Input fixes (center click, caps lock, drag selection)
+  - Config localization Fix
+  - Fixed a crashing issue when Domain Reload was disabled
+  - Fixed an issue where Trace logging wasn't reflected in the GameDriver menu
+  - Fixed a potential memory leak in the HierarchyPath debugger
+  - Added support for high code stripping in IL2CPP*
+  - Fixed issue with GetObjectDistance reliability
+  - Misc API doc fixes
+
+## Known Issues
+
+- iOS may crash if enhanced logging is enabled. We included a fix in this release to minimize this behavior, but this is a known issue [within Unity](https://forum.unity.com/threads/unity-2021-3-9f1-xcode-14-ios-16-problem.1335296/)
+
 ## 10-22-2023 Version 2023.10
+
 - **GameDriver SmartAgents**
   - Embedded LUA scripting engine (Moonsharp)
   - Allows for complex agent-side behavior
@@ -99,7 +129,7 @@
 - Apple Silicon support
 - Python Client (beta)
 
-For more information, visit https://gamedriver.io/latest
+For more information, visit <https://gamedriver.io/latest>
 
 ## 10-9-2021 (Beta)
 

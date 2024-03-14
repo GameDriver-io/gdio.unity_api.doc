@@ -3,12 +3,13 @@
 This method executes a Lua script.
 
 ```csharp
-public IEnumerable<bool> ExecuteScript(string script, int timeout = 30)
+public IEnumerable<bool> ExecuteScript(string scriptSource, bool debug = false, int timeout = 30)
 ```
 
 | parameter | description |
 | --- | --- |
-| script | The Lua script to be executed |
+| scriptSource | The Lua script to be executed |
+| debug | If true, the client will not timeout waiting for a response from the agent, so that the script can be attached to with a debugger. |
 | timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ## Return Value
@@ -37,7 +38,7 @@ api.ExecuteScript(msScript);
 # CoApiClient.ExecuteScript&lt;T&gt; method (2 of 2)
 
 ```csharp
-public IEnumerable<T> ExecuteScript<T>(string script, int timeout = 30)
+public IEnumerable<T> ExecuteScript<T>(string scriptSource, bool debug = false, int timeout = 30)
 ```
 
 ## See Also

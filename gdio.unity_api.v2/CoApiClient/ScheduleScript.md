@@ -3,15 +3,17 @@
 This method schedules the execution of a Lua script.
 
 ```csharp
-public IEnumerable<string> ScheduleScript(string script, 
-    ScriptExecutionMode mode = ScriptExecutionMode.Once, int NthFrames = 0, int timeout = 30)
+public IEnumerable<string> ScheduleScript(string scriptSource, 
+    ScriptExecutionMode mode = ScriptExecutionMode.Once, int NthFrames = 0, bool debug = false, 
+    int timeout = 30)
 ```
 
 | parameter | description |
 | --- | --- |
-| script | The Lua script to be executed |
+| scriptSource | The Lua script to be executed |
 | mode | The mode of execution, to determine how often the script is executed in the game. |
 | NthFrames | The number of frames to execute the script. The mode must be set to EveryNthFrame for this value to be used. |
+| debug | If true, the client will not timeout waiting for a response from the agent, so that the script can be attached to with a debugger. |
 | timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ## Return Value
