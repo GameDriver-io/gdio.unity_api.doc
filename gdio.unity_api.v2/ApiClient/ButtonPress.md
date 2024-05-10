@@ -24,7 +24,7 @@ api.ButtonPress("Fire1", 100);
 api.Wait(300);
 api.ButtonPress("Fire2", 100);
 api.Wait(300);
-            
+
 //A frame count of 0 can be used to uniquely and seperately trigger ButtonDown and ButtonUp events.
 api.ButtonPress("Jump", 0);
 api.Wait(500);

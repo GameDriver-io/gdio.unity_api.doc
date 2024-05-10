@@ -1,5 +1,11 @@
 # Changelog for GameDriver for Unity releases
 
+## 03-13-2024 Version 2024.05
+
+- Support for Meta XR SDK
+- Added InitializeApi method for enabling optional input support (e.g. Rewired, OVR)
+- Misc bug fixes
+
 ## 03-13-2024 Version 2024.03
 
 - Unity 2023 Support

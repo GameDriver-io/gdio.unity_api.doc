@@ -15,10 +15,8 @@ GameConnectionDetails
 ```csharp
 // The returned GameConnectionDetails object can be used to retrieve information about the connected game.
 GameConnectionDetails gameDetails = api.GetConnectedGameDetails();
-
 Console.WriteLine("Connection Address: " + gameDetails.Addr);
 Console.WriteLine("Connection Port: " + gameDetails.Port.ToString());
-
 if (gameDetails.IsEditor)
     Console.WriteLine("Testing in editor");
 else {
