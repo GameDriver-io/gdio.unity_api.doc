@@ -50,6 +50,7 @@ public class ApiClient
 | [GetObjectPosition](ApiClient/GetObjectPosition.md)(…) | Return the position of a specific object. |
 | [GetPropertyList](ApiClient/GetPropertyList.md)(…) | Returns a dictionary of the properties and fields attached to the target object. The key of the dictionary is the hierarchy path of the property. The value of the dictionary is the value of the property represented as a string. |
 | [GetSceneName](ApiClient/GetSceneName.md)(…) | Return the name of the current active scene. |
+| [InitializeApi](ApiClient/InitializeApi.md)(…) | Use this function to initialize Rewired if the Rewired Input Manager was not in the starting scene. |
 | [IntegerInputEvent](ApiClient/IntegerInputEvent.md)(…) | Use this function to send diferent kinds of Input Events to an action based Input System. |
 | [KeyPress](ApiClient/KeyPress.md)(…) | Use this function to send arbitrary button states to the game. Defaults to LEFT ALT/CTRL/SHIFT/WINDOWS(COMMAND) |
 | [LoadDeviceDescription](ApiClient/LoadDeviceDescription.md)(…) | Loads a controller description file. Can be obtained in Unity in the Input Debug by right clicking a device and selecting "Copy Device Description" then pasting to a .json file |
