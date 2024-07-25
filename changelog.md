@@ -1,5 +1,18 @@
 # Changelog for GameDriver for Unity releases
 
+## 03-13-2024 Version 2024.07
+
+- Added configurale retry for WebSockets connections
+- Extending fn:count() to support all objects resolved by an hpath and not just lists
+- Added PlayStation 5 Support
+- Added GetObjectPosition support for UIToolkit elements
+- Updated Scroll API to support UIToolkit elements
+- Gated SmartAgent and input hooking for ease of troubleshooting
+- Fixed issue with AutoPlay targeting multiple editors using regex expressions
+- Fixed an issue with MouseDrag on mobile devices
+- Fixed an issue with GetObjectList not returning all object
+- Misc performance and stability fixes
+
 ## 03-13-2024 Version 2024.05
 
 - Support for Meta XR SDK
