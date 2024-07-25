@@ -2,7 +2,7 @@
 
 ## 03-13-2024 Version 2024.07
 
-- Added configurale retry for WebSockets connections
+- Added configurable retry for WebSockets connections
 - Extending fn:count() to support all objects resolved by an hpath and not just lists
 - Added PlayStation 5 Support
 - Added GetObjectPosition support for UIToolkit elements
