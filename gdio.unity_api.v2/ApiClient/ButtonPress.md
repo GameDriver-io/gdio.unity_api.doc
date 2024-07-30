@@ -20,15 +20,15 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ```csharp
 //Press the Fire1 then Fire2 buttons in sequence
-api.ButtonPress("Fire1", 100);
-api.Wait(300);
-api.ButtonPress("Fire2", 100);
-api.Wait(300);
-
-//A frame count of 0 can be used to uniquely and seperately trigger ButtonDown and ButtonUp events.
-api.ButtonPress("Jump", 0);
-api.Wait(500);
-api.ButtonPress("Jump", 0);
+            api.ButtonPress("Fire1", 100);
+            api.Wait(300);
+            api.ButtonPress("Fire2", 100);
+            api.Wait(300);
+            
+            //A frame count of 0 can be used to uniquely and seperately trigger ButtonDown and ButtonUp events.
+            api.ButtonPress("Jump", 0);
+            api.Wait(500);
+            api.ButtonPress("Jump", 0);
 ```
 
 ## See Also
@@ -62,7 +62,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ```csharp
 //Press the down, left, up, then right keys in sequence
-api.ButtonPress("OculusTouchController/primaryButton", 100, 1.0f);
+            api.ButtonPress("OculusTouchController/primaryButton", 100, 1.0f);
 ```
 
 ## See Also

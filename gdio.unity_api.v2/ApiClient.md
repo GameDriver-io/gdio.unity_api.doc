@@ -19,7 +19,7 @@ public class ApiClient
 | [CallMethod](ApiClient/CallMethod.md)(…) | Use this function to execute a [System.Void](https://learn.microsoft.com/en-us/dotnet/api/system.void) method on an object or from a static class. |
 | [CallMethod&lt;T&gt;](ApiClient/CallMethod.md)(…) | Use this function to execute a method on an object or from a static class. |
 | [CaptureScreenshot](ApiClient/CaptureScreenshot.md)(…) | Use this function to capture a screenshot of the Game under test. |
-| [Click](ApiClient/Click.md)(…) | Use this function to perform in-game mouse-clicks. (2 methods) |
+| [Click](ApiClient/Click.md)(…) | Use this function to perform in-game mouse-clicks at the current mouse position. (3 methods) |
 | [ClickEx](ApiClient/ClickEx.md)(…) | Use this function to interact with an in-game object or UI items using mouse-clicks combined with modifier key press operations. The total frame count of this operation is clickFrameCount + modifiersNumberOfFrames (3 methods) |
 | [ClickObject](ApiClient/ClickObject.md)(…) | Use this function to interact with an in-game object using mouse-clicks. |
 | [ClickObjectEx](ApiClient/ClickObjectEx.md)(…) | Use this function to interact with an in-game object using mouse-clicks combined with key press operations. The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames. (2 methods) |
@@ -76,7 +76,6 @@ public class ApiClient
 | [Tap](ApiClient/Tap.md)(…) | Tap the handheld device at the defined position. (2 methods) |
 | [TapObject](ApiClient/TapObject.md)(…) | Tap an object. (2 methods) |
 | [ToggleEditorPause](ApiClient/ToggleEditorPause.md)() | Toggle the Pause mode in the Editor, if a game is in Play mode. If AutoPlay is not used, then 127.0.0.1 will be used as a default. |
-| [ToggleEditorPlay](ApiClient/ToggleEditorPlay.md)() | Toggle the Play mode in the Editor. If AutoPlay is not used, then 127.0.0.1 will be used as a default. |
 | [TouchInput](ApiClient/TouchInput.md)(…) | Send a raw TouchInput event to the game. (2 methods) |
 | [UnregisterCollisionMonitor](ApiClient/UnregisterCollisionMonitor.md)(…) | Unregister the monitoring of collision events on a GameObject that has been previously registered for monitoring. |
 | [UnscheduleScript](ApiClient/UnscheduleScript.md)(…) | Unschedules a Script that was scheduled by the ScheduleScript command. |
