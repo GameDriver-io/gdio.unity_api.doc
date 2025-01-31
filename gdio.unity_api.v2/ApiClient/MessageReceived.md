@@ -1,9 +1,9 @@
-# ApiClient.ToggleEditorPlay method
+# ApiClient.MessageReceived event
 
-Toggle the Play mode in the Editor. If AutoPlay is not used, then 127.0.0.1 will be used as a default.
+Passthrough event handler for for Api Extensions, eg: Recorder
 
 ```csharp
-public void ToggleEditorPlay()
+protected event EventHandler<ProtocolMessage> MessageReceived;
 ```
 
 ## See Also

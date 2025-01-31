@@ -3,8 +3,8 @@
 Use this function to connect to a Unity game with GameDriver Agent configured and active. This function can connect to the Unity editor or a Standalone deployment of a game.
 
 ```csharp
-public void Connect(string hostname, int port = 19734, bool autoplay = false, int timeout = 30, 
-    bool autoPortResolution = true)
+public virtual void Connect(string hostname, int port = 19734, bool autoplay = false, 
+    int timeout = 30, bool autoPortResolution = true)
 ```
 
 | parameter | description |

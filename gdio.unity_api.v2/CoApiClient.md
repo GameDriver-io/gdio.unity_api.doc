@@ -11,6 +11,7 @@ public class CoApiClient
 | [CoApiClient](CoApiClient/CoApiClient.md)() | The default constructor. |
 | event [LoggedMessage](CoApiClient/LoggedMessage.md) | Event handler for logged messages. Add a callback method to this handler to recieve all logging messages from the API. |
 | event [ScriptSignal](CoApiClient/ScriptSignal.md) |  |
+| [CallMethod](CoApiClient/CallMethod.md)(…) | Use this function to execute a [System.Void](https://learn.microsoft.com/en-us/dotnet/api/system.void) method on an object or from a static class. |
 | [CallMethod&lt;T&gt;](CoApiClient/CallMethod.md)(…) | Use this function to execute a method on an object. |
 | [CaptureScreenshot](CoApiClient/CaptureScreenshot.md)(…) | Use this function to capture a screenshot of the Game under test. |
 | [Click](CoApiClient/Click.md)(…) | Use this function to perform in-game mouse-clicks. (2 methods) |
@@ -28,7 +29,7 @@ public class CoApiClient
 | [GetLastFPS](CoApiClient/GetLastFPS.md)() | This method returns the last frames per second that the API client has recieved from the GameDriver agent. |
 | [GetMethodList](CoApiClient/GetMethodList.md)(…) | Returns a dictionary of the methods attached to the target object. The key of the dictionary is a string representing the method signature. The value of the dictionary is the hierarchy path of the object the method is attached to. |
 | [GetNextCollisionEvent&lt;T&gt;](CoApiClient/GetNextCollisionEvent.md)(…) | Collision events are stored in a FIFO queue. Calling this method returns the next collision event that was returned. |
-| [GetObjectDistance](CoApiClient/GetObjectDistance.md)(…) | This method returns the distance of two objects using vector subtraction. |
+| [GetObjectDistance](CoApiClient/GetObjectDistance.md)(…) |  |
 | [GetObjectFieldValue&lt;T&gt;](CoApiClient/GetObjectFieldValue.md)(…) | This method returns the field or property value of an object. (2 methods) |
 | [GetObjectList](CoApiClient/GetObjectList.md)(…) | This method returns of a list of all GameObjects as returned by [UnityEngine.GameObject.FindObjectsOfType(Type)](https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfType.html), where Type is UnityEngine.GameObject./&gt; |
 | [GetObjectPosition](CoApiClient/GetObjectPosition.md)(…) | Return the position of a specific object. |
@@ -46,6 +47,8 @@ public class CoApiClient
 | [ScheduleScript](CoApiClient/ScheduleScript.md)(…) | This method schedules the execution of a Lua script. |
 | [SetInputFieldText](CoApiClient/SetInputFieldText.md)(…) | Set the text of an InputField or TMP_InputField |
 | [SetObjectFieldValue](CoApiClient/SetObjectFieldValue.md)(…) | Set the field or property of an object. |
+| [StartVideoRecording](CoApiClient/StartVideoRecording.md)(…) | Use this function to start a video recording of the game's screen. (3 methods) |
+| [StopVideoRecording](CoApiClient/StopVideoRecording.md)(…) | Use this function to start a video recording of the game's screen. |
 | [Tap](CoApiClient/Tap.md)(…) | Tap the handheld device at the defined position. (2 methods) |
 | [TapObject](CoApiClient/TapObject.md)(…) | Tap an object. |
 | [TouchInput](CoApiClient/TouchInput.md)(…) | Send a raw TouchInput event to the game. (2 methods) |

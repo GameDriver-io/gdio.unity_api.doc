@@ -23,12 +23,14 @@ public class ApiClient
 | [ClickEx](ApiClient/ClickEx.md)(…) | Use this function to interact with an in-game object or UI items using mouse-clicks combined with modifier key press operations. The total frame count of this operation is clickFrameCount + modifiersNumberOfFrames (3 methods) |
 | [ClickObject](ApiClient/ClickObject.md)(…) | Use this function to interact with an in-game object using mouse-clicks. |
 | [ClickObjectEx](ApiClient/ClickObjectEx.md)(…) | Use this function to interact with an in-game object using mouse-clicks combined with key press operations. The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames. (2 methods) |
-| [Connect](ApiClient/Connect.md)(…) | Use this function to connect to a Unity game with GameDriver Agent configured and active. This function can connect to the Unity editor or a Standalone deployment of a game. (2 methods) |
+| virtual [Connect](ApiClient/Connect.md)(…) | Use this function to connect to a Unity game with GameDriver Agent configured and active. This function can connect to the Unity editor or a Standalone deployment of a game. |
+| [Connect](ApiClient/Connect.md)(…) | Use this function to connect to a Unity game with GameDriver Agent configured and active. This function can connect to the Unity editor or a Standalone deployment of a game. |
 | [CreateInputDevice](ApiClient/CreateInputDevice.md)(…) | Use this function to create a device of any type from a Unity layout (OculusHMD, Mouse, etc). |
 | [CreateInputDeviceFromDescription](ApiClient/CreateInputDeviceFromDescription.md)(…) | Use this function to create a device from a controller's description file. Use "LoadDeviceDescription" to obtain the jsonDescription string, or create your own. |
+| [CreateObjectRef](ApiClient/CreateObjectRef.md)(…) |  (3 methods) |
 | [DisableHooks](ApiClient/DisableHooks.md)(…) | Disable input hooks in the game. |
 | [DisableObjectCaching](ApiClient/DisableObjectCaching.md)(…) | Disable the use of object caching when doing HierarchyPath object resolution. |
-| [Disconnect](ApiClient/Disconnect.md)() | Use this function to disconnect the API client from the Game. |
+| virtual [Disconnect](ApiClient/Disconnect.md)() | Use this function to disconnect the API client from the Game. |
 | [DoubleClick](ApiClient/DoubleClick.md)(…) | Use this function to perform in-game mouse double-clicks. (2 methods) |
 | [DoubleClickEx](ApiClient/DoubleClickEx.md)(…) | Use this function to perform in game mouse double clicks combined with key press operations. The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames (2 methods) |
 | [DoubleClickObject](ApiClient/DoubleClickObject.md)(…) | Use this function to interact with an object in game using a mouse double-click. |
@@ -44,7 +46,7 @@ public class ApiClient
 | [GetLastFPS](ApiClient/GetLastFPS.md)() | This method returns the last frames per second that the API client has recieved from the GameDriver agent. |
 | [GetMethodList](ApiClient/GetMethodList.md)(…) | Returns a dictionary of the methods attached to the target object. The key of the dictionary is a string representing the method signature. The value of the dictionary is the hierarchy path of the object the method is attached to. |
 | [GetNextCollisionEvent](ApiClient/GetNextCollisionEvent.md)(…) | Collision events are stored in a FIFO queue. Calling this method returns the next collision event that was returned. |
-| [GetObjectDistance](ApiClient/GetObjectDistance.md)(…) | This method returns the distance of two objects using vector subtraction. |
+| [GetObjectDistance](ApiClient/GetObjectDistance.md)(…) |  |
 | [GetObjectFieldValue&lt;T&gt;](ApiClient/GetObjectFieldValue.md)(…) | This method returns the field or property value of an object. (2 methods) |
 | [GetObjectList](ApiClient/GetObjectList.md)(…) | This method returns of a list of all GameObjects as returned by [UnityEngine.GameObject.FindObjectsOfType(Type)](https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfType.html), where Type is UnityEngine.GameObject. (2 methods) |
 | [GetObjectPosition](ApiClient/GetObjectPosition.md)(…) | Return the position of a specific object. |
@@ -64,15 +66,20 @@ public class ApiClient
 | [PoseInputEvent](ApiClient/PoseInputEvent.md)(…) | Use this function to send arbitrary combinations of Vector3 and Quaternions to a game. This is usually the way when dealing with matrices. This is only used by SteamVR for now. |
 | [QuaternionInputEvent](ApiClient/QuaternionInputEvent.md)(…) | Use this function to send arbitrary Quaternion Event states to the game. |
 | [Raycast](ApiClient/Raycast.md)(…) | Perform a Raycast to a point to find out what is in that position. |
+| [ReconfigurePort](ApiClient/ReconfigurePort.md)(…) |  |
 | [RegisterCollisionMonitor](ApiClient/RegisterCollisionMonitor.md)(…) | Register a collision monitor to recieve collision events on an object. |
 | [RemoveInputDevices](ApiClient/RemoveInputDevices.md)(…) | Removes all devices created by GDIO "CreateDevice" methods. Should be used in OneTimeTearDown to prevent issues with controllers remaining in the scene. |
+| [RemoveObjectRef](ApiClient/RemoveObjectRef.md)(…) | Remove an objectRef |
 | [RotateObject](ApiClient/RotateObject.md)(…) | Rotate an object defined by the HierarchyPath and rotated by a Quaternion. [https://scriptinghelpers.org/blog/how-to-think-about-quaternions](https://scriptinghelpers.org/blog/how-to-think-about-quaternions) for more information. (4 methods) |
 | [ScheduleScript](ApiClient/ScheduleScript.md)(…) | This method schedules the execution of a Lua script. |
 | [Scroll](ApiClient/Scroll.md)(…) | Use this function to simulate mouse wheel scrolling. NOTE: The new input system values are a factor of 120 |
 | [SetInputFieldText](ApiClient/SetInputFieldText.md)(…) | Set the text of an InputField or TMP_InputField |
 | [SetObjectFieldValue](ApiClient/SetObjectFieldValue.md)(…) | Set the field or property of an object. |
+| [SetXRDeviceMode](ApiClient/SetXRDeviceMode.md)(…) | Used to change between controller and hand modes in XR if one of the used modes is not working or being rendered. Mostly for OVR. Set by default to both: XRDeviceModes.CONTROLLER &#x7C; XRDeviceModes.HAND. Ex: SetXRDeviceModes("GDIOLeftHand", XRDeviceModes.HAND) or SetXRDeviceModes("GDIOLeftHand", XRDeviceModes.CONTROLLER &#x7C; XRDeviceModes.HAND). |
 | [SkeletonInputEvent](ApiClient/SkeletonInputEvent.md)(…) | Use this function to send arbitrary Skeleton Event states to the game. (2 methods) |
+| [StartVideoRecording](ApiClient/StartVideoRecording.md)(…) | Start a video recording of the game's screen. Optionally center the video capture on a specific screen position. (3 methods) |
 | [StopEditorPlay](ApiClient/StopEditorPlay.md)() | Stop a game from playing in the Editor, if it is currently in Play mode. |
+| [StopVideoRecording](ApiClient/StopVideoRecording.md)(…) | Use this function to start a video recording of the game's screen. |
 | [Tap](ApiClient/Tap.md)(…) | Tap the handheld device at the defined position. (2 methods) |
 | [TapObject](ApiClient/TapObject.md)(…) | Tap an object. (2 methods) |
 | [ToggleEditorPause](ApiClient/ToggleEditorPause.md)() | Toggle the Pause mode in the Editor, if a game is in Play mode. If AutoPlay is not used, then 127.0.0.1 will be used as a default. |
@@ -87,6 +94,7 @@ public class ApiClient
 | [WaitForEmptyInput](ApiClient/WaitForEmptyInput.md)(…) | Wait for an Empty Input event to be received. (2 methods) |
 | [WaitForObject](ApiClient/WaitForObject.md)(…) | Wait for an object to exist. |
 | [WaitForObjectValue](ApiClient/WaitForObjectValue.md)(…) | Wait for an object to exist and have a specific value for a specified field/property. |
+| static [AUTOPLAY_BROADCAST_ADDR](ApiClient/AUTOPLAY_BROADCAST_ADDR.md) | The broadcast address to use for sending out AutoPlay requests. The default is for localhost: 127.0.0.1 |
 | static [AUTOPLAY_DEFAULT_PORT](ApiClient/AUTOPLAY_DEFAULT_PORT.md) | The default AUTOPLAY port to use when searching for running games. This port is configured in the Unity preferences. |
 | static [AUTOPLAY_ENABLED](ApiClient/AUTOPLAY_ENABLED.md) | NOT IN USE. |
 | static [AUTOPLAY_RECEIVE_PORT](ApiClient/AUTOPLAY_RECEIVE_PORT.md) | The port to listen for responses from the AutoPlay plugin running in Unity. Due to loopback limitations, this port must be different than the [`AUTOPLAY_DEFAULT_PORT`](./ApiClient/AUTOPLAY_DEFAULT_PORT.md) |
@@ -94,6 +102,15 @@ public class ApiClient
 | static [GetVersionsString](ApiClient/GetVersionsString.md)() | Returns the GameDriver component versions in this build. |
 | static [Launch](ApiClient/Launch.md)(…) | Use this function to launch the Unity game build from an executable. In order to automate execution, games should be set to automatically start at the desired screen resolution and require no additional external dialogs to start. These can typically be set in Unity under Build Settings &gt; Resolution, Other Settings, etc... |
 | static [TerminateGame](ApiClient/TerminateGame.md)() | If a standalone game was started with Launch, this method will terminate the Game process. |
+
+## Protected Members
+
+| name | description |
+| --- | --- |
+| virtual [IsRecorder](ApiClient/IsRecorder.md) { get; } |  |
+| [client](ApiClient/client.md) |  |
+| event [MessageReceived](ApiClient/MessageReceived.md) | Passthrough event handler for for Api Extensions, eg: Recorder |
+| [SendMessage](ApiClient/SendMessage.md)(…) | Passthrough SendMessage Method for Api Extensions, eg: Recorder. |
 
 ## See Also
 

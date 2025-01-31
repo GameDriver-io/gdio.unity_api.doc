@@ -12,7 +12,7 @@ public Collision GetNextCollisionEvent(string eventId)
 
 ## Return Value
 
-The Collision event next in the FIFO queue of events recieved. NULL is returned if the eventId doesn't march a Collision event or if no new event is available in the queue.
+The Collision event next in the FIFO queue of events recieved. NULL is returned if the eventId doesn't match a Collision event or if no new event is available in the queue.
 
 ## See Also
 

@@ -1,15 +1,9 @@
-# ApiClient.Disconnect method
+# ApiClient.AUTOPLAY_BROADCAST_ADDR field
 
-Use this function to disconnect the API client from the Game.
-
-```csharp
-public virtual void Disconnect()
-```
-
-## Examples
+The broadcast address to use for sending out AutoPlay requests. The default is for localhost: 127.0.0.1
 
 ```csharp
-api.Disconnect();
+public static string AUTOPLAY_BROADCAST_ADDR;
 ```
 
 ## See Also

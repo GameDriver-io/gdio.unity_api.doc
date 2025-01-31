@@ -1,15 +1,7 @@
-# ApiClient.Disconnect method
-
-Use this function to disconnect the API client from the Game.
+# ApiClient.client field
 
 ```csharp
-public virtual void Disconnect()
-```
-
-## Examples
-
-```csharp
-api.Disconnect();
+protected IClientCommunications client;
 ```
 
 ## See Also
