@@ -3,7 +3,7 @@
 Returns a dictionary of the methods attached to the target object. The key of the dictionary is a string representing the method signature. The value of the dictionary is the hierarchy path of the object the method is attached to.
 
 ```csharp
-public Dictionary<string, string> GetMethodList(string hierarchyPath, int timeout = 30)
+public HashSet<MethodInfo> GetMethodList(string hierarchyPath, int timeout = 30)
 ```
 
 | parameter | description |

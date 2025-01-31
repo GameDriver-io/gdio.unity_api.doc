@@ -1,16 +1,13 @@
-# ApiClient.Disconnect method
-
-Use this function to disconnect the API client from the Game.
+# ApiClient.ReconfigurePort method
 
 ```csharp
-public virtual void Disconnect()
+public void ReconfigurePort(int port, int timeout = 30)
 ```
 
-## Examples
-
-```csharp
-api.Disconnect();
-```
+| parameter | description |
+| --- | --- |
+| port |  |
+| timeout |  |
 
 ## See Also
 

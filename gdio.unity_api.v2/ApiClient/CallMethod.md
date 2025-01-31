@@ -26,7 +26,7 @@ api.CallMethod("//*[@name='Canvas']/fn:component('CustomScript')",
             
             //CallMethod can even be used to pass HPathObjects without the need for custom serialization.
             api.CallMethod("//*[@name='HPathDataObject']/fn:component('HPathObjectScript')",
-                "HPathObjectMethod", new object[] { new HPathObject("//*[@name='ObjecHPathRef']") });
+                "HPathObjectMethod", new object[] { new HPathObject("//*[@name='ObjectHPathRef']") });
 ```
 
 ## See Also

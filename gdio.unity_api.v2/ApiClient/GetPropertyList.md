@@ -3,7 +3,7 @@
 Returns a dictionary of the properties and fields attached to the target object. The key of the dictionary is the hierarchy path of the property. The value of the dictionary is the value of the property represented as a string.
 
 ```csharp
-public Dictionary<string, string> GetPropertyList(string hierarchyPath, int timeout = 30)
+public HashSet<PropertyInfo> GetPropertyList(string hierarchyPath, int timeout = 30)
 ```
 
 | parameter | description |

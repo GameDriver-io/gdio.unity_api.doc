@@ -1,29 +1,8 @@
 # ApiClient.GetObjectDistance method
 
-This method returns the distance of two objects using vector subtraction.
-
 ```csharp
 public float GetObjectDistance(string objectA_HierarchyPath, string objectB_HierarchyPath, 
     int timeout = 30)
-```
-
-| parameter | description |
-| --- | --- |
-| objectA_HierarchyPath | The HierarchyPath for the first GameObject. |
-| objectB_HierarchyPath | The HierarchyPath for the second GameObject. |
-| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
-
-## Return Value
-
-Returns the distance between the two objects as a float.
-
-## Examples
-
-```csharp
-// CubeA.Transform = Vector3(1, 2, 3)
-// CubeB.Transform = Vector3(6, 5, 4)
-d = api.GetObjectDistance("//*[@name = 'CubeA']", "//*[@name = 'CubeB']");
-Console.WriteLine(d.ToString()); // prints -5.0,-3.0,-1.0
 ```
 
 ## See Also

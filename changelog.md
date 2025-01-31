@@ -1,5 +1,19 @@
 # Changelog for GameDriver for Unity releases
 
+## 01-01-2025 Version 2025.01
+
+- GameDriver Test Assistant (TA)
+  - Recorder
+  - Object Explorer
+  - HPath Debugger
+  - Code Gen/Editor
+  - Test/Unity Log Viewer
+- UIToolkit Explorer
+- OpenH264 Encoder Plugin
+- Improved HierarchyPath performance
+- MRTK Support Updates
+- Meta XR Support Updates
+
 ## 03-13-2024 Version 2024.07
 
 - Added configurable retry for WebSockets connections

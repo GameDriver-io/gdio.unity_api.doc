@@ -3,7 +3,7 @@
 This method returns the field or property value of an object.
 
 ```csharp
-public T GetObjectFieldValue<T>(string hierarchyPath, int timeout = 30)
+public T GetObjectFieldValue<T>(object hierarchyPath, int timeout = 30)
 ```
 
 | parameter | description |
@@ -37,7 +37,7 @@ Assert.IsTrue(invisCube == false, "The invisible cube isn't active"); //Passes i
 This method returns the field or property value of an object.
 
 ```csharp
-public T GetObjectFieldValue<T>(string hierarchyPath, string fieldOrPropertyName, int timeout = 30)
+public T GetObjectFieldValue<T>(object hierarchyPath, string fieldOrPropertyName, int timeout = 30)
 ```
 
 | parameter | description |
