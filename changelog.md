@@ -13,6 +13,7 @@
 - Improved HierarchyPath performance
 - MRTK Support Updates
 - Meta XR Support Updates
+- Support for PlayMode options in newer versions of Unity (i.e. Domain Reload disabled)
 
 ## 03-13-2024 Version 2024.07
 
