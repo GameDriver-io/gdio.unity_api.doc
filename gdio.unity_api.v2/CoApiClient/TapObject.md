@@ -22,7 +22,12 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 ```csharp
 //Performs a single tap on an object with the name "Cube"
-            api.TapObject("//*[@name='Cube']", 1, 10);
+             api.TapObject("//*[@name='Cube']", 1, 10);
+            
+             // A frame count of 0 can be used to uniquely and seperately trigger TouchPhase.Began and TouchPhase.Ended events.
+             api.TapObject("//*[@name='Cube']", 1, 0);
+             api.Wait(500);
+             api.TapObject("//*[@name='Cube']", 1, 0);
 ```
 
 ## See Also
