@@ -22,7 +22,12 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 ```csharp
 //Performs a single tap at position 0, 0 for 10 frames
-            api.Tap(new Vector2(0, 0), 1, 10); 
+             api.Tap(new Vector2(0, 0), 1, 10);
+            
+             // A frame count of 0 can be used to uniquely and seperately trigger TouchPhase.Began and TouchPhase.Ended events.
+             api.Tap(new Vector2(0, 0), 1, 0);
+             api.Wait(500);
+             api.Tap(new Vector2(0, 0), 1, 0);
 ```
 
 ## See Also
@@ -57,7 +62,12 @@ TRUE if the GameDriver agent was able to process the request successfully.
 
 ```csharp
 //Performs a single tap at position 0, 0 for 10 frames
-            api.Tap(0, 0, 1, 10);
+             api.Tap(0, 0, 1, 10);
+            
+             // A frame count of 0 can be used to uniquely and seperately trigger TouchPhase.Began and TouchPhase.Ended events.
+             api.Tap(0, 0, 1, 0);
+             api.Wait(500);
+             api.Tap(0, 0, 1, 0);
 ```
 
 ## See Also

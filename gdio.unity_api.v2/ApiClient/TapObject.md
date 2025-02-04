@@ -27,6 +27,11 @@ api.TapObject("//*[@name='Cube']", 1, 10);
 
 // Performs a single tap on an object with the name "Cube", which is rendered using the AlternateCamera
 api.TapObject("//*[@name='Cube']", 1, 10, "//*[@name='AlternateCamera']/fn:component('UnityEngine.Camera')");
+
+// A frame count of 0 can be used to uniquely and seperately trigger TouchPhase.Began and TouchPhase.Ended events.
+api.TapObject("//*[@name='Cube']", 1, 0);
+api.Wait(500);
+api.TapObject("//*[@name='Cube']", 1, 0);
 ```
 
 ## See Also
@@ -71,6 +76,12 @@ api.TapObject(path, "//*[@name='UIDocument']/fn:component('UnityEngine.UIElement
 // Taps on a UI Elements object named "button-1", which is rendered using the AlternateCamera, using a simulated pen input device named "VirtualPen"
 path = api.CreateInputDevice("Pen", "VirtualPen", new string[] { "Pen" });
 api.TapObject(path, "//*[@name='UIDocument']/fn:component('UnityEngine.UIElements.UIDocument')/@rootVisualElement/fn:q('button-1')", 1, 200, 30, 10, "//*[@name='AlternateCamera']/fn:component('UnityEngine.Camera')");
+
+// A frame count of 0 can be used to uniquely and seperately trigger TouchPhase.Began and TouchPhase.Ended events.
+path = api.CreateInputDevice("Pen", "VirtualPen", new string[] { "Pen" });
+api.TapObject(path, "//*[@name='UIDocument']/fn:component('UnityEngine.UIElements.UIDocument')/@rootVisualElement/fn:q('button-1')", 1, 15, 0, 7);
+api.Wait(500);
+api.TapObject(path, "//*[@name='UIDocument']/fn:component('UnityEngine.UIElements.UIDocument')/@rootVisualElement/fn:q('button-1')", 1, 15, 0, 7);
 ```
 
 ## See Also
