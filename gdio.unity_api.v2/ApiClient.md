@@ -27,7 +27,7 @@ public class ApiClient
 | [Connect](ApiClient/Connect.md)(…) | Use this function to connect to a Unity game with GameDriver Agent configured and active. This function can connect to the Unity editor or a Standalone deployment of a game. |
 | [CreateInputDevice](ApiClient/CreateInputDevice.md)(…) | Use this function to create a device of any type from a Unity layout (OculusHMD, Mouse, etc). |
 | [CreateInputDeviceFromDescription](ApiClient/CreateInputDeviceFromDescription.md)(…) | Use this function to create a device from a controller's description file. Use "LoadDeviceDescription" to obtain the jsonDescription string, or create your own. |
-| [CreateObjectRef](ApiClient/CreateObjectRef.md)(…) |  (3 methods) |
+| [CreateObjectRef](ApiClient/CreateObjectRef.md)(…) | Instantiate an Object (Not a GameObject) using its `Type` and Constructor params if any and store it's reference as an ObjectRef. (3 methods) |
 | [DisableHooks](ApiClient/DisableHooks.md)(…) | Disable input hooks in the game. |
 | [DisableObjectCaching](ApiClient/DisableObjectCaching.md)(…) | Disable the use of object caching when doing HierarchyPath object resolution. |
 | virtual [Disconnect](ApiClient/Disconnect.md)() | Use this function to disconnect the API client from the Game. |
