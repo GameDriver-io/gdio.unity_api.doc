@@ -1,5 +1,7 @@
 # ApiClient.ReconfigurePort method
 
+Used to modify the listening port of the GDIOAgent once a connection has been established with the client.
+
 ```csharp
 public void ReconfigurePort(int port, int timeout = 30)
 ```
@@ -8,6 +10,19 @@ public void ReconfigurePort(int port, int timeout = 30)
 | --- | --- |
 | port |  |
 | timeout |  |
+
+## Examples
+
+```csharp
+//Connect 3 ApiClients to different instances of the running game, and reconfigure each to use a different port.
+api1.Connect(hostName, 19734, 30);
+api1.ReconfigurePort(19735, 30);
+
+api2.Connect(hostName, 19734, 30);
+api2.ReconfigurePort(19736, 30);
+
+api3.Connect(hostName, 19734, 30);
+```
 
 ## See Also
 

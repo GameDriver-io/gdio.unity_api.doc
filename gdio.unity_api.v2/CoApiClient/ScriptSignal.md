@@ -1,7 +1,18 @@
 # CoApiClient.ScriptSignal event
 
+Event handler for SmartAgent events. Add a callback method to this handler to recieve all event signals from an executing Lua script.
+
 ```csharp
 public event EventHandler<ScriptSignalEventArgs> ScriptSignal;
+```
+
+## Examples
+
+```csharp
+api.ScriptSignal += (s, a) =>
+{
+      Console.WriteLine($"A script signal has occurred: {a.obj}");
+};
 ```
 
 ## See Also

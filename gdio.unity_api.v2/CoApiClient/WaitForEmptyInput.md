@@ -10,6 +10,10 @@ public IEnumerator WaitForEmptyInput(int timeout = 30)
 | --- | --- |
 | timeout | The time to wait for the event. |
 
+## Return Value
+
+TRUE if the Empty Input event is received within the allotted timeout.
+
 ## See Also
 
 * class [CoApiClient](../CoApiClient.md)

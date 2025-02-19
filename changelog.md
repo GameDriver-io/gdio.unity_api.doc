@@ -9,7 +9,7 @@
   - Code Gen/Editor
   - Test/Unity Log Viewer
 - UIToolkit Explorer
-- OpenH264 Encoder Plugin
+- OpenH264 Encoder Plugin and video recording support
 - Improved HierarchyPath performance
 - MRTK Support Updates
 - Meta XR Support Updates

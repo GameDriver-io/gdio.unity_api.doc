@@ -1,6 +1,6 @@
 # CoApiClient.StartVideoRecording method (1 of 3)
 
-Use this function to start a video recording of the game's screen.
+Use this function to start a video recording of the screen space viewport.
 
 ```csharp
 public IEnumerator<bool> StartVideoRecording(float imageScale = 1, int timeout = 60)
@@ -8,16 +8,16 @@ public IEnumerator<bool> StartVideoRecording(float imageScale = 1, int timeout =
 
 | parameter | description |
 | --- | --- |
-| imageScale | The factor to multiply the current screen resolution by to get the resolution for the output video |
-| timeout | The number of seconds to wait for a response |
+| imageScale | The factor to multiply the current screen resolution by to get the resolution for the output video. |
+| timeout | The number of seconds to wait for a response. |
 
 ## Examples
 
 ```csharp
-// Record a video with half the resolution of the screen
+// Record a video with half the resolution of the screen.
 api.StartVideoRecording(0.5f);
 api.Wait(3000);
-// Save the video local to the test with the name "output.avi" and overwrite if it already exists
+// Save the video local to the test with the name "output.avi" and overwrite if it already exists.
 api.StopVideoRecording("output", false, FileCollisionOption.UseExisting);
 ```
 
@@ -63,7 +63,7 @@ api.StopVideoRecording("output", false, FileCollisionOption.UseExisting);
 
 # CoApiClient.StartVideoRecording method (3 of 3)
 
-Start a video recording of the game's screen. Using a specific screen position to center the capture around.
+Use this function to start a video recording of the screen space viewport. Optionally center the video capture on a specific screen position.
 
 ```csharp
 public IEnumerator<bool> StartVideoRecording(Vector2 centerOnPosition, float imageScale = 1, 
@@ -72,16 +72,16 @@ public IEnumerator<bool> StartVideoRecording(Vector2 centerOnPosition, float ima
 
 | parameter | description |
 | --- | --- |
-| centerOnPosition | The screen-position to center the video capture on |
-| imageScale | The factor to multiply the current screen resolution by to get the resolution for the output video |
-| magnification | The factor to scale the captured texture by. 2.0f == 2x magnification. Treats the value of *centerOnPosition* as the point magnify towards |
+| centerOnPosition | The screen-position to center the video capture on. |
+| imageScale | The factor to multiply the current screen resolution by to get the resolution for the output video. |
+| magnification | The factor to scale the captured texture by. 2.0f == 2x magnification. Treats the value of *centerOnPosition* as the point to magnify towards |
 | timeout | The number of seconds to wait for a response |
 
 ## Examples
 
 ```csharp
-// Record a video with half the resolution of the screen
-api.StartVideoRecording(0.5f);
+// Record a video recording at the 250, 250 coordinates of the screen at half resolution with a magnification of 2x.
+api.StartVideoRecording(new Vector2(250, 250) ,0.5f, 2.0f);
 api.Wait(3000);
 // Save the video local to the test with the name "output.avi" and overwrite if it already exists
 api.StopVideoRecording("output", false, FileCollisionOption.UseExisting);

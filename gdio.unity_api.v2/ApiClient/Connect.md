@@ -19,10 +19,10 @@ public virtual void Connect(string hostname, int port = 19734, bool autoplay = f
 
 ```csharp
 //Connects to a local instance of the Unity editor with the default port of 19734 configured and starts Play mode automatically.
-            api.Connect("localhost");
-            
-            //Connects to an instance of Unity running on the machine with IP address 10.0.0.2, port 19191, where the Unity editor is already in Play mode OR the standalone game is running.
-            api.Connect("10.0.0.20", 19191, false, 60);
+api.Connect("localhost");
+
+// Connects to an instance of Unity running on the machine with IP address 10.0.0.2, port 19191, where the Unity editor is already in Play mode OR the standalone game is running.
+api.Connect("10.0.0.20", 19191, false, 60);
 ```
 
 ## See Also
