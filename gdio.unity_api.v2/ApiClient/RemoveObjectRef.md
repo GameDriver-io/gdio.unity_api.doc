@@ -13,7 +13,7 @@ public bool RemoveObjectRef(ObjectRef objectRef, int timeout = 30)
 
 ## Return Value
 
-True if the object was found and removed, false otherwise.
+TRUE if the object was found and removed, FALSE otherwise.
 
 ## See Also
 

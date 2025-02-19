@@ -39,7 +39,7 @@ public IEnumerator<T> WaitForCollisionEvent<T>(string eventId, int timeout = 60)
 
 ## Return Value
 
-The collision messages. TODO: Return a translated collisionInfo object
+The collision messages.
 
 ## Examples
 

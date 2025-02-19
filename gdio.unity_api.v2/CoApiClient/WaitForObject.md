@@ -13,7 +13,7 @@ public IEnumerator<bool> WaitForObject(string hierarchyPath, int timeout = 30)
 
 ## Return Value
 
-Returns TRUE if the object exists within the alloted timeout.
+TRUE if the object exists within the alloted timeout.
 
 ## See Also
 

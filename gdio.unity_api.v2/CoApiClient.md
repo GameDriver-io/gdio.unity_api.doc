@@ -10,7 +10,7 @@ public class CoApiClient
 | --- | --- |
 | [CoApiClient](CoApiClient/CoApiClient.md)() | The default constructor. |
 | event [LoggedMessage](CoApiClient/LoggedMessage.md) | Event handler for logged messages. Add a callback method to this handler to recieve all logging messages from the API. |
-| event [ScriptSignal](CoApiClient/ScriptSignal.md) |  |
+| event [ScriptSignal](CoApiClient/ScriptSignal.md) | Event handler for SmartAgent events. Add a callback method to this handler to recieve all event signals from an executing Lua script. |
 | [CallMethod](CoApiClient/CallMethod.md)(…) | Use this function to execute a [System.Void](https://learn.microsoft.com/en-us/dotnet/api/system.void) method on an object or from a static class. |
 | [CallMethod&lt;T&gt;](CoApiClient/CallMethod.md)(…) | Use this function to execute a method on an object. |
 | [CaptureScreenshot](CoApiClient/CaptureScreenshot.md)(…) | Use this function to capture a screenshot of the Game under test. |
@@ -47,8 +47,8 @@ public class CoApiClient
 | [ScheduleScript](CoApiClient/ScheduleScript.md)(…) | This method schedules the execution of a Lua script. |
 | [SetInputFieldText](CoApiClient/SetInputFieldText.md)(…) | Set the text of an InputField or TMP_InputField |
 | [SetObjectFieldValue](CoApiClient/SetObjectFieldValue.md)(…) | Set the field or property of an object. |
-| [StartVideoRecording](CoApiClient/StartVideoRecording.md)(…) | Use this function to start a video recording of the game's screen. (3 methods) |
-| [StopVideoRecording](CoApiClient/StopVideoRecording.md)(…) | Use this function to start a video recording of the game's screen. |
+| [StartVideoRecording](CoApiClient/StartVideoRecording.md)(…) | Use this function to start a video recording of the screen space viewport. (3 methods) |
+| [StopVideoRecording](CoApiClient/StopVideoRecording.md)(…) | Use this function to stop a video recording. |
 | [Tap](CoApiClient/Tap.md)(…) | Tap the handheld device at the defined position. (2 methods) |
 | [TapObject](CoApiClient/TapObject.md)(…) | Tap an object. |
 | [TouchInput](CoApiClient/TouchInput.md)(…) | Send a raw TouchInput event to the game. (2 methods) |

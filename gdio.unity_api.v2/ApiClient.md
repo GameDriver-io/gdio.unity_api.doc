@@ -66,7 +66,7 @@ public class ApiClient
 | [PoseInputEvent](ApiClient/PoseInputEvent.md)(…) | Use this function to send arbitrary combinations of Vector3 and Quaternions to a game. This is usually the way when dealing with matrices. This is only used by SteamVR for now. |
 | [QuaternionInputEvent](ApiClient/QuaternionInputEvent.md)(…) | Use this function to send arbitrary Quaternion Event states to the game. |
 | [Raycast](ApiClient/Raycast.md)(…) | Perform a Raycast to a point to find out what is in that position. |
-| [ReconfigurePort](ApiClient/ReconfigurePort.md)(…) |  |
+| [ReconfigurePort](ApiClient/ReconfigurePort.md)(…) | Used to modify the listening port of the GDIOAgent once a connection has been established with the client. |
 | [RegisterCollisionMonitor](ApiClient/RegisterCollisionMonitor.md)(…) | Register a collision monitor to recieve collision events on an object. |
 | [RemoveInputDevices](ApiClient/RemoveInputDevices.md)(…) | Removes all devices created by GDIO "CreateDevice" methods. Should be used in OneTimeTearDown to prevent issues with controllers remaining in the scene. |
 | [RemoveObjectRef](ApiClient/RemoveObjectRef.md)(…) | Remove an objectRef |
@@ -77,9 +77,9 @@ public class ApiClient
 | [SetObjectFieldValue](ApiClient/SetObjectFieldValue.md)(…) | Set the field or property of an object. |
 | [SetXRDeviceMode](ApiClient/SetXRDeviceMode.md)(…) | Used to change between controller and hand modes in XR if one of the used modes is not working or being rendered. Mostly for OVR. Set by default to both: XRDeviceModes.CONTROLLER &#x7C; XRDeviceModes.HAND. Ex: SetXRDeviceModes("GDIOLeftHand", XRDeviceModes.HAND) or SetXRDeviceModes("GDIOLeftHand", XRDeviceModes.CONTROLLER &#x7C; XRDeviceModes.HAND). |
 | [SkeletonInputEvent](ApiClient/SkeletonInputEvent.md)(…) | Use this function to send arbitrary Skeleton Event states to the game. (2 methods) |
-| [StartVideoRecording](ApiClient/StartVideoRecording.md)(…) | Start a video recording of the game's screen. Optionally center the video capture on a specific screen position. (3 methods) |
+| [StartVideoRecording](ApiClient/StartVideoRecording.md)(…) | Use this function to start a video recording of the screen space viewport. (3 methods) |
 | [StopEditorPlay](ApiClient/StopEditorPlay.md)() | Stop a game from playing in the Editor, if it is currently in Play mode. |
-| [StopVideoRecording](ApiClient/StopVideoRecording.md)(…) | Use this function to start a video recording of the game's screen. |
+| [StopVideoRecording](ApiClient/StopVideoRecording.md)(…) | Use this function to stop a video recording. |
 | [Tap](ApiClient/Tap.md)(…) | Tap the handheld device at the defined position. (2 methods) |
 | [TapObject](ApiClient/TapObject.md)(…) | Tap an object. (2 methods) |
 | [ToggleEditorPause](ApiClient/ToggleEditorPause.md)() | Toggle the Pause mode in the Editor, if a game is in Play mode. If AutoPlay is not used, then 127.0.0.1 will be used as a default. |

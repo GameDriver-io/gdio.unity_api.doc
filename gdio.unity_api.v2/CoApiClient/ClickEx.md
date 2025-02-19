@@ -24,7 +24,7 @@ public IEnumerator<bool> ClickEx(MouseButtons buttonId, Vector2 position, ulong 
 
 ```csharp
 //Clicks the left mouse button at 0,0 for 30 frames while holding the left-shift key for 3 frames, and the C key for 5 frames.
-            api.ClickEx(MouseButtons.LEFT, new Vector2(0, 0), 30, new KeyCode[] { KeyCode.C }, 5, new KeyCode[] { KeyCode.LeftShift }, 3, 500, 30);
+api.ClickEx(MouseButtons.LEFT, new Vector2(0, 0), 30, new KeyCode[] { KeyCode.C }, 5, new KeyCode[] { KeyCode.LeftShift }, 3, 500, 30);
 ```
 
 ## See Also
@@ -62,10 +62,10 @@ public IEnumerator<bool> ClickEx(MouseButtons buttonId, float x, float y, ulong 
 
 ```csharp
 //Clicks the left mouse button at 0,0 for 30 frames while holding the left-shift key for 3 frames, and the C key for 5 frames.
-            api.ClickEx(MouseButtons.LEFT, 0, 0, 30,
-                new KeyCode[] { KeyCode.C }, 5,
-                new KeyCode[] { KeyCode.LeftShift }, 3,
-                500, 30);
+api.ClickEx(MouseButtons.LEFT, 0, 0, 30,
+    new KeyCode[] { KeyCode.C }, 5,
+    new KeyCode[] { KeyCode.LeftShift }, 3,
+    500, 30);
 ```
 
 ## See Also

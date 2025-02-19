@@ -1,6 +1,6 @@
 # ApiClient.StopVideoRecording method
 
-Use this function to start a video recording of the game's screen.
+Use this function to stop a video recording.
 
 ```csharp
 public string StopVideoRecording(string outputFileName = "capture", bool storeInGameFolder = false, 
@@ -9,10 +9,10 @@ public string StopVideoRecording(string outputFileName = "capture", bool storeIn
 
 | parameter | description |
 | --- | --- |
-| outputFileName |  |
-| storeInGameFolder |  |
-| collisionOption |  |
-| timeout | The number of seconds to wait for a response |
+| outputFileName | The name of the output file. The file extension is set to .avi. |
+| storeInGameFolder | TRUE will keep the file in the game folder, whereas FALSE will send it back to the ApiClient. |
+| collisionOption | Enum used to determine whether to overwrite the file if it exists. |
+| timeout | The number of seconds to wait for a response. |
 
 ## Examples
 
@@ -20,7 +20,7 @@ public string StopVideoRecording(string outputFileName = "capture", bool storeIn
 // Record a video with half the resolution of the screen
 api.StartVideoRecording(0.5f);
 api.Wait(3000);
-// Save the video local to the test with the name "output.avi" and overwrite if it already exists
+// Save the video local to the test with the name "output.avi" and overwrite if it already exists.
 api.StopVideoRecording("output", false, FileCollisionOption.UseExisting);
 ```
 

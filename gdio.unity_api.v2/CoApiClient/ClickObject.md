@@ -18,8 +18,8 @@ public IEnumerator<bool> ClickObject(MouseButtons buttonId, string hierarchyPath
 
 ```csharp
 //Locates and clicks the first object with the name "Cube" for 30 frames using the left mouse button.
-            api.ClickObject(MouseButtons.LEFT,
-                "//*[@name='Cube']", 30, 30);
+api.ClickObject(MouseButtons.LEFT,
+    "//*[@name='Cube']", 30, 30);
 ```
 
 ## See Also
