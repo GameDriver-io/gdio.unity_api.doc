@@ -1,5 +1,11 @@
 # Changelog for GameDriver for Unity releases
 
+## 02-25-2025 Version 2025.02
+
+- Fixed a memory leak in video capture
+- Fixed an issue with AutoPlay
+- Fixed an issue with WebGL builds
+
 ## 01-01-2025 Version 2025.01
 
 - GameDriver Test Assistant (TA)
