@@ -23,9 +23,11 @@ public class ApiClient
 | [ClickEx](ApiClient/ClickEx.md)(…) | Use this function to interact with an in-game object or UI items using mouse-clicks combined with modifier key press operations. The total frame count of this operation is clickFrameCount + modifiersNumberOfFrames (3 methods) |
 | [ClickObject](ApiClient/ClickObject.md)(…) | Use this function to interact with an in-game object using mouse-clicks. |
 | [ClickObjectEx](ApiClient/ClickObjectEx.md)(…) | Use this function to interact with an in-game object using mouse-clicks combined with key press operations. The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames. (2 methods) |
+| virtual [ConfigureInfoBox](ApiClient/ConfigureInfoBox.md)(…) | Updates the configuration of the infobox. Can be used to hide/unhide it and change position and scale. |
 | virtual [Connect](ApiClient/Connect.md)(…) | Use this function to connect to a Unity game with GameDriver Agent configured and active. This function can connect to the Unity editor or a Standalone deployment of a game. |
 | [Connect](ApiClient/Connect.md)(…) | Use this function to connect to a Unity game with GameDriver Agent configured and active. This function can connect to the Unity editor or a Standalone deployment of a game. |
 | [CreateInputDevice](ApiClient/CreateInputDevice.md)(…) | Use this function to create a device of any type from a Unity layout (OculusHMD, Mouse, etc). |
+| [CreateInputDeviceCustom](ApiClient/CreateInputDeviceCustom.md)(…) | Use this function to create a device from a Unity description file. You can extend an existing device or make an entire new device from scratch and add any inputs you want. Use "LoadDeviceDescription" to load the file or create your own. |
 | [CreateInputDeviceFromDescription](ApiClient/CreateInputDeviceFromDescription.md)(…) | Use this function to create a device from a controller's description file. Use "LoadDeviceDescription" to obtain the jsonDescription string, or create your own. |
 | [CreateObjectRef](ApiClient/CreateObjectRef.md)(…) | Instantiate an Object (Not a GameObject) using its `Type` and Constructor params if any and store it's reference as an ObjectRef. (3 methods) |
 | [DisableHooks](ApiClient/DisableHooks.md)(…) | Disable input hooks in the game. |
@@ -73,6 +75,7 @@ public class ApiClient
 | [RotateObject](ApiClient/RotateObject.md)(…) | Rotate an object defined by the HierarchyPath and rotated by a Quaternion. [https://scriptinghelpers.org/blog/how-to-think-about-quaternions](https://scriptinghelpers.org/blog/how-to-think-about-quaternions) for more information. (4 methods) |
 | [ScheduleScript](ApiClient/ScheduleScript.md)(…) | This method schedules the execution of a Lua script. |
 | [Scroll](ApiClient/Scroll.md)(…) | Use this function to simulate mouse wheel scrolling. NOTE: The new input system values are a factor of 120 |
+| [SetInfoBoxStatusMessage](ApiClient/SetInfoBoxStatusMessage.md)(…) | Sets a message in the infobox's textfield zone. |
 | [SetInputFieldText](ApiClient/SetInputFieldText.md)(…) | Set the text of an InputField or TMP_InputField |
 | [SetObjectFieldValue](ApiClient/SetObjectFieldValue.md)(…) | Set the field or property of an object. |
 | [SetXRDeviceMode](ApiClient/SetXRDeviceMode.md)(…) | Used to change between controller and hand modes in XR if one of the used modes is not working or being rendered. Mostly for OVR. Set by default to both: XRDeviceModes.CONTROLLER &#x7C; XRDeviceModes.HAND. Ex: SetXRDeviceModes("GDIOLeftHand", XRDeviceModes.HAND) or SetXRDeviceModes("GDIOLeftHand", XRDeviceModes.CONTROLLER &#x7C; XRDeviceModes.HAND). |
@@ -91,7 +94,7 @@ public class ApiClient
 | [Vector3InputEvent](ApiClient/Vector3InputEvent.md)(…) | Use this function to send arbitrary Vector3 Event states to the game. |
 | [Wait](ApiClient/Wait.md)(…) | Client side Wait or Pause. |
 | [WaitForCollisionEvent](ApiClient/WaitForCollisionEvent.md)(…) | Wait for a collision event to fire on an element that is being monitored for collisions. If the method has been called before, there is the potential that another event was recieved before waiting on the event again. Check with [`GetNextCollisionEvent`](./ApiClient/GetNextCollisionEvent.md) to see if it returns null to see if an event was missed. |
-| [WaitForEmptyInput](ApiClient/WaitForEmptyInput.md)(…) | Wait for an Empty Input event to be received. (2 methods) |
+| [WaitForEmptyInput](ApiClient/WaitForEmptyInput.md)(…) | Wait for an Empty Input event to be received. NOTE: Some methods have an internal WaitForEmptyInput parameter, do not use this with them. (2 methods) |
 | [WaitForObject](ApiClient/WaitForObject.md)(…) | Wait for an object to exist. |
 | [WaitForObjectValue](ApiClient/WaitForObjectValue.md)(…) | Wait for an object to exist and have a specific value for a specified field/property. |
 | static [AUTOPLAY_BROADCAST_ADDR](ApiClient/AUTOPLAY_BROADCAST_ADDR.md) | The broadcast address to use for sending out AutoPlay requests. The default is for localhost: 127.0.0.1 |
@@ -110,6 +113,7 @@ public class ApiClient
 | virtual [IsRecorder](ApiClient/IsRecorder.md) { get; } |  |
 | [client](ApiClient/client.md) |  |
 | event [MessageReceived](ApiClient/MessageReceived.md) | Passthrough event handler for for Api Extensions, eg: Recorder |
+| [LogMessage](ApiClient/LogMessage.md)(…) |  |
 | [SendMessage](ApiClient/SendMessage.md)(…) | Passthrough SendMessage Method for Api Extensions, eg: Recorder. |
 
 ## See Also

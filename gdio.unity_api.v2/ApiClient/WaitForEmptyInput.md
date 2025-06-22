@@ -1,6 +1,6 @@
 # ApiClient.WaitForEmptyInput method (1 of 2)
 
-Wait for an Empty Input event to be received.
+Wait for an Empty Input event to be received. NOTE: Some methods have an internal WaitForEmptyInput parameter, do not use this with them.
 
 ```csharp
 public bool WaitForEmptyInput(int timeout = 30)
@@ -23,7 +23,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 # ApiClient.WaitForEmptyInput method (2 of 2)
 
-Wait for an Empty Input event in a specific path to be received.
+Wait for an Empty Input event in a specific path to be received. NOTE: Some methods have an internal WaitForEmptyInput parameter, do not use this with them.
 
 ```csharp
 public bool WaitForEmptyInput(string path, int timeout = 30)

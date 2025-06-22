@@ -1,5 +1,116 @@
 # Changelog for GameDriver for Unity releases
 
+## 06-22-2025 Version 2025.06
+
+### Touch Input & Mobile Support
+
+#### New Touch Recording System
+
+* Comprehensive touch input recording capabilities for mobile testing  
+* Support for both Legacy Input and New Input System touch recording
+
+### Enhanced Input System Support
+
+#### Custom Device Creation
+
+* Custom device creation using Unity descriptions (`CreateDeviceCustom()`)  
+* Enhanced gamepad and controller support
+
+### VR/XR Support Enhancements
+
+#### Virtual Reality Integration
+
+* Automatic real device removal for headset testing  
+* OpenXR headset detection and configuration  
+* Improved VR input simulation  
+* Custom VR device creation support
+
+### UI/UX Enhancements
+
+#### Light Infobox System
+
+* Complete redesign replacing legacy OnGUI system  
+* Modern, lightweight UI with improved visual design  
+* Sprite-based graphics and better Unity UI integration  
+* Automatic fallback to legacy infobox when needed
+
+#### API Control & Configuration
+
+* `ConfigureInfoBox()` for enabling/disabling, positioning, and scaling  
+* `SetInfoBoxStatusMessage()` for custom status messaging  
+* Configurable canvas render modes for VR/AR compatibility
+
+### Unity Editor Integration
+
+* Enhanced recording interface with improved visual layout
+
+### Technical Improvements
+
+#### Object Reference & HPath System
+
+* Support for HPath-based object references (`CreateObjectRef(hPath)`, `RemoveObjectRef()`)  
+* Improved object resolution and caching  
+* Enhanced property lookup with binding flags
+
+#### Video Recording Enhancements
+
+* Fixed memory leaks during frame encoding  
+* Better error handling for missing video libraries  
+* More stable video recording across different platforms  
+* Improved error reporting and diagnostics
+
+#### API Enhancements
+
+* Enhanced video recording API (`StartVideoRecording`, `StopVideoRecording`)  
+* Better input management with `WaitForEmptyInput` improvements  
+* Improved `GetObjectDistance` functionality  
+* Enhanced debugging and error reporting capabilities
+
+#### Platform & Compatibility
+
+* WebGL build improvements and fixes  
+* Console platform support improvements  
+* iOS/Xcode build improvements with fixed OVR configuration
+
+### Bug Fixes & Stability
+
+#### Performance Optimizations
+
+* Memory leak fixes  
+* Better texture processing and resource cleanup  
+* Improved connection management and stability  
+* Enhanced thread safety across components
+
+#### Input System Fixes
+
+* Improved handling of double-click to prevent duplicate input events  
+* Better input system detection and initialization  
+* Fixed pointer events on mobile platforms  
+* Improved touch device handling
+
+#### General Stability
+
+* Enhanced logging and diagnostic capabilities  
+* Better screenshot functionality with UI element hiding  
+* Improved error handling and exception management  
+* More robust license validation and error reporting
+
+### Developer Experience
+
+#### Enhanced Developer Resources
+
+* Comprehensive API documentation updates 
+* Included XML for inline API documentation 
+* New examples for video recording workflows  
+* Enhanced touch input examples  
+* Improved object reference usage patterns
+
+#### Better Development Tools
+
+* Enhanced error messages and debugging information  
+* Improved diagnostic capabilities and logging  
+* Better validation and error reporting throughout the system
+
 ## 02-25-2025 Version 2025.02
 
 - Fixed a memory leak in video capture
